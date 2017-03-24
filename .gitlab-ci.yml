@@ -20,4 +20,4 @@ pages:
     paths:
     - public
   only:
-  - master
+  - gitlab-ci
