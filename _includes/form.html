@@ -1,0 +1,67 @@
+<form id="resist-form">
+	<fieldset>
+		<div>
+			<label for="service">Service</label>
+			<select name="service" id="select-service">
+				{% for service in site.data.services %}
+					<option value="{{service.Service}}">{{service.Service}}</option>
+				{% endfor %}
+				<option value="custom">Not on the list</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="dept">Government Department</label>
+			<input name="dept" size="60">
+		</div>
+	
+		<div>
+			<label for="address">Address</label>
+			<textarea name="address" rows="5" cols="50"></textarea>
+		</div>
+	
+		<div>
+			<label for="email">Email</label>
+			<input name="email" size="60">
+		</div>
+	
+		<div>
+			<label for="twitter">Twitter</label>
+			<input name="twitter" size="60">
+		</div>
+	</fieldset>
+</form>
+
+<script>
+
+var selectFormItem = function(name) {
+	return document.querySelector('#resist-form *[name=' + name + ']');
+};
+
+var disableAndSetValue = function(item, val) {
+	item.value = val.trim();
+	item.disabled = true;
+};
+
+var fixEmail = function(email) {
+	return email.replace(/[\[\(]dot[\]\)]/g, '.').replace(/[\[\(]at[\]\)]/g, '@').replace(/[\n\r]/g, ', ').replace(', , ', ', ');
+};
+
+var fixTwitter = function(handles) {
+	if (!handles) {
+		return '';
+	}
+	return "@" + handles.trim();
+}
+
+var services = {% include services.json %};
+
+document.getElementById('select-service').addEventListener('change', function() {
+	var service = services[this.selectedIndex];
+
+	disableAndSetValue(selectFormItem('dept'), service['Govt Department']);
+	disableAndSetValue(selectFormItem('address'), service.Address);
+	disableAndSetValue(selectFormItem('email'), fixEmail(service.Email));
+	disableAndSetValue(selectFormItem('twitter'), fixTwitter(service.Twitter));
+});
+</script>
