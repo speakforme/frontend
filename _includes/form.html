@@ -8,12 +8,7 @@
 				{% endfor %}
 				<option value="custom">Not on the list</option>
 			</select>
-		</div>
-
-		<div>
-			<label for="dept">Government Department</label>
-			<input name="dept" size="60">
-		</div>
+		</div><!-- 
 	
 		<div>
 			<label for="address">Address</label>
@@ -28,9 +23,38 @@
 		<div>
 			<label for="twitter">Twitter</label>
 			<input name="twitter" size="60">
+		</div> -->
+		<label for="content">Response</label>
+		<textarea cols="70" rows="10" name="content">
+		</textarea>
+
+		<div>
+			<h3>Step 1</h3>
+			<label for="dept">Send notice of contempt to: <span name="dept"></span></label>
+			<button class="btn-email" id="btn-dept-gmail" data-content="content" data-subject="{{page.subject}}">GMail</button>
+			<button class="btn-email" id="btn-dept-yahoo" data-content="content" data-subject="{{page.subject}}">Yahoo!</button>
+			<button class="btn-email" id="btn-dept-email" data-content="content" data-subject="{{page.subject}}">Other Email</button>
+		</div>
+
+		<div>
+			<h3>Step 2</h3>
+			<textarea cols="70" rows="10" name="content2">
+{% include draft-notice-uidai.inc %}
+			</textarea>
+			
+			<label for="dept">Send notice of contempt to UIDAI using:</label>
+			<button class="btn-email" id="btn-dept-gmail" data-content="content2" data-subject="{{page.subject}}">GMail</button>
+			<button class="btn-email" id="btn-dept-yahoo" data-content="content2" data-subject="{{page.subject}}">Yahoo!</button>
+			<button class="btn-email" id="btn-dept-email" data-content="content2" data-subject="{{page.subject}}">Other Email</button>
 		</div>
 	</fieldset>
+
+
 </form>
+
+<script id="draft-notice-dept" type="text/template">
+{% include draft-notice-dept.inc %}
+</script>
 
 <script>
 
@@ -39,9 +63,17 @@ var selectFormItem = function(name) {
 };
 
 var disableAndSetValue = function(item, val) {
-	item.value = val.trim();
+	item.innerText = val.trim();
 	item.disabled = true;
 };
+
+var setValue = function(item, val) {
+	item.value = val.trim();
+}
+
+var setInerText = function(item, text) {
+	item.innerText = text.trim();
+}
 
 var fixEmail = function(email) {
 	return email.replace(/[\[\(]dot[\]\)]/g, '.').replace(/[\[\(]at[\]\)]/g, '@').replace(/[\n\r]/g, ', ').replace(', , ', ', ');
@@ -54,14 +86,44 @@ var fixTwitter = function(handles) {
 	return "@" + handles.trim();
 }
 
+var emailContent = function(address) {
+	var content = document.getElementById('draft-notice-dept').innerText;
+	return address + "\n\n" + content;
+};
+
+var IEMobile = /IEMobile/i.test(navigator.userAgent);
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini/i.test(navigator.userAgent) && !IEMobile;
+
+function sendEmailMobile(toAddress, subject, bccAddress, encodedBody) {
+	window.location.href = "mailto:"+ encodeURIComponent(toAddress) +"?subject="+encodeURIComponent(subject)+"&bcc="+encodeURIComponent(bccAddress)+"&body="+encodedBody;
+	window.location.hash = '#share';
+}
+
+function sendEmail = function() {
+
+	// var to, subject, bcc, body
+
+	var encodedBody = encodeURIComponent(body);
+
+	if (isMobile) {
+		sendEmailMobile(to, subject, bcc, encodedBody);
+		return false;
+	}
+	else {
+
+	}
+
+}
+
 var services = {% include services.json %};
 
 document.getElementById('select-service').addEventListener('change', function() {
 	var service = services[this.selectedIndex];
 
-	disableAndSetValue(selectFormItem('dept'), service['Govt Department']);
-	disableAndSetValue(selectFormItem('address'), service.Address);
-	disableAndSetValue(selectFormItem('email'), fixEmail(service.Email));
-	disableAndSetValue(selectFormItem('twitter'), fixTwitter(service.Twitter));
+	setInerText(selectFormItem('dept'), service['Govt Department']);
+	// disableAndSetValue(selectFormItem('address'), service.Address);
+	// disableAndSetValue(selectFormItem('email'), fixEmail(service.Email));
+	// disableAndSetValue(selectFormItem('twitter'), fixTwitter(service.Twitter));
+	selectFormItem('content').value = emailContent(service.Address);
 });
 </script>
