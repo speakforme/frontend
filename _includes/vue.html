@@ -1,0 +1,46 @@
+<form id="resist-form">
+  <fieldset>
+    <div>
+      <label for="service">Service</label>
+      <select name="service" id="select-service" v-model="serviceIndex">
+        <option :value="index" v-for="(service,index) in services"><%service.name%></option>
+        <option value="custom">Not on the list</option>
+      </select>
+    </div>
+
+    <div v-if="service.address">
+      <label for="address">Address</label>
+      <textarea name="address" rows="5" cols="50"><%service.address%></textarea>
+    </div>
+
+    <div v-if="service.name=='Bank'">
+      <label for="bank">Bank</label>
+      <select name="bank" id="select-bank" v-model="bankIndex">
+        <option :value="index" v-for="(bank, index) in banks"><%bank.name%></option>
+      </select>
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input name="email" size="60" v-model="email">
+    </div>
+
+    <div v-if="service.twitter">
+      <label for="twitter">Twitter</label>
+      <input name="twitter" size="60" v-model="service.twitter">
+    </div>
+
+    <label for="content">Response</label>
+      <textarea cols="70" rows="10" name="content">
+        <%response%>
+    </textarea>
+  </fieldset>
+</form>
+
+<script>
+// TODO: Maybe load this async?
+window.services = {% include services.json %}
+window.banks = {% include banks.json %}
+
+</script>
+<script src="/public/app.js"></script>

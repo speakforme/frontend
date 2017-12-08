@@ -9,4 +9,4 @@ subject: "Contempt of Rule of Law and the orders of the Supreme Court of India"
 
 Select the authority that is forcing Aadhaar.
 
-{% include form.html %}
+{% include vue.html %}
