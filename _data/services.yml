@@ -1,8 +1,8 @@
 -
     Service: PDS
-    Department: >
+    Department: |
         Department of Food and Public Distribution, India
-    Address: >
+    Address: |
         Ministry of Consumer Affairs,
         Food and Public Distribution
         Department of Food & PD
@@ -14,7 +14,7 @@
 -
     Service: LPG
     Department: Ministry of Petroleum and Natural Gas
-    Address: >
+    Address: |
         Shri K.M.Mahesh
         Deputy Secretary (LPG)
         Ministry of Petroleum & Natural Gas
@@ -25,7 +25,7 @@
 -
     Service: MGNREGS
     Department: Ministry of Rural Department
-    Address: >
+    Address: |
         Smt Aparajita Sarangi,
         Joint Secretary 
         Ministry of Rural Development
@@ -39,7 +39,7 @@
 -
     Service: ""
     Department: ""
-    Address: >
+    Address: |
         Dr. Suparna S. Pachouri,
         Director 
         Ministry of Rural Development
@@ -53,7 +53,7 @@
 -
     Service: National Social Assistance Programme
     Department: Ministry of Rural Department
-    Address: >
+    Address: |
         Shri Manoranjan Kumar
         Eco. Adviser
         Ministry of Rural Development
@@ -67,7 +67,7 @@
 -
     Service: PMJDY
     Department: Ministry of Finance
-    Address: >
+    Address: |
         Pradhan Mantri Jan Dhan Yojana,
         Department of Financial Services,
         Ministry of Finance,
@@ -83,7 +83,7 @@
 -
     Service: Employees Provident Fund Organisation (EPFO)
     Department: Minister of State for Labour and Employment
-    Address: >
+    Address: |
         Dr. V.P Joy, IAS
         Central P.F. Commissioner
         EPFO Head Office, New Delhi, 
@@ -95,7 +95,7 @@
 -
     Service: PAN
     Department: Ministry of Finance (CBDT)
-    Address: >
+    Address: |
         Shri Sushil Chandra
         Chairperson​​, Central Board of Direct Tax,
         Ministry of Finance,
@@ -104,11 +104,11 @@
         Parliament Street,
         New Delhi-110001
         Phone: 011-23361571/23748738
-    Email: >
+    Email: |
         fmo@nic.in,
         chairman.cbdt@incometax.gov.in,
         rsecy@nic.in,
-    Twitter: >
+    Twitter: |
         FinMinIndia
         arunjaitley
         adhia03

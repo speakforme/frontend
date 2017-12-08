@@ -8,7 +8,7 @@
 				{% endfor %}
 				<option value="custom">Not on the list</option>
 			</select>
-		</div><!-- 
+		</div>
 	
 		<div>
 			<label for="address">Address</label>
@@ -23,7 +23,7 @@
 		<div>
 			<label for="twitter">Twitter</label>
 			<input name="twitter" size="60">
-		</div> -->
+		</div>
 		<label for="content">Response</label>
 		<textarea cols="70" rows="10" name="content">
 		</textarea>
@@ -63,7 +63,12 @@ var selectFormItem = function(name) {
 };
 
 var disableAndSetValue = function(item, val) {
-	item.innerText = val.trim();
+	if (item.tagName === 'textarea') {
+		item.innerText = val.trim();	
+	}
+	else {
+		item.value = val;
+	}
 	item.disabled = true;
 };
 
@@ -94,12 +99,12 @@ var emailContent = function(address) {
 var IEMobile = /IEMobile/i.test(navigator.userAgent);
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini/i.test(navigator.userAgent) && !IEMobile;
 
-function sendEmailMobile(toAddress, subject, bccAddress, encodedBody) {
+var sendEmailMobile = function(toAddress, subject, bccAddress, encodedBody) {
 	window.location.href = "mailto:"+ encodeURIComponent(toAddress) +"?subject="+encodeURIComponent(subject)+"&bcc="+encodeURIComponent(bccAddress)+"&body="+encodedBody;
 	window.location.hash = '#share';
 }
 
-function sendEmail = function() {
+var sendEmail = function() {
 
 	// var to, subject, bcc, body
 
@@ -119,10 +124,9 @@ var services = {% include services.json %};
 
 document.getElementById('select-service').addEventListener('change', function() {
 	var service = services[this.selectedIndex];
-
 	disableAndSetValue(selectFormItem('dept'), service['Department']);
-	disableAndSetValue(selectFormItem('address'), service.Address);
-	disableAndSetValue(selectFormItem('email'), fixEmail(service.Email));
-	disableAndSetValue(selectFormItem('twitter'), fixTwitter(service.Twitter));
+	disableAndSetValue(selectFormItem('address'), service['Address']);
+	disableAndSetValue(selectFormItem('email'), fixEmail(service['Email']));
+	disableAndSetValue(selectFormItem('twitter'), fixTwitter(service['Twitter']));
 });
 </script>
