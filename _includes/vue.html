@@ -8,11 +8,6 @@
       </select>
     </div>
 
-    <div v-if="service.address">
-      <label for="address">Address</label>
-      <textarea name="address" rows="5" cols="50"><%service.address%></textarea>
-    </div>
-
     <div v-if="serviceIndex==0">
       <label for="bank">Bank</label>
       <select name="bank" id="select-bank" v-model="bankIndex">
@@ -23,11 +18,6 @@
     <div>
       <label for="email">Email</label>
       <input name="email" size="60" v-model="email">
-    </div>
-
-    <div v-if="service.twitter">
-      <label for="twitter">Twitter</label>
-      <input name="twitter" size="60" v-model="service.twitter">
     </div>
 
     <label for="content">Response</label>
@@ -47,7 +37,7 @@
   <div v-if="twitter">
     <h3>Tweet</h3>
     <!-- TODO: Find a better generic twitter message -->
-    <textarea row="1" col="70">Hey <%twitter%>, please stop harrassing me for my aadhaar. @speakforme</textarea>
+    <textarea rows="1" cols="70">Hey <%twitter%>, please stop harrassing me for my aadhaar. @speakforme</textarea>
     <button class="btn-email" id="btn-dept-gmail" v-on:click="tweet">Tweet</button>
   </div>
 </form>

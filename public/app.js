@@ -40,6 +40,7 @@ var app = new Vue({
         sendEmailMobile(this.email, this.subject, this.bcc, encodedBody);
       }
     },
+    tweet: function() {},
   },
   computed: {
     mobile: function() {
