@@ -1,4 +1,7 @@
 -
+  # Leave this as first item on the list
+  name: Bank
+-
   name: PDS
   Department: |
     Department of Food and Public Distribution, India
@@ -8,7 +11,7 @@
     Department of Food & PD
     Krishi Bhawan,
     New Delhi - 110001.
-    Phone: 23382504"
+    Phone: 23382504
   email: asit.halder@nic.in
   twitter: jagograhakjago
 -
@@ -19,7 +22,7 @@
     Deputy Secretary (LPG)
     Ministry of Petroleum & Natural Gas
     Shastri Bhavan,
-    New Delhi - 110001.(India)"
+    New Delhi - 110001
   email: mahesh.png@gov.in
   twitter: PetroleumMin
 -
@@ -34,7 +37,7 @@
     Dr. Rajendra Prasad Road,
     New Delhi - 110001
   email: aparajitasarangi@gmail.com
-  twitter: ""
+  twitter: false
 -
   name: National Social Assistance Programme
   department: Ministry of Rural Department
@@ -47,7 +50,7 @@
     Dr. Rajendra Prasad Road,
     New Delhi - 110001
   email: manoranjan.kumar@nic.in
-  twitter: ""
+  twitter: false
 -
   name: PMJDY
   department: Ministry of Finance
@@ -96,5 +99,3 @@
     FinMinIndia
     arunjaitley
     adhia03
--
-  name: Bank

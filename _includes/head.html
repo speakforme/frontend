@@ -18,7 +18,9 @@
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
 
+  {% if jekyll.environment == 'production' %}
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  {% else %}
   <script src="https://vuejs.org/js/vue.js"></script>
-  <!-- Above is development, below is production -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+  {% endif %}
 </head>

@@ -1,15 +1,12 @@
 var banks = window.banks;
 var services = window.services;
 
-// This is the method that generates a response
-var makeResponse = function() {};
-
-// TODO: convert following methods to vue
-var emailContent = function(address) {
-  var content = document.getElementById('draft-notice-dept').innerText;
-  return address + '\n\n' + content;
+var templates = {
+  service: document.getElementById('draft-notice-service').innerText,
+  bank: document.getElementById('draft-notice-bank').innerText,
 };
 
+// TODO: convert following methods to vue
 var IEMobile = /IEMobile/i.test(navigator.userAgent);
 var isMobile =
   /Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini/i.test(
@@ -56,21 +53,20 @@ var app = new Vue({
       return window.services;
     },
     service: function() {
+      if (this.serviceIndex === 0) {
+        return this.banks[this.bankIndex];
+      }
+
       return this.services[this.serviceIndex];
     },
     bank: function() {
-      return this.banks[this.bankIndex].name;
+      return this.banks[this.bankIndex];
+    },
+    serviceName: function() {
+      return this.service.name;
     },
     email: function() {
-      var e;
-      switch (this.service.name) {
-        case 'Bank':
-          e = banks[this.bankIndex].email;
-          break;
-        default:
-          e = services[this.serviceIndex].email;
-          break;
-      }
+      var e = this.service.email;
 
       // email cleanup
       return e
@@ -79,6 +75,12 @@ var app = new Vue({
         .replace(/[\n\r]/g, ', ')
         .replace(', , ', ', ');
     },
-    response: makeResponse,
+    response: function() {
+      var template;
+      if (this.serviceIndex === 0) {
+        return templates.bank;
+      }
+      return templates.service;
+    },
   },
 });
