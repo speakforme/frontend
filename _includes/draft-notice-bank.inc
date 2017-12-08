@@ -52,7 +52,7 @@ In response to the drive to update Aadhaar I would like to draw your attention t
 
 *   I trust you will agree that it is your job to ensure that every notification you follow or cause customers to comply is legal. Your confirmation that the Notification No.2/F .No. P.12011/11/2016-ES Cell-DOR and No. 13012/79/2017/Legal-UIDAI (No. 4 of 2017) are illegal and invalid, and that you will not be coerced into implementing illegal notifications, will go a long way in providing reassurance that the bank protects its customers from risks of illegalities and theft of their assets.
 
-*   Your confirmation that you will end the use of Aadhaar in the bank will go a long way in providing reassurance that you are not not continuing to be in contempt of the court, nor are you forcing your customers to be in contempt of the Supreme Court.
+*   Your confirmation that you will end the use of Aadhaar in the bank will go a long way in providing reassurance that you are not continuing to be in contempt of the court, nor are you forcing your customers to be in contempt of the Supreme Court.
 
 *   A mail from you in confirmation that you value my business and will therefore continue to protect my money, and my access to it, would go a long way to reassure me that I can continue to bank with you.
 
