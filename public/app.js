@@ -43,6 +43,16 @@ var app = new Vue({
     tweet: function() {},
   },
   computed: {
+    tweettext: function() {
+      return encodeURIComponent(
+        'Hey ' +
+          this.twitter +
+          ', please stop harrassing me for my aadhaar. @speakforme'
+      );
+    },
+    tweeturl: function() {
+      return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
+    },
     mobile: function() {
       var IEMobile = /IEMobile/i.test(navigator.userAgent);
       // TODO: check needs to be more robust

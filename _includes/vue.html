@@ -37,8 +37,10 @@
   <div v-if="twitter">
     <h3>Tweet</h3>
     <!-- TODO: Find a better generic twitter message -->
-    <textarea rows="1" cols="70">Hey <%twitter%>, please stop harrassing me for my aadhaar. @speakforme</textarea>
-    <button class="btn-email" id="btn-dept-gmail" v-on:click="tweet">Tweet</button>
+    <a class="twitter-share-button"
+      v-bind:href="tweeturl"
+    >
+    Tweet</a>
   </div>
 </form>
 
