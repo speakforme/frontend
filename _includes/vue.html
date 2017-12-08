@@ -39,9 +39,16 @@
   <div>
     <h3>Send Email</h3>
     <label for="dept">Send notice of contempt to: <span class="service-name"><%serviceName%></span></label>
-    <button class="btn-email" id="btn-dept-gmail">GMail</button>
-    <button class="btn-email" id="btn-dept-yahoo">Yahoo!</button>
-    <button class="btn-email" id="btn-dept-email">Other Email</button>
+    <button class="btn-email" id="btn-dept-gmail" v-on:click="sendEmail('gmail')">GMail</button>
+    <button class="btn-email" id="btn-dept-yahoo" v-on:click="sendEmail('yahoo')">Yahoo!</button>
+    <button class="btn-email" id="btn-dept-email" v-on:click="sendEmail('other')">Other Email</button>
+  </div>
+
+  <div v-if="twitter">
+    <h3>Tweet</h3>
+    <!-- TODO: Find a better generic twitter message -->
+    <textarea row="1" col="70">Hey <%twitter%>, please stop harrassing me for my aadhaar. @speakforme</textarea>
+    <button class="btn-email" id="btn-dept-gmail" v-on:click="tweet">Tweet</button>
   </div>
 </form>
 

@@ -6,12 +6,7 @@ var templates = {
   bank: document.getElementById('draft-notice-bank').innerText,
 };
 
-// TODO: convert following methods to vue
-var IEMobile = /IEMobile/i.test(navigator.userAgent);
-var isMobile =
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini/i.test(
-    navigator.userAgent
-  ) && !IEMobile;
+// TODO: convert following method to vue
 
 var sendEmailMobile = function(toAddress, subject, bccAddress, encodedBody) {
   window.location.href =
@@ -26,18 +21,6 @@ var sendEmailMobile = function(toAddress, subject, bccAddress, encodedBody) {
   window.location.hash = '#share';
 };
 
-var sendEmail = function() {
-  // var to, subject, bcc, body
-
-  var encodedBody = encodeURIComponent(body);
-
-  if (isMobile) {
-    sendEmailMobile(to, subject, bcc, encodedBody);
-    return false;
-  } else {
-  }
-};
-
 var app = new Vue({
   delimiters: ['<%', '%>'],
   el: '#resist-form',
@@ -45,12 +28,57 @@ var app = new Vue({
     serviceIndex: 0,
     bankIndex: 0,
   },
+  methods: {
+    sendEmail: function() {
+      var encodedBody = encodeURIComponent(this.response);
+
+      if (this.mobile) {
+        sendEmailMobile(this.email, this.subject, this.bcc, encodedBody);
+        return false;
+      } else {
+        //TODO: desktop email (show copy paste instructions!)
+        sendEmailMobile(this.email, this.subject, this.bcc, encodedBody);
+      }
+    },
+  },
   computed: {
+    mobile: function() {
+      var IEMobile = /IEMobile/i.test(navigator.userAgent);
+      // TODO: check needs to be more robust
+      return (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini/i.test(
+          navigator.userAgent
+        ) && !IEMobile
+      );
+    },
     banks: function() {
       return window.banks;
     },
     services: function() {
       return window.services;
+    },
+    bcc: function() {
+      // TODO: Generate <campaign-code>@speakforme.in email address
+      return 'info@speakforme.in';
+    },
+    twitter: function() {
+      if (this.service.twitter) {
+        return this.service.twitter
+          .split(' ')
+          .map(function(handle) {
+            return '@' + handle;
+          })
+          .join(' ');
+      }
+      return false;
+    },
+    subject: function() {
+      if (this.serviceIndex === 0) {
+        return 'Threats to make bank accounts inoperable without Aadhaar';
+      }
+      return (
+        'Threats to make ' + this.service.name + ' inoperable without Aadhaar'
+      );
     },
     service: function() {
       if (this.serviceIndex === 0) {
@@ -80,6 +108,10 @@ var app = new Vue({
       if (this.serviceIndex === 0) {
         return templates.bank;
       }
+
+      // TODO: Somehow interpolate the current scope
+      // into this as a template, so we can use {{service.name}}
+      // inside the template
       return templates.service;
     },
   },

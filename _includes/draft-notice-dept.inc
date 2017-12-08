@@ -16,5 +16,5 @@ CC:
 
 1. Shri Nripendra Mishra, Principal Secretary to Prime Minister, 152, South Block, Raisina Hill, New Delhi-110011
 2. Prime Minister of India, 152, South Block, Raisina Hill, New Delhi-110011 Email: narendramodi@narendramodi.in Twitter: @narendramodi @pmoindia
-3. President of India, Rashtrapati Bhavan, New Delhi - 110 004 email: [email protected]
+3. President of India, Rashtrapati Bhavan, New Delhi - 110 004
 4. Chief Justice of India, Chief Justice's Conference Secretariat, Supreme Court of India, Tilak Marg, New Delhi-110 201
