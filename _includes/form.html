@@ -120,10 +120,9 @@ var services = {% include services.json %};
 document.getElementById('select-service').addEventListener('change', function() {
 	var service = services[this.selectedIndex];
 
-	setInerText(selectFormItem('dept'), service['Govt Department']);
-	// disableAndSetValue(selectFormItem('address'), service.Address);
-	// disableAndSetValue(selectFormItem('email'), fixEmail(service.Email));
-	// disableAndSetValue(selectFormItem('twitter'), fixTwitter(service.Twitter));
-	selectFormItem('content').value = emailContent(service.Address);
+	disableAndSetValue(selectFormItem('dept'), service['Department']);
+	disableAndSetValue(selectFormItem('address'), service.Address);
+	disableAndSetValue(selectFormItem('email'), fixEmail(service.Email));
+	disableAndSetValue(selectFormItem('twitter'), fixTwitter(service.Twitter));
 });
 </script>
