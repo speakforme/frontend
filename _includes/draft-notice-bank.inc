@@ -62,11 +62,11 @@ Sincerely,
 
 References:
 
-[0]: http://www.sundayguardianlive.com/opinion/11519-maharashtra-case-shows-pitfalls-aadhaar-use
-[1]: https://medium.com/@anupamsaraph/how-does-linking-your-aadhaar-to-your-bank-account-destroy-the-banking-system-5bb0379f2886
-[2]: https://uidai.gov.in/images/tenders/Notifications_in_connection_with_Regulations_12A_15072017.pdf
-[3]: http://egazette.nic.in/WriteReadData/2017/176407.pdf
-[4]: https://uidai.gov.in/legal-framework/acts.html
-[5]: http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/1811046.pdf
-[6]: http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/2274938.pdf
-[7]: http://supremecourtofindia.nic.in/jonew/ropor/rop/all/389939.pdf
+[^0]: http://www.sundayguardianlive.com/opinion/11519-maharashtra-case-shows-pitfalls-aadhaar-use
+[^1]: https://medium.com/@anupamsaraph/how-does-linking-your-aadhaar-to-your-bank-account-destroy-the-banking-system-5bb0379f2886
+[^2]: https://uidai.gov.in/images/tenders/Notifications_in_connection_with_Regulations_12A_15072017.pdf
+[^3]: http://egazette.nic.in/WriteReadData/2017/176407.pdf
+[^4]: https://uidai.gov.in/legal-framework/acts.html
+[^5]: http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/1811046.pdf
+[^6]: http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/2274938.pdf
+[^7]: http://supremecourtofindia.nic.in/jonew/ropor/rop/all/389939.pdf
