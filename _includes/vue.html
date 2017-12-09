@@ -1,63 +1,45 @@
-<form id="resist-form">
+<form>
   <fieldset>
     <div>
-      <label for="service">Service</label>
+      <label for="service">[{$t("service")}]</label>
       <select name="service" id="select-service" v-model="serviceIndex">
-        <option :value="index" v-for="(service,index) in services"><%service.name%></option>
-        <option value="custom">Not on the list</option>
+        <option :value="index" v-for="(service,index) in services">[{service.name}]</option>
+        <option value="custom">[{$t("not_in_list")}]</option>
       </select>
     </div>
 
     <div v-if="serviceIndex==0">
-      <label for="bank">Bank</label>
+      <label for="bank">[{$t("bank")}]</label>
       <select name="bank" id="select-bank" v-model="bankIndex">
-        <option :value="index" v-for="(bank, index) in banks"><%bank.name%></option>
+        <option :value="index" v-for="(bank, index) in banks">[{bank.name}]</option>
       </select>
     </div>
 
     <div>
-      <label for="email">Email</label>
+      <label for="email">[{$t("email")}]</label>
       <input name="email" size="60" v-model="email">
     </div>
 
-    <label for="content">Response</label>
-      <textarea cols="70" rows="10" name="content"><%service.address%>
-<%response%>
+    <label for="content">[{$t("response")}]</label>
+      <textarea cols="70" rows="10" name="content">[{service.address}]
+[{response}]
     </textarea>
   </fieldset>
 
   <div>
-    <h3>Send Email</h3>
-    <label for="dept">Send notice of contempt to: <span class="service-name"><%serviceName%></span></label>
-    <button class="btn-email" id="btn-dept-gmail" v-on:click="sendEmail('gmail')">GMail</button>
-    <button class="btn-email" id="btn-dept-yahoo" v-on:click="sendEmail('yahoo')">Yahoo!</button>
-    <button class="btn-email" id="btn-dept-email" v-on:click="sendEmail('other')">Other Email</button>
+    <h3>[{$t("send_email")}]</h3>
+    <label for="dept">[{$t("contempt_notice_msg")}] : <span class="service-name">[{serviceName}]</span></label>
+    <button class="btn-email" id="btn-dept-gmail" v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
+    <button class="btn-email" id="btn-dept-yahoo" v-on:click.stop.prevent="sendEmail('yahoo')">Yahoo!</button>
+    <button class="btn-email" id="btn-dept-email" v-on:click.stop.prevent="sendEmail('other')">Other Email</button>
   </div>
 
   <div v-if="twitter">
-    <h3>Tweet</h3>
+    <h3>[{$t("tweet")}]</h3>
     <!-- TODO: Find a better generic twitter message -->
     <a class="twitter-share-button"
       v-bind:href="tweeturl"
     >
-    Tweet</a>
+    [{$t("tweet")}]</a>
   </div>
 </form>
-
-<!-- This is the generic service notice for "services" -->
-<script id="draft-notice-service" type="text/template">
-{% include draft-notice-dept.inc %}
-</script>
-
-<!-- Specific notice to be sent to banks -->
-<script id="draft-notice-bank" type="text/template">
-{% include draft-notice-bank.inc %}
-</script>
-
-<script>
-// TODO: Maybe load this async?
-window.services = {% include services.json %}
-window.banks = {% include banks.json %}
-
-</script>
-<script src="/public/app.js"></script>

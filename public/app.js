@@ -21,9 +21,15 @@ var sendEmailMobile = function(toAddress, subject, bccAddress, encodedBody) {
   window.location.hash = '#share';
 };
 
+var i18n = new VueI18n({
+  locale: 'hi',
+  messages: i18nMsgs,
+});
+
 var app = new Vue({
-  delimiters: ['<%', '%>'],
-  el: '#resist-form',
+  i18n: i18n,
+  delimiters: ['[{', '}]'],
+  el: '#app',
   data: {
     serviceIndex: 0,
     bankIndex: 0,

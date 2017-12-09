@@ -2,10 +2,28 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home" id="app">
 
   <h1 class="page-heading">Speak for Me</h1>
-  
+
   {{ content }}
 
 </div>
+
+<!-- This is the generic service notice for "services" -->
+<script id="draft-notice-service" type="text/template">
+{% include draft-notice-dept.inc %}
+</script>
+
+<!-- Specific notice to be sent to banks -->
+<script id="draft-notice-bank" type="text/template">
+{% include draft-notice-bank.inc %}
+</script>
+
+<script>
+// TODO: Maybe load this async?
+const i18nMsgs  = {% include i18n.json %}
+window.services = {% include services.json %}
+window.banks    = {% include banks.json %}
+</script>
+<script src="/public/app.js"></script>

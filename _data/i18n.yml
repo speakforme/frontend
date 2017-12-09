@@ -1,0 +1,20 @@
+en:
+  title: Speak For Me
+  service: Service
+  not_in_list: Not on the list
+  bank: Bank
+  email: Email
+  send_email: Send Email
+  response: Response
+  contempt_notice_msg: Send notice of contempt to
+  tweet: Tweet
+hi:
+  title: मेरे लिए बोलो
+  service: संस्था
+  not_in_list: सूची में नहीं हैं
+  bank: बैंक
+  email: ईमेल
+  send_email: ईमेल भेजें
+  response: जवाब
+  contempt_notice_msg: चेतावनी  भेजें
+  tweet: ट्वीट
