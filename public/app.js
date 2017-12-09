@@ -50,6 +50,7 @@ var app = new Vue({
   },
   computed: {
     tweettext: function() {
+      // TODO: localize this as well
       return encodeURIComponent(
         'Hey ' +
           this.twitter +
@@ -61,6 +62,7 @@ var app = new Vue({
     },
     mobile: function() {
       var IEMobile = /IEMobile/i.test(navigator.userAgent);
+
       // TODO: check needs to be more robust
       return (
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini/i.test(
