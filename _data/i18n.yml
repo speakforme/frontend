@@ -8,6 +8,46 @@ en:
   response: Response
   contempt_notice_msg: Send notice of contempt to
   tweet: Tweet
+  state: State
+  constituency: Constituency
+  states:
+    AN: Andaman and Nicobar Islands
+    AP: Andhra Pradesh
+    AR: Arunachal Pradesh
+    AS: Assam
+    BI: Bihar
+    CH: Chandigarh
+    CT: Chhattisgarh
+    DN: Dadra and Nagar Haveli
+    DD: Daman and Diu
+    DL: Delhi
+    GO: Goa
+    GJ: Gujarat
+    HA: Haryana
+    HP: Himachal Pradesh
+    JK: Jammu and Kashmir
+    JH: Jharkhand
+    KA: Karnataka
+    KE: Kerala
+    LD: Lakshadweep
+    MP: Madhya Pradesh
+    MH: Maharashtra
+    MA: Manipur
+    ME: Meghalaya
+    MI: Mizoram
+    NA: Nagaland
+    OR: Odisha
+    PO: Puducherry
+    PB: Punjab
+    RJ: Rajasthan
+    SK: Sikkim
+    TG: Telangana
+    TN: Tamil Nadu
+    TR: Tripura
+    UP: Uttar Pradesh
+    UT: Uttarakhand
+    WB: West Bengal
+
 hi:
   title: मेरे लिए बोलो
   service: संस्था
@@ -18,3 +58,43 @@ hi:
   response: जवाब
   contempt_notice_msg: चेतावनी  भेजें
   tweet: ट्वीट
+  state: राज्य
+  constituency: चुनाव क्षेत्र
+  states:
+    # TODO: Please sort them in hindi alphabetical order
+    AN: अंडमान व नोकोबार द्वीप समूह
+    AP: आंध्र प्रदेश
+    AR: अरुणाचल प्रदेश
+    AS: असम
+    BI: बिहार
+    CH: चंडीगढ़
+    CT: छत्तीसगढ़
+    DN: दादरा और नगर हवेली
+    DD: दमन और दीव
+    DL: दिल्ली
+    GO: गोवा
+    GJ: गुजरात
+    HA: हरयाणा
+    HP: हिमाचल प्रदेश
+    JK: जम्मू और कश्मीर
+    JH: झारखंड
+    KA: कर्नाटक
+    KE: केरल
+    LD: लक्षद्वीप
+    MP: मध्य प्रदेश
+    MH: महाराष्ट्र
+    MA: मणिपुर
+    ME: मेघालय
+    MI: मिजोरम
+    NA: नगालैंड
+    OR: ओडिशा
+    PO: पुडुचेरी
+    PB: पंजाब
+    RJ: राजस्थान
+    SK: सिक्किम
+    TG: तेलंगाना
+    TN: तमिलनाडु
+    TR: त्रिपुरा
+    UP: उत्तर प्रदेश
+    UT: उत्तराखंड
+    WB: पश्चिम बंगाल

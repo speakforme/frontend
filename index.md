@@ -1,8 +1,8 @@
 ---
 layout: home
-title: Resist Aadhaar
+title: Speak for Me
 ---
 
-Select the authority that is forcing Aadhaar.
-
-{% include vue.html %}
+* [Petition your MP/CM](/mp/)
+* [Petition your service provider](/service/)
+* [Send a response to the Shrikrishna Committee on Data Protection](/consultation/)

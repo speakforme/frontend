@@ -3,7 +3,7 @@ var services = window.services;
 
 var templates = {
   service: document.getElementById('draft-notice-service').innerText,
-  bank: document.getElementById('draft-notice-bank').innerText,
+  bank: document.getElementById('draft-notice-bank').innerText
 };
 
 // TODO: convert following method to vue
@@ -23,7 +23,7 @@ var sendEmailMobile = function(toAddress, subject, bccAddress, encodedBody) {
 
 var i18n = new VueI18n({
   locale: 'hi',
-  messages: i18nMsgs,
+  messages: i18nMsgs
 });
 
 var app = new Vue({
@@ -33,6 +33,9 @@ var app = new Vue({
   data: {
     serviceIndex: 0,
     bankIndex: 0,
+    state: 'AN',
+    constituency: 'Andaman and Nicobar Islands',
+    mps: []
   },
   methods: {
     sendEmail: function() {
@@ -46,16 +49,65 @@ var app = new Vue({
         sendEmailMobile(this.email, this.subject, this.bcc, encodedBody);
       }
     },
-    tweet: function() {},
+    tweet: function() {}
+  },
+  ready: function() {
+    // We fetch the extra resources here, if needed
+    if (document.location.pathname === '/mp/') {
+      this.$http.get('/public/mps.json').then(function(response) {
+        this.$set('mps', response.data);
+      });
+    }
   },
   computed: {
     tweettext: function() {
       // TODO: localize this as well
+      // TODO: find a better twitter message
       return encodeURIComponent(
         'Hey ' +
           this.twitter +
           ', please stop harrassing me for my aadhaar. @speakforme'
       );
+    },
+    states: function() {
+      return [
+        'AN',
+        'AP',
+        'AR',
+        'AS',
+        'BI',
+        'CH',
+        'CT',
+        'DN',
+        'DD',
+        'DL',
+        'GO',
+        'GJ',
+        'HA',
+        'HP',
+        'JK',
+        'JH',
+        'KA',
+        'KE',
+        'LD',
+        'MP',
+        'MH',
+        'MA',
+        'ME',
+        'MI',
+        'NA',
+        'OR',
+        'PO',
+        'PB',
+        'RJ',
+        'SK',
+        'TG',
+        'TN',
+        'TR',
+        'UP',
+        'UT',
+        'WB'
+      ];
     },
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
@@ -122,6 +174,16 @@ var app = new Vue({
         .replace(/[\n\r]/g, ', ')
         .replace(', , ', ', ');
     },
+    // Find all the constituencies for the current state
+    constituencies: function() {
+      return this.mps
+        .filter(function(mp) {
+          return mp.state === this.state;
+        })
+        .map(function(mp) {
+          return mp.cons;
+        });
+    },
     response: function() {
       var template;
       if (this.serviceIndex === 0) {
@@ -132,6 +194,6 @@ var app = new Vue({
       // into this as a template, so we can use {{service.name}}
       // inside the template
       return templates.service;
-    },
-  },
+    }
+  }
 });

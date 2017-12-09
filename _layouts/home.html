@@ -22,8 +22,9 @@ layout: default
 
 <script>
 // TODO: Maybe load this async?
-const i18nMsgs  = {% include i18n.json %}
-window.services = {% include services.json %}
-window.banks    = {% include banks.json %}
+const i18nMsgs  = {{site.data.i18n | jsonify}}
+window.services = {{site.data.services | jsonify}}
+window.banks    = {{site.data.banks | jsonify}}
+window.states   = {{site.data.states | jsonify}}
 </script>
 <script src="/public/app.js"></script>
