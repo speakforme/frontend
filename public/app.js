@@ -22,7 +22,7 @@ var sendEmailMobile = function(toAddress, subject, bccAddress, encodedBody) {
 };
 
 var i18n = new VueI18n({
-  locale: 'hi',
+  locale: window.localStorage.getItem('locale') || 'en',
   messages: i18nMsgs,
   fallbackLocale: 'en'
 });
@@ -32,6 +32,7 @@ var app = new Vue({
   delimiters: ['[{', '}]'],
   el: '#app',
   data: {
+    locale: 'en',
     serviceIndex: 0,
     bankIndex: 0,
     state: 'AN',
@@ -41,6 +42,10 @@ var app = new Vue({
     campaign: 'mp'
   },
   methods: {
+    setLocale: function(val) {
+      this.$i18n.locale = val;
+      window.localStorage.setItem('locale', val);
+    },
     sendEmail: function() {
       var encodedBody = encodeURIComponent(this.response);
 
@@ -67,6 +72,9 @@ var app = new Vue({
     },
     constituencyIndex: function(newIndex) {
       var c = this.constituencies[newIndex];
+    },
+    locale: function(newLocale) {
+      this.setLocale(newLocale);
     }
   },
   created: function() {

@@ -2,29 +2,10 @@
 layout: default
 ---
 
-<div class="home" id="app">
+<div class="home">
 
   <h1 class="page-heading">[{$t("title")}]</h1>
 
   {{ content }}
 
 </div>
-
-<!-- This is the generic service notice for "services" -->
-<script id="draft-notice-service" type="text/template">
-{% include draft-notice-dept.inc %}
-</script>
-
-<!-- Specific notice to be sent to banks -->
-<script id="draft-notice-bank" type="text/template">
-{% include draft-notice-bank.inc %}
-</script>
-
-<script>
-// TODO: Maybe load this async?
-const i18nMsgs  = {{site.data.i18n | jsonify}}
-window.services = {{site.data.services | jsonify}}
-window.banks    = {{site.data.banks | jsonify}}
-window.states   = {{site.data.states | jsonify}}
-</script>
-<script src="/public/app.js"></script>
