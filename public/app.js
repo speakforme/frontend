@@ -23,7 +23,8 @@ var sendEmailMobile = function(toAddress, subject, bccAddress, encodedBody) {
 
 var i18n = new VueI18n({
   locale: 'hi',
-  messages: i18nMsgs
+  messages: i18nMsgs,
+  fallbackLocale: 'en'
 });
 
 var app = new Vue({
