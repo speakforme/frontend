@@ -85,6 +85,8 @@ var app = new Vue({
       this.campaign = 'service';
     }
 
+    this.locale = window.localStorage.getItem('locale') || 'en';
+
     var self = this;
 
     switch (this.campaign) {
