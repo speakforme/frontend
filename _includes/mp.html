@@ -3,21 +3,19 @@
     <div>
       <label for="state">[{$t("state")}]</label>
       <select name="state" id="select-state" v-model="state">
-        <option :value="code" v-for="code in states">[{$t("states." + code)}]</option>
+        <option v-bind:selected="i === 0"
+                :value="code" v-for="(code, i) in states">
+              [{$t("states." + code)}]</option>
       </select>
     </div>
 
     <div>
       <label for="constituency">[{$t("constituency")}]</label>
-      <select name="constituency" id="select-constituency" v-model="constituency">
-        <option :value="name" v-for="constituency in constituencies">[{constituency}]</option>
-      </select>
-    </div>
-
-    <!-- <div v-if="serviceIndex==0">
-      <label for="bank">[{$t("bank")}]</label>
-      <select name="bank" id="select-bank" v-model="bankIndex">
-        <option :value="index" v-for="(bank, index) in banks">[{bank.name}]</option>
+      <select name="constituency" id="select-constituency" v-model="constituencyIndex">
+        <option v-bind:selected="i === 0"
+                :value="i"
+                v-for="(constituency, i) in constituencies">
+              [{constituency.cons}]</option>
       </select>
     </div>
 
@@ -29,7 +27,7 @@
     <label for="content">[{$t("response")}]</label>
       <textarea cols="70" rows="10" name="content">[{service.address}]
 [{response}]
-    </textarea> -->
+    </textarea>
   </fieldset>
 
   <div>

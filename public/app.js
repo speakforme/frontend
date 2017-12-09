@@ -34,8 +34,10 @@ var app = new Vue({
     serviceIndex: 0,
     bankIndex: 0,
     state: 'AN',
-    constituency: 'Andaman and Nicobar Islands',
-    mps: []
+    constituencyIndex: 0,
+    mps: [],
+    constituencies: [],
+    campaign: 'mp'
   },
   methods: {
     sendEmail: function() {
@@ -49,14 +51,42 @@ var app = new Vue({
         sendEmailMobile(this.email, this.subject, this.bcc, encodedBody);
       }
     },
-    tweet: function() {}
+    tweet: function() {},
+    updateConstituencies: function() {
+      var self = this;
+
+      this.constituencies = this.mps.filter(function(mp) {
+        return mp.state === self.state;
+      });
+    }
   },
-  ready: function() {
+  watch: {
+    state: function(newState) {
+      this.updateConstituencies();
+    },
+    constituencyIndex: function(newIndex) {
+      var c = this.constituencies[newIndex];
+    }
+  },
+  created: function() {
     // We fetch the extra resources here, if needed
     if (document.location.pathname === '/mp/') {
-      this.$http.get('/public/mps.json').then(function(response) {
-        this.$set('mps', response.data);
-      });
+      this.campaign = 'mp';
+    } else if (document.location.pathname === '/service/') {
+      this.campaign = 'service';
+    }
+
+    var self = this;
+
+    switch (this.campaign) {
+      case 'mp':
+        this.$http
+          .get('/public/mps.json', { responseType: 'json' })
+          .then(function(response) {
+            this.mps = response.body;
+            this.updateConstituencies();
+          });
+        break;
     }
   },
   computed: {
@@ -109,6 +139,9 @@ var app = new Vue({
         'WB'
       ];
     },
+    constituency: function() {
+      return this.constituencies[this.constituencyIndex];
+    },
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
     },
@@ -152,11 +185,26 @@ var app = new Vue({
       );
     },
     service: function() {
-      if (this.serviceIndex === 0) {
-        return this.banks[this.bankIndex];
-      }
+      switch (this.campaign) {
+        case 'service':
+          if (this.serviceIndex === 0) {
+            return this.banks[this.bankIndex];
+          }
 
-      return this.services[this.serviceIndex];
+          return this.services[this.serviceIndex];
+          break;
+        case 'mp':
+          var e = '',
+            a = '';
+          if (this.constituency) {
+            e = this.constituency.email;
+            a = this.constituency.name;
+          }
+          return {
+            email: e,
+            address: a
+          };
+      }
     },
     bank: function() {
       return this.banks[this.bankIndex];
@@ -173,16 +221,6 @@ var app = new Vue({
         .replace(/[\[\(]at[\]\)]/g, '@')
         .replace(/[\n\r]/g, ', ')
         .replace(', , ', ', ');
-    },
-    // Find all the constituencies for the current state
-    constituencies: function() {
-      return this.mps
-        .filter(function(mp) {
-          return mp.state === this.state;
-        })
-        .map(function(mp) {
-          return mp.cons;
-        });
     },
     response: function() {
       var template;
