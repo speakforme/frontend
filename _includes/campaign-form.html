@@ -37,7 +37,7 @@
 
     <div>
       <label for="email">[{$t("email")}]</label>
-      <input name="email" size="60" v-model="email">
+      <input name="email" size="60" v-model="email" readonly>
     </div>
 
     <label for="content">[{$t("response")}]</label>
@@ -52,7 +52,7 @@
 
     <label for="service-name">[{$t("contempt_notice_msg")}] : <span class="service-name">[{serviceName}]</span></label>
 
-    <button class="btn-email btn-primary" v-if="!mobile"
+    <button id="btn-email-desktop" class="btn-email btn-primary" v-if="!mobile"
       v-on:click.stop.prevent="sendEmail()">[{$t("send_email")}]</button>
 
     <p v-if="showcopymsg">[{$t("copy_msg")}]</p>

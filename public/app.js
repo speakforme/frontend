@@ -326,7 +326,8 @@ var app = new Vue({
           }
           return {
             email: e,
-            address: a
+            address: a,
+            name: a
           };
       }
     },
@@ -335,6 +336,12 @@ var app = new Vue({
     },
     personName: function() {
       switch (this.campaign) {
+        case 'bank':
+          return 'Chairman and MD (' + this.bank.name + ')';
+        case 'mp':
+          return this.serviceName;
+        case 'service':
+          return this.service.personName;
       }
     },
     serviceName: function() {
@@ -343,14 +350,21 @@ var app = new Vue({
     email: function() {
       var e = this.service.email;
 
+      var self = this;
       // email cleanup
       // TODO: TRIM trailing commas
       return e
         .replace(';', ',')
         .replace(/[\[\(]dot[\]\)]/g, '.')
         .replace(/[\[\(]at[\]\)]/g, '@')
-        .replace(/[\n\r]/g, ', ')
-        .replace(', , ', ', ');
+        .split(',')
+        .filter(function(t) {
+          return t.trim().length > 0;
+        })
+        .map(function(e) {
+          return self.personName + ' <' + e + '>';
+        })
+        .join(', ');
     },
     response: function() {
       var template;

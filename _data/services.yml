@@ -11,9 +11,11 @@
     Phone: 23382504
   email: asit.halder@nic.in
   twitter: jagograhakjago
+  personName: Asit Halder
 -
   name: LPG
   department: Ministry of Petroleum and Natural Gas
+  personName: Shri K.M.Mahesh
   address: |
     Shri K.M.Mahesh
     Deputy Secretary (LPG)
@@ -25,6 +27,7 @@
 -
   name: MGNREGS
   department: Ministry of Rural Department
+  personName: Smt Aparajita Sarangi
   address: |
     Smt Aparajita Sarangi,
     Joint Secretary
@@ -38,6 +41,7 @@
 -
   name: National Social Assistance Programme
   department: Ministry of Rural Department
+  personName: Shri Manoranjan Kumar
   address: |
     Shri Manoranjan Kumar
     Eco. Adviser
@@ -51,6 +55,7 @@
 -
   name: PMJDY
   department: Ministry of Finance
+  personName: Shri Arun Jaitley
   address: |
     Pradhan Mantri Jan Dhan Yojana,
     Department of Financial names,
@@ -67,6 +72,7 @@
 -
   name: Employees Provident Fund Org
   department: Minister of State for Labour and Employment
+  personName: Dr. V.P Joy
   address: |
       Dr. V.P Joy, IAS
       Central P.F. Commissioner
@@ -79,6 +85,7 @@
 -
   name: PAN
   department: Ministry of Finance (CBDT)
+  personName: Shri Sushil Chandra
   address: |
     Shri Sushil Chandra
     Chairperson​​, Central Board of Direct Tax,
