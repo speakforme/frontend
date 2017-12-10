@@ -5,7 +5,7 @@ en:
   bank: Bank
   email: Email
   send_email: Send Email
-  response: Response
+  response: Message
   contempt_notice_msg: Send notice of contempt to
   tweet: Tweet
   state: State
@@ -54,7 +54,7 @@ hi:
   bank: बैंक
   email: ईमेल
   send_email: ईमेल भेजें
-  response: जवाब
+  response: संदेश
   contempt_notice_msg: चेतावनी  भेजें
   tweet: ट्वीट
   state: राज्य

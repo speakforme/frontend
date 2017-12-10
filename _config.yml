@@ -1,13 +1,13 @@
 title: Speak For Me
 email: info@speakforme.in
 description: >
-  TODO
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://speakforme.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+  Speak for Me
+baseurl: ""
+url: "https://beta.speakforme.in"
 twitter_username: speakforme
 github_username:  speakforme
-
 # Build settings
 markdown: kramdown
 gems:
   - jekyll-feed
+google_analytics: UA-82421266-2
