@@ -1,8 +1,9 @@
-Chairman and Managing Director
+Chairman and Managing Director,
+((addressee))
 
 Dear Sir/Madam,
 
-Subject: Threats to make bank accounts inoperable without Aadhaar 
+Subject: Threats to make bank accounts inoperable without Aadhaar
 
 I am disappointed and concerned about threats to freeze my bank accounts were I to not to link them to Aadhaar. This is questioning my relationship with your bank and the value of the business I have brought to you. I am threatened that you neither value my business, nor are willing to protect my money and continued access to it.
 
@@ -22,7 +23,7 @@ In response to the drive to update Aadhaar I would like to draw your attention t
 
         c.  Furthermore under section 74 of the Prevention of Money-laundering Act, 2002 (15 of 2003) every rule made under this Act shall be laid, as soon as may be after it is made, before each House of Parliament, while it is in session, for a total period of thirty days which may be comprised in one session or in two or more successive sessions, and if, before the expiry of the session immediately following the session or the successive sessions aforesaid, both Houses agree in making any modification in the rule or both Houses agree that the rule should not be made, the rule shall thereafter have effect only in such modified form or be of no effect, as the case may be; so, however, that any such modification or annulment shall be without prejudice to the validity of anything previously done under that rule. The rules being cited in the said notification by Dr. Pandey in para 2 have not been laid before, and approved by, the Parliament as required by parliamentary procedure and is therefore not law. Using this notification to force linkage to Aadhaar amounts to using pretend laws and is a criminal misconduct.
 
-        d.  Para 3 and para 7 of the said notification relies on section 12A Aadhaar (Enrolment and Update) (Second Amendment) Regulations, 2017 (No. 2 of 2017) and the Aadhaar (Enrolment and Update) (Third Amendment) (No. 3 of 2017) that may require any Scheduled Bank which requires Aadhaar to set up enrolment centres. Section 54 of the The Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act 2016[4] does not provide any power to the UIDAI to make regulations to cause any entity to set up enrolment centres. Section 12A and all notifications, including notification No. 13012/79/2017/Legal-UIDAI (No. 4 of 2017) of July 14th, 2017 [^2]  relying on it are, therefore, invalid.
+        d.  Para 3 and para 7 of the said notification relies on section 12A Aadhaar (Enrolment and Update) (Second Amendment) Regulations, 2017 (No. 2 of 2017) and the Aadhaar (Enrolment and Update) (Third Amendment) (No. 3 of 2017) that may require any Scheduled Bank which requires Aadhaar to set up enrolment centres. Section 54 of the The Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act 2016[^4] does not provide any power to the UIDAI to make regulations to cause any entity to set up enrolment centres. Section 12A and all notifications, including notification No. 13012/79/2017/Legal-UIDAI (No. 4 of 2017) of July 14th, 2017 [^2]  relying on it are, therefore, invalid.
 
         e.  Furthermore, the use of Aadhaar for linking to other databases, retention, storage or publishing is not only not permitted but prohibited and also a punishable offence under sections 8, 29 and 37 the The Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act 2016[^4]. Anyone asking to retain, link, store or publish the Aadhaar, would be in violation of the Aadhaar Act.
 
