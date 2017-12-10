@@ -10,6 +10,10 @@ en:
   tweet: Tweet
   state: State
   constituency: Constituency
+  petition:
+    bank: "Petition your Bank:"
+    service: "Petition your service provider:"
+    mp: "Send a letter to your MP:"
   states:
     AN: Andaman and Nicobar Islands
     AP: Andhra Pradesh
@@ -59,6 +63,10 @@ hi:
   tweet: ट्वीट
   state: राज्य
   constituency: चुनाव क्षेत्र
+  petition:
+    bank: "अपने बैंक को लिखें"
+    service: "केंद्र को लिखें"
+    mp: "सांसद सदस्य को लिखें"
   states:
     AN: अंडमान व नोकोबार द्वीप समूह
     AP: आंध्र प्रदेश

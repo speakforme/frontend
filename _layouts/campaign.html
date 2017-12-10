@@ -12,7 +12,11 @@ layout: default
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
+        [{$t("petition." + campaign)}]
+
         {{ content }}
+
+        {% include campaign-form.html %}
       </div>
     </main>
   </div>

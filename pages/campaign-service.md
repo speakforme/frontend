@@ -5,5 +5,3 @@ permalink: /service/
 header: true
 drafts: ['service', 'bank']
 ---
-
-{% include service.html %}

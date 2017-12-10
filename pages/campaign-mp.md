@@ -5,5 +5,3 @@ permalink: /mp/
 header: true
 drafts: ['mp']
 ---
-
-{% include mp.html %}
