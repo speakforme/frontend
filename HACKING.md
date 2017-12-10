@@ -40,3 +40,13 @@ If you still get some errors, see the [Troubleshooting page](https://jekyllrb.co
 The `_data/i18n.yml` file holds the UI translations. Add a new language below. We fallback to english.
 
 Work is ongoing for translating the constituency names, as well as the petition text
+
+## Javascript
+
+* All code is in `public/app.js`.
+* Single component VueApp.
+* We have mountpoints in 2 files: `_layouts/campaign.html` `_layouts/home.html`
+
+## Wanna Help?
+
+We have a checklist of things to do at https://github.com/speakforme/frontend/issues/2
