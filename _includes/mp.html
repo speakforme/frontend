@@ -1,0 +1,48 @@
+<form>
+  <fieldset>
+    <div>
+      <label for="state">[{$t("state")}]</label>
+      <select name="state" id="select-state" v-model="state">
+        <option v-bind:selected="i === 0"
+                :value="code" v-for="(code, i) in states">
+              [{$t("states." + code)}]</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="constituency">[{$t("constituency")}]</label>
+      <select name="constituency" id="select-constituency" v-model="constituencyIndex">
+        <option v-bind:selected="i === 0"
+                :value="i"
+                v-for="(constituency, i) in constituencies">
+              [{constituency.cons}]</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="email">[{$t("email")}]</label>
+      <input name="email" size="60" v-model="email">
+    </div>
+
+    <label for="content">[{$t("response")}]</label>
+      <textarea cols="70" rows="10" name="content">[{service.address}]
+[{response}]
+    </textarea>
+  </fieldset>
+
+  <div>
+    <!-- <h3>[{$t("send_email")}]</h3> -->
+    <label for="dept">[{$t("contempt_notice_msg")}] : <span class="service-name">[{serviceName}]</span></label>
+    <button class="btn-email btn-primary" id="btn-dept-gmail" v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
+    <button class="btn-email btn-primary" id="btn-dept-yahoo" v-on:click.stop.prevent="sendEmail('yahoo')">Yahoo!</button>
+    <button class="button-unstyled" id="btn-dept-email" v-on:click.stop.prevent="sendEmail('other')">Other</button>
+  </div>
+
+  <div v-if="twitter">
+    <h3>[{$t("tweet")}]</h3>
+    <a class="twitter-share-button"
+      v-bind:href="tweeturl"
+    >
+    [{$t("tweet")}]</a>
+  </div>
+</form>

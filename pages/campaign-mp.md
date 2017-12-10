@@ -1,6 +1,7 @@
 ---
 layout: campaign
-title: Petition your MP
+layout: home
+title: MP
 permalink: /mp/
 header: true
 drafts: ['mp']

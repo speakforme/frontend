@@ -1,0 +1,44 @@
+<form>
+  <fieldset>
+    <div>
+      <label for="service">[{$t("service")}]</label>
+      <select name="service" id="select-service" v-model="serviceIndex">
+        <option :value="index" v-for="(service,index) in services">[{service.name}]</option>
+        <option value="custom">[{$t("not_in_list")}]</option>
+      </select>
+    </div>
+
+    <div v-if="serviceIndex==0">
+      <label for="bank">[{$t("bank")}]</label>
+      <select name="bank" id="select-bank" v-model="bankIndex">
+        <option :value="index" v-for="(bank, index) in banks">[{bank.name}]</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="email">[{$t("email")}]</label>
+      <input name="email" size="60" v-model="email">
+    </div>
+
+    <label for="content">[{$t("response")}]</label>
+      <textarea cols="70" rows="10" name="content">[{service.address}]
+[{response}]
+    </textarea>
+  </fieldset>
+
+  <div>
+    <h3>[{$t("send_email")}]</h3>
+    <label for="dept">[{$t("contempt_notice_msg")}] : <span class="service-name">[{serviceName}]</span></label>
+    <button class="btn-email btn-primary" id="btn-dept-gmail" v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
+    <button class="btn-email btn-primary" id="btn-dept-yahoo" v-on:click.stop.prevent="sendEmail('yahoo')">Yahoo!</button>
+    <button class="btn-email button-unstyled" id="btn-dept-email" v-on:click.stop.prevent="sendEmail('other')">Other Email</button>
+  </div>
+
+  <div v-if="twitter">
+    <h3>[{$t("tweet")}]</h3>
+    <a class="twitter-share-button"
+      v-bind:href="tweeturl"
+    >
+    [{$t("tweet")}]</a>
+  </div>
+</form>
