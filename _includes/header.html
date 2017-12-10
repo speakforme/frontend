@@ -13,8 +13,9 @@
       {% endfor %}
 
       <select name="lang" class="select-lang styled-select" v-model="locale">
-        <option value="en">English</option>
-        <option value="hi">हिंदी</option>
+        {% for lang in site.data.i18n %}
+          <option value="{{lang[0]}}">{{lang[1].language_name}}</option>
+        {% endfor %}
       </select>
     </nav>
   </div>
