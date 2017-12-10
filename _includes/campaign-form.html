@@ -41,12 +41,14 @@
     </div>
 
     <label for="content">[{$t("response")}]</label>
-      <textarea cols="70" rows="10" name="content" id="response-content"
-        v-on:copy="copied"
-      >[{service.address}]
+      <textarea-response
+        @copied="copied"
+        :service-name="serviceName"
+        :address="service.address"
+        :body="response"></textarea-response>
 
-[{response}]</textarea>
   </fieldset>
+
 
   <div>
 

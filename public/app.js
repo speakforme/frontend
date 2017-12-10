@@ -19,6 +19,23 @@ var i18n = new VueI18n({
   fallbackLocale: 'en'
 });
 
+Vue.component('textarea-response', {
+  props: [
+    'address',
+    'body'
+  ],
+  template: `
+  <textarea @copy="copied" cols="70" rows="10" name="content" id="response-content">
+    {{address}}
+    {{body}}
+  </textarea>`,
+  methods: {
+    copied: function () {
+      this.$emit('copied')
+    }
+  }
+
+})
 var app = new Vue({
   i18n: i18n,
   delimiters: ['[{', '}]'],
