@@ -305,7 +305,7 @@ var app = new Vue({
             ' inoperable without Aadhaar'
           );
         case 'mp':
-          return 'Speak for me, MP!';
+          return 'An appeal to raise my concerns regarding Aadhaar in Winter Session of Parliament';
       }
     },
     service: function() {
@@ -332,6 +332,10 @@ var app = new Vue({
     },
     bank: function() {
       return this.banks[this.bankIndex];
+    },
+    personName: function() {
+      switch (this.campaign) {
+      }
     },
     serviceName: function() {
       return this.service.name;

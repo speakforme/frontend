@@ -1,1 +1,18 @@
-The MP notice email will be here
+I am getting constant messages from my Bank and phone company to link my Aadhaar number. There are reports on a daily basis about the shoddy implementation of Aadhaar and how it is putting my personal information in danger.
+
+If one does a cursory google search, there is enough material about the pitfalls of Aadhaar being reported. From starvation deaths[^1] to exclusion[^2] to enabling fraud[^3] to mass surveillance[^4], Aadhaar is becoming the basis for a lot of widespread suffering. There have been data leaks by 210 government entities[^5] putting privacy of citizens like me at risk and making them vulnerable to identity theft[^6].
+
+As my representative, I request you to raise these issues regarding Aadhaar in Parliament. I ask you to demand an answer from the Government of the day as to why I am being forced to register for a flawed system. I demand that Aadhaar should be made non-mandatory, as the Supreme Court has already ordered in 2015, and there should be an opt-out clause which would allow those who don’t want to be a part of the system to get out.
+
+I’m attaching with this email a Rule 193 Notice with an explanatory statement asking for a Short Duration discussion on citizen concerns regarding Aadhaar in Lok Sabha. I ask you to file this notice before the Winter Session so that there can be a discussion on the topic and we can question the Government through you.
+
+Thank you.
+
+Sincerely,
+
+[^1]: http://www.livemint.com/Opinion/FNWYVUxeXUw8rHbdirTe4H/Hunger-Starvation-and-Aadhaar.html
+[^2]: http://indianexpress.com/article/opinion/columns/a-welfare-test-for-aadhaar-upa-nda-aadhaar-card-4921582/
+[^3]: https://scroll.in/article/852689/sophisticated-aadhaar-related-bank-fraud-has-left-police-in-delhi-and-noida-baffled
+[^4]: http://www.wired.co.uk/article/india-aadhaar-biometrics-privacy
+[^5]: https://tech.economictimes.indiatimes.com/news/corporate/210-govt-websites-made-public-aadhaar-details-uidai/61719345
+[^6]: https://scroll.in/article/833230/explainer-aadhaar-is-vulnerable-to-identity-theft-because-of-its-design-and-the-way-it-is-used
