@@ -1,3 +1,5 @@
+((address))
+
 We are shocked that you have been continuing to require and use the UID number and associated data for purposes beyond that approved by the Supreme Court of India. We are also disturbed that you are mandating the requirement of the UID number. This is an unbelievable disrespect of the rule of law and of the repeated orders of the Supreme Court of India.
 
 Your actions have also resulted in coercing children, elderly and others alike to have to register for an UID number against their free will. Your actions also constitute an illegal functional creep that cannot be morally or legally justified. Your actions reek of creating a fait accompli before the court finally decides on the matter and hence does not uphold the promise of justice, liberty, equality or fraternity.

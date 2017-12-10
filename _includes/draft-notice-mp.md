@@ -1,3 +1,5 @@
+((addressee))
+
 I am getting constant messages from my Bank and phone company to link my Aadhaar number. There are reports on a daily basis about the shoddy implementation of Aadhaar and how it is putting my personal information in danger.
 
 If one does a cursory google search, there is enough material about the pitfalls of Aadhaar being reported. From starvation deaths[^1] to exclusion[^2] to enabling fraud[^3] to mass surveillance[^4], Aadhaar is becoming the basis for a lot of widespread suffering. There have been data leaks by 210 government entities[^5] putting privacy of citizens like me at risk and making them vulnerable to identity theft[^6].

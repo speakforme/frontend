@@ -1,5 +1,7 @@
 var banks = window.banks;
 var services = window.services;
+var templates = {}
+var responseComponents = {}
 
 // forEach method, could be shipped as part of an Object Literal/Module
 var forEach = function(array, callback, scope) {
@@ -18,6 +20,33 @@ var i18n = new VueI18n({
   messages: i18nMsgs,
   fallbackLocale: 'en'
 });
+
+forEach(document.querySelectorAll('script[id^=draft-notice-]'), function(
+  index,
+  el
+) {
+  var key = el.id.substr('draft-notice-'.length);
+  templates[key] = el.innerText;
+
+  responseComponents[key] = {
+    props: [
+      'addressee',
+      'address',
+      'body'
+    ],
+    delimiters: ['((', '))'],
+    template:
+    '<textarea @copy="copied" cols="70" rows="10" name="content" id="response-content">' +
+    templates[key] +
+    '</textarea>',
+    methods: {
+      copied: function () {
+        this.$emit('copied')
+      }
+    }
+  }
+});
+
 
 var app = new Vue({
   i18n: i18n,
@@ -145,13 +174,7 @@ var app = new Vue({
     },
     initTemplates: function() {
       var self = this;
-      forEach(document.querySelectorAll('script[id^=draft-notice-]'), function(
-        index,
-        el
-      ) {
-        var key = el.id.substr('draft-notice-'.length);
-        self.templates[key] = el.innerText;
-      });
+      self.templates = templates
     },
     // We have 3 values for the campaign:
     // mp/service/bank
@@ -383,5 +406,6 @@ var app = new Vue({
           break;
       }
     }
-  }
+  },
+  components: responseComponents
 });
