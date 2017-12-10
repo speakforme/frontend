@@ -55,7 +55,7 @@
     <button id="btn-email-desktop" class="btn-email btn-primary" v-if="!mobile"
       v-on:click.stop.prevent="sendEmail()">[{$t("send_email")}]</button>
 
-    <p v-if="showcopymsg">[{$t("copy_msg")}]</p>
+    <p v-if="showcopymsg" class="success-box">[{$t("copy_msg")}]</p>
 
     <button class="btn-email btn-primary" v-if="mobile"
       v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
