@@ -13,16 +13,24 @@ rvm install 2.4
 rvm use 2.4
 rvm gemset create speakforme
 rvm gemset use speakforme
-bundle install
+gem install bundler
+gem install jekyll
 bundle exec jekyll serve --watch
 ```
 
 ## If you don't care about RVM:
 
 ```
+gem install bundler
 gem update bundler
-gem install github-pages
+gem install jekyll
 jekyll serve --watch
 ```
 
 Then open http://localhost:4000 in your browser. If you don't use RVM, skip the first 2 commands.
+
+If you still get some errors, see the [Troubleshooting page](https://jekyllrb.com/docs/troubleshooting/#installation-problems). It covers errors with:
+
+* native extension failing to build
+* Jekyll & Mac OS X 10.11
+* `ExecJS::RuntimeUnavailable`

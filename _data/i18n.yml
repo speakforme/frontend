@@ -60,7 +60,6 @@ hi:
   state: राज्य
   constituency: चुनाव क्षेत्र
   states:
-    # TODO: Please sort them in hindi alphabetical order
     AN: अंडमान व नोकोबार द्वीप समूह
     AP: आंध्र प्रदेश
     AR: अरुणाचल प्रदेश
