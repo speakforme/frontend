@@ -13,41 +13,6 @@ if (!window.gtag) {
   window.gtag = function() {};
 }
 
-// TODO: convert following method to vue
-// On desktops, ensure that body isn't large
-var openMailLink = function(encodedBody, method) {
-  var base = 'mailto:',
-    subject = 'subject',
-    bcc = 'bcc';
-  switch (method) {
-    case 'gmail':
-      base =
-        'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=';
-      subject = 'su';
-    case 'yahoo':
-      base = 'http://compose.mail.yahoo.com/?To=';
-      subject = 'Subject';
-      to = 'To';
-      bcc = 'Bcc';
-  }
-
-  // TODO: use string interpolation after switching to es6
-  window.location.href =
-    base +
-    encodeURIComponent(this.email) +
-    '?' +
-    subject +
-    '=' +
-    encodeURIComponent(this.subject) +
-    '&' +
-    bcc +
-    '=' +
-    encodeURIComponent(this.bcc) +
-    '&body=' +
-    encodedBody;
-  window.location.hash = '#share';
-};
-
 var i18n = new VueI18n({
   locale: window.localStorage.getItem('locale') || 'en',
   messages: i18nMsgs,
@@ -82,6 +47,49 @@ var app = new Vue({
       this.$i18n.locale = val;
       window.localStorage.setItem('locale', val);
     },
+    openMailLink: function(encodedBody, method) {
+      var base = 'mailto:',
+        subject = 'subject',
+        bcc = 'bcc';
+
+      switch (method) {
+        case 'gmail':
+          base =
+            'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=';
+          subject = 'su';
+          break;
+        case 'yahoo':
+          base = 'http://compose.mail.yahoo.com/?To=';
+          subject = 'Subject';
+          to = 'To';
+          bcc = 'Bcc';
+          break;
+      }
+
+      // TODO: use string interpolation after switching to es6
+      var url =
+        base +
+        encodeURIComponent(this.email) +
+        '?' +
+        subject +
+        '=' +
+        encodeURIComponent(this.subject) +
+        '&' +
+        bcc +
+        '=' +
+        encodeURIComponent(this.bcc) +
+        '&body=' +
+        encodedBody;
+
+      if (this.mobile) {
+        window.location.href = url;
+      } else {
+        // Open in new tab
+        // TODO: Make the btn-email-desktop
+        // into a <a href> with dynamic link and new tab opening
+        window.location.href = url;
+      }
+    },
     /**
      * On mobiles, we show 3 buttons for gmail/yahoo/mailto
      * since long links work properly there with intents
@@ -103,7 +111,7 @@ var app = new Vue({
       var encodedBody = encodeURIComponent(this.response);
 
       if (this.mobile) {
-        openMailLink(this.email, this.subject, this.bcc, encodedBody, method);
+        this.openMailLink(encodedBody, method);
       } else {
         var responseEl = document.querySelector('#response-content');
         responseEl.select();
@@ -111,22 +119,19 @@ var app = new Vue({
           timeout = 1000;
           var successful = document.execCommand('copy');
           if (successful) {
-            // Copy successful
-            this.showcopymsg = 'auto';
-            alert("We've copied the message, paste it in your mail client");
-            timeout = 5;
+            return;
           } else {
             // Ask user to copy
-            this.showcopymsg = 'fallback';
+            this.showcopymsg = true;
           }
         } catch (err) {
-          this.showcopymsg = 'fallback';
+          this.showcopymsg = true;
         }
-
-        setTimeout(function() {
-          openMailLink(this.email, this.subject, this.bcc, 'Paste here!');
-        }, timeout);
       }
+    },
+    copied: function() {
+      alert('The message is now copied, paste it in your mail client');
+      this.openMailLink('Paste+here');
     },
     tweet: function() {
       gtag('event', 'sendTweet');
