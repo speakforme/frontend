@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Petition your Service Provider
+title: Service Provider
 permalink: /service/
 header: true
 ---

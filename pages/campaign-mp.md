@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Petition your MP
+title: MP
 permalink: /mp/
 header: true
 ---

@@ -1,0 +1,72 @@
+body{
+    color: #1F2D3D;
+    background-color: #f8f8f8;
+}
+
+.site-header{
+    background-color: #70C6B7;
+}
+
+.site-nav .page-link{
+    color: #fafafa;
+    border-bottom: none;
+    font-weight: 600;
+}
+
+.site-nav{
+    h2{
+        margin: 20px 5px;
+    }
+    a{
+        font-size: 24px;
+    }
+}
+.styled-select {
+   height: 29px;
+   overflow: hidden;
+   width: 240px;
+   background-color: #fafafa;
+}
+
+.styled-select select {
+   background: white;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+
+/* --- */
+
+.page-heading{
+    font-weight: 600;
+    margin-top: -8px;
+    margin-bottom: 16px;
+}
+
+label{
+    margin-top: 10px;
+}
+
+/* --- */
+
+.btn-primary{
+    background-color: #e79824;
+    color: #fafafa;
+    padding: 10px 25px;
+    border: solid 1px #e79824;
+    &:hover{
+        background-color: #d99004;
+        cursor:pointer
+    }
+}
+
+.button-unstyled{
+    border: none;
+    color: #3498db;
+    &:hover{
+        cursor:pointer
+    }
+}
+
