@@ -6,6 +6,11 @@ var templates = {
   bank: document.getElementById('draft-notice-bank').innerText
 };
 
+// Handle google-analytics blocks gracefully
+if (!window.gtag) {
+  window.gtag = function() {};
+}
+
 // TODO: convert following method to vue
 
 var sendEmailMobile = function(toAddress, subject, bccAddress, encodedBody) {
@@ -43,10 +48,20 @@ var app = new Vue({
   },
   methods: {
     setLocale: function(val) {
+      gtag('event', 'setLocale', {
+        lang: val
+      });
       this.$i18n.locale = val;
       window.localStorage.setItem('locale', val);
     },
     sendEmail: function() {
+      gtag('event', 'sendEmail', {
+        email: this.email,
+        subject: this.subject,
+        bcc: this.bcc,
+        mobile: this.mobile
+      });
+
       var encodedBody = encodeURIComponent(this.response);
 
       if (this.mobile) {
@@ -57,7 +72,9 @@ var app = new Vue({
         sendEmailMobile(this.email, this.subject, this.bcc, encodedBody);
       }
     },
-    tweet: function() {},
+    tweet: function() {
+      gtag('event', 'sendTweet');
+    },
     updateConstituencies: function() {
       var self = this;
 
