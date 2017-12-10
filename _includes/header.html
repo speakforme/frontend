@@ -8,7 +8,7 @@
         <h2>Petition your</h2>
       {% for my_page in site.pages %}
         {% if my_page.header==true %}
-        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.headertitle | escape }}</a>
         {% endif %}
       {% endfor %}
 

@@ -6,12 +6,12 @@ layout: default
 
   <div id="app">
 
-  <h1 class="page-heading">[{$t("title")}]</h1>
 
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
+        <h1 class="page-heading">[{$t("title")}]</h1>
         [{$t("petition." + campaign)}]
 
         {{ content }}

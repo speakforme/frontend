@@ -46,20 +46,19 @@
   </fieldset>
 
   <div>
-    <h3>[{$t("send_email")}]</h3>
 
     <label for="service-name">[{$t("contempt_notice_msg")}] : <span class="service-name">[{serviceName}]</span></label>
 
-    <button class="btn-email" v-if="!mobile"
-      v-on:click.stop.prevent="sendEmail()">Send Email</button>
+    <button class="btn-email btn-primary" v-if="!mobile"
+      v-on:click.stop.prevent="sendEmail()">[{$t("send_email")}]</button>
 
     <p v-if="showcopymsg">[{$t("copy_msg")}]</p>
 
-    <button class="btn-email" v-if="mobile"
+    <button class="btn-email btn-primary" v-if="mobile"
       v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
-    <button class="btn-email" v-if="mobile"
+    <button class="btn-email btn-primary" v-if="mobile"
       v-on:click.stop.prevent="sendEmail('yahoo')">Yahoo!</button>
-    <button class="btn-email" v-if="mobile"
+    <button class="btn-email btn-primary" v-if="mobile"
       v-on:click.stop.prevent="sendEmail('other')">Other Email</button>
 
   </div>
