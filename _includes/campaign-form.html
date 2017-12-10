@@ -41,11 +41,11 @@
     </div>
 
     <label for="content">[{$t("response")}]</label>
-      <textarea-response
+      <component :is="campaign"
         @copied="copied"
-        :service-name="serviceName"
+        :addressee="service.name"
         :address="service.address"
-        :body="response"></textarea-response>
+        :body="response"></component>
 
   </fieldset>
 
