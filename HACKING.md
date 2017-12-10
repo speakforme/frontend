@@ -34,3 +34,9 @@ If you still get some errors, see the [Troubleshooting page](https://jekyllrb.co
 * native extension failing to build
 * Jekyll & Mac OS X 10.11
 * `ExecJS::RuntimeUnavailable`
+
+## Translation
+
+The `_data/i18n.yml` file holds the UI translations. Add a new language below. We fallback to english.
+
+Work is ongoing for translating the constituency names, as well as the petition text
