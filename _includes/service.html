@@ -1,14 +1,16 @@
 <form>
   <fieldset>
+
     <div>
       <label for="service">[{$t("service")}]</label>
       <select name="service" id="select-service" v-model="serviceIndex">
         <option :value="index" v-for="(service,index) in services">[{service.name}]</option>
-        <option value="custom">[{$t("not_in_list")}]</option>
+        <option value="bank">Bank</option>
+        <!-- <option value="custom">[{$t("not_in_list")}]</option> -->
       </select>
     </div>
 
-    <div v-if="serviceIndex==0">
+    <div v-if="campaign==='bank'">
       <label for="bank">[{$t("bank")}]</label>
       <select name="bank" id="select-bank" v-model="bankIndex">
         <option :value="index" v-for="(bank, index) in banks">[{bank.name}]</option>

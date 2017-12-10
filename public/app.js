@@ -1,6 +1,13 @@
 var banks = window.banks;
 var services = window.services;
 
+// forEach method, could be shipped as part of an Object Literal/Module
+var forEach = function(array, callback, scope) {
+  for (var i = 0; i < array.length; i++) {
+    callback.call(scope, i, array[i]); // passes back stuff we need
+  }
+};
+
 // Handle google-analytics blocks gracefully
 if (!window.gtag) {
   window.gtag = function() {};
@@ -81,6 +88,26 @@ var app = new Vue({
       this.constituencies = this.mps.filter(function(mp) {
         return mp.state === self.state;
       });
+    },
+    initTemplates: function() {
+      var self = this;
+      forEach(document.querySelectorAll('script[id^=draft-notice-]'), function(
+        index,
+        el
+      ) {
+        var key = el.id.substr('draft-notice-'.length);
+        self.templates[key] = el.innerText;
+      });
+    },
+    // We have 3 values for the campaign:
+    // mp/service/bank
+    setInitialCampaign: function() {
+      // TODO: Use the page template to export a variable
+      if (document.location.pathname === '/mp/') {
+        this.campaign = 'mp';
+      } else if (document.location.pathname === '/service/') {
+        this.campaign = 'service';
+      }
     }
   },
   watch: {
@@ -92,19 +119,21 @@ var app = new Vue({
     },
     locale: function(newLocale) {
       this.setLocale(newLocale);
+    },
+    serviceIndex: function(i) {
+      if (i === 'bank') {
+        this.campaign = 'bank';
+      }
     }
   },
   created: function() {
-    // We fetch the extra resources here, if needed
-    if (document.location.pathname === '/mp/') {
-      this.campaign = 'mp';
-    } else if (document.location.pathname === '/service/') {
-      this.campaign = 'service';
-    }
-
     this.locale = window.localStorage.getItem('locale') || 'en';
 
     var self = this;
+
+    this.initTemplates();
+
+    this.setInitialCampaign();
 
     switch (this.campaign) {
       case 'mp':
@@ -115,18 +144,9 @@ var app = new Vue({
             this.updateConstituencies();
           });
 
-        this.templates.mp = document.getElementById(
-          'draft-notice-mp'
-        ).innerText;
         break;
 
       case 'service':
-        this.templates.service = document.getElementById(
-          'draft-notice-service'
-        ).innerText;
-        this.templates.bank = document.getElementById(
-          'draft-notice-bank'
-        ).innerText;
         break;
     }
   },
@@ -218,22 +238,28 @@ var app = new Vue({
       return false;
     },
     subject: function() {
-      if (this.serviceIndex === 0) {
-        return 'Threats to make bank accounts inoperable without Aadhaar';
+      switch (this.campaign) {
+        case 'bank':
+          return 'Threats to make bank accounts inoperable without Aadhaar';
+        case 'service':
+          return (
+            'Threats to make ' +
+            this.service.name +
+            ' inoperable without Aadhaar'
+          );
+        case 'mp':
+          return 'Speak for me, MP!';
       }
-      return (
-        'Threats to make ' + this.service.name + ' inoperable without Aadhaar'
-      );
     },
     service: function() {
       switch (this.campaign) {
+        case 'bank':
+          return this.banks[this.bankIndex];
         case 'service':
-          if (this.serviceIndex === 0) {
-            return this.banks[this.bankIndex];
-          }
-
           return this.services[this.serviceIndex];
           break;
+        // TODO: fix this hacky code by making constituency
+        // schema same as service/bank
         case 'mp':
           var e = '',
             a = '';
@@ -257,6 +283,7 @@ var app = new Vue({
       var e = this.service.email;
 
       // email cleanup
+      // TODO: TRIM trailing commas
       return e
         .replace(';', ',')
         .replace(/[\[\(]dot[\]\)]/g, '.')
@@ -268,10 +295,9 @@ var app = new Vue({
       var template;
 
       switch (this.campaign) {
+        case 'bank':
+          return this.templates.bank.trim();
         case 'service':
-          if (this.serviceIndex === 0) {
-            return this.templates.bank;
-          }
           return this.templates.service.trim();
           break;
         case 'mp':

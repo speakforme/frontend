@@ -1,7 +1,4 @@
 -
-  # Leave this as first item on the list
-  name: Bank
--
   name: PDS
   Department: |
     Department of Food and Public Distribution, India
