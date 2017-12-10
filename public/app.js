@@ -172,6 +172,8 @@ var app = new Vue({
     serviceIndex: function(i) {
       if (i === 'bank') {
         this.campaign = 'bank';
+      } else {
+        this.campaign = 'service';
       }
     }
   },
