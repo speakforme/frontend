@@ -8,6 +8,4 @@ twitter_username: speakforme
 github_username:  speakforme
 # Build settings
 markdown: kramdown
-gems:
-  - jekyll-feed
 google_analytics: UA-82421266-2
