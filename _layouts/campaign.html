@@ -4,9 +4,10 @@ layout: default
 
 <div class="home">
 
+  <div id="app">
+
   <h1 class="page-heading">[{$t("title")}]</h1>
 
-  <div id="app">
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
@@ -17,8 +18,6 @@ layout: default
   </div>
 
   <!-- ADD campaign specific data here -->
-
-  <!-- TODO: Make the layout/page more sane -->
   <!-- This is the generic service notice for "services" -->
 
   {% for notice in page.drafts %}
