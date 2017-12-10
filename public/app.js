@@ -3,6 +3,9 @@ var services = window.services;
 var templates = {};
 var responseComponents = {};
 
+/**
+ * Util methods start
+ */
 // forEach method, could be shipped as part of an Object Literal/Module
 var forEach = function(array, callback, scope) {
   for (var i = 0; i < array.length; i++) {
@@ -10,10 +13,18 @@ var forEach = function(array, callback, scope) {
   }
 };
 
+String.prototype.paddingLeft = function(paddingValue) {
+  return String(paddingValue + this).slice(-paddingValue.length);
+};
+
 // Handle google-analytics blocks gracefully
 if (!window.gtag) {
   window.gtag = function() {};
 }
+
+/**
+ * Util methds end
+ */
 
 var i18n = new VueI18n({
   locale: window.localStorage.getItem('locale') || 'en',
@@ -306,8 +317,22 @@ var app = new Vue({
       return window.services;
     },
     bcc: function() {
-      // TODO: Generate <campaign-code>@speakforme.in email address
-      return 'info@speakforme.in';
+      var code = this.campaign + '-';
+      switch (this.campaign) {
+        case 'service':
+          code += this.service.name;
+          break;
+        case 'bank':
+          code += this.serviceName;
+          break;
+        case 'mp':
+          code +=
+            this.constituency.state +
+            '-' +
+            this.constituencyIndex.toString().paddingLeft('000');
+          break;
+      }
+      return (code + '@speakforme.in').toLowerCase();
     },
     twitter: function() {
       if (this.service.twitter) {
