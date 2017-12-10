@@ -14,15 +14,35 @@ if (!window.gtag) {
 }
 
 // TODO: convert following method to vue
+// On desktops, ensure that body isn't large
+var openMailLink = function(encodedBody, method) {
+  var base = 'mailto:',
+    subject = 'subject',
+    bcc = 'bcc';
+  switch (method) {
+    case 'gmail':
+      base =
+        'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=';
+      subject = 'su';
+    case 'yahoo':
+      base = 'http://compose.mail.yahoo.com/?To=';
+      subject = 'Subject';
+      to = 'To';
+      bcc = 'Bcc';
+  }
 
-var sendEmailMobile = function(toAddress, subject, bccAddress, encodedBody) {
+  // TODO: use string interpolation after switching to es6
   window.location.href =
-    'mailto:' +
-    encodeURIComponent(toAddress) +
-    '?subject=' +
-    encodeURIComponent(subject) +
-    '&bcc=' +
-    encodeURIComponent(bccAddress) +
+    base +
+    encodeURIComponent(this.email) +
+    '?' +
+    subject +
+    '=' +
+    encodeURIComponent(this.subject) +
+    '&' +
+    bcc +
+    '=' +
+    encodeURIComponent(this.bcc) +
     '&body=' +
     encodedBody;
   window.location.hash = '#share';
@@ -51,7 +71,8 @@ var app = new Vue({
       mp: '',
       bank: '',
       service: ''
-    }
+    },
+    showcopymsg: false
   },
   methods: {
     setLocale: function(val) {
@@ -61,22 +82,50 @@ var app = new Vue({
       this.$i18n.locale = val;
       window.localStorage.setItem('locale', val);
     },
-    sendEmail: function() {
+    /**
+     * On mobiles, we show 3 buttons for gmail/yahoo/mailto
+     * since long links work properly there with intents
+     *
+     * On desktops (and IE Mobile) we
+     * - try to copy the text automatically
+     * - show a message asking user to paste it
+     * - and then open the mail client to let the user paste it
+     */
+    sendEmail: function(method) {
       gtag('event', 'sendEmail', {
         email: this.email,
         subject: this.subject,
         bcc: this.bcc,
-        mobile: this.mobile
+        mobile: this.mobile,
+        method: method
       });
 
       var encodedBody = encodeURIComponent(this.response);
 
       if (this.mobile) {
-        sendEmailMobile(this.email, this.subject, this.bcc, encodedBody);
-        return false;
+        openMailLink(this.email, this.subject, this.bcc, encodedBody, method);
       } else {
-        //TODO: desktop email (show copy paste instructions!)
-        sendEmailMobile(this.email, this.subject, this.bcc, encodedBody);
+        var responseEl = document.querySelector('#response-content');
+        responseEl.select();
+        try {
+          timeout = 1000;
+          var successful = document.execCommand('copy');
+          if (successful) {
+            // Copy successful
+            this.showcopymsg = 'auto';
+            alert("We've copied the message, paste it in your mail client");
+            timeout = 5;
+          } else {
+            // Ask user to copy
+            this.showcopymsg = 'fallback';
+          }
+        } catch (err) {
+          this.showcopymsg = 'fallback';
+        }
+
+        setTimeout(function() {
+          openMailLink(this.email, this.subject, this.bcc, 'Paste here!');
+        }, timeout);
       }
     },
     tweet: function() {
@@ -210,6 +259,7 @@ var app = new Vue({
       var IEMobile = /IEMobile/i.test(navigator.userAgent);
 
       // TODO: check needs to be more robust
+      // UCBrowser etc?
       return (
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini/i.test(
           navigator.userAgent

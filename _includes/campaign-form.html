@@ -41,16 +41,27 @@
     </div>
 
     <label for="content">[{$t("response")}]</label>
-      <textarea cols="70" rows="10" name="content">[{service.address}]
+      <textarea cols="70" rows="10" name="content" id="response-content">[{service.address}]
 [{response}]</textarea>
   </fieldset>
 
   <div>
     <h3>[{$t("send_email")}]</h3>
-    <label for="dept">[{$t("contempt_notice_msg")}] : <span class="service-name">[{serviceName}]</span></label>
-    <button class="btn-email" id="btn-dept-gmail" v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
-    <button class="btn-email" id="btn-dept-yahoo" v-on:click.stop.prevent="sendEmail('yahoo')">Yahoo!</button>
-    <button class="btn-email" id="btn-dept-email" v-on:click.stop.prevent="sendEmail('other')">Other Email</button>
+
+    <label for="service-name">[{$t("contempt_notice_msg")}] : <span class="service-name">[{serviceName}]</span></label>
+
+    <button class="btn-email" v-if="!mobile"
+      v-on:click.stop.prevent="sendEmail()">Send Email</button>
+
+    <p v-if="showcopymsg">[{$t("copy_msg")}]</p>
+
+    <button class="btn-email" v-if="mobile"
+      v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
+    <button class="btn-email" v-if="mobile"
+      v-on:click.stop.prevent="sendEmail('yahoo')">Yahoo!</button>
+    <button class="btn-email" v-if="mobile"
+      v-on:click.stop.prevent="sendEmail('other')">Other Email</button>
+
   </div>
 
   <div v-if="twitter">
