@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">[{$t("title")}]</h1>
+
+  <div id="app">
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+  </div>
+
+  <!-- ADD campaign specific data here -->
+
+  <!-- TODO: Make the layout/page more sane -->
+  <!-- This is the generic service notice for "services" -->
+
+  {% for notice in page.drafts %}
+    <script id="draft-notice-{{notice}}" type="text/template">{% include draft-notice-{{notice}}.md %}</script>
+
+    <script>
+    {% if notice == 'service' %}
+      window.services = {{site.data.services | jsonify}}
+      window.banks    = {{site.data.banks | jsonify}}
+    {% elsif notice == 'mp' %}
+      window.states   = {{site.data.states | jsonify}}
+    {% endif %}
+    </script>
+  {% endfor %}
+
+</div>

@@ -1,11 +1,6 @@
 var banks = window.banks;
 var services = window.services;
 
-var templates = {
-  service: document.getElementById('draft-notice-service').innerText,
-  bank: document.getElementById('draft-notice-bank').innerText
-};
-
 // Handle google-analytics blocks gracefully
 if (!window.gtag) {
   window.gtag = function() {};
@@ -44,7 +39,12 @@ var app = new Vue({
     constituencyIndex: 0,
     mps: [],
     constituencies: [],
-    campaign: 'mp'
+    campaign: 'mp',
+    templates: {
+      mp: '',
+      bank: '',
+      service: ''
+    }
   },
   methods: {
     setLocale: function(val) {
@@ -114,6 +114,19 @@ var app = new Vue({
             this.mps = response.body;
             this.updateConstituencies();
           });
+
+        this.templates.mp = document.getElementById(
+          'draft-notice-mp'
+        ).innerText;
+        break;
+
+      case 'service':
+        this.templates.service = document.getElementById(
+          'draft-notice-service'
+        ).innerText;
+        this.templates.bank = document.getElementById(
+          'draft-notice-bank'
+        ).innerText;
         break;
     }
   },
@@ -245,6 +258,7 @@ var app = new Vue({
 
       // email cleanup
       return e
+        .replace(';', ',')
         .replace(/[\[\(]dot[\]\)]/g, '.')
         .replace(/[\[\(]at[\]\)]/g, '@')
         .replace(/[\n\r]/g, ', ')
@@ -252,14 +266,21 @@ var app = new Vue({
     },
     response: function() {
       var template;
-      if (this.serviceIndex === 0) {
-        return templates.bank;
-      }
 
-      // TODO: Somehow interpolate the current scope
-      // into this as a template, so we can use {{service.name}}
-      // inside the template
-      return templates.service;
+      switch (this.campaign) {
+        case 'service':
+          if (this.serviceIndex === 0) {
+            return this.templates.bank;
+          }
+          return this.templates.service.trim();
+          break;
+        case 'mp':
+          // TODO: Somehow interpolate the current scope
+          // into this as a template, so we can use {{service.name}}
+          // inside the template
+          return this.templates.mp.trim();
+          break;
+      }
     }
   }
 });
