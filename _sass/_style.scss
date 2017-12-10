@@ -22,20 +22,20 @@ body{
     }
 }
 .styled-select {
-   height: 29px;
+   height: 32px;
    overflow: hidden;
    width: 240px;
    background-color: #fafafa;
 }
 
-.styled-select select {
+/* .styled-select select {
    background: white;
    border: none;
    font-size: 14px;
    height: 29px;
-   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   padding: 5px; If you add too much padding here, the options won't show in IE
    width: 268px;
-}
+} */
 
 /* --- */
 
