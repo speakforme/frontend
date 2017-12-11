@@ -12,11 +12,9 @@
 
     <div v-if="campaign==='mp'">
       <label for="constituency">[{$t("constituency")}]</label>
-      <select name="constituency" id="select-constituency" v-model="constituencyIndex" class="styled-select">
-        <option v-bind:selected="i === 0"
-                :value="i"
-                v-for="(constituency, i) in constituencies">
-              [{constituency.cons}]</option>
+      <select name="constituency" id="select-constituency" v-model="constituencyCode" class="styled-select">
+        <option :value="[{constituency.state}]-[{constituency.code}]"
+                v-for="constituency in constituencies">[{constituency.name}]</option>
       </select>
       <p>Don't know your constituency? Check <a target="_blank" rel="noopener" href="http://netafilter.in">here</a> for a map.</p>
     </div>

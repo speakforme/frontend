@@ -63,7 +63,7 @@ var app = new Vue({
     serviceIndex: 0,
     bankIndex: 0,
     state: 'AN',
-    constituencyIndex: 0,
+    constituencyCode: 'UP-18',
     mps: [],
     constituencies: [],
     campaign: 'mp',
@@ -182,6 +182,10 @@ var app = new Vue({
     updateConstituencies: function() {
       var self = this;
 
+      return [].reduce(function(a, b, i) {
+        return (a[b] = i), a;
+      }, {});
+
       this.constituencies = this.mps.filter(function(mp) {
         return mp.state === self.state;
       });
@@ -205,7 +209,7 @@ var app = new Vue({
     state: function(newState) {
       this.updateConstituencies();
     },
-    constituencyIndex: function(newIndex) {
+    constituencyCode: function(newIndex) {
       var c = this.constituencies[newIndex];
     },
     locale: function(newLocale) {
@@ -366,19 +370,19 @@ var app = new Vue({
         case 'service':
           return this.services[this.serviceIndex];
           break;
-        // TODO: fix this hacky code by making constituency
-        // schema same as service/bank
+        // TODO: use a setter for constituency
+        // and make sure that it works before the mps.json
+        // file is loaded
         case 'mp':
-          var e = '',
-            a = '';
           if (this.constituency) {
-            e = this.constituency.email;
-            a = this.constituency.name;
+            return this.constituency;
           }
           return {
-            email: e,
-            address: a,
-            name: a
+            code: '18',
+            constituency: 'Agra',
+            state: 'UP',
+            name: 'Dr. Prof. Ram Shankar',
+            email: 'office.mpagra@gmail.com, rs.katheria@sansad.nic.in'
           };
       }
     },
