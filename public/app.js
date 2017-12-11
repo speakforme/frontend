@@ -380,6 +380,7 @@ var app = new Vue({
         .replace(';', ',')
         .replace(/[\[\(]dot[\]\)]/g, '.')
         .replace(/[\[\(]at[\]\)]/g, '@')
+        .replace(' ', ',')
         .split(',')
         .filter(function(t) {
           return t.trim().length > 0;
