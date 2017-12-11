@@ -333,13 +333,10 @@ var app = new Vue({
           code += this.serviceName;
           break;
         case 'mp':
-          code +=
-            this.constituency.state +
-            '-' +
-            this.constituencyIndex.toString().paddingLeft('000');
+          code = this.constituencyCode;
           break;
       }
-      return (code + '@speakforme.in').toLowerCase();
+      return (code + '@storage.speakforme.in').toLowerCase();
     },
     twitter: function() {
       if (this.service.twitter) {
