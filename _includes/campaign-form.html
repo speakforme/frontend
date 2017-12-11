@@ -41,7 +41,7 @@
     <label for="content">[{$t("response")}]</label>
       <component :is="campaign"
         @copied="copied"
-        :addressee="service.name"
+        :addressee="personName"
         :address="service.address"
         :body="response"></component>
 

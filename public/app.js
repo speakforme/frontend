@@ -62,9 +62,17 @@ var app = new Vue({
     locale: 'en',
     serviceIndex: 0,
     bankIndex: 0,
-    state: 'AN',
+    state: 'UP',
     constituencyCode: 'UP-18',
-    mps: {},
+    mps: {
+      'UP-18': {
+        index: 18,
+        name: 'Agra',
+        state: 'UP',
+        mp: 'Dr. Prof. Ram Shankar',
+        email: 'office.mpagra@gmail.com'
+      }
+    },
     constituencies: [],
     campaign: 'mp',
     mailMethod: null,
