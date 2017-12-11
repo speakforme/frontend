@@ -12,9 +12,9 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
-  <!-- {% if jekyll.environment == 'production' and site.google_analytics %} -->
+  {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.inc %}
-  <!-- {% endif %} -->
+  {% endif %}
 
   {% if jekyll.environment == 'production' %}
   <script src="/dist/app.min.js"></script>
@@ -22,6 +22,5 @@
   <script src="/public/vue.js"></script>
   <script src="/public/vue-resource.js"></script>
   <script src="/public/vue-i18n.js"></script>
-  <script src="/public/app.js"></script>
   {% endif %}
 </head>

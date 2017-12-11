@@ -4,15 +4,15 @@
   {% include head.html %}
 
   <body>
-    {{content}}
 
     <script>
     // TODO: Maybe load this async?
     const i18nMsgs  = {{site.data.i18n | jsonify}}
     </script>
 
-    <script src="/public/app.js"></script>
+    {{content}}
 
+    <script src="/public/app.js"></script>
     {% include footer.html %}
 
   </body>
