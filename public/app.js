@@ -3,6 +3,9 @@ var services = window.services;
 var templates = {};
 var responseComponents = {};
 
+/**
+ * Util methods start
+ */
 // forEach method, could be shipped as part of an Object Literal/Module
 var forEach = function(array, callback, scope) {
   for (var i = 0; i < array.length; i++) {
@@ -10,10 +13,18 @@ var forEach = function(array, callback, scope) {
   }
 };
 
+String.prototype.paddingLeft = function(paddingValue) {
+  return String(paddingValue + this).slice(-paddingValue.length);
+};
+
 // Handle google-analytics blocks gracefully
 if (!window.gtag) {
   window.gtag = function() {};
 }
+
+/**
+ * Util methds end
+ */
 
 var i18n = new VueI18n({
   locale: window.localStorage.getItem('locale') || 'en',
@@ -51,9 +62,17 @@ var app = new Vue({
     locale: 'en',
     serviceIndex: 0,
     bankIndex: 0,
-    state: 'AN',
-    constituencyIndex: 0,
-    mps: [],
+    state: 'UP',
+    constituencyCode: 'UP-18',
+    mps: {
+      'UP-18': {
+        index: 18,
+        name: 'Agra',
+        state: 'UP',
+        mp: 'Dr. Prof. Ram Shankar',
+        email: 'office.mpagra@gmail.com'
+      }
+    },
     constituencies: [],
     campaign: 'mp',
     mailMethod: null,
@@ -171,9 +190,15 @@ var app = new Vue({
     updateConstituencies: function() {
       var self = this;
 
-      this.constituencies = this.mps.filter(function(mp) {
-        return mp.state === self.state;
-      });
+      this.constituencies = [];
+
+      for (var code in this.mps) {
+        if (code.substr(0, 2) === this.state) {
+          this.constituencies.push(this.mps[code]);
+        }
+      }
+
+      this.constituencyCode = this.constituencies[0].code;
     },
     initTemplates: function() {
       var self = this;
@@ -193,9 +218,6 @@ var app = new Vue({
   watch: {
     state: function(newState) {
       this.updateConstituencies();
-    },
-    constituencyIndex: function(newIndex) {
-      var c = this.constituencies[newIndex];
     },
     locale: function(newLocale) {
       this.setLocale(newLocale);
@@ -219,11 +241,15 @@ var app = new Vue({
 
     switch (this.campaign) {
       case 'mp':
+        var self = this;
         this.$http
           .get('/public/mps.json', { responseType: 'json' })
           .then(function(response) {
-            this.mps = response.body;
-            this.updateConstituencies();
+            // Set this.mps
+            response.body.forEach(function(row) {
+              self.mps[row.code] = row;
+            });
+            self.updateConstituencies();
           });
 
         break;
@@ -283,7 +309,7 @@ var app = new Vue({
       ];
     },
     constituency: function() {
-      return this.constituencies[this.constituencyIndex];
+      return this.mps[this.constituencyCode];
     },
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
@@ -306,8 +332,19 @@ var app = new Vue({
       return window.services;
     },
     bcc: function() {
-      // TODO: Generate <campaign-code>@speakforme.in email address
-      return 'info@speakforme.in';
+      var code = this.campaign + '-';
+      switch (this.campaign) {
+        case 'service':
+          code += this.service.name;
+          break;
+        case 'bank':
+          code += this.serviceName;
+          break;
+        case 'mp':
+          code = this.constituencyCode;
+          break;
+      }
+      return (code + '@storage.speakforme.in').toLowerCase();
     },
     twitter: function() {
       if (this.service.twitter) {
@@ -341,19 +378,20 @@ var app = new Vue({
         case 'service':
           return this.services[this.serviceIndex];
           break;
-        // TODO: fix this hacky code by making constituency
-        // schema same as service/bank
+        // TODO: use a setter for constituency
+        // and make sure that it works before the mps.json
+        // file is loaded
         case 'mp':
-          var e = '',
-            a = '';
           if (this.constituency) {
-            e = this.constituency.email;
-            a = this.constituency.name;
+            return this.constituency;
           }
           return {
-            email: e,
-            address: a,
-            name: a
+            index: '18',
+            name: 'Agra',
+            state: 'UP',
+            name: 'Dr. Prof. Ram Shankar',
+            email: 'office.mpagra@gmail.com, rs.katheria@sansad.nic.in',
+            code: 'UP-18'
           };
       }
     },
@@ -365,7 +403,7 @@ var app = new Vue({
         case 'bank':
           return 'Chairman and MD (' + this.bank.name + ')';
         case 'mp':
-          return this.serviceName;
+          return this.constituency.mp;
         case 'service':
           return this.service.personName;
       }
