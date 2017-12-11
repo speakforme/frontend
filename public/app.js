@@ -381,11 +381,12 @@ var app = new Vue({
             return this.constituency;
           }
           return {
-            code: '18',
-            constituency: 'Agra',
+            index: '18',
+            name: 'Agra',
             state: 'UP',
             name: 'Dr. Prof. Ram Shankar',
-            email: 'office.mpagra@gmail.com, rs.katheria@sansad.nic.in'
+            email: 'office.mpagra@gmail.com, rs.katheria@sansad.nic.in',
+            code: 'UP-18'
           };
       }
     },
@@ -397,7 +398,7 @@ var app = new Vue({
         case 'bank':
           return 'Chairman and MD (' + this.bank.name + ')';
         case 'mp':
-          return this.constituency.mp;
+          return this.service.name;
         case 'service':
           return this.service.personName;
       }
