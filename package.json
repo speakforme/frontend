@@ -1,0 +1,25 @@
+{
+  "name": "speakforme",
+  "version": "1.0.0",
+  "description": "speakforme.in",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/speakforme/frontend.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/speakforme/frontend/issues"
+  },
+  "homepage": "https://github.com/speakforme/frontend#readme"
+}

@@ -4,3 +4,6 @@ _site
 vendor/
 .bundle
 Gemfile.lock
+tmp
+node_modules/
+dist/
