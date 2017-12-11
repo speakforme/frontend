@@ -64,7 +64,7 @@ var app = new Vue({
     bankIndex: 0,
     state: 'AN',
     constituencyCode: 'UP-18',
-    mps: [],
+    mps: {},
     constituencies: [],
     campaign: 'mp',
     mailMethod: null,
@@ -182,13 +182,15 @@ var app = new Vue({
     updateConstituencies: function() {
       var self = this;
 
-      return [].reduce(function(a, b, i) {
-        return (a[b] = i), a;
-      }, {});
+      this.constituencies = [];
 
-      this.constituencies = this.mps.filter(function(mp) {
-        return mp.state === self.state;
-      });
+      for (var code in this.mps) {
+        if (code.substr(0, 2) === this.state) {
+          this.constituencies.push(this.mps[code]);
+        }
+      }
+
+      this.constituencyCode = this.constituencies[0].code;
     },
     initTemplates: function() {
       var self = this;
@@ -208,9 +210,6 @@ var app = new Vue({
   watch: {
     state: function(newState) {
       this.updateConstituencies();
-    },
-    constituencyCode: function(newIndex) {
-      var c = this.constituencies[newIndex];
     },
     locale: function(newLocale) {
       this.setLocale(newLocale);
@@ -234,11 +233,15 @@ var app = new Vue({
 
     switch (this.campaign) {
       case 'mp':
+        var self = this;
         this.$http
           .get('/public/mps.json', { responseType: 'json' })
           .then(function(response) {
-            this.mps = response.body;
-            this.updateConstituencies();
+            // Set this.mps
+            response.body.forEach(function(row) {
+              self.mps[row.code] = row;
+            });
+            self.updateConstituencies();
           });
 
         break;
@@ -298,7 +301,7 @@ var app = new Vue({
       ];
     },
     constituency: function() {
-      return this.constituencies[this.constituencyIndex];
+      return this.mps[this.constituencyCode];
     },
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
@@ -394,7 +397,7 @@ var app = new Vue({
         case 'bank':
           return 'Chairman and MD (' + this.bank.name + ')';
         case 'mp':
-          return this.serviceName;
+          return this.constituency.mp;
         case 'service':
           return this.service.personName;
       }
