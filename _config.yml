@@ -9,3 +9,13 @@ github_username:  speakforme
 # Build settings
 markdown: kramdown
 google_analytics: UA-82421266-2
+exclude:
+  - _locales
+  - _scripts
+  - package.json
+  - package-lock.json
+  - HACKING.md
+  - Gulpfile.js
+  - Gemfile.lock
+  - Gemfile
+  - CNAME

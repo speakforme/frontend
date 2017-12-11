@@ -38,6 +38,17 @@ If you still get some errors, see the [Troubleshooting page](https://jekyllrb.co
 * Jekyll & Mac OS X 10.11
 * `ExecJS::RuntimeUnavailable`
 
+### Setting up translations
+
+Only needed if you are editing something inside `_locales` directory
+
+```
+npm install
+./node_modules/.bin/gulp locales
+```
+
+This is require to copy over the extra localization files to JSON format.
+
 ## Translation
 
 The `_data/i18n.yml` file holds the UI translations. Add a new language below. We fallback to english.
