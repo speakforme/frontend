@@ -18,6 +18,7 @@
   {% if jekyll.environment == 'production' %}
   <script src="/dist/app.min.js"></script>
   {% else %}
+  <!-- If you add a file here, make sure you add it to Gulpfile.js as well -->
   <script src="/public/vue.js"></script>
   <script src="/public/vue-resource.js"></script>
   <script src="/public/vue-i18n.js"></script>

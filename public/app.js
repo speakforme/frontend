@@ -59,6 +59,10 @@ var app = new Vue({
   delimiters: ['[{', '}]'],
   el: '#app',
   data: {
+    // This is the list of all locales
+    // we have loaded so far from a separate file
+    // successfully
+    localeLoaded: ['en'],
     locale: 'en',
     serviceIndex: 0,
     bankIndex: 0,
@@ -90,6 +94,23 @@ var app = new Vue({
       });
       this.$i18n.locale = val;
       window.localStorage.setItem('locale', val);
+
+      if (this.localeLoaded.indexOf(val) === -1) {
+        // Try to load the locale
+        this.$http
+          .get('/locales/' + val + '.json', { responseType: 'json' })
+          .then(
+            function(response) {
+              this.$i18n.mergeLocaleMessage(val, response.body);
+              this.localeLoaded.push[val];
+              this.$forceUpdate();
+            },
+            function(response) {
+              // If there is no such file
+              this.localeLoaded.push[val];
+            }
+          );
+      }
     },
     openMailLink: function(encodedBody, method) {
       this.mailMethod = method;
@@ -246,9 +267,19 @@ var app = new Vue({
           .get('/public/mps.json', { responseType: 'json' })
           .then(function(response) {
             // Set this.mps
-            response.body.forEach(function(row) {
+            var self = this,
+              msgs = {
+                constituencies: {}
+              };
+            for (var i = 0; i < response.body.length; i++) {
+              var row = response.body[i];
               self.mps[row.code] = row;
-            });
+
+              msgs.constituencies[row.code] = row.name;
+            }
+            self.$i18n.mergeLocaleMessage('en', msgs);
+
+            // Also, set the constituencies inside the english locale
             self.updateConstituencies();
           });
 
