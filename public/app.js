@@ -395,7 +395,7 @@ var app = new Vue({
         case 'bank':
           return 'Chairman and MD (' + this.bank.name + ')';
         case 'mp':
-          return this.service.name;
+          return this.constituency.mp;
         case 'service':
           return this.service.personName;
       }
