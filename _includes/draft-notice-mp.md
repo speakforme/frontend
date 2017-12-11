@@ -1,16 +1,17 @@
-((addressee))
+((प्रेषक))
 
-I am getting constant messages from my Bank and phone company to link my Aadhaar number. There are reports on a daily basis about the shoddy implementation of Aadhaar and how it is putting my personal information in danger.
+मुझे मेरे आधार संखियाँ को मेरे बैंक और मोबाइल सेवा प्रदाता से जोड़ने के लिए लगातार संदेश मिल रहे हैं. आधार के घटिया अमल तथा कैसे यह मेरी व्यक्तिगत जानकारीयों को खतरे में डाल रहा है इसके बारे में दैनिक आधार पर रिपोर्ट है.
 
-If one does a cursory google search, there is enough material about the pitfalls of Aadhaar being reported. From starvation deaths[^1] to exclusion[^2] to enabling fraud[^3] to mass surveillance[^4], Aadhaar is becoming the basis for a lot of widespread suffering. There have been data leaks by 210 government entities[^5] putting privacy of citizens like me at risk and making them vulnerable to identity theft[^6].
+अगर कोई भी सतही गूगल खोज करता है,तो आधार के खतरों के बारे में प्रयाप्त जानकारी देखने को मिल जाती है. भुखमरी के कारण मौतों से[^1] बहिस्कार के लिए[^2] धोखाधड़ी को सक्षम करने के लिए[^3] जन निगरानी के लिए[^4] आधार कई व्यापक दुखों के लिए मूल स्रोत बनता जा रहा है. 210 सरकारी संस्थाओं द्वारा डेटा लीक हो चूका है[^5] मेरे जैसे नागरिकों की गोपनीयता खतरे में लाया जा रहा है और पहचान की चोरी के लिए उन्हें कमजोर बनाया जा रहा है[^6].
 
-As my representative, I request you to raise these issues regarding Aadhaar in Parliament. I ask you to demand an answer from the Government of the day as to why I am being forced to register for a flawed system. I demand that Aadhaar should be made non-mandatory, as the Supreme Court has already ordered in 2015, and there should be an opt-out clause which would allow those who don’t want to be a part of the system to get out.
+मेरे प्रतिनिधि के रूप में, मेरा आपसे अनुरोध है कि संसद भवन में आधार के संबंध में इन मुद्दों को उठाएं. मैं अनुरोध करता हूँ कि वर्तमान सरकार से आप जवाब मांगें की क्यों मुझे एक त्रुटिपूर्ण प्रणाली में पंजीकरण करने के लिए मजबूर किया जा रहा है. मेरी मांग है कि आधार को गैर-अनिवार्य किया जाना चाहिए, जैसा कि सर्वोच्च न्यायालय ने पहले ही 2015 में आदेश दिया हुआ है, तथा बहार निकलने का एक खंड होना चाहिए जो उन्हें प्रणाली से बहार रहने की अनुमति देगा जो प्रणाली का हिस्सा नहीं बनना चाहते.  
 
-I’m attaching with this email a Rule 193 Notice with an explanatory statement asking for a Short Duration discussion on citizen concerns regarding Aadhaar in Lok Sabha. I ask you to file this notice before the Winter Session so that there can be a discussion on the topic and we can question the Government through you.
+मैं इस ईमेल के साथ एक नियम 193 नोटीस संलग्न करके एक व्याख्यात्मक बयान के साथ लोक सभा में आधार के संबंध में नागरिकों कि चिंताओं पर एक छोटी अवधि की चर्चा के लिए पूछ रहा हूँ. मैं अनुरोध करता हूँ की इस नोटिस को शीतकालीन सत्र के पहले दर्ज किया जाए ताकि इस विषय पर चर्चा हो सके और हम आपके जरिये सरकार से सवाल पूछ सकें.
 
-Thank you.
+धन्यवाद
 
-Sincerely,
+निष्ठापूर्वक
+
 
 [^1]: http://www.livemint.com/Opinion/FNWYVUxeXUw8rHbdirTe4H/Hunger-Starvation-and-Aadhaar.html
 [^2]: http://indianexpress.com/article/opinion/columns/a-welfare-test-for-aadhaar-upa-nda-aadhaar-card-4921582/
