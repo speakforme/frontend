@@ -1,7 +1,7 @@
 var banks = window.banks;
 var services = window.services;
-var templates = {}
-var responseComponents = {}
+var templates = {};
+var responseComponents = {};
 
 // forEach method, could be shipped as part of an Object Literal/Module
 var forEach = function(array, callback, scope) {
@@ -29,24 +29,19 @@ forEach(document.querySelectorAll('script[id^=draft-notice-]'), function(
   templates[key] = el.innerText;
 
   responseComponents[key] = {
-    props: [
-      'addressee',
-      'address',
-      'body'
-    ],
+    props: ['addressee', 'address', 'body'],
     delimiters: ['((', '))'],
     template:
-    '<textarea @copy="copied" cols="70" rows="10" name="content" id="response-content">' +
-    templates[key] +
-    '</textarea>',
+      '<textarea @copy="copied" cols="70" rows="10" name="content" id="response-content">' +
+      templates[key] +
+      '</textarea>',
     methods: {
-      copied: function () {
-        this.$emit('copied')
+      copied: function() {
+        this.$emit('copied');
       }
     }
-  }
+  };
 });
-
 
 var app = new Vue({
   i18n: i18n,
@@ -61,6 +56,7 @@ var app = new Vue({
     mps: [],
     constituencies: [],
     campaign: 'mp',
+    mailMethod: null,
     templates: {
       mp: '',
       bank: '',
@@ -77,6 +73,7 @@ var app = new Vue({
       window.localStorage.setItem('locale', val);
     },
     openMailLink: function(encodedBody, method) {
+      this.mailMethod = method;
       var base = 'mailto:',
         subject = 'subject',
         bcc = 'bcc';
@@ -120,15 +117,18 @@ var app = new Vue({
       }
     },
     /**
-     * On mobiles, we show 3 buttons for gmail/yahoo/mailto
-     * since long links work properly there with intents
+     * On desktop, we show 3 buttons for gmail/yahoo/mailto
+     * since desktops likely don't have a default email client
      *
-     * On desktops (and IE Mobile) we
+     * On desktop (and IE Mobile) we
      * - try to copy the text automatically
      * - show a message asking user to paste it
      * - and then open the mail client to let the user paste it
+     *
+     * On mobiles: Just open the mailto link with complete body
      */
     sendEmail: function(method) {
+      this.mailMethod = method;
       gtag('event', 'sendEmail', {
         email: this.email,
         subject: this.subject,
@@ -140,7 +140,7 @@ var app = new Vue({
       var encodedBody = encodeURIComponent(this.response);
 
       if (this.mobile) {
-        this.openMailLink(encodedBody, method);
+        this.openMailLink(encodedBody);
       } else {
         var responseEl = document.querySelector('#response-content');
         responseEl.select();
@@ -158,9 +158,12 @@ var app = new Vue({
         }
       }
     },
+    // We are assuming here that the user has copied the whole
+    // content of the textarea.
+    // TODO: See if we can detect a partial copy and not open the mail link
     copied: function() {
       alert('The message is now copied, paste it in your mail client');
-      this.openMailLink('Paste+here');
+      this.openMailLink('Paste+here', this.mailMethod);
     },
     tweet: function() {
       gtag('event', 'sendTweet');
@@ -174,7 +177,7 @@ var app = new Vue({
     },
     initTemplates: function() {
       var self = this;
-      self.templates = templates
+      self.templates = templates;
     },
     // We have 3 values for the campaign:
     // mp/service/bank

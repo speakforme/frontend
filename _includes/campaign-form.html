@@ -18,7 +18,7 @@
                 v-for="(constituency, i) in constituencies">
               [{constituency.cons}]</option>
       </select>
-      <p>Don't know your constituency? Check <a href="http://netafilter.in">here</a> for a map.</p>
+      <p>Don't know your constituency? Check <a target="_blank" rel="noopener" href="http://netafilter.in">here</a> for a map.</p>
     </div>
 
     <div v-if="campaign==='bank'||campaign == 'service'">
@@ -55,16 +55,16 @@
 
     <label for="service-name">[{$t("contempt_notice_msg")}] : <span class="service-name">[{serviceName}]</span></label>
 
-    <button id="btn-email-desktop" class="btn-email btn-primary" v-if="!mobile"
+    <button id="btn-email-mobile" class="btn-email btn-primary" v-if="mobile"
       v-on:click.stop.prevent="sendEmail()">[{$t("send_email")}]</button>
 
     <p v-if="showcopymsg" class="success-box">[{$t("copy_msg")}]</p>
 
-    <button class="btn-email btn-primary" v-if="mobile"
+    <button class="btn-email btn-primary" v-if="!mobile"
       v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
-    <button class="btn-email btn-primary" v-if="mobile"
+    <button class="btn-email btn-primary" v-if="!mobile"
       v-on:click.stop.prevent="sendEmail('yahoo')">Yahoo!</button>
-    <button class="btn-email button-unstyled" v-if="mobile"
+    <button class="btn-email button-unstyled" v-if="!mobile"
       v-on:click.stop.prevent="sendEmail('other')">Other</button>
 
   </div>
