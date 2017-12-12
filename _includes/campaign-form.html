@@ -1,16 +1,14 @@
 <div id="content-wrapper">
   <!-- <div class="mui--appbar-height"></div> -->
   <div class="form-panel">
-    {% for my_page in site.pages %}
-    {% if my_page.header==true %}
-    <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.headertitle | escape }}</a>
-    {% endif %}
-    {% endfor %}
     <!-- <h3>Send petition to your</h3> -->
     <div class="mui-panel no-padding">
       <ul class="mui-tabs__bar form-tab">
-        <li class="mui--is-active "><a data-mui-toggle="tab" data-mui-controls="pane-default-1">MP</a></li>
-        <li><a data-mui-toggle="tab" data-mui-controls="pane-default-2">Service Provider</a></li>
+        {% for my_page in site.pages %}
+        {% if my_page.header==true %}
+          <li><a class="page-link" data-mui-toggle="tab" data-mui-controls="pane-default-1" href="{{ my_page.url | relative_url }}">{{ my_page.headertitle | escape }}</a></li>
+        {% endif %}
+        {% endfor %}
       </ul>
       <div class="mui-tabs__pane mui--is-active tab-active" id="pane-default-1">Pane-1</div>
         <div class="mui-tabs__pane" id="pane-default-2">Pane-2</div>
