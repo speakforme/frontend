@@ -444,7 +444,7 @@ var app = new Vue({
           code += this.bank.ifsc;
           break;
         case 'mp':
-          code = this.constituencyCode;
+          code += this.constituencyCode;
           break;
       }
       return (code + '@email.speakforme.in').toLowerCase();
