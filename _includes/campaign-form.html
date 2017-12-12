@@ -1,88 +1,87 @@
 <div id="content-wrapper">
   <!-- <div class="mui--appbar-height"></div> -->
   <div class="form-panel">
-  {% for my_page in site.pages %}
-        {% if my_page.header==true %}
-        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.headertitle | escape }}</a>
-        {% endif %}
-      {% endfor %}
-  <!-- <h3>Send petition to your</h3> -->
-  <div class="mui-panel no-padding">
-    <ul class="mui-tabs__bar form-tab">
-      <li class="mui--is-active "><a data-mui-toggle="tab" data-mui-controls="pane-default-1">MP</a></li>
-      <li><a data-mui-toggle="tab" data-mui-controls="pane-default-2">Service Provider</a></li>
-    </ul>
-    <div class="mui-tabs__pane mui--is-active tab-active" id="pane-default-1">Pane-1</div>
-    <div class="mui-tabs__pane" id="pane-default-2">Pane-2</div>
-    <div class="mui-row form-container">
-      <div class="mui-col-md-12">
-        <div v-if="campaign==='mp'" class="mui-textfield mui-col-md-6">
-          <label for="state" class="uppercase">[{$t("state")}]</label><br>
-          <select name="state" id="select-state" v-model="state" class="styled-select">
-            <option v-bind:selected="i === 0"
-              :value="code" v-for="(code, i) in states">
-              [{$t("states." + code)}]</option>
-          </select>
-        </div>
+    {% for my_page in site.pages %}
+    {% if my_page.header==true %}
+    <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.headertitle | escape }}</a>
+    {% endif %}
+    {% endfor %}
+    <!-- <h3>Send petition to your</h3> -->
+    <div class="mui-panel no-padding">
+      <ul class="mui-tabs__bar form-tab">
+        <li class="mui--is-active "><a data-mui-toggle="tab" data-mui-controls="pane-default-1">MP</a></li>
+        <li><a data-mui-toggle="tab" data-mui-controls="pane-default-2">Service Provider</a></li>
+      </ul>
+      <div class="mui-tabs__pane mui--is-active tab-active" id="pane-default-1">Pane-1</div>
+        <div class="mui-tabs__pane" id="pane-default-2">Pane-2</div>
+          <div class="mui-row form-container">
+            <div class="mui-col-md-12">
+              <div v-if="campaign==='mp'" class="mui-textfield mui-col-md-6">
+                <label for="state" class="uppercase">[{$t("state")}]</label><br>
+                <select name="state" id="select-state" v-model="state" class="styled-select">
+                  <option v-bind:selected="i === 0"
+                  :value="code" v-for="(code, i) in states">
+                  [{$t("states." + code)}]</option>
+                </select>
+              </div>
 
-        <div v-if="campaign==='mp'" class="mui-textfield mui-col-md-6">
-          <label for="constituency" class="uppercase">[{$t("constituency")}]</label><br>
-          <select name="constituency" id="select-constituency" v-model="constituencyIndex" class="styled-select">
-            <option v-bind:selected="i === 0"
-              :value="i"
-              v-for="(constituency, i) in constituencies">
-              [{constituency.cons}]</option>
-          </select>
-          <p class="helper-text">Don't know your constituency? Check <a target="_blank" rel="noopener" href="http://netafilter.in">here</a> for a map.</p>
-        </div>
+              <div v-if="campaign==='mp'" class="mui-textfield mui-col-md-6">
+                <label for="constituency" class="uppercase">[{$t("constituency")}]</label><br>
+                <select name="constituency" v-model="constituencyCode" class="styled-select">
+                  <option :value="constituency.code" v-for="(constituency,i) in constituencies">[{$t("constituencies." + constituency.code)}]</option>
+                </select>
+                <p class="helper-text">Don't know your constituency? Check <a target="_blank" rel="noopener" href="http://netafilter.in">here</a> for a map.</p>
+              </div>
 
-        <div v-if="campaign==='bank'||campaign == 'service'" class="mui-textfield mui-col-md-6">
-          <label for="service" class="uppercase">[{$t("service")}]</label><br>
-          <select name="service" id="select-service" v-model="serviceIndex" class="styled-select">
-            <option :value="index" v-for="(service,index) in services">[{service.name}]</option>
-            <option value="bank">Bank</option>
-          </select>
-        </div>
+              <div v-if="campaign==='bank'||campaign == 'service'" class="mui-textfield mui-col-md-6">
+                <label for="service" class="uppercase">[{$t("service")}]</label><br>
+                <select name="service" id="select-service" v-model="serviceIndex" class="styled-select">
+                  <option :value="index" v-for="(service,index) in services">[{service.name}]</option>
+                  <option value="bank">Bank</option>
+                </select>
+              </div>
 
-        <div v-if="campaign==='bank'" class="mui-textfield mui-col-md-6">
-          <label for="bank" class="uppercase">[{$t("bank")}]</label><br>
-          <select name="bank" id="select-bank" v-model="bankIndex" class="styled-select">
-            <option :value="index" v-for="(bank, index) in banks">[{bank.name}]</option>
-          </select>
-        </div>
+              <div v-if="campaign==='bank'" class="mui-textfield mui-col-md-6">
+                <label for="bank" class="uppercase">[{$t("bank")}]</label><br>
+                <select name="bank" id="select-bank" v-model="bankIndex" class="styled-select">
+                  <option :value="index" v-for="(bank, index) in banks">[{bank.name}]</option>
+                </select>
+              </div>
 
-        <div class="mui-textfield mui-col-md-12">
-          <label for="email" class="uppercase">[{$t("email")}]</label><br>
-          <input name="email" size="60" v-model="email"  readonly>
-        </div>
+              <div class="mui-textfield mui-col-md-12">
+                <label for="email" class="uppercase">[{$t("email")}]</label><br>
+                <input name="email" size="60" v-model="email" readonly>
+              </div>
 
-        <div class="mui-textfield mui-col-md-12">
-          <label for="content" class="uppercase">[{$t("response")}]</label><br>
-          <component :is="campaign"
-            @copied="copied"
-            :addressee="service.name"
-            :address="service.address"
-            :body="response"></component>
-        </div>
-        <div class="mui-col-md-12">
-          <p class="helper-text">[{$t("contempt_notice_msg")}] <span class="service-name">[{serviceName}]</span> via</p>
-          <button id="btn-email-mobile" class="btn-email btn-primary" v-if="mobile"
-          v-on:click.stop.prevent="sendEmail()">[{$t("send_email")}]</button>
-          <p v-if="showcopymsg" class="success-box">[{$t("copy_msg")}]</p>
-          <button class="btn-email btn-primary" v-if="!mobile"
-          v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
-          <button class="btn-email btn-primary" v-if="!mobile"
-          v-on:click.stop.prevent="sendEmail('yahoo')">Yahoo!</button>
-          <button class="btn-email button-unstyled" v-if="!mobile"
-          v-on:click.stop.prevent="sendEmail('other')">Other email client</button>
-        </div>
-        <div v-if="twitter" class="mui-col-md-12">
-          <h3>[{$t("tweet")}]</h3>
-          <a class="twitter-share-button"cv-bind:href="tweeturl">
-          [{$t("tweet")}]</a>
+              <div class="mui-textfield mui-col-md-12">
+                <label for="content" class="uppercase">[{$t("response")}]</label><br>
+                <component :is="campaign"
+                @copied="copied"
+                :addressee="personName"
+                :address="service.address"
+                :body="response"></component>
+              </div>
+              <div class="mui-col-md-12">
+                <p class="helper-text">[{$t("contempt_notice_msg")}] <span class="service-name">[{serviceName}]</span> via</p>
+                <button id="btn-email-mobile" class="btn-email btn-primary" v-if="mobile"
+                v-on:click.stop.prevent="sendEmail()">[{$t("send_email")}]</button>
+                <p v-if="showcopymsg" class="success-box">[{$t("copy_msg")}]</p>
+                <button class="btn-email btn-primary" v-if="!mobile"
+                v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
+                <button class="btn-email btn-primary" v-if="!mobile"
+                v-on:click.stop.prevent="sendEmail('yahoo')">Yahoo!</button>
+                <button class="btn-email button-unstyled" v-if="!mobile"
+                v-on:click.stop.prevent="sendEmail('other')">Other email client</button>
+              </div>
+              <div v-if="twitter" class="mui-col-md-12">
+                <h3>[{$t("tweet")}]</h3>
+                <a class="twitter-share-button"cv-bind:href="tweeturl">
+                [{$t("tweet")}]</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
   </div>
 </div>
