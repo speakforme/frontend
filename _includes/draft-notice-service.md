@@ -9,16 +9,23 @@ We are shocked that you continue to require and use the Aadhaar number and assoc
 1. Your actions have resulted in widespread exclusion of beneficiaries, caused hardships, suffering and even death of individuals, the coercing children, elderly and others alike to have to register for an Aadhaar number against their free will. Your actions constitute an illegal functional creep that is not only legislative overreach of the government, but also morally or legally indefensible. Your actions reek of creating a fait accompli before the court finally decides on the matter and hence does not uphold the promise of the Preamble to the Constitution of justice, liberty, equality or fraternity to we the citizens.
 
 2. We draw your attention to the fact that more than a dozen PILs challenging the creation, validity and use of Aadhaar, the risks it puts citizens, institutions, the economy and the nation to, the legal validity of the Aadhaar Act and the validity of linking Aadhaar to PAN, banking, telecom and several other services are pending before the Supreme Court from 2012. The court has passed several unambiguous orders restricting the use of Aadhaar, stating that it cannot be mandated and that no person can be made to suffer for not getting the Aadhaar. The court has underlined that these remain in force till the issues raised by the PILs are finally addressed and the matter is settled.
+
  a) In its first order of September 23, 2013 [^0] that: **“In the meanwhile, no person should suffer for not getting the Aadhaar card inspite of the fact that some authority had issued a circular making it mandatory”**. You cannot cause any person to suffer inspite of any authority having mandated Aadhaar. **Anyone threatening or blocking of services would amount to causing suffering and a contempt of the Supreme Court of India.**
  
  b) In its order of August 11, 2015 [^1] that: “The learned Attorney General had stated that the respondent **Union of India would ensure that Aadhaar cards would only be issued on a consensual basis after informing the public at large about the fact that the preparation of Aadhaar card involving the parting of biometric information of the individual, which shall however not be used for any purpose other than a social benefit schemes”**. It had therefore ordered that:
+
   i) “The Unique Identification Number or the **Aadhaar card will not be used by the respondents for any purpose other than the PDS Scheme and in particular for the purpose of distribution of foodgrains, etc. and cooking fuel, such as kerosene. The Aadhaar card may also be used for the purpose of the LPG Distribution Scheme**;”
+
   ii) **“The information about an individual obtained by the Unique Identification Authority of India while issuing an Aadhaar card shall not be used for any other purpose, save as above**, except as may be directed by a Court for the purpose of criminal investigation”.
+
   iii) “Union of India shall **give wide publicity in the electronic and print media including radio and television networks that it is not mandatory for a citizen to obtain an Aadhaar card”**.
 
  c) In its order of October 15, 2015 [^2] the 5 member bench ordered that:
+
   i) “After hearing the learned Attorney General for India and other learned senior counsels, we are of the view that in paragraph 3 of the Order dated 11.08.2015 [^3] if we add, apart from the other two Schemes, namely, P.D.S. Scheme and the L.P.G. Distribution Scheme, the Schemes like The Mahatma Gandhi National Rural Employment Guarantee Scheme (MGNREGS), National Social Assistance Programme (Old Age Pensions, Widow Pensions, Disability Pensions) Prime Minister's Jan Dhan Yojana (PMJDY) and Employees' Providend Fund Organisation (EPFO) for the present, it would not dilute earlier order passed by this Court. Therefore, we now include the aforesaid Schemes apart from the other two Schemes that this Court has permitted in its earlier order dated 11.08.2015” 
+  
   ii) **“We impress upon the Union of India that it shall strictly follow all the earlier orders passed by this Court commencing from 23.09.2013”.** [^4]    
+  
   iii) **“We will also make it clear that the Aadhaar card Scheme is purely voluntary and it cannot be made mandatory till the matter is finally decided by this Court one way or the other”.**
 
 You have not got these orders vacated by the Supreme Court and the matter has not been finally settled. These orders are, therefore, in force.
