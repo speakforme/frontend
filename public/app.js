@@ -114,34 +114,37 @@ var app = new Vue({
     },
     openMailLink: function(encodedBody, method) {
       this.mailMethod = method;
-      var base = 'mailto:',
-        subject = 'subject',
-        bcc = 'bcc';
+      var base,
+        subjectField = 'subject',
+        bccField = 'bcc',
+        email = encodeURIComponent(this.email);
 
       switch (method) {
         case 'gmail':
           base =
-            'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=';
-          subject = 'su';
+            'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=' +
+            email +
+            '&';
+          subjectField = 'su';
           break;
         case 'yahoo':
-          base = 'http://compose.mail.yahoo.com/?To=';
-          subject = 'Subject';
+          base = 'http://compose.mail.yahoo.com/?To=' + email + '&';
+          subjectField = 'Subject';
           to = 'To';
-          bcc = 'Bcc';
+          bccField = 'Bcc';
           break;
+        default:
+          base = 'mailto:' + email + '?';
       }
 
       // TODO: use string interpolation after switching to es6
       var url =
         base +
-        encodeURIComponent(this.email) +
-        '?' +
-        subject +
+        subjectField +
         '=' +
         encodeURIComponent(this.subject) +
         '&' +
-        bcc +
+        bccField +
         '=' +
         encodeURIComponent(this.bcc) +
         '&body=' +
