@@ -26,6 +26,30 @@ if (!window.gtag) {
  * Util methds end
  */
 
+var mailUrlOpts = {
+  mailto: {
+    base: 'mailto:',
+    subject: 'subject',
+    cc: 'cc',
+    bcc: 'bcc',
+    body: 'body'
+  },
+  gmail: {
+    base: 'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=',
+    subject: 'su',
+    cc: 'cc',
+    bcc: 'bcc',
+    body: 'body'
+  },
+  yahoo: {
+    base: 'http://compose.mail.yahoo.com/?To=',
+    subject: 'Subject',
+    cc: 'Cc',
+    bcc: 'Bcc',
+    body: 'Body'
+  },
+};
+
 var i18n = new VueI18n({
   locale: window.localStorage.getItem('locale') || 'en',
   messages: i18nMsgs,
@@ -112,54 +136,25 @@ var app = new Vue({
           );
       }
     },
-    openMailLink: function(encodedBody, method) {
-      this.mailMethod = method;
-      var base,
-        subjectField = 'subject',
-        bccField = 'bcc',
-        email = encodeURIComponent(this.email);
-
-      switch (method) {
-        case 'gmail':
-          base =
-            'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=' +
-            email +
-            '&';
-          subjectField = 'su';
-          break;
-        case 'yahoo':
-          base = 'http://compose.mail.yahoo.com/?To=' + email + '&';
-          subjectField = 'Subject';
-          to = 'To';
-          bccField = 'Bcc';
-          break;
-        default:
-          base = 'mailto:' + email + '?';
-      }
-
-      // TODO: use string interpolation after switching to es6
-      var url =
-        base +
-        subjectField +
-        '=' +
-        encodeURIComponent(this.subject) +
-        '&' +
-        bccField +
-        '=' +
-        encodeURIComponent(this.bcc) +
-        '&body=' +
-        encodedBody +
-        '&cc=' +
-        encodeURIComponent(this.cc);
-
-      if (this.mobile) {
-        window.location.href = url;
-      } else {
-        // Open in new tab
-        // TODO: Make the btn-email-desktop
-        // into a <a href> with dynamic link and new tab opening
-        window.location.href = url;
-      }
+    getMailUrl(opts, encodedBody) {
+      return opts.base +
+      encodeURIComponent(this.email) +
+      '&' +
+      opts.subject +
+      '=' +
+      encodeURIComponent(this.subject) +
+      '&' +
+      opts.cc +
+      '=' +
+      encodeURIComponent(this.cc) +
+      '&' +
+      opts.bcc +
+      '=' +
+      encodeURIComponent(this.bcc) +
+      '&' +
+      opts.body +
+      '=' +
+      encodedBody;
     },
     /**
      * On desktop, we show 3 buttons for gmail/yahoo/mailto
@@ -172,7 +167,20 @@ var app = new Vue({
      *
      * On mobiles: Just open the mailto link with complete body
      */
-    sendEmail: function(method) {
+
+    sendGmail: function(event) {
+      this.sendEmail('gmail', event);
+    },
+
+    sendYahoo: function(event) {
+      this.sendEmail('yahoo', event);
+    },
+
+    sendMailto: function(event) {
+      this.sendEmail('mailto', event);
+    },
+
+    sendEmail: function(method, event) {
       this.mailMethod = method;
       gtag('event', 'sendEmail', {
         email: this.email,
@@ -186,21 +194,24 @@ var app = new Vue({
       var encodedBody = encodeURIComponent(this.response);
 
       if (this.mobile) {
-        this.openMailLink(encodedBody);
+        // Do nothing, already opened.
       } else {
         var responseEl = document.querySelector('#response-content');
         responseEl.select();
         try {
-          timeout = 1000;
           var successful = document.execCommand('copy');
-          if (false) {
-            return;
-          } else {
-            // Ask user to copy
-            this.showcopymsg = true;
-          }
         } catch (err) {
+          successful = false;
+        }
+
+        if (successful) {
+          // TODO: i18n this.
+          alert(this.$t('copied_msg'));
+          return;
+        } else if (!this.showcopymsg) {
+          // Show message asking user to copy, and don't open the new tab
           this.showcopymsg = true;
+          event.preventDefault();
         }
       }
     },
@@ -208,8 +219,7 @@ var app = new Vue({
     // content of the textarea.
     // TODO: See if we can detect a partial copy and not open the mail link
     copied: function() {
-      alert(this.$t('copied_msg'));
-      this.openMailLink('Paste+here', this.mailMethod);
+      // Do nothing
     },
     tweet: function() {
       gtag('event', 'sendTweet');
@@ -351,6 +361,18 @@ var app = new Vue({
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
     },
+    fullmailtourl: function () {
+      return this.getMailUrl(mailUrlOpts.mailto, encodeURIComponent(this.response));
+    },
+    mailtourl: function () {
+      return this.getMailUrl(mailUrlOpts.mailto, 'Paste+Here');
+    },
+    gmailurl: function () {
+      return this.getMailUrl(mailUrlOpts.gmail, 'Paste+Here');
+    },
+    yahoourl: function () {
+      return this.getMailUrl(mailUrlOpts.yahoo, 'Paste+Here');
+    },
     mobile: function() {
       var IEMobile = /IEMobile/i.test(navigator.userAgent);
 
@@ -370,7 +392,6 @@ var app = new Vue({
     },
     // This is maintained manually
     cc: function() {
-      console.log(this.campaign);
       switch (this.campaign) {
         case 'mp':
           return '';

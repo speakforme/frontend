@@ -68,17 +68,21 @@
     </label>
     <br>
 
-    <button id="btn-email-mobile" class="btn-email btn-primary" v-if="mobile"
-      v-on:click.stop.prevent="sendEmail()">[{$t("send_email")}]</button>
+    <a id="btn-email-mobile" class="btn btn-email btn-primary" v-if="mobile"
+      v-bind:href="fullmailtourl"
+      v-on:click.stop="sendMailto">[{$t("send_email")}]</a>
 
     <p v-if="showcopymsg" class="success-box">[{$t("copy_msg")}]</p>
 
-    <button class="btn-email btn-primary" v-if="!mobile"
-      v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
-    <button class="btn-email btn-primary" v-if="!mobile"
-      v-on:click.stop.prevent="sendEmail('yahoo')">Yahoo!</button>
-    <button class="btn-email button-unstyled" v-if="!mobile"
-      v-on:click.stop.prevent="sendEmail('other')">Other</button>
+    <a class="btn btn-email btn-primary" v-if="!mobile"
+      v-bind:href="gmailurl" target="_blank"
+      v-on:click.stop="sendGmail">GMail</a>
+    <a class="btn btn-email btn-primary" v-if="!mobile"
+      v-bind:href="yahoourl" target="_blank"
+      v-on:click.stop="sendYahoo">Yahoo!</a>
+    <a class="btn btn-email btn-primary" v-if="!mobile"
+      v-bind:href="mailtourl" target="_blank"
+      v-on:click.stop="sendMailto">Other</a>
 
   </div>
 
