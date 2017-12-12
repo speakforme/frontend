@@ -193,7 +193,7 @@ var app = new Vue({
         try {
           timeout = 1000;
           var successful = document.execCommand('copy');
-          if (successful) {
+          if (false) {
             return;
           } else {
             // Ask user to copy
@@ -208,7 +208,7 @@ var app = new Vue({
     // content of the textarea.
     // TODO: See if we can detect a partial copy and not open the mail link
     copied: function() {
-      alert('The message is now copied, paste it in your mail client');
+      alert(this.$t('copied_msg'));
       this.openMailLink('Paste+here', this.mailMethod);
     },
     tweet: function() {

@@ -66,6 +66,7 @@
             [{$t("constituencies." + constituencyCode)}])
           </span>
     </label>
+    <br>
 
     <button id="btn-email-mobile" class="btn-email btn-primary" v-if="mobile"
       v-on:click.stop.prevent="sendEmail()">[{$t("send_email")}]</button>
