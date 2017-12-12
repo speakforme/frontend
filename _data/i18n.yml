@@ -1,6 +1,17 @@
 en:
   language_name: English
   title: Speak For Me
+  # This is what we use after headertitle in
+  # the top (Petition your ...)
+  headertitle:
+    MP: MP
+    GOV: Service Provider
+    TELCO: Mobile Operator
+    BANK: Bank
+  netafilter:
+    helptext: Don't know your constituency?
+    # We mark this as the link.
+    click_here: Check Netafilter
   service: Service
   not_in_list: Not on the list
   bank: Bank
@@ -90,6 +101,10 @@ hi:
   tweet: ट्वीट
   state: राज्य
   constituency: चुनाव क्षेत्र
+  netafilter:
+    helptext: चुनाव क्षेत्र नहीं पता?
+    # We mark this as the link.
+    click_here: नेता फ़िल्टर पर पता करे
   copy_msg: >
      हमने आपके ब्राउज़र पर ईमेल की नक़ल की है,
      बस इसे अपने मेल क्लाइंट में पेस्ट करें
@@ -98,6 +113,12 @@ hi:
     bank: "अपने बैंक को याचिका दें:"
     service: "अपने सेवा प्रदाता को याचिका दें :"
     mp: "अपने सांसद को एक पत्र भेजें :"
+  headertitle:
+    MP: सांसद
+    GOV: सेवा प्रदाता
+    # Sounds better than मोबाइल संचालक
+    TELCO: मोबाइल ऑपरेटर
+    BANK: बैंक
 gu:
   language_name: ગુજરાતી
   title: મારા માટે બોલો

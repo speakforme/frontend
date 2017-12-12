@@ -15,7 +15,11 @@
       <select name="constituency" v-model="constituencyCode" class="styled-select">
         <option :value="constituency.code" v-for="(constituency,i) in constituencies">[{$t("constituencies." + constituency.code)}]</option>
       </select>
-      <p>Don't know your constituency? Check <a target="_blank" rel="noopener" href="http://netafilter.in">here</a> for a map.</p>
+      <p>[{$t("netafilter.helptext")}]
+        <a target="_blank" rel="noopener noreferer" href="http://netafilter.in">
+          [{$t("netafilter.click_here")}]
+        </a>
+      </p>
     </div>
 
     <div v-if="campaign==='bank'||campaign == 'service'">
