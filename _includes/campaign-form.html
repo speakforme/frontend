@@ -12,7 +12,7 @@
         {% endfor %}
         <script>
           var paneIds = ['mp', 'gov'];
-          mui.tabs.activate({{requst.path}})
+          mui.tabs.activate({{campaign}})
         </script>
       </ul>
           <div class="mui-row form-container">
@@ -91,7 +91,7 @@
                 v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
                 <button class="btn-email btn-primary" v-if="!mobile"
                 v-on:click.stop.prevent="sendEmail('yahoo')">Yahoo!</button>
-                <button class="btn-email button-unstyled" v-if="!mobile"
+                <button class="btn-email button-primary" v-if="!mobile"
                 v-on:click.stop.prevent="sendEmail('other')">Other email client</button>
               </div>
               
