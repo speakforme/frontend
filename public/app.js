@@ -375,7 +375,7 @@ var app = new Vue({
           code = this.constituencyCode;
           break;
       }
-      return (code + '@storage.speakforme.in').toLowerCase();
+      return (code + '@email.speakforme.in').toLowerCase();
     },
     twitter: function() {
       if (this.service.twitter) {
