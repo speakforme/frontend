@@ -56,7 +56,16 @@
 
     <label v-if="campaign!=='mp'" for="service-name">[{$t("contempt_notice_msg")}] : <span class="service-name">[{serviceName}]</span></label>
 
-    <label v-if="campaign==='mp'" for="service-name">[{$t("contempt_notice_msg")}] : <span class="service-name">[{personName}], [{$t("constituencies." + constituencyCode)}]</span></label>
+    <label v-if="campaign==='mp'" for="service-name">
+        <!-- Send Email: MP_NAME (MP, Constituency)-->
+        [{$t("contempt_notice_msg")}] :
+          <!-- MP name goes here -->
+          <span class="service-name">
+            [{personName}],
+            ([{$t("mp")}],
+            [{$t("constituencies." + constituencyCode)}])
+          </span>
+    </label>
 
     <button id="btn-email-mobile" class="btn-email btn-primary" v-if="mobile"
       v-on:click.stop.prevent="sendEmail()">[{$t("send_email")}]</button>
