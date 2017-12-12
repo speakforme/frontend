@@ -3,11 +3,13 @@ en:
   title: Speak For Me
   # This is what we use after headertitle in
   # the top (Petition your ...)
+  # Use a short word, since this is title
   headertitle:
     MP: MP
     GOV: Service Provider
     TELCO: Mobile Operator
     BANK: Bank
+  mp: Member of Parliament
   netafilter:
     helptext: Don't know your constituency?
     # We mark this as the link.
@@ -113,6 +115,7 @@ hi:
     bank: "अपने बैंक को याचिका दें:"
     service: "अपने सेवा प्रदाता को याचिका दें :"
     mp: "अपने सांसद को एक पत्र भेजें :"
+  mp: सांसद
   headertitle:
     MP: सांसद
     GOV: सेवा प्रदाता

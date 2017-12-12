@@ -68,7 +68,21 @@
                 :body="response"></component>
               </div>
               <div class="mui-col-md-12">
-                <p class="helper-text">[{$t("contempt_notice_msg")}] <span class="service-name">[{serviceName}]</span> via</p>
+                <p class="helper-text" v-if="campaign!=='mp'">
+                  
+                <label v-if="campaign!=='mp'" for="service-name">[{$t("contempt_notice_msg")}] : <span class="service-name">[{serviceName}]</span></p>
+
+                <label v-if="campaign==='mp'" for="service-name">
+                    <!-- Send Email: MP_NAME (MP, Constituency)-->
+                    [{$t("contempt_notice_msg")}] :
+                      <!-- MP name goes here -->
+                      <span class="service-name">
+                        [{personName}],
+                        ([{$t("mp")}],
+                        [{$t("constituencies." + constituencyCode)}])
+                      </span>
+                </label>
+                  
                 <button id="btn-email-mobile" class="btn-email btn-primary" v-if="mobile"
                 v-on:click.stop.prevent="sendEmail()">[{$t("send_email")}]</button>
                 <p v-if="showcopymsg" class="success-box">[{$t("copy_msg")}]</p>
@@ -79,6 +93,7 @@
                 <button class="btn-email button-unstyled" v-if="!mobile"
                 v-on:click.stop.prevent="sendEmail('other')">Other email client</button>
               </div>
+              
               <div v-if="twitter" class="mui-col-md-12">
                 <h3>[{$t("tweet")}]</h3>
                 <a class="twitter-share-button"cv-bind:href="tweeturl">
