@@ -279,8 +279,8 @@ var app = new Vue({
     }
   },
   created: function() {
-    var locale = (this.locale = (window.location.search.split('lang=')[1] + '').substr(0,2) ||
-      window.localStorage.getItem('locale') ||
+    var locale = (this.locale = window.localStorage.getItem('locale') ||
+      (window.location.search.split('lang=')[1] + '').substr(0,2) ||
       window.navigator.languages
         .map(function(l) {
           return l.split('-')[0];
