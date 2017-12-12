@@ -4,5 +4,5 @@ headertitle: GOV
 title: Petition your Government Service Provider
 permalink: /service/
 header: true
-drafts: ['service', 'bank']
+drafts: ['gov']
 ---

@@ -91,7 +91,7 @@ var app = new Vue({
     localeLoaded: ['en'],
     banks: {},
     locale: 'en',
-    serviceIndex: 0,
+    serviceIndex: 'PAN',
     bankIFSC: 'ALLA',
     state: 'UP',
     constituencyCode: 'UP-18',
@@ -269,13 +269,6 @@ var app = new Vue({
     },
     locale: function(newLocale) {
       this.setLocale(newLocale);
-    },
-    serviceIndex: function(i) {
-      if (i === 'bank') {
-        this.campaign = 'bank';
-      } else {
-        this.campaign = 'service';
-      }
     }
   },
   created: function() {
@@ -327,11 +320,15 @@ var app = new Vue({
         for (var i = 0; i < banks.length; i++) {
           this.banks[banks[i].ifsc] = banks[i];
         }
-
-        console.log(this.banks);
         break;
 
-      case 'service':
+      case 'gov':
+        // Setup service inside translations
+        console.log(this.services);
+        var msgs = {
+          services: this.services
+        };
+        self.$i18n.mergeLocaleMessage('en', msgs);
         break;
     }
   },
@@ -427,7 +424,6 @@ var app = new Vue({
           return '';
         case 'bank':
           return 'cabinet@nic.in,urjitrpatel@rbi.org.in,governor@rbi.org.in';
-        case 'service':
         case 'gov':
           return 'cabinet@nic.in,narendramodi@narendramodi.in';
         case 'telco':
@@ -437,14 +433,14 @@ var app = new Vue({
     bcc: function() {
       var code = this.campaign + '-';
       switch (this.campaign) {
-        case 'service':
+        case 'gov':
           code += this.service.name;
           break;
         case 'bank':
           code += this.bank.ifsc;
           break;
         case 'mp':
-          code = this.constituencyCode;
+          code += this.constituencyCode;
           break;
       }
       return (code + '@email.speakforme.in').toLowerCase();
@@ -464,7 +460,7 @@ var app = new Vue({
       switch (this.campaign) {
         case 'bank':
           return 'Threats to make bank accounts inoperable without Aadhaar';
-        case 'service':
+        case 'gov':
           return (
             'Threats to make ' +
             this.service.name +
@@ -478,7 +474,7 @@ var app = new Vue({
       switch (this.campaign) {
         case 'bank':
           return this.banks[this.bankIFSC];
-        case 'service':
+        case 'gov':
           return this.services[this.serviceIndex];
           break;
         // TODO: use a setter for constituency
@@ -509,7 +505,7 @@ var app = new Vue({
           return 'Chairman and MD (' + this.bank.name + ')';
         case 'mp':
           return this.constituency ? this.constituency.mp : '';
-        case 'service':
+        case 'gov':
           return this.service.personName;
       }
     },
