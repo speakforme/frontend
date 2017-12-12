@@ -268,7 +268,13 @@ var app = new Vue({
     }
   },
   created: function() {
-    this.locale = window.localStorage.getItem('locale') || 'en';
+    this.locale = window.localStorage.getItem('locale') ||
+      window.navigator.languages
+        .map(function (l) { return l.split('-')[0]; })
+        .filter(function (l) { return !!i18nMsgs[l]; })[0] ||
+      window.navigator.language.split('-')[0];
+
+    if (!i18nMsgs[this.locale]) this.locale = 'en';
 
     var self = this;
 
