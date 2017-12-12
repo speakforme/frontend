@@ -30,9 +30,10 @@ layout: default
     <script>
     {% if notice == 'service' %}
       window.services = {{site.data.services | jsonify}}
-      window.banks    = {{site.data.banks | jsonify}}
     {% elsif notice == 'mp' %}
       window.states   = {{site.data.states | jsonify}}
+    {% elsif notice == 'bank' %}
+      window.banksList= {{site.data.banks | jsonify}}
     {% endif %}
     </script>
   {% endfor %}

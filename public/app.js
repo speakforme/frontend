@@ -1,4 +1,5 @@
-var banks = window.banks;
+var banks = window.banksList;
+
 var services = window.services;
 var templates = {};
 var responseComponents = {};
@@ -35,7 +36,8 @@ var mailUrlOpts = {
     body: 'body'
   },
   gmail: {
-    base: 'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=',
+    base:
+      'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=',
     subject: 'su',
     cc: 'cc',
     bcc: 'bcc',
@@ -47,7 +49,7 @@ var mailUrlOpts = {
     cc: 'Cc',
     bcc: 'Bcc',
     body: 'Body'
-  },
+  }
 };
 
 var i18n = new VueI18n({
@@ -87,9 +89,10 @@ var app = new Vue({
     // we have loaded so far from a separate file
     // successfully
     localeLoaded: ['en'],
+    banks: {},
     locale: 'en',
     serviceIndex: 0,
-    bankIndex: 0,
+    bankIFSC: 'ALLA',
     state: 'UP',
     constituencyCode: 'UP-18',
     mps: {
@@ -137,24 +140,26 @@ var app = new Vue({
       }
     },
     getMailUrl(opts, encodedBody) {
-      return opts.base +
-      encodeURIComponent(this.email) +
-      '&' +
-      opts.subject +
-      '=' +
-      encodeURIComponent(this.subject) +
-      '&' +
-      opts.cc +
-      '=' +
-      encodeURIComponent(this.cc) +
-      '&' +
-      opts.bcc +
-      '=' +
-      encodeURIComponent(this.bcc) +
-      '&' +
-      opts.body +
-      '=' +
-      encodedBody;
+      return (
+        opts.base +
+        encodeURIComponent(this.email) +
+        '&' +
+        opts.subject +
+        '=' +
+        encodeURIComponent(this.subject) +
+        '&' +
+        opts.cc +
+        '=' +
+        encodeURIComponent(this.cc) +
+        '&' +
+        opts.bcc +
+        '=' +
+        encodeURIComponent(this.bcc) +
+        '&' +
+        opts.body +
+        '=' +
+        encodedBody
+      );
     },
     /**
      * On desktop, we show 3 buttons for gmail/yahoo/mailto
@@ -245,10 +250,16 @@ var app = new Vue({
     // mp/service/bank
     setInitialCampaign: function() {
       // TODO: Use the page template to export a variable
-      if (document.location.pathname === '/mp/') {
-        this.campaign = 'mp';
-      } else if (document.location.pathname === '/service/') {
-        this.campaign = 'service';
+      switch (window.location.pathname) {
+        case '/mp/':
+          this.campaign = 'mp';
+          break;
+        case '/service/':
+          this.campaign = 'gov';
+          break;
+        case '/bank/':
+          this.campaign = 'bank';
+          break;
       }
     }
   },
@@ -299,6 +310,14 @@ var app = new Vue({
             self.updateConstituencies();
           });
 
+        break;
+
+      case 'bank':
+        for (var i = 0; i < banks.length; i++) {
+          this.banks[banks[i].ifsc] = banks[i];
+        }
+
+        console.log(this.banks);
         break;
 
       case 'service':
@@ -361,16 +380,19 @@ var app = new Vue({
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
     },
-    fullmailtourl: function () {
-      return this.getMailUrl(mailUrlOpts.mailto, encodeURIComponent(this.response));
+    fullmailtourl: function() {
+      return this.getMailUrl(
+        mailUrlOpts.mailto,
+        encodeURIComponent(this.response)
+      );
     },
-    mailtourl: function () {
+    mailtourl: function() {
       return this.getMailUrl(mailUrlOpts.mailto, 'Paste+Here');
     },
-    gmailurl: function () {
+    gmailurl: function() {
       return this.getMailUrl(mailUrlOpts.gmail, 'Paste+Here');
     },
-    yahoourl: function () {
+    yahoourl: function() {
       return this.getMailUrl(mailUrlOpts.yahoo, 'Paste+Here');
     },
     mobile: function() {
@@ -383,9 +405,6 @@ var app = new Vue({
           navigator.userAgent
         ) && !IEMobile
       );
-    },
-    banks: function() {
-      return window.banks;
     },
     services: function() {
       return window.services;
@@ -411,7 +430,7 @@ var app = new Vue({
           code += this.service.name;
           break;
         case 'bank':
-          code += this.serviceName;
+          code += this.bank.ifsc;
           break;
         case 'mp':
           code = this.constituencyCode;
@@ -447,7 +466,7 @@ var app = new Vue({
     service: function() {
       switch (this.campaign) {
         case 'bank':
-          return this.banks[this.bankIndex];
+          return this.banks[this.bankIFSC];
         case 'service':
           return this.services[this.serviceIndex];
           break;
@@ -469,7 +488,7 @@ var app = new Vue({
       }
     },
     bank: function() {
-      return this.banks[this.bankIndex];
+      return this.banks[this.bankIFSC];
     },
     personName: function() {
       switch (this.campaign) {

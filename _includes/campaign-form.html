@@ -22,18 +22,17 @@
       </p>
     </div>
 
-    <div v-if="campaign==='bank'||campaign == 'service'">
+    <div v-if="campaign == 'service'">
       <label for="service">[{$t("service")}]</label>
       <select name="service" id="select-service" v-model="serviceIndex" class="styled-select">
         <option :value="index" v-for="(service,index) in services">[{service.name}]</option>
-        <option value="bank">Bank</option>
       </select>
     </div>
 
     <div v-if="campaign==='bank'">
       <label for="bank">[{$t("bank")}]</label>
-      <select name="bank" id="select-bank" v-model="bankIndex" class="styled-select">
-        <option :value="index" v-for="(bank, index) in banks">[{bank.name}]</option>
+      <select name="bank" id="select-bank" v-model="bankIFSC" class="styled-select">
+        <option :value="bank.ifsc" v-for="(bank, index) in banks">[{bank.name}]</option>
       </select>
     </div>
 
