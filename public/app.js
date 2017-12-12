@@ -279,7 +279,18 @@ var app = new Vue({
     }
   },
   created: function() {
-    this.locale = window.localStorage.getItem('locale') || 'en';
+    var locale = (this.locale =
+      window.localStorage.getItem('locale') ||
+      window.navigator.languages
+        .map(function(l) {
+          return l.split('-')[0];
+        })
+        .filter(function(l) {
+          return !!i18nMsgs[l];
+        })[0] ||
+      window.navigator.language.split('-')[0]);
+
+    this.setLocale(locale);
 
     var self = this;
 
@@ -495,7 +506,7 @@ var app = new Vue({
         case 'bank':
           return 'Chairman and MD (' + this.bank.name + ')';
         case 'mp':
-          return this.constituency.mp;
+          return this.constituency ? this.constituency.mp : '';
         case 'service':
           return this.service.personName;
       }
