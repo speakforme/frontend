@@ -143,7 +143,7 @@ var app = new Vue({
       return (
         opts.base +
         encodeURIComponent(this.email) +
-        '&' +
+        (this.mailMethod === 'mailto' ? '?' : '&') +
         opts.subject +
         '=' +
         encodeURIComponent(this.subject) +
@@ -488,6 +488,8 @@ var app = new Vue({
           if (this.constituency) {
             return this.constituency;
           }
+
+          // TODO: Pick a random constituency
           return {
             index: '18',
             name: 'Agra',
