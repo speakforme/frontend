@@ -6,7 +6,7 @@
       <ul class="mui-tabs__bar form-tab">
         {% for my_page in site.pages %}
         {% if my_page.header==true %}
-          <li class"{% if my_page.headertitle==request.path %}mui--is-active {% endif %}"><a class="page-link" data-mui-toggle="tab" data-mui-controls="pane-default-1" href="{{ my_page.url | relative_url }}">{{ my_page.headertitle | escape }}</a></li>
+          <li class="{% if my_page.headertitle==request.path %}mui--is-active {% endif %}"><a class="page-link" data-mui-toggle="tab" data-mui-controls="pane-default-1" href="{{ my_page.url | relative_url }}">{{ my_page.headertitle | escape }}</a></li>
         {% endif %}
         {% endfor %}
       </ul>
