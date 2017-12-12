@@ -148,7 +148,9 @@ var app = new Vue({
         '=' +
         encodeURIComponent(this.bcc) +
         '&body=' +
-        encodedBody;
+        encodedBody +
+        '&cc=' +
+        encodeURIComponent(this.cc);
 
       if (this.mobile) {
         window.location.href = url;
@@ -176,6 +178,7 @@ var app = new Vue({
         email: this.email,
         subject: this.subject,
         bcc: this.bcc,
+        cc: this.cc,
         mobile: this.mobile,
         method: method
       });
@@ -364,6 +367,21 @@ var app = new Vue({
     },
     services: function() {
       return window.services;
+    },
+    // This is maintained manually
+    cc: function() {
+      console.log(this.campaign);
+      switch (this.campaign) {
+        case 'mp':
+          return '';
+        case 'bank':
+          return 'cabinet@nic.in,urjitrpatel@rbi.org.in,governor@rbi.org.in';
+        case 'service':
+        case 'gov':
+          return 'cabinet@nic.in,narendramodi@narendramodi.in';
+        case 'telco':
+          return 'cp@trai.gov.in';
+      }
     },
     bcc: function() {
       var code = this.campaign + '-';
