@@ -19,3 +19,6 @@ exclude:
   - Gemfile.lock
   - Gemfile
   - CNAME
+# https://www.netlify.com/docs/redirects/
+include:
+  - _redirects
