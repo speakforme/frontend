@@ -3,27 +3,21 @@ layout: default
 ---
 
 <div class="home">
-
   <div id="app">
-
-
     {% include header.html %}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <h1 class="page-heading">[{$t("title")}]</h1>
-        [{$t("petition." + campaign)}]
-
+      <div class="mui-container">
+        <div class="mui-row">
+          <div class="mui-col-md-12">
+             <h1 class="page-heading">[{$t("title")}]</h1>
+        <p class="page-subheading">[{$t("petition." + campaign)}]</p>
         {{ content }}
-
         {% include campaign-form.html %}
+          </div>
       </div>
-    </main>
+        </div>
   </div>
-
   <!-- ADD campaign specific data here -->
   <!-- This is the generic service notice for "services" -->
-
   {% for notice in page.drafts %}
     <script id="draft-notice-{{notice}}" type="text/template">{% include draft-notice-{{notice}}.md %}</script>
 

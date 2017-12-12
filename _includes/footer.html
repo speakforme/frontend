@@ -1,49 +1,52 @@
-<footer class="site-footer">
+<footer id="footer" class="footer">
+  <div class="mui-container">
+    <h2 class="footer-heading">
+      {{ site.title | escape }} | {% if site.email %}
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          {% endif %}
+    </h2>
+  </div>
+</footer>
 
-  <div class="wrapper">
-
+<!-- <footer id="footer">
+  <div class="mui-container-fluid">
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-
-          </li>
+    <div>
+      <ul class="contact-list">
+        <li>
+          {% if site.author %}
+            {{ site.author | escape }}
+          {% else %}
+            {{ site.title | escape }}
           {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-
           </li>
+          {% if site.email %}
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
           {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
+      </ul>
     </div>
 
-  </div>
+    <div class="footer-col footer-col-2">
+      <ul class="social-media-list">
+        {% if site.github_username %}
+        <li>
 
-</footer>
+        </li>
+        {% endif %}
+
+        {% if site.twitter_username %}
+        <li>
+
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+
+    <div>
+      <p>{{ site.description | escape }}</p>
+    </div>
+  </div>
+</footer> -->
 
 <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
