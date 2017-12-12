@@ -1,4 +1,4 @@
--
+PDS:
   name: PDS
   Department: |
     Department of Food and Public Distribution, India
@@ -12,7 +12,7 @@
   email: asit.halder@nic.in
   twitter: jagograhakjago
   personName: Asit Halder
--
+LPG:
   name: LPG
   department: Ministry of Petroleum and Natural Gas
   personName: Shri K.M.Mahesh
@@ -24,7 +24,7 @@
     New Delhi - 110001
   email: mahesh.png@gov.in
   twitter: PetroleumMin
--
+MGNREGS:
   name: MGNREGS
   department: Ministry of Rural Department
   personName: Smt Aparajita Sarangi
@@ -38,7 +38,7 @@
     New Delhi - 110001
   email: aparajitasarangi@gmail.com
   twitter: false
--
+NSAP:
   name: National Social Assistance Programme
   department: Ministry of Rural Department
   personName: Shri Manoranjan Kumar
@@ -52,7 +52,7 @@
     New Delhi - 110001
   email: manoranjan.kumar@nic.in
   twitter: false
--
+PMJDY:
   name: PMJDY
   department: Ministry of Finance
   personName: Shri Arun Jaitley
@@ -69,7 +69,7 @@
   twitter:
     FinMinIndia
     arunjaitley
--
+EPFO:
   name: Employees Provident Fund Org
   department: Minister of State for Labour and Employment
   personName: Dr. V.P Joy
@@ -82,7 +82,7 @@
       New Delhi - 110 066"
   email: cpfc@epfindia.gov.in
   twitter: labourministry
--
+PAN:
   name: PAN
   department: Ministry of Finance (CBDT)
   personName: Shri Sushil Chandra

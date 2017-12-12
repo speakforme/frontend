@@ -25,7 +25,9 @@
     <div v-if="campaign == 'gov'">
       <label for="service">[{$t("service")}]</label>
       <select name="service" id="select-service" v-model="serviceIndex" class="styled-select">
-        <option :value="index" v-for="(service,index) in services">[{service.name}]</option>
+        <option :value="code" v-for="(service, code) in services">
+          [{$t("services."+ code + ".name")}]
+        </option>
       </select>
     </div>
 

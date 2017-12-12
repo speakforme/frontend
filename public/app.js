@@ -91,7 +91,7 @@ var app = new Vue({
     localeLoaded: ['en'],
     banks: {},
     locale: 'en',
-    serviceIndex: 0,
+    serviceIndex: 'PAN',
     bankIFSC: 'ALLA',
     state: 'UP',
     constituencyCode: 'UP-18',
@@ -322,7 +322,13 @@ var app = new Vue({
         }
         break;
 
-      case 'service':
+      case 'gov':
+        // Setup service inside translations
+        console.log(this.services);
+        var msgs = {
+          services: this.services
+        };
+        self.$i18n.mergeLocaleMessage('en', msgs);
         break;
     }
   },
