@@ -1,7 +1,7 @@
 ---
 layout: campaign
-headertitle: Service Provider
-title: Petition your Service Provider
+headertitle: GOV
+title: Petition your Government Service Provider
 permalink: /service/
 header: true
 drafts: ['service', 'bank']
