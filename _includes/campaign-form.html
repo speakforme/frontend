@@ -6,12 +6,12 @@
       <ul class="mui-tabs__bar form-tab">
         {% for my_page in site.pages %}
         {% if my_page.header==true %}
-          <li><a class="page-link" data-mui-toggle="tab" data-mui-controls="pane-default-1" href="{{ my_page.url | relative_url }}">{{ my_page.headertitle | escape }}</a></li>
+          <li class"{% if my_page.headertitle==request.path %}mui--is-active {% endif %}"><a class="page-link" data-mui-toggle="tab" data-mui-controls="pane-default-1" href="{{ my_page.url | relative_url }}">{{ my_page.headertitle | escape }}</a></li>
         {% endif %}
         {% endfor %}
       </ul>
-      <div class="mui-tabs__pane mui--is-active tab-active" id="pane-default-1">Pane-1</div>
-        <div class="mui-tabs__pane" id="pane-default-2">Pane-2</div>
+      <div class="mui-tabs__pane mui--is-active tab-active" id="pane-default-1"></div>
+        <div class="mui-tabs__pane" id="pane-default-2"></div>
           <div class="mui-row form-container">
             <div class="mui-col-md-12">
               <div v-if="campaign==='mp'" class="mui-textfield mui-col-md-6">
@@ -22,7 +22,6 @@
                   [{$t("states." + code)}]</option>
                 </select>
               </div>
-2
               <div v-if="campaign==='mp'" class="mui-textfield mui-col-md-6">
                 <label for="constituency" class="uppercase">[{$t("constituency")}]</label><br>
                 <select name="constituency" v-model="constituencyCode" class="styled-select">
@@ -84,6 +83,7 @@
                 <button id="btn-email-mobile" class="btn-email btn-primary" v-if="mobile"
                 v-on:click.stop.prevent="sendEmail()">[{$t("send_email")}]</button>
                 <p v-if="showcopymsg" class="success-box">[{$t("copy_msg")}]</p>
+                <br>
                 <button class="btn-email btn-primary" v-if="!mobile"
                 v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
                 <button class="btn-email btn-primary" v-if="!mobile"
