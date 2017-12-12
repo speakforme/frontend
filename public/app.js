@@ -279,7 +279,7 @@ var app = new Vue({
     }
   },
   created: function() {
-    var locale = (this.locale =
+    var locale = (this.locale = (window.location.search.split('lang=')[1] + '').substr(0,2) ||
       window.localStorage.getItem('locale') ||
       window.navigator.languages
         .map(function(l) {
