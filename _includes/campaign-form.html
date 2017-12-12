@@ -12,11 +12,12 @@
         {% endfor %}
         <script>
           var paneIds = ['mp', 'service'];
+          var currPos=0;
           {% if campaign==='mp' %}
-          var currPos = 0;
+          currPos = 0;
           {% endif %}
           {% if campaign==='bank' %}
-          var currPos = 0;
+          currPos = 1;
           {% endif %}
           mui.tabs.activate(paneIds[currPos]);
         </script>
