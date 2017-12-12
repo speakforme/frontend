@@ -1,4 +1,3 @@
-Chairman and Managing Director,
 ((addressee))
 
 Dear Sir/Madam,
@@ -24,9 +23,9 @@ In response to the drive to update Aadhaar I would like to draw your attention t
 1. Letters from you cite notification No. 13012/79/2017/Legal-UIDAI (No. 4 of 2017) of July 14th, 2017 [^3] issued by Dr. Ajay Bhushan Pandey, CEO UIDAI as the basis to threaten customers to link Aadhaar to the bank account. I draw your attention to the following:
 
    a) Para 2 of the said notification relies on Notification No.2/F .No. P.12011/11/2016-ES Cell-DOR [^4] citing powers conferred by sub-section (1) read with clause (h), clause (i), clause (j) and clause (k) of sub-section (2) of section 73 of the Prevention of Money-laundering Act, 2002 (15 of 2003) [^5] on June 1st 2017 as the basis to freeze bank accounts if they are not linked to Aadhaar.
-   
+
    b) While clause (h) of the Prevention of Money-laundering Act, 2002 (15 of 2003) [^5] was omitted by s. 29 with effect from 15.2.2013 and clause (i), clause (j) and clause (k) of sub-section (2) of **section 73 of the Prevention of Money-laundering Act, 2002 (15 of 2003) [^5] does not allow for freezing of any asset or making it inoperable. Any rule claiming to make accounts inoperative is therefore invalid as it is a rule that cannot be made under the PMLA. Using invalid rules or pretend laws amounts to criminal misconduct.**
-   
+
    c) Furthermore under section 74 of the Prevention of Money-laundering Act, 2002 (15 of 2003) every rule made under this Act shall be laid, as soon as may be after it is made, before each House of Parliament, while it is in session, for a total period of thirty days which may be comprised in one session or in two or more successive sessions, and if, before the expiry of the session immediately following the session or the successive sessions aforesaid, both Houses agree in making any modification in the rule or both Houses agree that the rule should not be made, the rule shall thereafter have effect only in such modified form or be of no effect, as the case may be; so, however, that any such modification or annulment shall be without prejudice to the validity of anything previously done under that rule. **The rules being cited in the said notification by Dr. Pandey in para 2 have not been laid before, and approved by, the Parliament as required [^6] by parliamentary procedure [^7] and is therefore not law. Using this notification to force linkage to Aadhaar amounts to using pretend laws and is a criminal misconduct.**
 
    d) Para 3 and para 7 of the said notification relies on section 12A Aadhaar (Enrolment and Update) (Second Amendment) Regulations, 2017 (No. 2 of 2017) and the Aadhaar (Enrolment and Update) (Third Amendment) (No. 3 of 2017) that may require any Scheduled Bank which requires Aadhaar to set up enrolment centres. Section 54 of the The Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act 2016 [^8] does not provide any power to the UIDAI to make regulations to cause any entity to set up enrolment centres. **Section 12A and all notifications, including notification No. 13012/79/2017/Legal-UIDAI (No. 4 of 2017) of July 14th, 2017 [^9] relying on it are, therefore, invalid.**
@@ -44,17 +43,17 @@ Contempt of Supreme Court
    a) In its first order of September 23, 2013 [^10] that: **“In the meanwhile, no person should suffer for not getting the Aadhaar card inspite of the fact that some authority had issued a circular making it mandatory”**. You cannot cause any person to suffer inspite of any authority having mandated Aadhaar. **Anyone threatening or blocking of services would amount to causing suffering and a contempt of the Supreme Court of India.**
 
    b) In its order of August 11, 2015 [^11] that: “The learned Attorney General had stated that the respondent **Union of India would ensure that Aadhaar cards would only be issued on a consensual basis after informing the public at large about the fact that the preparation of Aadhaar card involving the parting of biometric information of the individual, which shall however not be used for any purpose other than a social benefit schemes”**. It had therefore ordered that:
-    
+
    i) “The Unique Identification Number or the **Aadhaar card will not be used by the respondents for any purpose other than the PDS Scheme and in particular for the purpose of distribution of foodgrains, etc. and cooking fuel, such as kerosene. The Aadhaar card may also be used for the purpose of the LPG Distribution Scheme;”**
 
    ii) "**The information about an individual obtained by the Unique Identification Authority of India while issuing an Aadhaar card shall not be used for any other purpose, save as above**, except as may be directed by a Court for the purpose of criminal investigation".
-   
+
    c) In its order of October 15, 2015 [^12] the 5 member bench ordered that:
 
    i) “After hearing the learned Attorney General for India and other learned senior counsels, we are of the view that in paragraph 3 of the Order dated 11.08.2015 [^13] if we add, apart from the other two Schemes, namely, P.D.S. Scheme and the L.P.G. Distribution Scheme, the Schemes like The Mahatma Gandhi National Rural Employment Guarantee Scheme (MGNREGS), National Social Assistance Programme (Old Age Pensions, Widow Pensions, Disability Pensions) Prime Minister's Jan Dhan Yojana (PMJDY) and Employees' Providend Fund Organisation (EPFO) for the present, it would not dilute earlier order passed by this Court. Therefore, we now include the aforesaid Schemes apart from the other two Schemes that this Court has permitted in its earlier order dated 11.08.2015”. **This does not include use of Aadhaar in banking. Anyone using of Aadhaar for banking would amount to a contempt of the Supreme Court of India.**
-   
+
    ii) **“We impress upon the Union of India that it shall strictly follow all the earlier orders passed by this Court commencing from 23.09.2013 [^14]”.**
-   
+
    iii) **“We will also make it clear that the Aadhaar card Scheme is purely voluntary and it cannot be made mandatory till the matter is finally decided by this Court one way or the other”.**
 
 Your Commitment to protecting your customers
@@ -69,14 +68,13 @@ Your Commitment to protecting your customers
 
 Thanking you for your support as always,
 Sincerely,
-((name))
 
 CC
+
 1. Shri. P.K.Sinha, Cabinet Secretary, South Block, Raisina Hill, New Delhi-110011cabinet@nic.in
 2. Shri Nripendra Mishra, Principal Secretary to Prime Minister, 152, South Block, Raisina Hill, New Delhi-110011
-3. Dr Urjit R Patel, Governor, Reserve Bank of India, 16th floor, Central Office Building, Shahid Bhagat Singh Marg, Mumbai - 400 001 urjitrpatel@rbi.org.in, governor@rbi.org.in 
+3. Dr Urjit R Patel, Governor, Reserve Bank of India, 16th floor, Central Office Building, Shahid Bhagat Singh Marg, Mumbai - 400 001 urjitrpatel@rbi.org.in, governor@rbi.org.in
 4. Registrar, Supreme Court of India, Tilak Marg, New Delhi-110 201 For the attention of the bench hearing WP(C) 494/2012
-
 
 [^0]: http://www.sundayguardianlive.com/opinion/11519-maharashtra-case-shows-pitfalls-aadhaar-use
 [^1]: https://medium.com/@anupamsaraph/how-does-linking-your-aadhaar-to-your-bank-account-destroy-the-banking-system-5bb0379f2886
@@ -93,4 +91,3 @@ CC
 [^12]: http://supremecourtofindia.nic.in/jonew/ropor/rop/all/389939.pdf
 [^13]: http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/2274938.pdf
 [^14]: http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/1811046.pdf
-
