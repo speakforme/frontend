@@ -23,8 +23,11 @@ if (!window.gtag) {
 }
 
 /**
- * Util methds end
+ * Util methods end
  */
+
+// Use the services.yml for translation as well
+i18nMsgs.en.services = services;
 
 var i18n = new VueI18n({
   locale: window.localStorage.getItem('locale') || 'en',
@@ -64,7 +67,8 @@ var app = new Vue({
     // successfully
     localeLoaded: ['en'],
     locale: 'en',
-    serviceIndex: 0,
+    serviceType: 'gov',
+    govCode: 'PAN',
     bankIndex: 0,
     state: 'UP',
     constituencyCode: 'UP-18',
@@ -232,7 +236,7 @@ var app = new Vue({
       if (document.location.pathname === '/mp/') {
         this.campaign = 'mp';
       } else if (document.location.pathname === '/service/') {
-        this.campaign = 'service';
+        this.campaign = 'gov';
       }
     }
   },
@@ -242,13 +246,6 @@ var app = new Vue({
     },
     locale: function(newLocale) {
       this.setLocale(newLocale);
-    },
-    serviceIndex: function(i) {
-      if (i === 'bank') {
-        this.campaign = 'bank';
-      } else {
-        this.campaign = 'service';
-      }
     }
   },
   created: function() {
@@ -285,7 +282,7 @@ var app = new Vue({
 
         break;
 
-      case 'service':
+      case 'gov':
         break;
     }
   },
@@ -365,11 +362,8 @@ var app = new Vue({
     bcc: function() {
       var code = this.campaign + '-';
       switch (this.campaign) {
-        case 'service':
+        case 'gov':
           code += this.service.name;
-          break;
-        case 'bank':
-          code += this.serviceName;
           break;
         case 'mp':
           code = this.constituencyCode;
@@ -392,7 +386,7 @@ var app = new Vue({
       switch (this.campaign) {
         case 'bank':
           return 'Threats to make bank accounts inoperable without Aadhaar';
-        case 'service':
+        case 'gov':
           return (
             'Threats to make ' +
             this.service.name +
@@ -406,8 +400,8 @@ var app = new Vue({
       switch (this.campaign) {
         case 'bank':
           return this.banks[this.bankIndex];
-        case 'service':
-          return this.services[this.serviceIndex];
+        case 'gov':
+          return this.services[this.govCode];
           break;
         // TODO: use a setter for constituency
         // and make sure that it works before the mps.json
@@ -435,7 +429,7 @@ var app = new Vue({
           return 'Chairman and MD (' + this.bank.name + ')';
         case 'mp':
           return this.constituency.mp;
-        case 'service':
+        case 'gov':
           return this.service.personName;
       }
     },
@@ -468,7 +462,7 @@ var app = new Vue({
       switch (this.campaign) {
         case 'bank':
           return this.templates.bank.trim();
-        case 'service':
+        case 'gov':
           return this.templates.service.trim();
           break;
         case 'mp':

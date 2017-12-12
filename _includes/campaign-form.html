@@ -18,20 +18,30 @@
       <p>Don't know your constituency? Check <a target="_blank" rel="noopener" href="http://netafilter.in">here</a> for a map.</p>
     </div>
 
-    <div v-if="campaign==='bank'||campaign == 'service'">
-      <label for="service">[{$t("service")}]</label>
-      <select name="service" id="select-service" v-model="serviceIndex" class="styled-select">
-        <option :value="index" v-for="(service,index) in services">[{service.name}]</option>
-        <option value="bank">Bank</option>
+    <div v-if="campaign!=='mp'">
+      <label for="service-type">[{$t("serviceType")}]</label>
+      <select name="service" id="select-service" v-model="serviceType" class="styled-select">
+        <option value="gov">[{$t("gov")}]</option>
+        <option value="bank">[{$t("bank")}]</option>
+        <option value="telco">[{$t("telco")}]</option>
       </select>
     </div>
 
-    <div v-if="campaign==='bank'">
+    <div v-if="campaign!=='mp' && serviceType==='gov'">
+      <label for="service">[{$t("gov_service")}]</label>
+      <select name="service" id="select-service" v-model="govCode" class="styled-select">
+        <option :value="code" v-for="(service, code) in services">[{service.name}]</option>
+      </select>
+    </div>
+
+    <div v-if="campaign!='mp' && serviceType==='bank'">
       <label for="bank">[{$t("bank")}]</label>
       <select name="bank" id="select-bank" v-model="bankIndex" class="styled-select">
         <option :value="index" v-for="(bank, index) in banks">[{bank.name}]</option>
       </select>
     </div>
+
+    <!-- TODO: telco -->
 
     <div>
       <label for="email">[{$t("email")}]</label>
