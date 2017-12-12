@@ -35,7 +35,8 @@ var mailUrlOpts = {
     body: 'body'
   },
   gmail: {
-    base: 'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=',
+    base:
+      'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=',
     subject: 'su',
     cc: 'cc',
     bcc: 'bcc',
@@ -47,7 +48,7 @@ var mailUrlOpts = {
     cc: 'Cc',
     bcc: 'Bcc',
     body: 'Body'
-  },
+  }
 };
 
 var i18n = new VueI18n({
@@ -137,24 +138,26 @@ var app = new Vue({
       }
     },
     getMailUrl(opts, encodedBody) {
-      return opts.base +
-      encodeURIComponent(this.email) +
-      '&' +
-      opts.subject +
-      '=' +
-      encodeURIComponent(this.subject) +
-      '&' +
-      opts.cc +
-      '=' +
-      encodeURIComponent(this.cc) +
-      '&' +
-      opts.bcc +
-      '=' +
-      encodeURIComponent(this.bcc) +
-      '&' +
-      opts.body +
-      '=' +
-      encodedBody;
+      return (
+        opts.base +
+        encodeURIComponent(this.email) +
+        '&' +
+        opts.subject +
+        '=' +
+        encodeURIComponent(this.subject) +
+        '&' +
+        opts.cc +
+        '=' +
+        encodeURIComponent(this.cc) +
+        '&' +
+        opts.bcc +
+        '=' +
+        encodeURIComponent(this.bcc) +
+        '&' +
+        opts.body +
+        '=' +
+        encodedBody
+      );
     },
     /**
      * On desktop, we show 3 buttons for gmail/yahoo/mailto
@@ -268,13 +271,18 @@ var app = new Vue({
     }
   },
   created: function() {
-    this.locale = window.localStorage.getItem('locale') ||
+    var locale =
+      window.localStorage.getItem('locale') ||
       window.navigator.languages
-        .map(function (l) { return l.split('-')[0]; })
-        .filter(function (l) { return !!i18nMsgs[l]; })[0] ||
+        .map(function(l) {
+          return l.split('-')[0];
+        })
+        .filter(function(l) {
+          return !!i18nMsgs[l];
+        })[0] ||
       window.navigator.language.split('-')[0];
 
-    if (!i18nMsgs[this.locale]) this.locale = 'en';
+    this.setLocale(locale);
 
     var self = this;
 
@@ -367,16 +375,19 @@ var app = new Vue({
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
     },
-    fullmailtourl: function () {
-      return this.getMailUrl(mailUrlOpts.mailto, encodeURIComponent(this.response));
+    fullmailtourl: function() {
+      return this.getMailUrl(
+        mailUrlOpts.mailto,
+        encodeURIComponent(this.response)
+      );
     },
-    mailtourl: function () {
+    mailtourl: function() {
       return this.getMailUrl(mailUrlOpts.mailto, 'Paste+Here');
     },
-    gmailurl: function () {
+    gmailurl: function() {
       return this.getMailUrl(mailUrlOpts.gmail, 'Paste+Here');
     },
-    yahoourl: function () {
+    yahoourl: function() {
       return this.getMailUrl(mailUrlOpts.yahoo, 'Paste+Here');
     },
     mobile: function() {
