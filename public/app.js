@@ -271,7 +271,7 @@ var app = new Vue({
     }
   },
   created: function() {
-    var locale =
+    this.locale =
       window.localStorage.getItem('locale') ||
       window.navigator.languages
         .map(function(l) {
