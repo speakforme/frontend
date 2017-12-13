@@ -388,6 +388,14 @@ var app = new Vue({
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
     },
+    facebookhref: function () {
+      return 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.href
+    },
+    facebookurl: function () {
+      return `https://www.facebook.com/plugins/share_button.php?href=${'http://google.com'}&layout=button&size=small&mobile_iframe=true&width=59&height=20`
+
+
+    },
     fullmailtourl: function() {
       return this.getMailUrl(
         mailUrlOpts.mailto,
