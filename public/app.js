@@ -143,7 +143,7 @@ var app = new Vue({
       return (
         opts.base +
         encodeURIComponent(this.email) +
-        (this.mailMethod === 'mailto' ? '?' : '&') +
+        (opts.base === 'mailto:' ? '?' : '&') +
         opts.subject +
         '=' +
         encodeURIComponent(this.subject) +
