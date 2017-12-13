@@ -148,7 +148,7 @@ var app = new Vue({
     getMailUrl(opts, encodedBody) {
       var url =
         opts.base +
-        encodeURIComponent(this.email) +
+        encodeURIComponent(opts.fullEmail ? this.email : this.partialEmail) +
         (opts.base === 'mailto:' ? '?' : '&') +
         opts.subject +
         '=' +
