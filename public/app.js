@@ -451,7 +451,6 @@ var app = new Vue({
           code += this.constituencyCode;
           break;
       }
-      code = code.replace(/ /g, '_')
       return (code + '@email.speakforme.in').toLowerCase();
     },
     twitter: function() {
@@ -546,17 +545,15 @@ var app = new Vue({
 
       switch (this.campaign) {
         case 'bank':
-          return this.templates.bank.trim();
+          template = this.templates.bank;
         case 'service':
-          return this.templates.service.trim();
-          break;
+          template = this.templates.service.trim();
         case 'mp':
-          // TODO: Somehow interpolate the current scope
-          // into this as a template, so we can use {{service.name}}
-          // inside the template
-          return this.templates.mp.trim();
-          break;
+          template = this.templates.mp.trim();
       }
+      return template.trim()
+        .replace(/\(\(addressee\)\)/g, this.personName)
+        .replace(/\(\(address\)\)/g, this.service.address);
     }
   },
   components: responseComponents
