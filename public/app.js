@@ -146,7 +146,7 @@ var app = new Vue({
       }
     },
     getMailUrl(opts, encodedBody) {
-      return (
+      var url =
         opts.base +
         encodeURIComponent(this.email) +
         (opts.base === 'mailto:' ? '?' : '&') +
@@ -160,12 +160,13 @@ var app = new Vue({
         '&' +
         opts.bcc +
         '=' +
-        encodeURIComponent(this.bcc) +
-        '&' +
-        opts.body +
-        '=' +
-        encodedBody
-      );
+        encodeURIComponent(this.bcc);
+
+      if (encodedBody) {
+        url += '&' + opts.body + '=' + encodedBody;
+      }
+
+      return url;
     },
     /**
      * On desktop, we show 3 buttons for gmail/yahoo/mailto
