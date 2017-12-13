@@ -32,7 +32,7 @@
 
   <div>
     <!-- <h3>[{$t("send_email")}]</h3> -->
-    <label for="dept">[{$t("contempt_notice_msg")}] : <span class="service-name">[{serviceName}]</span></label>
+    <label for="dept">[{$t("contempt_notice_msg")}]: <span class="service-name">[{serviceName}]</span></label>
     <button class="btn-email btn-primary" id="btn-dept-gmail" v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
     <button class="btn-email btn-primary" id="btn-dept-yahoo" v-on:click.stop.prevent="sendEmail('yahoo')">Yahoo!</button>
     <button class="button-unstyled" id="btn-dept-email" v-on:click.stop.prevent="sendEmail('other')">Other</button>
