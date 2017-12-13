@@ -23,7 +23,7 @@
 <header id="header">
   <div class="mui-appbar mui--appbar-line-height navbar-styles">
     <div class="mui-container-fluid navbar-container">
-      <img src="../assets/Logo_website.png" alt="" class="mui--align-middle navbar-logo">
+      <img src="{{ "/public/Logo_website.png" | relative_url }}" alt="" class="mui--align-middle navbar-logo">
       <div class="mui-dropdown mui--pull-right navbar-language-dropdown">
         <select name="lang" class="select-lang mui-btn dropdown-styles" v-model="locale">
         {% for lang in site.data.i18n %}

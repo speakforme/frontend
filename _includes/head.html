@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="{{ "/public/main.css" | relative_url }}"> <!-- remove if creating problems -->
   <link rel="stylesheet" href="{{ "/public/no-class.min.css" | relative_url }}">
-  <link rel="stylesheet" href="https://raw.githubusercontent.com/gurshabad/frontend/ui-updates/public/mui.min.css">
+  <link rel="stylesheet" href="{{ "/public/mui.min.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
@@ -24,6 +24,6 @@
   <script src="/public/vue.js"></script>
   <script src="/public/vue-resource.js"></script>
   <script src="/public/vue-i18n.js"></script>
-  <script src="https://raw.githubusercontent.com/gurshabad/frontend/ui-updates/public/mui.min.js"></script>
+  <script src="/public/mui.min.js"></script>
   {% endif %}
 </head>
