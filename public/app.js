@@ -109,6 +109,7 @@ forEach(Object.keys(window.petitions), function(index, item) {
           }
         }
       };
+      app.petitionLocales.push(item.split('-').pop())
     })
   }
 })
@@ -124,6 +125,7 @@ var app = new Vue({
     localeLoaded: ['en'],
     banks: {},
     locale: 'en',
+    petitionLocales: [''],
     serviceIndex: 'PAN',
     bankIFSC: 'ALLA',
     state: 'UP',
@@ -284,6 +286,13 @@ var app = new Vue({
     // mp/service/bank
     setInitialCampaign: function () {
       this.campaign = getCampaignType()
+    },
+    setPetitionLocale: function () {
+      if (responseComponents[this.campaign + '-' + this.locale]) {
+        this.petition = responseComponents[this.campaign + '-' + this.locale]
+      } else {
+        this.petition = responseComponents[this.campaign]
+      }
     }
   },
   watch: {
@@ -292,6 +301,11 @@ var app = new Vue({
     },
     locale: function(newLocale) {
       this.setLocale(newLocale);
+      this.setPetitionLocale()
+
+    },
+    petitionLocales: function(newValue) {
+      this.setPetitionLocale()
     }
   },
   created: function() {
