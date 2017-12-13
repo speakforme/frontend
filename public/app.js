@@ -442,7 +442,7 @@ var app = new Vue({
       var code = this.campaign + '-';
       switch (this.campaign) {
         case 'gov':
-          code += this.service.name;
+          code += this.service.code;
           break;
         case 'bank':
           code += this.bank.ifsc;
@@ -541,15 +541,18 @@ var app = new Vue({
         .join(', ');
     },
     response: function() {
-      var template;
+      var template = '';
 
       switch (this.campaign) {
         case 'bank':
           template = this.templates.bank;
+	  break;
         case 'service':
-          template = this.templates.service.trim();
+          template = this.templates.service;
+	  break;
         case 'mp':
-          template = this.templates.mp.trim();
+          template = this.templates.mp;
+	  break;
       }
       return template.trim()
         .replace(/\(\(addressee\)\)/g, this.personName)
