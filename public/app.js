@@ -442,6 +442,7 @@ var app = new Vue({
       return window.services;
     },
     // This is maintained manually
+    // TODO: Do not break things if this returns undefined
     cc: function() {
       switch (this.campaign) {
         case 'mp':
@@ -450,7 +451,7 @@ var app = new Vue({
           return 'cabinet@nic.in,urjitrpatel@rbi.org.in,governor@rbi.org.in';
         case 'gov':
           return 'cabinet@nic.in,narendramodi@narendramodi.in';
-        case 'telco':
+        case 'mobile':
           return 'cp@trai.gov.in';
       }
     },
@@ -462,6 +463,9 @@ var app = new Vue({
           break;
         case 'bank':
           code += this.bank.ifsc;
+          break;
+        case 'mobile':
+          code += this.telcoCode;
           break;
         case 'mp':
           code += this.constituencyCode;
@@ -490,6 +494,8 @@ var app = new Vue({
             this.service.name +
             ' inoperable without Aadhaar'
           );
+        case 'mobile':
+          return 'Threats to make mobile connections inoperable without Aadhaar';
         case 'mp':
           return 'An appeal to raise my concerns regarding Aadhaar in Winter Session of Parliament';
       }
@@ -525,10 +531,12 @@ var app = new Vue({
     bank: function() {
       return this.banks[this.bankIFSC];
     },
+
+    // IMP: Make sure this does not have a comma
     personName: function() {
       switch (this.campaign) {
         case 'mobile':
-          return 'Chairman, ' + this.telcos[this.telcoCode].name;
+          return 'Chairman (' + this.telcos[this.telcoCode].name + ')';
         case 'bank':
           return 'Chairman and MD (' + this.bank.name + ')';
         case 'mp':
@@ -545,9 +553,12 @@ var app = new Vue({
         self = this;
 
       return emails
-        .split(',')
+        .split(', ')
         .map(function(e) {
           return self.personName + ' <' + e + '>';
+        })
+        .filter(function(t) {
+          return t.trim().length > 0;
         })
         .join(', ');
     },
