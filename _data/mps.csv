@@ -1,549 +1,547 @@
-index,name,state,mp,email,code,ml,ta,hi
-1,Adilabad,TG,Shri  Nagesh Godam,nageshgodam@gmail.com,TG-1,അദിലാബാദ്,அடிலாபாத்,आदिलाबाद
-18,Agra,UP,Dr. Prof. Ram Shankar,"office.mpagra@gmail.com,  rs.katheria@sansad.nic.in",UP-18,ആഗ്ര,ஆக்ரா,आगरा
-7,Ahmedabad East,GJ,Shri Paresh Rawal,"paresh.rawal@sansad.nic.in,  mppareshrawal@gmail.com",GJ-7,അഹമദാബാദ് കിഴക്ക്,அகமதாபாத் கிழக்கு,अहमदाबाद पूर्व
-8,Ahmedabad West,GJ,Dr. (Prof) Kirit Premjibhai Solanki,"kirit.solanki@sansad.nic.in,  sansadkiritsolanki@gmail.com,  drkiritsolanki@yahoo.co.in",GJ-8,അഹമദാബാദ് പടിഞ്ഞാറ്,அகமதாபாத் மேற்கு,अहमदाबाद पश्चिम
-37,Ahmednagar,MH,Shri Dilip Kumar Mansukhlal Gandhi,"dmgandhi@sansad.nic.in,  dilipmgandhi@gmail.com",MH-37,അഹമദ് നഗർ,அகமதுநகர்,अहमदनगर
-13,Ajmer,RJ,Prof. Sanwar Lal Jat,sanwarlalj@gmail.com,RJ-13,അജ്മേർ,அஜ்மீர்,अजमेर
-44,Akbarpur,UP,Shri Devendra (Alias) Bhole Singh Singh,devendra.singh19@sansad.nic.in,UP-44,അക്ബർപൂർ,Akbarpur,अकबरपुर
-6,Akola,MH,Shri Sanjay Shamrao Dhotre,sanjaysdhotre@gmail.com,MH-6,അകോല,அகோலா,अकोला
-15,Alappuzha,KE,Shri K. C. Venugopal,"kc.venugopal@sansad.nic.in,  kcvenugopal.org@gmail.com",KE-15,ആലപ്പുഴ,ஆலப்புழை,अलाप्पुझा
-9,Alathur,KE,Shri Parayamparambil Kuttappan Biju,"pk.biju@sansad.nic.in,  pkbijump@gmail.com",KE-9,ആലത്തൂർ,ஆலத்தூர்,Alathur
-15,Aligarh,UP,Shri Satish Kumar Gautam,"satish.gautam@sansad.nic.in,  satishgautambjp@gmail.com",UP-15,അലിഗഡ്,அலிகார்,अलीगढ़
-2,Alipurduars,WB,Shri Dasrath Tirkey,dasrath.tirkey@sansad.nic.in,WB-2,അലിപൂർദുരാസ്,Alipurduars,अलीपुरद्वार लोक सभा निर्वाचन क्षेत्र
-52,Allahabad,UP,Shri Shyama Charan Gupta,shyamacharangupta@shyamacharangupta.co.in,UP-52,അലഹാബാദ്,அலகாபாத்,इलाहाबाद
-3,Almora,UT,Shri Ajay Tamta,ajay.tamta@sansad.nic.in,UT-3,അൽമോര,அல்மோரா,अल्मोड़ा
-8,Alwar,RJ,Shri Chand Nath Yogi,"chand.nath@sansad.nic.in,  mahentchandnathyogi@gmail.com",RJ-8,അൽവാർ,ஆழ்வார்,अलवर
-24,Amalapuram,AP,Dr. Ravindra Babu Pandula,"pandularavi@gmail.com,  pandularavi@gmail.com",AP-24,അമലാപുരം,Amalapuram,अमलापुरम
-1,Ambala,HA,Shri Rattan Lal Kataria,ratanlal.kataria@sansad.nic.in,HA-1,അംബാല,அம்பாலா,अंबाला
-55,Ambedkar Nagar,UP,Shri Hari Om Pandey,hariom.pandey@sansad.nic.in,UP-55,അംബേദ്കർ നഗർ,அம்பேத்கர் நகர்,अंबेडकर नगर
-37,Amethi,UP,Shri Rahul Gandhi,office@rahulgandhi.in,UP-37,അമേഠി,அமேதி,अमेठी
-7,Amravati,MH,Shri Anandrao Adsul,av.adsul@sansad.nic.in,MH-7,അമരാവതി,அமராவதி,अमरावती
-14,Amreli,GJ,Shri Naranbhai Bhikhabhai Kachhadiya,"mpamreli@gmail.com,  mp_amreli@rediffmail.com",GJ-14,അമരേലി,Amreli,अमरेली
-2,Amritsar,PB,Captain Amarinder Singh,amarinder.singh@sansad.nic.in,PB-2,അമൃത്സർ,அமிர்தசரஸ்,अमृतसर
-9,Amroha,UP,Shri Kanwar Singh Tanwar,ks.tanwar@sansad.nic.in,UP-9,അംഹോര,Amroha,अमरोहा
-22,Anakapalle,AP,Shri Muthamsetti Srinivasa Rao (Avanthi),ms.rao19@sansad.nic.in,AP-22,അൻകാപ്പള്ളി,Anakapalle,अनकापल्ली
-16,Anand,GJ,Shri Dilip M. Patel,dilip2455@gmail.com,GJ-16,ആനന്ദ്,ஆனந்த்,आनंद
-6,Anandpur Sahib,PB,Shri Prem Singh Chandumajra,"ps.chandumajra@sansad.nic.in,  chandumajra50@gmail.com",PB-6,ആനന്ദ്പൂർ സാഹിബ്,அனந்தபூர் சாஹிப்,आनंदपुर साहिब
-36,Anantapur,AP,Shri J.C. Divakar Reddy,jcdr.tdp@gmail.com,AP-36,അനന്ദ്പൂർ,அனந்தபூர்,अनंतपुर
-3,Anantnag,JK,Ms. Mehbooba Mufti,,JK-3,അനന്ദ്നാഗ്,அனந்த்நாக்,अनंतनाग
-1,Andaman and Nicobar Islands,AN,Shri Bishnu Pada Ray,andamanmp@gmail.com,AN-1,ആന്തമാൻ നിക്കോബാർ ദ്വീപുകൾ,அந்தமான் நிக்கோபார் தீவுகள்,अंडमान व नोकोबार द्वीप समूह
-24,Aonla,UP,Shri Dharmendra Kumar,kumar.dharmendra@sansad.nic.in,UP-24,ആംവ്ല,நெல்லி,आंवला
-7,Arakkonam,TN,Shri G. Hari,"hari.g@sansad.nic.in,  tiruttani.hari@gmail.com",TN-7,ആരക്കോണം,அரக்கோணம்,अराकोणम
-18,Araku,AP,Smt. Geetha Kothapalli,"kothapalli.geetha@sansad.nic.in,  kothapalligeetha@gmail.com",AP-18,അർകൂ,அராக்கு,अरकू
-29,Arambagh,WB,Smt. Aparupa Poddar,"aparupa.poddar@sansad.nic.in,  aparupa29afrin@gmail.com",WB-29,അരാംബാഗ്,Arambagh,आरामबाग
-12,Arani,TN,Shri Elumalai Vellaigounder,v.elumalai@sansad.nic.in,TN-12,അരണി,ஆரணி,अरणि
-9,Araria,BI,Shri Taslimuddin,mparaials@gmail.com,BI-9,അരണിയ,அராரியாவில்,अररिया
-32,Arrah,BI,Shri Raj Kumar Singh,"rajkumar.singh19@sansad.nic.in,  rksinghmpare@gmail.com",BI-32,ആരാ,Arrah,आरा
-2,Arunachal East,AR,Shri Ninong Ering,"ninong2ering@gmail.com,  ninong.ering@sansad.nic.in",AR-2,അരുണാചൽ കിഴക്ക്,அருணாச்சல கிழக்கு,अरुणाचल पूर्व
-1,Arunachal West,AR,Shri Kiren Rijiju,"kiren.rijiju@sansad.nic.in,  krijiju@gmail.com",AR-1,അരുണാചൽ പടിഞ്ഞാറ്,அருணாச்சல் மேற்கு,अरुणाचल पश्चिम
-40,Asansol,WB,Shri Babul Supriyo,mos.ud@nic.in,WB-40,അസനോൾ,அசன்சல்,आसनसोल
-19,Aska,OR,Shri Ladu Kishore Swain,"ladukishore.swain@sansad.nic.in,  lksmpaska@gmail.com",OR-19,അസ്ക,அஸ்கா,अस्का
-19,Attingal,KE,Dr. Anirudhan Sampath,"a.sampath@sansad.nic.in,",KE-19,ആറ്റിങ്ങൽ,Attingal,Attingal
-37,Aurangabad,BI,Shri Sushil Kumar Singh,"sushilkumar.singh19@sansad.nic.in,  sushilsingh.mp@gmail.com",BI-37,ഒൗറംഗാബാദ്,அவுரங்காபாத்,औरंगाबाद
-19,Aurangabad,MH,Shri Chandrakant Bhaurao Khaire,"bk.chandrakant@sansad.nic.in,  cbkhaire@gmail.com",MH-19,ഒൗറംഗാബാദ്,அவுரங்காபாத்,औरंगाबाद
-3,Autonomous District,AS,Shri Biren Singh Engti,"birens.engti@sansad.nic.in,  shisude@yahoo.com",AS-3,Autonomous District,தன்னாட்சி மாவட்ட,स्वायत्त जिला
-69,Azamgarh,UP,Shri Mulayam Singh Yadav,mulayamsingh.yadav@sansad.nic.in,UP-69,അസംഗഢ്,ஆசம்கர்,आजमगढ़
-23,Badaun,UP,Shri Dharmendra Yadav,d.yadav@sansad.nic.in,UP-23,ബദായൂ,பாடாவ்ன்,बदायूं
-3,Bagalkot,KA,Shri Parvatagouda Chandanagouda Gaddigoudar,pcgaddigoudar@rediffmail.com,KA-3,ബഗൽകോഠ്,பாகல்கோட்,बागलकोट
-11,Baghpat,UP,Dr. Satya Pal Singh,"dr.satyapalsingh@sansad.nic.in,  bjpbagpat@gmail.com,  allsatya@gmail.com",UP-11,ബാഗ്പത്,பக்பட்,बागपत
-10,Baharampur,WB,Shri Adhir Ranjan Chowdhury,adhir@sansad.nic.in,WB-10,ബഹാരംപൂർ,Baharampur,बरहाम्पुर
-56,Bahraich,UP,Sushree Sadhvi Savitri Bai Phoole,"sadhvisavitrib.foole@sansad.nic.in,  savitribaiphoole@gmail.com",UP-56,ബഹരായ്ച്,Bahraich,बहराइच
-15,Balaghat,MP,Shri Bodhsingh Bhagat,bodhsingh.bhagat@sansad.nic.in,MP-15,ബാലാഘട്ട്,விசாத்து வரும் பாலாகாட்டின்,बालाघाट
-6,Balasore,OR,Shri Rabindra Kumar Jena,"rabindra.jena@sansad.nic.in,  rkjena.mpblsloksabha@gmail.com",OR-6,ബാലാസോർ,பலாசோர்,बालासोर
-72,Ballia,UP,Shri Bharat Singh,"bharatsingh.ballia@sansad.nic.in,  mpbharatsingh.ballia@gmail.com",UP-72,ബലിയ,பாலியா,बलिया
-6,Balurghat,WB,Ms. Arpita Ghosh,"ghosh.arpita@sansad.nic.in,  ghosarpita@gmail.com",WB-6,Balurghat,Balurghat,बेलूरघाट
-2,Banaskantha,GJ,Shri Haribhai Parthibhai Chaudhary,mos-mha@nic.in,GJ-2,Banaskantha,Banaskantha,बनासकांठा
-48,Banda,UP,Shri Bhairon Prasad Mishra,bhairon.prasad@sansad.nic.in,UP-48,Banda,பண்டா,बांदा
-25,Bangalore Central,KA,Shri P. C. Mohan,pc.mohan@sansad.nic.in,KA-25,Bangalore Central,பெங்களூர் மத்திய,बैंगलोर सेंट्रल
-24,Bangalore North,KA,Shri D.V. Sadananda Gowda,"sadananda.gowda@sansad.nic.in, sadanandagowda@yahoo.com",KA-24,Bangalore North,பெங்களூர் வட,बैंगलोर उत्तर
-23,Bangalore Rural,KA,Shri Doddaalahalli Kempegowda Suresh,dksuresh18@gmail.com,KA-23,Bangalore Rural,பெங்களூர் கிராம,बैंगलोर ग्रामीण
-26,Bangalore South,KA,Shri Ananth Kumar,ananth@ananth.org,KA-26,Bangalore South,பெங்களூர் தென்,बैंगलोर दक्षिण
-14,Bangaon,WB,Smt. Mamata Thakur,mamatathakur67@gmail.com,WB-14,Bangaon,Bangaon,Bangaon
-27,Banka,BI,Shri Jay Prakash Narayan Yadav,jpnarayan.yadav@sansad.nic.in,BI-27,Banka,பங்கா,बांका
-36,Bankura,WB,Smt. Dev (Moon Moon Sen) Varma,"sd.verma@sansad.nic.in,",WB-36,Bankura,பங்குரா,बांकुड़ा
-67,Bansgaon,UP,Shri Kamlesh Paswan,"kamlesh.paswan@sansad.nic.in,  kamleshpassi67@gmail.com",UP-67,Bansgaon,Bansgaon,Bansgaon
-20,Banswara,RJ,Shri Manshankar Ninama,akkanchan@gmail.com,RJ-20,Banswara,பன்ஸ்வாரா,बांसवाड़ा
-32,Bapatla,AP,Shri Sriram Malyadri,"malyadri.sriram@sansad.nic.in,  malaydri@gmail.com",AP-32,Bapatla,பாப்பட்லா,बापतला
-53,Barabanki,UP,Smt. Priyanka Singh Rawat,priyankasingh.rawat@sansad.nic.in,UP-53,Barabanki,பாராபங்கி,बाराबंकी
-35,Baramati,MH,Smt. Supriya Sadanand Sule,supriyassule@gmail.com,MH-35,Baramati,பாராமதி,बारामती
-1,Baramulla,JK,Shri Muzaffar Hussain Baig,muzaffar.baig@sansad.nic.in,JK-1,Baramulla,பாரமுல்லா,बारामूला
-17,Barasat,WB,Dr. (Smt.) Kakoli Ghosh Dastidar,kakoli.dastidar@sansad.nic.in,WB-17,Barasat,பராசத்,बारासात
-38,Bardhaman Purba,WB,Shri Sunil Kumar Mondal,sunilk.mondal@sansad.nic.in,WB-38,Bardhaman Purba,வர்தமான் Purba,बर्धमान पूर्ब
-39,Bardhaman-Durgapur,WB,Dr. (Smt.) Mamtaz Sanghamita,mamtaz.sanghamita@sansad.nic.in,WB-39,Bardhaman-Durgapur,வர்தமான்-துர்காபூர்,बर्धमान-दुर्गापुर
-23,Bardoli,GJ,Shri Parbhubhai Nagarbhai Vasava,mpprabhuvasava@gmail.com,GJ-23,Bardoli,பர்தோலி,बारडोली
-25,Bareilly,UP,Shri Santosh Kumar Gangwar,"santoshg@sansad.nic.in,  santosh.gangwar.bareilly@gmail.com,  mot_fb@nic.in",UP-25,Bareilly,பரேலி,बरेली
-1,Bargarh,OR,Dr. Prabhas Kumar Singh,prabhas.singh@sansad.nic.in,OR-1,Bargarh,Bargarh,बारगढ़
-17,Barmer,RJ,VSM (Retd.) Sona Ram Col. Choudhary,col.sonaram@sansad.nic.in,RJ-17,Barmer,பார்மர்,बाड़मेर
-6,Barpeta,AS,Shri Sirajuddin Ajmal,msirajuddinajmal@gmail.com,AS-6,Barpeta,பர்பேடா,बारपेटा
-15,Barrackpur,WB,Shri Dinesh Trivedi,dintriv@gmail.com,WB-15,Barrackpur,Barrackpur,बर्रक्पुर
-18,Basirhat,WB,Shri Idris Ali,idris.ali@sansad.nic.in,WB-18,Basirhat,Basirhat,बशीरहाट
-10,Bastar,CT,Shri Dinesh Kashyap,dinesh.kashyap@sansad.nic.in,CT-10,Bastar,பஸ்தர்,बस्तर
-61,Basti,UP,Shri Harish Dwivedi,"harishchandra.mp@sansad.nic.in,  bjpharish@gmail.com",UP-61,Basti,பஸ்தி,बस्ती
-11,Bathinda,PB,Smt. Harsimrat Kaur Badal,"harsimratk.badal@sansad.nic.in,  simratbadal@yahoo.com",PB-11,Bathinda,பதிந்தா,बठिंडा
-39,Beed,MH,Dr. Pritam Gopinath Munde,"pritam.munde@sansad.nic.in,  drpritammunde@gmail.com",MH-39,Beed,பீட்,बीड
-24,Begusarai,BI,Dr. Bhola Singh,bholasingh.mp@sansad.nic.in,BI-24,Begusarai,Begusarai,बेगूसराय
-2,Belgaum,KA,Shri Suresh Chanabasappa Angadi,suresh.angadimp@gmail.com,KA-2,Belgaum,பெல்காம்,बेलगाम
-9,Bellary,KA,Shri B. Sreeramulu,"b.sreeramulu@sansad.nic.in,",KA-9,Bellary,பெல்லாரி,बेल्लारी
-20,Berhampur,OR,Shri Sidhant Mohapatra,"sidhant.mohapatra@sansad.nic.in,  mpsidhant@gmail.com",OR-20,Berhampur,பர்ஹாம்பூர்,बेरहामपुर
-29,Betul,MP,Smt. Jyoti Dhurve,"jyoti.dhurve@sansad.nic.in,  jyotidhurvememberofparliament@gmail.com",MP-29,Betul,பெடுல்,बेतुल
-78,Bhadohi,UP,Shri Virendra Singh,virendra.singh19@sansad.nic.in,UP-78,Bhadohi,Bhadohi,भदोही
-7,Bhadrak,OR,Shri Arjun Charan Sethi,"ac.sethi@sansad.nic.in,  nama.kmm@gmail.com",OR-7,Bhadrak,Bhadrak,भद्रक
-26,Bhagalpur,BI,Shri Shailesh (Bulo Mandal) Kumar,shailesh.kumar19@sansad.nic.in,BI-26,Bhagalpur,பாகல்பூர்,भागलपुर
-11,Bhandara-Gondiya,MH,Shri Nanabhau Falgunrao Patole,nanapatole@gmail.com,MH-11,Bhandara-Gondiya,பண்டாரா-Gondiya,भंडारा-गोंदिया जिला
-9,Bharatpur,RJ,Shri Bahadur Singh Koli,"mpbskoli@gmail.com,  bahadurs@sansad.nic.in",RJ-9,Bharatpur,பரத்பூர்,भरतपुर
-22,Bharuch,GJ,Shri Mansukhbhai Dhanjibhai Vasava,"md.vasava@sansad.nic.in,  m.vasava@nic.in",GJ-22,Bharuch,பாருச்சில்,भरूच
-15,Bhavnagar,GJ,Dr. Bharati Dhirubhai Shyal,"bharatibend.shiyal@sansad.nic.in,  mpbhartishyal@gmail.com,  mpbhartishyal@yahoo.com",GJ-15,Bhavnagar,பாவ்நகர்,भावनगर
-23,Bhilwara,RJ,Shri Subhash Chandra Baheria,"subhash.baheria@sansad.nic.in,  baheriasc@gmail.com",RJ-23,Bhilwara,பில்வரா,भीलवाड़ा
-2,Bhind,MP,Dr. Bhagirath Prasad,"dr.bhagirathprasad@sansad.nic.in,  bhagirath.prasad2@gmail.com",MP-2,Bhind,Bhind,भिंड
-23,Bhiwandi,MH,Shri Kapil Moreshwar Patil,"km.patil@sansad.nic.in,  kapilpatil.kp@rediffmail.com,  kapil.patilmp@gmail.com",MH-23,Bhiwandi,பேவண்டி,भिवंडी
-8,Bhiwani-Mahendragarh,HA,Shri Dharambir Singh,"dharambir.mp@sansad.nic.in,  office.dharambir@gmail.com",HA-8,Bhiwani-Mahendragarh,பிவானி-மஹேந்திரகார்தல்,भिवानी-महेंद्रगढ़
-14,Bhongir,TG,Dr. Boora Narsaiah Goud,drbnarsaiah@yahoo.com,TG-14,Bhongir,Bhongir,भोंगीर
-19,Bhopal,MP,Shri Alok Sanjar,"alok.sanjar@sansad.nic.in,  aloksanjar.mp@gmail.com",MP-19,Bhopal,போபால்,भोपाल
-18,Bhubaneswar,OR,Dr. (Prof.) Prasanna Kumar Patasani,prasanna.patasani@sansad.nic.in,OR-18,Bhubaneswar,புவனேஸ்வர்,भुवनेश्वर
-7,Bidar,KA,Shri Bhagwanth Khuba,"bhagwanth.khuba@sansad.nic.in,",KA-7,Bidar,பிதார்,बीदर
-4,Bijapur,KA,Shri Ramesh Chandappa Jigajinagi,bijapur.mp@gmail.com,KA-4,Bijapur,பிஜப்பூர்,बीजापुर
-4,Bijnor,UP,Kunwar Bharatendra Singh,bharatendrasingh@yahoo.com,UP-4,Bijnor,பிஜ்னூர் ஆகியவற்றால் சூழப்பட்டுள்ளது,बिजनौर
-2,Bikaner,RJ,Shri Arjun Ram Meghwal,"arjunrammeghwal@gmail.com,  ar.meghwal@sansad.nic.in",RJ-2,Bikaner,பிகானீர்,बीकानेर
-5,Bilaspur,CT,Shri Lakhan Lal Sahu,"lakhanl.sahu@sansad.nic.in,  lakhanlalsahu1971@gmail.com",CT-5,Bilaspur,பிலாஸ்பூர்,बिलासपुर
-42,Birbhum,WB,Smt. Satabdi Roy (Banerjee),,WB-42,Birbhum,பிர்பும்,बीरभूम
-37,Bishnupur,WB,Shri Khan Saumitra,"khan.saumitra@sansad.nic.in,  saumitrakhan@gmail.com",WB-37,Bishnupur,பிஷ்ணுபூர்,बिश्नुपुर
-10,Bolangir,OR,Shri Kalikesh Narayan Singh Deo,kalikesh.singhdeo@sansad.nic.in,OR-10,Bolangir,Bolangir,बोलंगीर
-41,Bolpur,WB,Dr. Anupam Hazra,anupam.hazra@sansad.nic.in,WB-41,Bolpur,Bolpur,बोलपुर
-14,Bulandshahr,UP,Shri Bhola Singh,"bholasingh.mp@sansad.nic.in,  drbholasingh@gmail.com",UP-14,Bulandshahr,புலந்த்ஷல்,बुलंदशहर
-5,Buldhana,MH,Shri Prataprao Jadhav,jadhavprataprao25@gmail.com,MH-5,Buldhana,Buldhana,बुलढाना
-33,Buxar,BI,Shri Ashwini Kumar Choubey,ashwinikumar.choubey@sansad.nic.in,BI-33,Buxar,பக்சர்,बक्सर
-11,Chalakudy,KE,Shri Innocent,"innocent.mp@sansad.nic.in,  chalakkudymp@gmail.com",KE-11,ചാലക്കുടി,சாலக்குடி,चलाकुडी
-22,Chamrajanagar,KA,Shri R. Dhruvanarayana,"r.dhruvanarayana@sansad.nic.in,  dhruvanarayana@gmail.com",KA-22,Chamrajanagar,Chamrajanagar,Chamrajanagar
-76,Chandauli,UP,Dr. Mahendra Nath Pandey,76chandauli.mp@gmail.com,UP-76,Chandauli,வாரணாசி,चंदौली
-,Chandigarh,CH,Smt. Kirron Anupam Kher,"kirron.kher@sansad.nic.in,  kirronkher14@gmail.com",CH-,Chandigarh,சண்டிகர்,चंडीगढ़
-1,Chandni Chowk,DL,Dr. Harsh Vardhan,dr.harshvardhan@sansad.nic.in,DL-1,Chandni Chowk,சாந்தினி சவுக்,चांदनी चोक
-13,Chandrapur,MH,Shri Hansraj Gangaram Ahir,hansrajahir1954@gmail.com,MH-13,Chandrapur,சந்திராபூர்,चंद्रपुर
-4,Chatra,JH,Shri Sunil Kumar Singh,sunilkr.singh@sansad.nic.in,JH-4,Chatra,Chatra,चतरा
-4,Chennai Central,TN,Shri Vijayakumar S.R.,sr.vijayakumar@sansad.nic.in,TN-4,Chennai Central,சென்னை மத்திய,चेन्नई सेंट्रल
-2,Chennai North,TN,Shri T.G. Venkatesh Babu,venkatesh.tg@sansad.nic.in,TN-2,Chennai North,சென்னை வட,चेन्नई उत्तर
-3,Chennai South,TN,Dr. Jayakumar Jayavardhan,"j.jayavardhan@sansad.nic.in,  jayavardhanjayakumar@gmail.com",TN-3,Chennai South,சென்னை தென்,चेन्नई दक्षिण
-10,Chevella,TG,Shri Konda Vishweshwar Reddy,kvishweshwar.reddy@sansad.nic.in,TG-10,Chevella,Chevella,चेवेल्ला
-16,Chhindwara,MP,Shri Kamal Nath,knshikarpur@gmail.com,MP-16,Chhindwara,சிக்கிந்வாராவில்,छिंदवाड़ा
-21,Chhota Udaipur,GJ,Shri Ramsinh Pataliyabhai Rathwa,"ramsinh.rathwa@sansad.nic.in,  ramsinhrathwa@yahoo.co.in",GJ-21,Chhota Udaipur,சோட்டா உதய்பூர்,छोटा उदयपुर
-27,Chidambaram,TN,Shri M. Chandrakasi,"m.chandrakasi@sansad.nic.in,  mckasi1969@gmail.com",TN-27,Chidambaram,சிதம்பரம்,चिदंबरम
-27,Chikkballapur,KA,Dr. M. Veerappa Moily,vmoily@kar.nic.in,KA-27,Chikkballapur,Chikkballapur,Chikkballapur
-1,Chikkodi,KA,Shri Prakash Babanna Hukkeri,mpchikkodi3290@gmail.com,KA-1,Chikkodi,Chikkodi,Chikkodi
-18,Chitradurga,KA,Shri B.N. Chandrappa,bn.chandrappa@sansad.nic.in,KA-18,Chitradurga,சித்ரதுர்கா,चित्रदुर्ग
-42,Chittoor,AP,Dr. Naramalli Sivaprasad,,AP-42,Chittoor,சித்தூர்,चित्तूर
-21,Chittorgarh,RJ,Shri C.  P. Joshi,"cpjoshi.mp@sansad.nic.in,  cpjoshicor@gmail.com",RJ-21,Chittorgarh,சிட்டர்கர்,चित्तौड़गढ़
-3,Churu,RJ,Shri Rahul Kaswan,"rahul.kaswan@sansad.nic.in,  rahulkaswan2@gmail.com",RJ-3,Churu,சுரு,चुरू
-20,Coimbatore,TN,Shri Nagarajan P.,"nagarajan.p19@sansad.nic.in,  apnagarajan62@gmail.com",TN-20,Coimbatore,கோயம்புத்தூர்,कोयंबटूर
-1,Coochbehar,WB,Smt. Renuka Sinha,"renuka.sinha@sansad.nic.in,  bangabhawan@gmail.com",WB-1,Coochbehar,கூச்பெஹார்,कूचबिहार
-26,Cuddalore,TN,Shri A. Arunmozhithevan,"a.arunmozhithevan@sansad.nic.in,  arun2868@gmail.com",TN-26,Cuddalore,கடலூர்,कुड्डालोर
-14,Cuttack,OR,Shri Bhartruhari Mahtab,,OR-14,Cuttack,கட்டாக்,कटक
-1,Dadra and Nagar Haveli,DN,Shri Natubhai Gomanbhai Patel,dnhmp2009@gmail.com,DN-1,Dadra and Nagar Haveli,தாத்ரா மற்றும் நாகர் ஹவேலி,दादरा और नगर हवेली
-19,Dahod,GJ,Shri Jaswantsinh Sumanbhai Bhabhor,jsmpdhd@gmail.com,GJ-19,Dahod,Dahod,दाहोद
-17,Dakshina Kannada,KA,Shri Nalin Kumar Kateel,"nalinkumar.kateel@sansad.nic.in,  mpdkannada@gmail.com",KA-17,Dakshina Kannada,தக்ஷின கன்னடா,दक्षिण कन्नड़
-1,Daman and Diu,DD,Shri Lalubhai Babubhai Patel,,DD-1,Daman and Diu,டாமன் மற்றும் டையூ,दमन और दीव
-7,Damoh,MP,Shri Prahlad Singh Patel,prahladp@sansad.nic.in,MP-7,Damoh,தாமோ,दमोह
-14,Darbhanga,BI,Shri Kirti (JHA) Azad,"kirti.azad@sansad.nic.in,  kirtiazad.office@gmail.com",BI-14,Darbhanga,தர்பங்கா,दरभंगा
-4,Darjeeling,WB,Shri S.S. Ahluwalia,"ssa@sansad.nic.in,  tengrg@gmail.com,  2014darjeeling@gmail.com",WB-4,Darjeeling,டார்ஜீலிங்,दार्जिलिंग
-11,Dausa,RJ,Shri Harish Chandra Meena,"meena.harishchandra@sansad.nic.in,  hcmeena54@gmail.com",RJ-11,Dausa,Dausa,दौसा
-13,Davanagere,KA,Shri Gowdar Mallikarjunappa Siddeshwara,gmsiddeshwara@gov.in,KA-13,Davanagere,தேவநகரி,दावनगेरे
-66,Deoria,UP,Shri Kalraj Mishra,"kalraj.mishra@sansad.nic.in,  kalraj@kalrajmishra.com",UP-66,Deoria,தியோரியா,देवरिया
-21,Dewas,MP,Shri Manhor Utwal,,MP-21,Dewas,தேவாஸ்,देवास
-7,Dhanbad,JH,Shri Pashupati Nath Singh,pashupati.ns@sansad.nic.in,JH-7,Dhanbad,தான்பாத்,धनबाद
-25,Dhar,MP,Smt. Savitri Thakur,"savitri.thakur@sansad.nic.in,  smtsavitrithakur@gmail.com",MP-25,Dhar,தார்,धार
-10,Dharmapuri,TN,Dr. Anbumani Ramadoss,dranbu910@gmail.com,TN-10,Dharmapuri,தர்மபுரி,धर्मपुरी
-11,Dharwad,KA,Shri Pralhad Venkatesh Joshi,"joshi.pralhad@sansad.nic.in,  pralhadvjoshi@gmail.com",KA-11,Dharwad,தர்வாதைச்,धारवाड़
-29,Dhaurahra,UP,Smt. Rekha Arun Verma,,UP-29,Dhaurahra,Dhaurahra,धौरहरा
-9,Dhenkanal,OR,Shri Tathagata Satpathy,tatzaudi@yahoo.com,OR-9,Dhenkanal,Dhenkanal,ढेंकनाल
-4,Dhubri,AS,Maulana Badruddin Ajmal,"b.ajmal@sansad.nic.in,  amarhuzoor@gmail.com",AS-4,Dhubri,துப்ரி,धुबरी
-2,Dhule,MH,Dr. Subhash Ramrao Bhamre,"sr.bhamre@sansad.nic.in,  drsubhashbhamre11@gmail.com,  dr.subhash.bhamre@gmail.com",MH-2,Dhule,துலே,धुले
-21,Diamond Harbour,WB,Shri Abhishek Banerjee,abhishekbanerjee.mp@gmail.com,WB-21,Diamond Harbour,டயமண்ட் ஹார்பர்,डायमंड हार्बर
-13,Dibrugarh,AS,Shri Rameswar Teli,"rameswar.teli@sansad.nic.in,  rameswartelimp@gmail.com",AS-13,Dibrugarh,திப்ருகார்,डिब्रूगढ़
-22,Dindigul,TN,Shri M. Udhayakumar,m.udhayakumar@sansad.nic.in,TN-22,Dindigul,திண்டுக்கல்,डिंडीगुल
-20,Dindori,MH,Shri Harishchandra Deoram Chavan,harishchandra.chavan@sansad.nic.in,MH-20,Dindori,Dindori,डिंडोरी
-60,Domariyaganj,UP,Shri Jagdambika Pal,"mp.jpal@yahoo.com,  jagdambika.pal@sansad.nic.in",UP-60,Domariyaganj,Domariyaganj,डुमरियागंज लोक सभा निर्वाचन क्षेत्र
-16,Dum Dum,WB,Prof. Saugata Roy,saugatapolitics_roy@yahoo.co.in,WB-16,Dum Dum,டம் டம்,डम डम
-2,Dumka,JH,Shri Shibu Soren,shisoren@sansad.nic.in,JH-2,Dumka,தும்கா,दुमका
-7,Durg,CT,Shri Tamradhwaj Sahu,"tamradhwaj.sahu@sansad.nic.in,  loksabhadurg14@gmail.com",CT-7,Durg,துர்க்,दुर्ग
-3,East Delhi,DL,Shri Maheish Girri,"maheish.girri@sansad.nic.in,",DL-3,East Delhi,கிழக்கு தில்லி,पूर्वी दिल्ली
-27,Eluru,AP,Shri Venkateswara Rao (Babu) Magantti,"mvenkateswara.rao19@sansad.nic.in,  maganttibabu@gmail.com",AP-27,Eluru,எலுரு,एलुरु
-12,Ernakulam,KE,Prof. Kuruppassery Varkey Thomas,"thomaskv@sansad.nic.in,  prof.kvthomas2014@gmail.com",KE-12,എറണാകുളം ,எர்ணாகுளம்,एर्नाकुलम
-17,Erode,TN,Shri S. Selvakumarachinnayan,"ss.chinnayan@sansad.nic.in,  erodempselvakumarachinnayan@gmail.com",TN-17,Erode,ஈரோடு,इरोड
-22,Etah,UP,Shri Rajveer (Raju Bhaiya) Singh,"rajveersingh.mp@sansad.nic.in,  mpetarajvirsinghrajubhaiya@gmail.com",UP-22,Etah,எடாவிலிருந்து,एटा
-41,Etawah,UP,Shri Ashok Kumar Dohrey,ashokkumar.doharey@sansad.nic.in,UP-41,Etawah,Etawah,इटावा
-54,Faizabad,UP,Shri Lallu Singh,lallu.singh@sansad.nic.in,UP-54,Faizabad,பைசாபாத்,फैजाबाद
-10,Faridabad,HA,Shri Krishan Pal Gurjar,info@krishanpalgurjar.com,HA-10,Faridabad,பரிதாபாத்,फरीदाबाद
-9,Faridkot,PB,Prof. Sadhu Singh,"singh.sadhu@sansad.nic.in,  prof.sadhu.singh@gmail.com",PB-9,Faridkot,ஃபரித்கோட்,फरीदकोट
-40,Farrukhabad,UP,Shri Mukesh Rajput,mukesh.rajput@sansad.nic.in,UP-40,Farrukhabad,Farrukhabad,फर्रुखाबाद
-8,Fatehgarh Sahib,PB,Shri Harinder Singh Khalsa,"harinders.khalsa@sansad.nic.in,  harsinkha@gmail.com",PB-8,Fatehgarh Sahib,Fatehgarh சாஹிப்,फतेहगढ़ साहिब
+index,name,state,mp,email,code
+1,Adilabad,TG,Shri  Nagesh Godam,nageshgodam@gmail.com,TG-1
+18,Agra,UP,Dr. Prof. Ram Shankar,"office.mpagra@gmail.com,  rs.katheria@sansad.nic.in",UP-18
+7,Ahmedabad East,GJ,Shri Paresh Rawal,"paresh.rawal@sansad.nic.in,  mppareshrawal@gmail.com",GJ-7
+8,Ahmedabad West,GJ,Dr. (Prof) Kirit Premjibhai Solanki,"kirit.solanki@sansad.nic.in,  sansadkiritsolanki@gmail.com,  drkiritsolanki@yahoo.co.in",GJ-8
+37,Ahmednagar,MH,Shri Dilip Kumar Mansukhlal Gandhi,"dmgandhi@sansad.nic.in,  dilipmgandhi@gmail.com",MH-37
+13,Ajmer,RJ,Prof. Sanwar Lal Jat,sanwarlalj@gmail.com,RJ-13
+44,Akbarpur,UP,Shri Devendra (Alias) Bhole Singh Singh,devendra.singh19@sansad.nic.in,UP-44
+6,Akola,MH,Shri Sanjay Shamrao Dhotre,sanjaysdhotre@gmail.com,MH-6
+15,Alappuzha,KE,Shri K. C. Venugopal,"kc.venugopal@sansad.nic.in,  kcvenugopal.org@gmail.com",KE-15
+9,Alathur,KE,Shri Parayamparambil Kuttappan Biju,"pk.biju@sansad.nic.in,  pkbijump@gmail.com",KE-9
+15,Aligarh,UP,Shri Satish Kumar Gautam,"satish.gautam@sansad.nic.in,  satishgautambjp@gmail.com",UP-15
+2,Alipurduars,WB,Shri Dasrath Tirkey,dasrath.tirkey@sansad.nic.in,WB-2
+52,Allahabad,UP,Shri Shyama Charan Gupta,shyamacharangupta@shyamacharangupta.co.in,UP-52
+3,Almora,UT,Shri Ajay Tamta,ajay.tamta@sansad.nic.in,UT-3
+8,Alwar,RJ,Shri Chand Nath Yogi,"chand.nath@sansad.nic.in,  mahentchandnathyogi@gmail.com",RJ-8
+24,Amalapuram,AP,Dr. Ravindra Babu Pandula,"pandularavi@gmail.com,  pandularavi@gmail.com",AP-24
+1,Ambala,HA,Shri Rattan Lal Kataria,ratanlal.kataria@sansad.nic.in,HA-1
+55,Ambedkar Nagar,UP,Shri Hari Om Pandey,hariom.pandey@sansad.nic.in,UP-55
+37,Amethi,UP,Shri Rahul Gandhi,office@rahulgandhi.in,UP-37
+7,Amravati,MH,Shri Anandrao Adsul,av.adsul@sansad.nic.in,MH-7
+14,Amreli,GJ,Shri Naranbhai Bhikhabhai Kachhadiya,"mpamreli@gmail.com,  mp_amreli@rediffmail.com",GJ-14
+2,Amritsar,PB,Captain Amarinder Singh,amarinder.singh@sansad.nic.in,PB-2
+9,Amroha,UP,Shri Kanwar Singh Tanwar,ks.tanwar@sansad.nic.in,UP-9
+22,Anakapalle,AP,Shri Muthamsetti Srinivasa Rao (Avanthi),ms.rao19@sansad.nic.in,AP-22
+16,Anand,GJ,Shri Dilip M. Patel,dilip2455@gmail.com,GJ-16
+6,Anandpur Sahib,PB,Shri Prem Singh Chandumajra,"ps.chandumajra@sansad.nic.in,  chandumajra50@gmail.com",PB-6
+36,Anantapur,AP,Shri J.C. Divakar Reddy,jcdr.tdp@gmail.com,AP-36
+3,Anantnag,JK,Ms. Mehbooba Mufti,,JK-3
+1,Andaman and Nicobar Islands,AN,Shri Bishnu Pada Ray,andamanmp@gmail.com,AN-1
+24,Aonla,UP,Shri Dharmendra Kumar,kumar.dharmendra@sansad.nic.in,UP-24
+7,Arakkonam,TN,Shri G. Hari,"hari.g@sansad.nic.in,  tiruttani.hari@gmail.com",TN-7
+18,Araku,AP,Smt. Geetha Kothapalli,"kothapalli.geetha@sansad.nic.in,  kothapalligeetha@gmail.com",AP-18
+29,Arambagh,WB,Smt. Aparupa Poddar,"aparupa.poddar@sansad.nic.in,  aparupa29afrin@gmail.com",WB-29
+12,Arani,TN,Shri Elumalai Vellaigounder,v.elumalai@sansad.nic.in,TN-12
+9,Araria,BI,Shri Taslimuddin,mparaials@gmail.com,BI-9
+32,Arrah,BI,Shri Raj Kumar Singh,"rajkumar.singh19@sansad.nic.in,  rksinghmpare@gmail.com",BI-32
+2,Arunachal East,AR,Shri Ninong Ering,"ninong2ering@gmail.com,  ninong.ering@sansad.nic.in",AR-2
+1,Arunachal West,AR,Shri Kiren Rijiju,"kiren.rijiju@sansad.nic.in,  krijiju@gmail.com",AR-1
+40,Asansol,WB,Shri Babul Supriyo,mos.ud@nic.in,WB-40
+19,Aska,OR,Shri Ladu Kishore Swain,"ladukishore.swain@sansad.nic.in,  lksmpaska@gmail.com",OR-19
+19,Attingal,KE,Dr. Anirudhan Sampath,"a.sampath@sansad.nic.in,",KE-19
+37,Aurangabad,BI,Shri Sushil Kumar Singh,"sushilkumar.singh19@sansad.nic.in,  sushilsingh.mp@gmail.com",BI-37
+19,Aurangabad,MH,Shri Chandrakant Bhaurao Khaire,"bk.chandrakant@sansad.nic.in,  cbkhaire@gmail.com",MH-19
+3,Autonomous District,AS,Shri Biren Singh Engti,"birens.engti@sansad.nic.in,  shisude@yahoo.com",AS-3
+69,Azamgarh,UP,Shri Mulayam Singh Yadav,mulayamsingh.yadav@sansad.nic.in,UP-69
+23,Badaun,UP,Shri Dharmendra Yadav,d.yadav@sansad.nic.in,UP-23
+3,Bagalkot,KA,Shri Parvatagouda Chandanagouda Gaddigoudar,pcgaddigoudar@rediffmail.com,KA-3
+11,Baghpat,UP,Dr. Satya Pal Singh,"dr.satyapalsingh@sansad.nic.in,  bjpbagpat@gmail.com,  allsatya@gmail.com",UP-11
+10,Baharampur,WB,Shri Adhir Ranjan Chowdhury,adhir@sansad.nic.in,WB-10
+56,Bahraich,UP,Sushree Sadhvi Savitri Bai Phoole,"sadhvisavitrib.foole@sansad.nic.in,  savitribaiphoole@gmail.com",UP-56
+15,Balaghat,MP,Shri Bodhsingh Bhagat,bodhsingh.bhagat@sansad.nic.in,MP-15
+6,Balasore,OR,Shri Rabindra Kumar Jena,"rabindra.jena@sansad.nic.in,  rkjena.mpblsloksabha@gmail.com",OR-6
+72,Ballia,UP,Shri Bharat Singh,"bharatsingh.ballia@sansad.nic.in,  mpbharatsingh.ballia@gmail.com",UP-72
+6,Balurghat,WB,Ms. Arpita Ghosh,"ghosh.arpita@sansad.nic.in,  ghosarpita@gmail.com",WB-6
+2,Banaskantha,GJ,Shri Haribhai Parthibhai Chaudhary,mos-mha@nic.in,GJ-2
+48,Banda,UP,Shri Bhairon Prasad Mishra,bhairon.prasad@sansad.nic.in,UP-48
+25,Bangalore Central,KA,Shri P. C. Mohan,pc.mohan@sansad.nic.in,KA-25
+24,Bangalore North,KA,Shri D.V. Sadananda Gowda,"sadananda.gowda@sansad.nic.in, sadanandagowda@yahoo.com",KA-24
+23,Bangalore Rural,KA,Shri Doddaalahalli Kempegowda Suresh,dksuresh18@gmail.com,KA-23
+26,Bangalore South,KA,Shri Ananth Kumar,ananth@ananth.org,KA-26
+14,Bangaon,WB,Smt. Mamata Thakur,mamatathakur67@gmail.com,WB-14
+27,Banka,BI,Shri Jay Prakash Narayan Yadav,jpnarayan.yadav@sansad.nic.in,BI-27
+36,Bankura,WB,Smt. Dev (Moon Moon Sen) Varma,"sd.verma@sansad.nic.in,",WB-36
+67,Bansgaon,UP,Shri Kamlesh Paswan,"kamlesh.paswan@sansad.nic.in,  kamleshpassi67@gmail.com",UP-67
+20,Banswara,RJ,Shri Manshankar Ninama,akkanchan@gmail.com,RJ-20
+32,Bapatla,AP,Shri Sriram Malyadri,"malyadri.sriram@sansad.nic.in,  malaydri@gmail.com",AP-32
+53,Barabanki,UP,Smt. Priyanka Singh Rawat,priyankasingh.rawat@sansad.nic.in,UP-53
+35,Baramati,MH,Smt. Supriya Sadanand Sule,supriyassule@gmail.com,MH-35
+1,Baramulla,JK,Shri Muzaffar Hussain Baig,muzaffar.baig@sansad.nic.in,JK-1
+17,Barasat,WB,Dr. (Smt.) Kakoli Ghosh Dastidar,kakoli.dastidar@sansad.nic.in,WB-17
+38,Bardhaman Purba,WB,Shri Sunil Kumar Mondal,sunilk.mondal@sansad.nic.in,WB-38
+39,Bardhaman-Durgapur,WB,Dr. (Smt.) Mamtaz Sanghamita,mamtaz.sanghamita@sansad.nic.in,WB-39
+23,Bardoli,GJ,Shri Parbhubhai Nagarbhai Vasava,mpprabhuvasava@gmail.com,GJ-23
+25,Bareilly,UP,Shri Santosh Kumar Gangwar,"santoshg@sansad.nic.in,  santosh.gangwar.bareilly@gmail.com,  mot_fb@nic.in",UP-25
+1,Bargarh,OR,Dr. Prabhas Kumar Singh,prabhas.singh@sansad.nic.in,OR-1
+17,Barmer,RJ,VSM (Retd.) Sona Ram Col. Choudhary,col.sonaram@sansad.nic.in,RJ-17
+6,Barpeta,AS,Shri Sirajuddin Ajmal,msirajuddinajmal@gmail.com,AS-6
+15,Barrackpur,WB,Shri Dinesh Trivedi,dintriv@gmail.com,WB-15
+18,Basirhat,WB,Shri Idris Ali,idris.ali@sansad.nic.in,WB-18
+10,Bastar,CT,Shri Dinesh Kashyap,dinesh.kashyap@sansad.nic.in,CT-10
+61,Basti,UP,Shri Harish Dwivedi,"harishchandra.mp@sansad.nic.in,  bjpharish@gmail.com",UP-61
+11,Bathinda,PB,Smt. Harsimrat Kaur Badal,"harsimratk.badal@sansad.nic.in,  simratbadal@yahoo.com",PB-11
+39,Beed,MH,Dr. Pritam Gopinath Munde,"pritam.munde@sansad.nic.in,  drpritammunde@gmail.com",MH-39
+24,Begusarai,BI,Dr. Bhola Singh,bholasingh.mp@sansad.nic.in,BI-24
+2,Belgaum,KA,Shri Suresh Chanabasappa Angadi,suresh.angadimp@gmail.com,KA-2
+9,Bellary,KA,Shri B. Sreeramulu,"b.sreeramulu@sansad.nic.in,",KA-9
+20,Berhampur,OR,Shri Sidhant Mohapatra,"sidhant.mohapatra@sansad.nic.in,  mpsidhant@gmail.com",OR-20
+29,Betul,MP,Smt. Jyoti Dhurve,"jyoti.dhurve@sansad.nic.in,  jyotidhurvememberofparliament@gmail.com",MP-29
+78,Bhadohi,UP,Shri Virendra Singh,virendra.singh19@sansad.nic.in,UP-78
+7,Bhadrak,OR,Shri Arjun Charan Sethi,"ac.sethi@sansad.nic.in,  nama.kmm@gmail.com",OR-7
+26,Bhagalpur,BI,Shri Shailesh (Bulo Mandal) Kumar,shailesh.kumar19@sansad.nic.in,BI-26
+11,Bhandara-Gondiya,MH,Shri Nanabhau Falgunrao Patole,nanapatole@gmail.com,MH-11
+9,Bharatpur,RJ,Shri Bahadur Singh Koli,"mpbskoli@gmail.com,  bahadurs@sansad.nic.in",RJ-9
+22,Bharuch,GJ,Shri Mansukhbhai Dhanjibhai Vasava,"md.vasava@sansad.nic.in,  m.vasava@nic.in",GJ-22
+15,Bhavnagar,GJ,Dr. Bharati Dhirubhai Shyal,"bharatibend.shiyal@sansad.nic.in,  mpbhartishyal@gmail.com,  mpbhartishyal@yahoo.com",GJ-15
+23,Bhilwara,RJ,Shri Subhash Chandra Baheria,"subhash.baheria@sansad.nic.in,  baheriasc@gmail.com",RJ-23
+2,Bhind,MP,Dr. Bhagirath Prasad,"dr.bhagirathprasad@sansad.nic.in,  bhagirath.prasad2@gmail.com",MP-2
+23,Bhiwandi,MH,Shri Kapil Moreshwar Patil,"km.patil@sansad.nic.in,  kapilpatil.kp@rediffmail.com,  kapil.patilmp@gmail.com",MH-23
+8,Bhiwani-Mahendragarh,HA,Shri Dharambir Singh,"dharambir.mp@sansad.nic.in,  office.dharambir@gmail.com",HA-8
+14,Bhongir,TG,Dr. Boora Narsaiah Goud,drbnarsaiah@yahoo.com,TG-14
+19,Bhopal,MP,Shri Alok Sanjar,"alok.sanjar@sansad.nic.in,  aloksanjar.mp@gmail.com",MP-19
+18,Bhubaneswar,OR,Dr. (Prof.) Prasanna Kumar Patasani,prasanna.patasani@sansad.nic.in,OR-18
+7,Bidar,KA,Shri Bhagwanth Khuba,"bhagwanth.khuba@sansad.nic.in,",KA-7
+4,Bijapur,KA,Shri Ramesh Chandappa Jigajinagi,bijapur.mp@gmail.com,KA-4
+4,Bijnor,UP,Kunwar Bharatendra Singh,bharatendrasingh@yahoo.com,UP-4
+2,Bikaner,RJ,Shri Arjun Ram Meghwal,"arjunrammeghwal@gmail.com,  ar.meghwal@sansad.nic.in",RJ-2
+5,Bilaspur,CT,Shri Lakhan Lal Sahu,"lakhanl.sahu@sansad.nic.in,  lakhanlalsahu1971@gmail.com",CT-5
+42,Birbhum,WB,Smt. Satabdi Roy (Banerjee),,WB-42
+37,Bishnupur,WB,Shri Khan Saumitra,"khan.saumitra@sansad.nic.in,  saumitrakhan@gmail.com",WB-37
+10,Bolangir,OR,Shri Kalikesh Narayan Singh Deo,kalikesh.singhdeo@sansad.nic.in,OR-10
+41,Bolpur,WB,Dr. Anupam Hazra,anupam.hazra@sansad.nic.in,WB-41
+14,Bulandshahr,UP,Shri Bhola Singh,"bholasingh.mp@sansad.nic.in,  drbholasingh@gmail.com",UP-14
+5,Buldhana,MH,Shri Prataprao Jadhav,jadhavprataprao25@gmail.com,MH-5
+33,Buxar,BI,Shri Ashwini Kumar Choubey,ashwinikumar.choubey@sansad.nic.in,BI-33
+11,Chalakudy,KE,Shri Innocent,"innocent.mp@sansad.nic.in,  chalakkudymp@gmail.com",KE-11
+22,Chamrajanagar,KA,Shri R. Dhruvanarayana,"r.dhruvanarayana@sansad.nic.in,  dhruvanarayana@gmail.com",KA-22
+76,Chandauli,UP,Dr. Mahendra Nath Pandey,76chandauli.mp@gmail.com,UP-76
+,Chandigarh,CH,Smt. Kirron Anupam Kher,"kirron.kher@sansad.nic.in,  kirronkher14@gmail.com",CH-
+1,Chandni Chowk,DL,Dr. Harsh Vardhan,dr.harshvardhan@sansad.nic.in,DL-1
+13,Chandrapur,MH,Shri Hansraj Gangaram Ahir,hansrajahir1954@gmail.com,MH-13
+4,Chatra,JH,Shri Sunil Kumar Singh,sunilkr.singh@sansad.nic.in,JH-4
+4,Chennai Central,TN,Shri Vijayakumar S.R.,sr.vijayakumar@sansad.nic.in,TN-4
+2,Chennai North,TN,Shri T.G. Venkatesh Babu,venkatesh.tg@sansad.nic.in,TN-2
+3,Chennai South,TN,Dr. Jayakumar Jayavardhan,"j.jayavardhan@sansad.nic.in,  jayavardhanjayakumar@gmail.com",TN-3
+10,Chevella,TG,Shri Konda Vishweshwar Reddy,kvishweshwar.reddy@sansad.nic.in,TG-10
+16,Chhindwara,MP,Shri Kamal Nath,knshikarpur@gmail.com,MP-16
+21,Chhota Udaipur,GJ,Shri Ramsinh Pataliyabhai Rathwa,"ramsinh.rathwa@sansad.nic.in,  ramsinhrathwa@yahoo.co.in",GJ-21
+27,Chidambaram,TN,Shri M. Chandrakasi,"m.chandrakasi@sansad.nic.in,  mckasi1969@gmail.com",TN-27
+27,Chikkballapur,KA,Dr. M. Veerappa Moily,vmoily@kar.nic.in,KA-27
+1,Chikkodi,KA,Shri Prakash Babanna Hukkeri,mpchikkodi3290@gmail.com,KA-1
+18,Chitradurga,KA,Shri B.N. Chandrappa,bn.chandrappa@sansad.nic.in,KA-18
+42,Chittoor,AP,Dr. Naramalli Sivaprasad,,AP-42
+21,Chittorgarh,RJ,Shri C.  P. Joshi,"cpjoshi.mp@sansad.nic.in,  cpjoshicor@gmail.com",RJ-21
+3,Churu,RJ,Shri Rahul Kaswan,"rahul.kaswan@sansad.nic.in,  rahulkaswan2@gmail.com",RJ-3
+20,Coimbatore,TN,Shri Nagarajan P.,"nagarajan.p19@sansad.nic.in,  apnagarajan62@gmail.com",TN-20
+1,Coochbehar,WB,Smt. Renuka Sinha,"renuka.sinha@sansad.nic.in,  bangabhawan@gmail.com",WB-1
+26,Cuddalore,TN,Shri A. Arunmozhithevan,"a.arunmozhithevan@sansad.nic.in,  arun2868@gmail.com",TN-26
+14,Cuttack,OR,Shri Bhartruhari Mahtab,,OR-14
+1,Dadra and Nagar Haveli,DN,Shri Natubhai Gomanbhai Patel,dnhmp2009@gmail.com,DN-1
+19,Dahod,GJ,Shri Jaswantsinh Sumanbhai Bhabhor,jsmpdhd@gmail.com,GJ-19
+17,Dakshina Kannada,KA,Shri Nalin Kumar Kateel,"nalinkumar.kateel@sansad.nic.in,  mpdkannada@gmail.com",KA-17
+1,Daman and Diu,DD,Shri Lalubhai Babubhai Patel,,DD-1
+7,Damoh,MP,Shri Prahlad Singh Patel,prahladp@sansad.nic.in,MP-7
+14,Darbhanga,BI,Shri Kirti (JHA) Azad,"kirti.azad@sansad.nic.in,  kirtiazad.office@gmail.com",BI-14
+4,Darjeeling,WB,Shri S.S. Ahluwalia,"ssa@sansad.nic.in,  tengrg@gmail.com,  2014darjeeling@gmail.com",WB-4
+11,Dausa,RJ,Shri Harish Chandra Meena,"meena.harishchandra@sansad.nic.in,  hcmeena54@gmail.com",RJ-11
+13,Davanagere,KA,Shri Gowdar Mallikarjunappa Siddeshwara,gmsiddeshwara@gov.in,KA-13
+66,Deoria,UP,Shri Kalraj Mishra,"kalraj.mishra@sansad.nic.in,  kalraj@kalrajmishra.com",UP-66
+21,Dewas,MP,Shri Manhor Utwal,,MP-21
+7,Dhanbad,JH,Shri Pashupati Nath Singh,pashupati.ns@sansad.nic.in,JH-7
+25,Dhar,MP,Smt. Savitri Thakur,"savitri.thakur@sansad.nic.in,  smtsavitrithakur@gmail.com",MP-25
+10,Dharmapuri,TN,Dr. Anbumani Ramadoss,dranbu910@gmail.com,TN-10
+11,Dharwad,KA,Shri Pralhad Venkatesh Joshi,"joshi.pralhad@sansad.nic.in,  pralhadvjoshi@gmail.com",KA-11
+29,Dhaurahra,UP,Smt. Rekha Arun Verma,,UP-29
+9,Dhenkanal,OR,Shri Tathagata Satpathy,tatzaudi@yahoo.com,OR-9
+4,Dhubri,AS,Maulana Badruddin Ajmal,"b.ajmal@sansad.nic.in,  amarhuzoor@gmail.com",AS-4
+2,Dhule,MH,Dr. Subhash Ramrao Bhamre,"sr.bhamre@sansad.nic.in,  drsubhashbhamre11@gmail.com,  dr.subhash.bhamre@gmail.com",MH-2
+21,Diamond Harbour,WB,Shri Abhishek Banerjee,abhishekbanerjee.mp@gmail.com,WB-21
+13,Dibrugarh,AS,Shri Rameswar Teli,"rameswar.teli@sansad.nic.in,  rameswartelimp@gmail.com",AS-13
+22,Dindigul,TN,Shri M. Udhayakumar,m.udhayakumar@sansad.nic.in,TN-22
+20,Dindori,MH,Shri Harishchandra Deoram Chavan,harishchandra.chavan@sansad.nic.in,MH-20
+60,Domariyaganj,UP,Shri Jagdambika Pal,"mp.jpal@yahoo.com,  jagdambika.pal@sansad.nic.in",UP-60
+16,Dum Dum,WB,Prof. Saugata Roy,saugatapolitics_roy@yahoo.co.in,WB-16
+2,Dumka,JH,Shri Shibu Soren,shisoren@sansad.nic.in,JH-2
+7,Durg,CT,Shri Tamradhwaj Sahu,"tamradhwaj.sahu@sansad.nic.in,  loksabhadurg14@gmail.com",CT-7
+3,East Delhi,DL,Shri Maheish Girri,"maheish.girri@sansad.nic.in,",DL-3
+27,Eluru,AP,Shri Venkateswara Rao (Babu) Magantti,"mvenkateswara.rao19@sansad.nic.in,  maganttibabu@gmail.com",AP-27
+12,Ernakulam,KE,Prof. Kuruppassery Varkey Thomas,"thomaskv@sansad.nic.in,  prof.kvthomas2014@gmail.com",KE-12
+17,Erode,TN,Shri S. Selvakumarachinnayan,"ss.chinnayan@sansad.nic.in,  erodempselvakumarachinnayan@gmail.com",TN-17
+22,Etah,UP,Shri Rajveer (Raju Bhaiya) Singh,"rajveersingh.mp@sansad.nic.in,  mpetarajvirsinghrajubhaiya@gmail.com",UP-22
+41,Etawah,UP,Shri Ashok Kumar Dohrey,ashokkumar.doharey@sansad.nic.in,UP-41
+54,Faizabad,UP,Shri Lallu Singh,lallu.singh@sansad.nic.in,UP-54
+10,Faridabad,HA,Shri Krishan Pal Gurjar,info@krishanpalgurjar.com,HA-10
+9,Faridkot,PB,Prof. Sadhu Singh,"singh.sadhu@sansad.nic.in,  prof.sadhu.singh@gmail.com",PB-9
+40,Farrukhabad,UP,Shri Mukesh Rajput,mukesh.rajput@sansad.nic.in,UP-40
+8,Fatehgarh Sahib,PB,Shri Harinder Singh Khalsa,"harinders.khalsa@sansad.nic.in,  harsinkha@gmail.com",PB-8
 49,Fatehpur,UP,Sadhvi Niranjan Jyoti,"niranjan.jyoti@sansad.nic.in
-",UP-49,Fatehpur,ஃபதேபூர்,फतेहपुर
-19,Fatehpur Sikri,UP,Shri Babulal Chaudhary,babulal.mp@sansad.nic.in,UP-19,Fatehpur Sikri,ஃபதேபூர் சிக்ரி,फतेहपुर सीकरी
-10,Ferozpur,PB,Shri Sher Singh Ghubaya,ss.ghubaya@sansad.nic.in,PB-10,Ferozpur,Ferozpur,फिरोजपुर
-20,Firozabad,UP,Shri Akshay Yadav,"akshay.yadav@sansad.nic.in,  yadavakshay@yahoo.com",UP-20,Firozabad,பிரோசாபாத்,फिरोजाबाद
-12,Gadchiroli-Chimur,MH,Shri Ashok Mahadeorao Nete,"ashok.mahadeorao@sansad.nic.in,  ashoknetempgad@gmail.com",MH-12,Gadchiroli-Chimur,கட்சிரோலி-Chimur,गढ़चिरोली-चिमूर लोक सभा निर्वाचन क्षेत्र
-6,Gandhinagar,GJ,Shri Lal Krishna Advani,officelka@gmail.com,GJ-6,Gandhinagar,காந்திநகர்,गांधीनगर
-1,Ganganagar,RJ,Shri Nihal Chand Chauhan,mos-mopr@nic.in,RJ-1,Ganganagar,கங்கா நகர்,गंगानगर
-2,Garhwal,UT,Maj Gen  Bhuwan Chandra AVSM (Retd.) Khanduri,"bc.khanduri@nic.in,  khanduribc@gmail.com",UT-2,Garhwal,கர்வால்,गढ़वाल
-7,Gauhati,AS,Smt. Bijoya Chakravarty,"bijoya.chakravarty@sansad.nic.in,  bijoya@nic.in",AS-7,Gauhati,குவாகத்தி,गुवाहाटी
-13,Gautam Buddha Nagar,UP,Dr. Mahesh Sharma,dr.mahesh@sansad.nic.in,UP-13,Gautam Buddha Nagar,கவுதம் புத்தர் நகர்,गौतम बुद्ध नगर
-38,Gaya,BI,Shri Hari Manjhi,manjhihari@gmail.com,BI-38,Gaya,கயா,गया
-32,Ghatal,WB,Shri Deepak (Dev) Adhikari,"adhikari.deepak@sansad.nic.in,",WB-32,Ghatal,Ghatal,Ghatal
-12,Ghaziabad,UP,Vijay Kumar Singh  (Retd.) General (Dr.),"vksingh.mp@sansad.nic.in,  veekaysingh@gmail.com",UP-12,Ghaziabad,காஸியாபாத்,गाज़ियाबाद
-75,Ghazipur,UP,Shri Manoj Kumar Sinha,manojsinha.mp@sansad.nic.in,UP-75,Ghazipur,Ghazipur,गाजीपुर
-70,Ghosi,UP,Shri Hari Narayan Rajbhar,harinarayan.rajbhar@sansad.nic.in,UP-70,Ghosi,Ghosi,घोसी
-6,Giridih,JH,Shri Ravindra Kumar Pandey,"rkpandey@sansad.nic.in,",JH-6,Giridih,Giridih,गिरिडीह
-3,Godda,JH,Shri Nishikant Dubey,"nishikant.dubey@sansad.nic.in,  nishikant.dubey.mp@gmail.com",JH-3,Godda,Godda,गोड्डा
-59,Gonda,UP,Shri Kirti Vardhan Singh,kirtivardhan.singh@sansad.nic.in,UP-59,Gonda,கோண்டா,गोंडा
-17,Gopalganj,BI,Shri Janak Ram,"janak.ram@sansad.nic.in,  janakchamarbjp73@gmail.com",BI-17,Gopalganj,கோபால்கஞ்ச்,गोपालगंज
-64,Gorakhpur,UP,Shri Yogi Adityanath,"yogi.adityanath@sansad.nic.in,  yogiadityanath72@gmail.com",UP-64,Gorakhpur,கோரக்பூர்,गोरखपुर
-5,Gulbarga,KA,Shri Mallikarjun Kharge,"m.kharge@sansad.nic.in,  mallikarjunkharge@yahoo.in",KA-5,Gulbarga,குல்பர்கா,गुलबर्गा
-4,Guna,MP,Shri Jyotiraditya Madhavrao Scindia,office.scindia@yahoo.com,MP-4,Guna,குணா,गुना
-30,Guntur,AP,Shri Jayadev Galla,jayadev.galla@sansad.nic.in,AP-30,Guntur,குண்டூர்,गुंटूर
-1,Gurdaspur,PB,Shri Vinod Khanna,"vkhanna@sansad.nic.in,",PB-1,Gurdaspur,குர்தாஸ்பூர்,गुरदासपुर
-9,Gurgaon,HA,Rao Inderjit Singh,"rao.inderjit@sansad.nic.in,  mos-planning@gov.in",HA-9,Gurgaon,குர்கான்,गुडगाँव
-3,Gwalior,MP,Shri Narendra Singh Tomar,ns.tomar@sansad.nic.in,MP-3,Gwalior,குவாலியர்,ग्वालियर
-21,Hajipur,BI,Shri Ram Vilas Paswan,ramvilas.p@sansad.nic.in,BI-21,Hajipur,Hajipur,हाजीपुर
-3,Hamirpur,HP,Shri Anurag Singh Thakur,"hpcapresident@yahoo.com,  mphamirpur@gmail.com",HP-3,Hamirpur,ஹமீர்புர்,हमीरपुर
-47,Hamirpur,UP,Kunwar Pushpendra Singh Chandel,"kunwarps.chandel@sansad.nic.in,  pushpendra.chandelmahoba@gmail.com",UP-47,Hamirpur,ஹமீர்புர்,हमीरपुर
-31,Hardoi,UP,Shri Anshul Verma,anshul.verma@sansad.nic.in,UP-31,Hardoi,Hardoi,हरदोई
-5,Hardwar,UT,Dr. Ramesh Pokhriyal Nishank,,UT-5,Hardwar,ஹரித்வாரில்,हरद्वार
-16,Hassan,KA,Shri H.D. Devegowda,haradanahalli@yahoo.co.in,KA-16,Hassan,ஹாசன்,हसन
-16,Hathras,UP,Shri Rajesh Kumar Diwakar,"rk.diwaker@sansad.nic.in,  rajeshhathras@yahoo.com",UP-16,Hathras,ஹத்ராஸ்,हाथरस
-48,Hatkanangle,MH,Shri Raju alias Devappa Anna Shetti,raju.shetty@sansad.nic.in,MH-48,Hatkanangle,Hatkanangle,हातकणंगले लोक सभा निर्वाचन क्षेत्र
-10,Haveri,KA,Shri Shivkumar Chanabasappa Udasi,"68southavenue@gmail.com,  udasi.channabasappa@sansad.nic.in",KA-10,Haveri,ஹாவேரி,हावेरी
-14,Hazaribagh,JH,Shri Jayant Sinha,"jayant.sinha19@sansad.nic.in,  jsinha21@gmail.com",JH-14,Hazaribagh,ஹசாரிபாக்,हजारीबाग
-37,Hindupur,AP,Shri Kristappa Nimmala,nimmalakristappa@gmail.com,AP-37,Hindupur,Hindupur,हिन्दुपुर
-15,Hingoli,MH,Shri Rajeev Shankarrao Satav,rajeevsatav@gmail.com,MH-15,Hingoli,Hingoli,हिंगोली
-4,Hisar,HA,Shri Dushyant Chautala,"dushyant.chautala@sansad.nic.in,  dchautala@gmail.com",HA-4,Hisar,ஹிசார்,हिसार
-28,Hooghly,WB,Dr. (Smt.) Ratna De(Nag),ratna.de@sansad.nic.in,WB-28,Hooghly,ஹூக்ளி,हुगली
-17,Hoshangabad,MP,Shri Uday Pratap Singh,udaypratap_narsinghpur@yahoo.com,MP-17,Hoshangabad,ஹோஷங்காபாத்திலிருந்து,होशंगाबाद
-5,Hoshiarpur,PB,Shri Vijay Sampla,"vijay.sampla@sansad.nic.in,",PB-5,Hoshiarpur,ஹோஷியார்பூர்,होशियारपुर
-25,Howrah,WB,Shri Prasun Banerjee,"prasun.banerjee@sansad.nic.in,  prasuntmcsc@gmail.com",WB-25,Howrah,ஹவுரா,हावड़ा
-9,Hyderabad,TG,Shri Asaduddin Owaisi,asad.owaisi@sansad.nic.in,TG-9,Hyderabad,ஹைதெராபாத்,हैदराबाद
-13,Idukki,KE,Shri (Adv.) Joice George,"joice.george@sansad.nic.in,  joicegeorgeadv@gmail.com",KE-13,ഇടുക്കി,இடுக்கி,इडुक्की
-26,Indore,MP,Sumitra Mahajan (Tai),"speakerloksabha@sansad.nic.in,  s_mahajan@nic.in",MP-26,Indore,இந்தூர்,इंदौर
-1,Inner Manipur,MA,Dr. Thokchom Meinya,meinya@sansad.nic.in,MA-1,Inner Manipur,இன்னர் மணிப்பூர்,इनर मणिपुर
-13,Jabalpur,MP,Shri Rakesh Singh,"rakesh.singh@sansad.nic.in,  mpjbp@yahoo.com",MP-13,Jabalpur,ஜபல்பூர்,जबलपुर
-22,Jadavpur,WB,Prof. (Dr.) Sugata Bose,"sugata.bose@sansad.nic.in,  sugata.bose@nic.in",WB-22,Jadavpur,ஜாதவ்பூர்,जादवपुर
-16,Jagatsinghpur,OR,Dr. Kulamani Samal,kulamani.samal@sansad.nic.in,OR-16,Jagatsinghpur,ஜகத்சிங்பூர்,जगतसिंहपुर
-36,Jahanabad,BI,Dr. Arun Kumar,"dr.arunkumar@sansad.nic.in,  drarunkumarjahanabad@gmail.com",BI-36,Jahanabad,Jahanabad,जहानाबाद
-7,Jaipur,RJ,Shri Ramcharan Bohra,,RJ-7,Jaipur,ஜெய்ப்பூர்,जयपुर
-6,Jaipur Rural,RJ,Col. Rajyavardhan Singh Rathore,rajyavardhan.rathore@sansad.nic.in,RJ-6,Jaipur Rural,ஜெய்ப்பூர் ஊரக,जयपुर ग्रामीण
-8,Jajpur,OR,Smt. Rita Tarai,rita.tarai@sansad.nic.in,OR-8,Jajpur,Jajpur,जाजपुर
-4,Jalandhar,PB,Shri Santokh Singh Chaudhary,"ss.chaudhary@sansad.nic.in,  santokhschaudhary@gmail.com",PB-4,Jalandhar,ஜலந்தர்,जालंधर
-45,Jalaun,UP,Shri Bhanu Pratap Singh Verma,bhanus@sansad.nic.in,UP-45,Jalaun,Jalaun,जालौन
-3,Jalgaon,MH,Shri A.T. (Nana) Patil,atnana.patil@sansad.nic.in,MH-3,Jalgaon,ஜல்கான்,जलगांव
-18,Jalna,MH,Shri Raosaheb Patil Danve,raosaheb.danve@sansad.nic.in,MH-18,Jalna,ஜல்னா,जलना
-18,Jalore,RJ,Shri Devji Mansingram Patel,"dm.patel@sansad.nic.in,  devjimp@gmail.com",RJ-18,Jalore,Jalore,जालोर
-3,Jalpaiguri,WB,Shri Bijoy Chandra Barman,"bc.barman@sansad.nic.in,  bijoychandrabarman@gmail.com",WB-3,Jalpaiguri,ஜல்பைகுரி,जलपाईगुड़ी
-6,Jammu,JK,Shri Jugal Kishore Sharma,jugal.bjp@gmail.com,JK-6,Jammu,ஜம்மு,जम्मू
-12,Jamnagar,GJ,Smt. Poonamben Hematbhai Maadam,poonam.maadam@sansad.nic.in,GJ-12,Jamnagar,ஜாம்நகர்,जामनगर
-9,Jamshedpur,JH,Shri Bidyut Baran Mahato,mpbidyutmahato@gmail.com,JH-9,Jamshedpur,ஜாம்ஷெட்பூர்,जमशेदपुर
-40,Jamui,BI,Shri Chirag Paswan,office.chiragpaswan@gmail.com,BI-40,Jamui,ஜமுய்,जमुई
-9,Jangipur,WB,Dr. Abhijit Mukherjee,abhijit.mukherjee@sansad.nic.in,WB-9,Jangipur,Jangipur,जंगीपुर
-3,Janjgir-Champa,CT,Smt. Kamla Devi Patle,kd.patle@sansad.nic.in,CT-3,Janjgir-Champa,Janjgir-சம்பா,जांजगीर-चंपा
-73,Jaunpur,UP,Dr. Krishna Pratap Singh,kpsingh.jnp@gmail.com,UP-73,Jaunpur,ஜான்பூர்,जौनपुर
-19,Jaynagar,WB,Smt. Pratima Mondal,"pratima.mondal@sansad.nic.in,  pratimamondal66@yahoo.com",WB-19,Jaynagar,Jaynagar,जयनगर
-25,Jhalawar-Baran,RJ,Shri Dushyant Singh,dushyant@dholpurpalace.com,RJ-25,Jhalawar-Baran,ஜலவால்-பாரன்,झालावाड़-बरन
-7,Jhanjharpur,BI,Shri Birendra Kumar Chaudhary,bkumar.chaudhary@sansad.nic.in,BI-7,Jhanjharpur,Jhanjharpur,झंझारपुर
-46,Jhansi,UP,Uma  Bharati Sushree,uma.bharati@sansad.nic.in,UP-46,Jhansi,ஜான்சி,झांसी
-33,Jhargram,WB,Dr. Uma Saren,uma.saren@sansad.nic.in,WB-33,Jhargram,ஜார்கிராம்,झारग्राम
-4,Jhunjhunu,RJ,Smt. Santosh Ahlawat,ahlawat.santosh@sansad.nic.in,RJ-4,Jhunjhunu,ஜுன்ஜுனு,झुंझुनू
-16,Jodhpur,RJ,Shri Gajendra Singh Shekhawat,"g.shekhawat@sansad.nic.in,  mpgssjodhpur@gmail.com",RJ-16,Jodhpur,ஜோத்பூர்,जोधपुर
-12,Jorhat,AS,Shri Kamakhya Prasad Tasa,"kamakhyap.tasa@sansad.nic.in,  kamakhyatasa@gmail.com",AS-12,Jorhat,ஜோர்கட்,जोरहाट
-13,Junagadh,GJ,Shri Rajeshbhai Naranbhai Chudasama,"chudasamar.naranbhai@sansad.nic.in,  rajnc@ymail.com,  mp13junagadh@gmail.com",GJ-13,Junagadh,ஜூனாகத்,जूनागढ़
-1,Kachchh,GJ,Shri Vinod Chavda,"chavdav.lakhamashi@sansad.nic.in,  vinod5467@gmail.com",GJ-1,Kachchh,Kachchh,कच्छ
-38,Kadapa,AP,Shri Y. S. Avinash Reddy,ysavinash.reddy@sansad.nic.in,AP-38,Kadapa,கடப்பா,कडपा
-2,Kairana,UP,Shri Hukum Singh,"hukum.singh@sansad.nic.in,  hukumbjp@gmail.com",UP-2,Kairana,Kairana,कैराना
-57,Kaiserganj,UP,Shri Brijbhushan Sharan Singh,bjp2014kaisherganj@gmail.com,UP-57,Kaiserganj,Kaiserganj,कैसरगंज
-23,Kakinada,AP,Shri Narasimham Thota,"thotanarasimhammp@gmail.com,  thotanarasimhamdelhioffice@gmail.com",AP-23,Kakinada,காக்கிநாடா,काकीनाडा
-11,Kalahandi,OR,Shri Arka Keshari Deo,arka.keshari@sansad.nic.in,OR-11,Kalahandi,Kalahandi,कालाहांडी
-11,Kaliabor,AS,Shri Gaurav Gogoi,,AS-11,Kaliabor,Kaliabor,कलियाबोर
-14,Kallakurichi,TN,Dr. K. Kamaraj,k.kamaraj@sansad.nic.in,TN-14,Kallakurichi,கள்ளக்குறிச்சி,कल्लाकुरिची
-24,Kalyan,MH,Dr. Shrikant Eknath Shinde,shrikantshinde87@yahoo.in,MH-24,Kalyan,கல்யாண்,कल्याण
-6,Kancheepuram,TN,Smt. K. Maragatham,"k.maragatham@sansad.nic.in,  maragathamkmj@gmail.com",TN-6,Kancheepuram,காஞ்சிபுரம்,कांचीपुरम
-13,Kandhamal,OR,Smt. Pratyusha Rajeshwari Singh,"mpkandhamal@gmail.com,  pratyusha.singh@sansad.nic.in",OR-13,Kandhamal,கந்தமால்,कंधमाल
-1,Kangra,HP,Shri Shanta Kumar,"shanta.kumar@sansad.nic.in,  skyamini@gmail.com",HP-1,Kangra,காங்க்ரா,कांगड़ा
-11,Kanker,CT,Shri Vikram Usendi,"vikramd.usendi@sansad.nic.in,  vikram_usendi@ymail.com",CT-11,Kanker,Kanker,कांकेर
-42,Kannauj,UP,Smt. Dimple Yadav,dimpleyadav78@gmail.com,UP-42,Kannauj,கன்னோஜ்,कन्नौज
-39,Kanniyakumari,TN,Shri Pon Radhakrishnan,ponrk@sansad.nic.in,TN-39,Kanniyakumari,கன்னியாகுமரி,कन्याकुमारी
-2,Kannur,KE,Smt. P.K. Sreemathi Teacher,"pk.sreemathi@sansad.nic.in,  pksreemathi@gmail.com",KE-2,കണ്ണൂർ,கண்ணூர்,कन्नूर
-43,Kanpur,UP,Dr. Murli Manohar Joshi,murli@sansad.nic.in,UP-43,Kanpur,கான்பூர்,कानपुर
-31,Kanthi,WB,Shri Sisir Kumar Adhikari,"sisir.adhikari@nic.in,  sisiradhikari76@yahoo.com",WB-31,Kanthi,காந்தி,Kanthi
-35,Karakat,BI,Shri Upendra Kushwaha,upendra.kushwaha19@sansad.nic.in,BI-35,Karakat,Karakat,काराकाट लोक सभा निर्वाचन क्षेत्र
-10,Karauli-Dholpur,RJ,Dr. Manoj Rajoria,"manoj.rajoria@sansad.nic.in,  dr.manojrajoria001@gmail.com",RJ-10,Karauli-Dholpur,கரவ்லி-Dholpur,करौली-धौलपुर
-1,Karimganj,AS,Shri Radheshyam Biswas,radheshyam.biswas@sansad.nic.in,AS-1,Karimganj,Karimganj,करीमगंज
-3,Karimnagar,TG,Shri Vinod Kumar Boianapalli,"vkumar.boianapalli@sansad.nic.in,  vinodkumarboianapalli@yahoo.com",TG-3,Karimnagar,கரீம்நகர்,करीमनगर
-5,Karnal,HA,Shri Ashwini Kumar,ashwinikumar001@gmail.com,HA-5,Karnal,கர்னல்,करनाल
-23,Karur,TN,Dr. M. Thambi Durai,,TN-23,Karur,கரூர்,करूर
-1,Kasaragod,KE,Shri P. Karunakaran,"karunakaran.p@sansad.nic.in,  pkarunakaranmp@gmail.com",KE-1,കാസർഗോഡ്,காசர்கோடு,कासरगोड
-11,Katihar,BI,Shri Tariq Anwar,tariq.anwar@sansad.nic.in,BI-11,Katihar,மழையால்,कटिहार
-50,Kaushambi,UP,Shri Vinod Kumar Sonkar,"vinod.sonkar@sansad.nic.in,  bjpvinodsonkar@gmail.com",UP-50,Kaushambi,Kaushambi,कौशाम्बी
-15,Kendrapara,OR,Shri Baijayant 'Ja' Panda,"office@bjpanda.org,  bj.panda@sansad.nic.in",OR-15,Kendrapara,Kendrapara,केंद्रपाड़ा
-4,Keonjhar,OR,Smt. Sakuntala Laguri,sakuntala.laguri@sansad.nic.in,OR-4,Keonjhar,Keonjhar,क्योंझर
-3,Khadoor Sahib,PB,Shri Ranjit Singh Brahmpura,,PB-3,Khadoor Sahib,Khadoor சாஹிப்,खडूर साहिब लोक सभा निर्वाचन क्षेत्र
-25,Khagaria,BI,Choudhary Mehboob Ali Kaiser,mahboobali.kaiser@sansad.nic.in,BI-25,Khagaria,Khagaria,खगरिया
-8,Khajuraho,MP,Shri Nagendra Singh,nsinghnagod@gmail.com,MP-8,Khajuraho,கஜுராஹோ,खजुराहो
-17,Khammam,TG,Shri Ponguleti Srinivasa Reddy,,TG-17,Khammam,கம்மம்,खम्मम
-28,Khandwa,MP,Shri Nand Kumar Singh Chauhan,,MP-28,Khandwa,கந்த்வா,खंडवा
-27,Khargone,MP,Shri Subhash Patel,"subhash.patel@sansad.nic.in,",MP-27,Khargone,Khargone,खरगोन
-17,Kheda,GJ,Shri Devusinh Jesingbhai Chauhan,devusinh@yahoo.co.in,GJ-17,Kheda,கீடா,खेड़ा
-28,Kheri,UP,Shri Ajay (Teni) Misra,ajay.kumar19@sansad.nic.in,UP-28,Kheri,Kheri,खेरी
-11,Khunti,JH,Shri Kariya Munda,kariya.munda@sansad.nic.in,JH-11,Khunti,ராஞ்சி,खूंटी
-10,Kishanganj,BI,Shri Asrarul Haque Mohammad,"masrarul.haque@sansad.nic.in,",BI-10,Kishanganj,கிஷான்கஞ்ச்,किशनगंज
-5,Kodarma,JH,Dr. Ravindra Kumar Ray,"ravindrak.ray@sansad.nic.in,  rkraibjp@gmail.com",JH-5,Kodarma,Kodarma,कोडरमा
-5,Kokrajhar,AS,Shri Naba (Hira) Kumar Sarania,saranianabakumar@yahoo.com,AS-5,Kokrajhar,கோக்ரஜார்,कोकराझार
-28,Kolar,KA,Dr. K.H. Muniyappa,khmuni@sansad.nic.in,KA-28,Kolar,கோலார்,कोलार
-47,Kolhapur,MH,Shri Dhananjay Bhimrao Mahadik,"db.mahadik@sansad.nic.in,",MH-47,Kolhapur,கோலாப்பூர்,कोल्हापुर
-23,Kolkata Dakshin,WB,Shri Subrata Bakshi,,WB-23,Kolkata Dakshin,கொல்கத்தா தக்ஷிண்,कोलकाता दक्षिण
-24,Kolkata Uttar,WB,Shri Sudip Bandyopadhyay,"sudip@sansad.nic.in,  sudip_bandyopadhyay2006@yahoo.com",WB-24,Kolkata Uttar,கொல்கத்தா உத்தரப்,कोलकाता उत्तर
-18,Kollam,KE,Shri N.K. Premachandran,"nk.premachandran@sansad.nic.in,  nkprem07@gmail.com",KE-18,കൊല്ലം,கொல்லம்,कोल्लम
-8,Koppal,KA,Shri Sanganna Amarappa Karadi,bjpdpkpl@gmail.com,KA-8,Koppal,கொப்பல்,कोप्पल
-21,Koraput,OR,Shri Jhina Hikaka,jhina.hikaka@sansad.nic.in,OR-21,Koraput,கோரபுட்,कोरापुट
-4,Korba,CT,Dr. Banshilal Mahto,"banshilal.mahto@sansad.nic.in,  mahtobanshilal@gmail.com",CT-4,Korba,கோர்பா,कोरबा
-24,Kota,RJ,Shri Om Birla,"ombirla@yahoo.co.in,  ombirlakota@gmail.com,  birla.om@sansad.nic.in",RJ-24,Kota,கோட்டா,कोटा
-14,Kottayam,KE,Shri Jose K. Mani,"josekmanimp@gmail.com,  mani.josek@sansad.nic.in",KE-14,കോട്ടയം,கோட்டயம்,कोट्टायम
-5,Kozhikode,KE,Shri M. K. Raghavan,"mk.raghavan@sansad.nic.in,  calicutmp@yahoo.co.in",KE-5,കോഴിക്കോട്,கோழிக்கோடு,कोझिकोड
-9,Krishnagiri,TN,Shri K. Ashokkumar,k.ashokkumar@sansad.nic.in,TN-9,Krishnagiri,கிருஷ்ணகிரி,कृष्णागिरी
-12,Krishnanagar,WB,Shri Tapas Paul,"tapas.paul@sansad.nic.in,  t.paul1mp@gmail.com",WB-12,Krishnanagar,Krishnanagar,कृष्णनगर
-35,Kurnool,AP,Smt. Renuka Butta,"butta.renuka@sansad.nic.in,  brnk2106@gmail.com",AP-35,Kurnool,கர்னூல்,कुरनूल
-2,Kurukshetra,HA,Shri Raj Kumar Saini,rajkumarsaini1953@gmail.com,HA-2,Kurukshetra,குருஷேத்ரா,कुरुक्षेत्र
-65,Kushi Nagar,UP,Shri Rajesh Pandey,"pandey.rajesh@sansad.nic.in,  prajeshmangal@gmail.com",UP-65,Kushi Nagar,குஷி நகர்,कुशी नगर
-4,Ladakh,JK,Shri Thupstan Chhewang,"thupstan.chhewang@sansad.nic.in,  thupstanc@yahoo.co.in",JK-4,Ladakh,லடாக்,लद्दाख
-14,Lakhimpur,AS,Shri Sarbananda Sonowal,sarbananda.sonowal@sansad.nic.in,AS-14,Lakhimpur,லக்கிம்பூர்,लखीमपुर
-1,Lakshadweep,LD,Shri Faizal P.P. Mohammed,"mohammed.faizal@sansad.nic.in,  faizalpp786@gmail.com",LD-1,Lakshadweep,இலட்சத்தீவுகள்,लक्षद्वीप
-68,Lalganj,UP,Smt. Neelam Sonker,neelam.sonkar@sansad.nic.in,UP-68,Lalganj,Lalganj,लालगंज
-41,Latur,MH,Dr. Sunil Baliram Gaikwad,"sbgbjp@gmail.com,  dr.sunilbgaikwad@sansad.nic.in,  drsbgaikwadbjp@gmail.com",MH-41,Latur,லத்தூர்,लातूर
-12,Lohardaga,JH,Shri Sudarshan Bhagat,s.bhagat@sansad.nic.in,JH-12,Lohardaga,லோஹர்டாகா,लोहरदगा
-35,Lucknow,UP,Shri Rajnath Singh,,UP-35,Lucknow,லக்னோ,लखनऊ
-7,Ludhiana,PB,Shri Ravneet Singh,ravneetbittu@gmail.com,PB-7,Ludhiana,லூதியானா,लुधियाना
-74,Machhlishahr,UP,Shri Ram Charitra Nishad,"ram.charitra@sansad.nic.in,  anamikaram21@gmail.com",UP-74,Machhlishahr,Machhlishahr,Machhlishahr
-28,Machilipatnam,AP,Shri Konakalla Narayana Rao,knarayana.rao@sansad.nic.in,AP-28,Machilipatnam,மஜிலிப்பட்டினம்,मछलीपट्टनम
-43,Madha,MH,Shri Vijaysinh Mohite Patil,mpv.shankarrao@sansad.nic.in,MH-43,Madha,மாதாவின்,माढा
-13,Madhepura,BI,Shri Rajesh Ranjan  (Pappu  Yadav),"pappu.yadav@sansad.nic.in,  rajesh.ranjan19@sansad.nic.in",BI-13,Madhepura,மாதேபுரா,मधेपुरा
-6,Madhubani,BI,Shri Hukmdev Narayan Yadav,,BI-6,Madhubani,மதுபானி,मधुबनी
-32,Madurai,TN,Shri R. Gopalakrishnan,eramgopal@gmail.com,TN-32,Madurai,மதுரை,मदुरै
-16,Mahabubabad,TG,Dr. (Prof.) Azmeera Seetaram Naik,"aseetaram.naik@sansad.nic.in,  asrnaik9@gmail.com",TG-16,Mahabubabad,Mahabubabad,महबुबाबाद
-11,Mahabubnagar,TG,Shri A.P. Jithender Reddy,"jreddy@sansad.nic.in,  jrinfra@gmail.com",TG-11,Mahabubnagar,மகபூப்நகர்,महबूबनगर
-19,Maharajganj,BI,Shri Janardan Singh Sigriwal,janardansingh.sigriwal@sansad.nic.in,BI-19,Maharajganj,Maharajganj,महाराजगंज
-63,Maharajganj,UP,Shri Pankaj Chowdhary,"pankaj.chowdhary@sansad.nic.in,  pankajchaudharyloksabha91@gmail.com",UP-63,Maharajganj,Maharajganj,महाराजगंज
-9,Mahasamund,CT,Shri Chandu Lal Sahu,chandulal.sahu@sansad.nic.in,CT-9,Mahasamund,மகாசமுந்த்,महासमुंद
-21,Mainpuri,UP,Shri Tejpratap Singh Yadav,yadavteju@gmail.com,UP-21,Mainpuri,மைன்புரி,मैनपुरी
-6,Malappuram,KE,Shri E. Ahamed,eahamed@hotmail.com,KE-6,മലപ്പുറം,மலப்புரம்,मलप्पुरम
-8,Maldaha Dakshin,WB,Shri Abu Hasem Khan Choudhury,ahk.chowdhury@sansad.nic.in,WB-8,Maldaha Dakshin,Maldaha தக்ஷிண்,मालदा दक्षिण लोक सभा निर्वाचन क्षेत्र
-7,Maldaha Uttar,WB,Smt. Mausam Noor,mausam_bnoor@yahoo.co.in,WB-7,Maldaha Uttar,Maldaha உத்தரப்,मालदा उत्तर
-7,Malkajgiri,TG,Shri Ch. Malla Reddy,"chmalla.reddy@sansad.nic.in,  chmallareddy999@gmail.com",TG-7,Malkajgiri,மல்கஜ்கிரி,मल्काजगिरि लोक सभा निर्वाचन क्षेत्र
-2,Mandi,HP,Shri Ram Swaroop Sharma,"r.swaroop@sansad.nic.in,  mpmandikullu@gmail.com",HP-2,Mandi,மண்டி,मंडी
-14,Mandla,MP,Shri Faggan Singh Kulaste,"fskulaste@sansad.nic.in,  fskulaste@yahoo.com,  fskulaste@gmail.com",MP-14,Mandla,மாண்டலா,मंडला
-23,Mandsour,MP,Shri Sudheer Gupta,"sudhirgupta.mp@sansad.nic.in,  sudhirgupta2760@gmail.com",MP-23,Mandsour,Mandsour,Mandsour
-20,Mandya,KA,Shri C.S. Puttaraju,"cs.puttaraju@sansad.nic.in,  cspmdy.mp@gmail.com",KA-20,Mandya,மாண்டியா,मंड्या
-8,Mangaldoi,AS,Shri Ramen Deka,"ramen.deka@sansad.nic.in,  ramenguwahati@yahoo.co.in,  ramendeka16@gmail.com",AS-8,Mangaldoi,Mangaldoi,मंगलदोई
-17,Mathura,UP,Smt. Hema Malini,"h.malini@sansad.nic.in,  hema3pol@gmail.com",UP-17,Mathura,மதுராவில்,मथुरा
-20,Mathurapur,WB,Shri Choudhury Mohan Jatua,mj.choudhury@sansad.nic.in,WB-20,Mathurapur,Mathurapur,मथुरापुर
-33,Maval,MH,Shri Shrirang Appa Barne,"sc.barne@sansad.nic.in,  appabarne@gmail.com",MH-33,Maval,மாவல்,मावल
-16,Mavelikkara,KE,Shri Suresh Kodikunnil,"kodikunnil.suresh@sansad.nic.in,  kodikunnilsuresh@yahoo.com",KE-16,മാവേലിക്കര,மாவேலிக்கரா,मवेलिक्कारा
-28,Mayiladuthurai,TN,Shri R.K. Bharathimohan,"rkm.bharathi@sansad.nic.in,  rkbmp2014@gmail.com",TN-28,Mayiladuthurai,மயிலாடுதுறை,माइलादुत्रयी
-5,Mayurbhanj,OR,Shri Rama Chandra Hansdah,,OR-5,Mayurbhanj,மயுர்பஞ்ச்,मयूरभंज
-6,Medak,TG,Shri Kotha Prabhakar Reddy,kprmedakmp@gmail.com,TG-6,Medak,மேடக்,मेडक
-34,Medinipur,WB,Smt. Sandhya Roy,"sandhya.roy@sansad.nic.in,  roysandhya@yahoo.com",WB-34,Medinipur,மேதினிபூர்,मेदिनीपुर
-10,Meerut,UP,Shri Rajendra Agrawal,"rajendra.agrawal51@gmail.com,  rajendra.agrawal@sansad.nic.in",UP-10,Meerut,மீரட்,मेरठ
-4,Mehsana,GJ,Smt. Jayshreeben Patel,"jkpatelgujarat@gmail.com,  jk.patel@sansad.nic.in",GJ-4,Mehsana,மேசனா,मेहसाणा
-79,Mirzapur,UP,Smt. Anupriya Patel,"anupriyasingh.patel@sansad.nic.in,  mirzapur.mp@gmail.com",UP-79,Mirzapur,மிர்சாபூர்,मिर्जापुर
-32,Misrikh,UP,Smt. Anju Bala,"anju.bala@sansad.nic.in,  anjubala32mishrikh@gmail.com",UP-32,Misrikh,Misrikh,मिसरिख
-1,Mizoram,MI,Shri C. L. Ruala,rualacl@gmail.com,MI-1,Mizoram,மிசோரம்,मिजोरम
-34,Mohanlalganj,UP,Shri Kaushal Kishore,kishore.kaushal@sansad.nic.in,UP-34,Mohanlalganj,Mohanlalganj,मोहनलालगंज
-6,Moradabad,UP,Shri Kunwar Sarvesh Kumar,sarveshsinghbjp@gmail.com,UP-6,Moradabad,மொரதாபாத்,मुरादाबाद
-1,Morena,MP,Shri Anoop Mishra,anoop.mishra@sansad.nic.in,MP-1,Morena,மொரீனா,Morena
-30,Mumbai South-Central,MH,Shri Rahul Ramesh Shewale,"rr.shewale@sansad.nic.in,  rahul.shewale2014@gmail.com",MH-30,Mumbai South-Central,மும்பை தென் மத்திய,मुंबई दक्षिण-मध्य
-26,Mumbai-North,MH,Shri Gopal Chinayya Shetty,helpdeskgopalshetty@gmail.com,MH-26,Mumbai-North,மும்பை-வட,मुंबई-उत्तर
-29,Mumbai-North-Central,MH,Smt. Poonam Mahajan,poonam.mahajan@sansad.nic.in,MH-29,Mumbai-North-Central,மும்பை-வட மத்திய,मुंबई उत्तर-मध्य
-28,Mumbai-North-East,MH,Dr. Kirit Somaiya,"kiritbjp@gmail.com,  kiritsomaiya@gmail.com",MH-28,Mumbai-North-East,மும்பை வட-கிழக்கு,मुंबई-उत्तर-पूर्व
-27,Mumbai-North-West,MH,Shri Gajanan Chandrakant Kirtikar,"gc.kirtikar@sansad.nic.in,  gajanan.kirtikar@yahoo.com",MH-27,Mumbai-North-West,மும்பை-வட மேற்கு,मुंबई-उत्तर-पश्चिम
-31,Mumbai-South,MH,Shri Arvind Ganpat Sawant,"arvind.sawant@sansad.nic.in,  arvindsawantg@gmail.com",MH-31,Mumbai-South,மும்பை-தென்,मुंबई-दक्षिण
-28,Munger,BI,Smt. Veena Devi,veena.devi@sansad.nic.in,BI-28,Munger,முங்கர்,मुंगेर
-11,Murshidabad,WB,Shri Md. Badaruddoza Khan,,WB-11,Murshidabad,மூர்ஷிதாபாத்,मुर्शिदाबाद
-3,Muzaffarnagar,UP,Dr. Sanjeev Kumar Balyan,"sanjeevkumar.balyan@sansad.nic.in,  drbalyan@rediffmail.com",UP-3,Muzaffarnagar,முசாபர்நகர்,मुजफ्फरनगर
-15,Muzaffarpur,BI,Shri Ajay Nishad,ajay.nishad@sansad.nic.in,BI-15,Muzaffarpur,முஸாபர்பூர்,मुजफ्फरपुर
-21,Mysore,KA,Shri Prathap Simha,"prathap.simha@sansad.nic.in,",KA-21,Mysore,மைசூர்,मैसूर
-12,Nabarangpur,OR,Shri Balabhadra Majhi,"balabhadra.majhi@sansad.nic.in,  bmajhi86@yahoo.co.in",OR-12,Nabarangpur,Nabarangpur,नबरंगपुर
-1,Nagaland,NA,Shri Neiphiu Rio,"neiphiu.rio@sansad.nic.in,  rioneiphiu@gmail.com",NA-1,Nagaland,நாகாலாந்து,नगालैंड
-29,Nagapattinam,TN,Dr. K. Gopal,gopalnannilam@gmail.com,TN-29,Nagapattinam,நாகப்பட்டினம்,नागपट्टिनम
-12,Nagarkurnool,TG,Shri Nandi Yellaiah,"nandiy@sansad.nic.in,  nandiyellaiah@yahoo.co.in",TG-12,Nagarkurnool,Nagarkurnool,नगरकुरनूल
-14,Nagaur,RJ,Shri C.R. Chaudhary,"cr.choudhary@sansad.nic.in,  crchaudhary.nagaur@gmail.com",RJ-14,Nagaur,நாகவ்ர்,नागौर
-5,Nagina,UP,Dr. Yashwant Singh,yashwant.singh19@sansad.nic.in,UP-5,Nagina,நாகினா,नगीना
-10,Nagpur,MH,Shri Nitin Jairam Gadkari,nitin.gadkari@nic.in,MH-10,Nagpur,நாக்பூர்,नागपुर
-4,Nainital-Udhamsingh Nagar,UT,Shri Bhagat Singh Koshyari,"J123uk@gmail.com,  bs.koshyari@sansad.nic.in",UT-4,Nainital-Udhamsingh Nagar,நைனிடால்-Udhamsingh நகர்,नैनीताल-उधमसिंह नगर
-29,Nalanda,BI,Shri Kaushalendra Kumar,kaushalendra.k@sansad.nic.in,BI-29,Nalanda,நாளந்தா,नालंदा
-13,Nalgonda,TG,Shri Sukender Reddy Gutha,gutha.loksabha@gmail.com,TG-13,Nalgonda,நல்கொண்டா,नलगोंडा
-16,Namakkal,TN,Shri P.R. Sundaram,"pr.sundaram@sansad.nic.in,  aiadmkprs@gmail.com",TN-16,Namakkal,நாமக்கல்,नमक्कल
-16,Nanded,MH,Shri Ashok Shankarrao Chavan,ashokchavan009@gmail.com,MH-16,Nanded,நந்தீத்,नांदेड़
-1,Nandurbar,MH,Dr. Heena Vijaykumar Gavit,,MH-1,Nandurbar,நந்தர்பார்,नंदुरबार
-34,Nandyal,AP,Shri S.P.Y. Reddy,"spy.reddy@sansad.nic.in,",AP-34,Nandyal,நந்தியால்,नांदयाल
-31,Narasaraopet,AP,Shri Rayapati Sambasiva Rao,rsrdelhi11@gmail.com,AP-31,Narasaraopet,Narasaraopet,Narasaraopet
-26,Narsapuram,AP,Shri Gokaraju Ganga Raju,"goka.raju@sansad.nic.in,  gokarajugangarajump@gmail.com",AP-26,Narsapuram,Narsapuram,नरसापुरम
-21,Nashik,MH,Shri Hemant Tukaram Godse,ht.godse@sansad.nic.in,MH-21,Nashik,நாசிக்,नासिक
-25,Navsari,GJ,Shri C. R. Patil,"cr.patil@sansad.nic.in,  crpatiloffice@ymail.com,  c_r_patil@yahoo.com",GJ-25,Navsari,நவ்சாரி,नवसारी
-39,Nawada,BI,Shri Giriraj Singh,"giriraj.singh@sansad.nic.in,  girirajbihari@gmail.com",BI-39,Nawada,நவாதா,नवादा
-10,Nawgong,AS,Shri Rajen Gohain,"r.gohain@sansad.nic.in,  rajen.gohain@gmail.com",AS-10,Nawgong,Nawgong,Nawgong
-39,Nellore,AP,Shri Mekapati Rajamohan Reddy,rajamohan.reddy@sansad.nic.in,AP-39,Nellore,நெல்லூர்,नेल्लोर
-4,New Delhi,DL,Smt. Meenakashi Lekhi,mrs.mlekhi@gmail.com,DL-4,New Delhi,புது தில்லி,नई दिल्ली
-19,Nilgiris,TN,Shri Gopalakrishnan Chinnaraj,"c.gopalakrishnan@sansad.nic.in,  cgopal777@gmail.com",TN-19,Nilgiris,நீலகிரி,नीलगिरी
-4,Nizamabad,TG,Smt. Kavitha Kalvakuntla,kalvakuntla.kavitha@sansad.nic.in,TG-4,Nizamabad,நிஜாமாபாத்,निजामाबाद
-AI,Nominated Anglo-Indian,KE,Prof. Richard Hay,profhay@gmail.com,KE-AI,നിർദ്ദേശിക്കപ്പെട്ട ആംഗ്ലോ ഇന്ത്യൻ,பரிந்துரைக்கப்பட்டது ஆங்கிலோ-இந்திய,मनोनीत एंग्लो-इंडियन
-,Nominated Anglo-Indian,WB,Shri George Baker,georgeb2810@gmail.com,WB-,Nominated Anglo-Indian,பரிந்துரைக்கப்பட்டது ஆங்கிலோ-இந்திய,मनोनीत एंग्लो-इंडियन
-2,North East Delhi,DL,Shri Manoj Kumar Tiwari,"mt7tiwari@gmail.com,  tiwari.manoj@sansad.nic.in",DL-2,North East Delhi,வடகிழக்கு தில்லி,नॉर्थ ईस्ट दिल्ली
-1,North Goa,GO,Shri Shripad Yesso Naik,shripad.naik@sansad.nic.in,GO-1,North Goa,வடக்கு கோவா,उत्तरी गोवा
-5,North West Delhi,DL,Dr. Udit Raj,"udit.raj@sansad.nic.in,  dr.uditraj@gmail.com",DL-5,North West Delhi,வட மேற்கு தில்லி,उत्तर पश्चिम दिल्ली
-33,Ongole,AP,Shri Yerram Venkata Subba Reddy,"yvsubba.reddy@sansad.nic.in,  yvsubbareddymp@gmail.com",AP-33,Ongole,ஓங்கோல்,ओंगोल
-40,Osmanabad,MH,Prof. Ravindra Vishwanath Gaikwad,prof.ravi@sansad.nic.in,MH-40,Osmanabad,உஸ்மனாபாத்,उस्मानाबाद
-2,Outer Manipur,MA,Shri Thangso Baite,"t.baite@sansad.nic.in,",MA-2,Outer Manipur,அவுட்டர் மணிப்பூர்,बाहरी मणिपुर
-8,Palakkad,KE,Shri M. B. Rajesh,"mb.rajesh@sansad.nic.in,  mbrajesh05@yahoo.com",KE-8,പാലക്കാട്,பாலக்காடு,पलक्कड़
-13,Palamu,JH,Shri Vishnu Dayal Ram,"vishnudayal.ram@sansad.nic.in,  vishnudayalram.mp@gmail.com",JH-13,Palamu,பலாமு,पलामू
-22,Palghar,MH,Shri Chintaman Navsha Wanaga,,MH-22,Palghar,Palghar,Palghar
-15,Pali,RJ,Shri P.P. Chaudhary,"pp.chaudhary@sansad.nic.in,  ppchaudhary@gmail.com",RJ-15,Pali,பாலி,पाली
-18,Panchmahal,GJ,Shri Prabhatsinh Pratapsinh Chauhan,mp.panchmahal@prabhatsinh.com,GJ-18,Panchmahal,Panchmahal,पंचमहल
-17,Parbhani,MH,Shri Sanjay Haribhau Jadhav,jadhav.sanjay@sansad.nic.in,MH-17,Parbhani,பர்பானி,परभनी
-2,Paschim Champaran,BI,Dr. Sanjay Jaiswal,"drsanjayjaiswal@gmail.com,  dr.sanjayjaiswal@sansad.nic.in",BI-2,Paschim Champaran,Paschim சம்பரன்,पश्चिम चंपारण
-31,Pataliputra,BI,Shri Ram Kripal Yadav,ramkripal.yadav@sansad.nic.in,BI-31,Pataliputra,பாடலிபுத்ராவாக,पाटलिपुत्र
-3,Patan,GJ,Shri Liladharbhai Khodaji Vaghela,vaghela.liladharbhai@gmail.com,GJ-3,Patan,படான்,पाटन
-17,Pathanamthitta,KE,Shri Anto Antony,anto.antony@sansad.nic.in,KE-17,പത്തനംതിട്ട ,பத்தனம்திட்டா,पथानामथिट्टा
-13,Patiala,PB,Dr. Dharam Vira Gandhi,"dharamv.gandhi@sansad.nic.in,  dvgandhi1951@yahoo.com",PB-13,Patiala,பாட்டியாலா,पटियाला
-30,Patna Sahib,BI,Shri Shatrughan Prasad Sinha,"shatrugn@sansad.nic.in,  shatrughansinha@ymail.com",BI-30,Patna Sahib,பாட்னா சாஹிப்,पटना साहिब
-2,Peddapalle,TG,Shri Balka Suman,"balka.suman@sansad.nic.in,  balkasumantrsv@gmail.com",TG-2,Peddapalle,Peddapalle,Peddapalle
-25,Perambalur,TN,Shri R.P. Marutharajaa,rpmarutharajaa@gmail.com,TN-25,Perambalur,பெரம்பலூர்,पेरम्बलुर
-51,Phulpur,UP,Shri Keshav Prasad (Kushwaha) Maurya,keshav.prasad@sansad.nic.in,UP-51,Phulpur,Phulpur,फूलपुर
-26,Pilibhit,UP,Smt. Maneka Sanjay Gandhi,gandhim@sansad.nic.in,UP-26,Pilibhit,பிலிபிட்,पीलीभीत
-21,Pollachi,TN,Shri C. Mahendran,mahendran.c@sansad.nic.in,TN-21,Pollachi,பொள்ளாச்சி,पोलाची
-7,Ponnani,KE,Shri E. T. Mohammed Basheer,basheeret@gmail.com,KE-7,പൊന്നാനി,பொன்னானி,पोन्नानी
-11,Porbandar,GJ,Shri Vitthalbhai Hansrajbhai Radadiya,,GJ-11,Porbandar,போர்பந்தர்,पोरबंदर
-39,Pratapgarh,UP,Shri Kunwar Haribansh Singh,hbgroupofcompany@gmail.com,UP-39,Pratapgarh,பிரதாப்கர்,प्रतापगढ़
-1,Puducherry,PO,Shri R. Radhakrishnan,rrrpondy@gmail.com,PO-1,Puducherry,புதுச்சேரி,पुडुचेरी
-34,Pune,MH,Shri  Shirole Anil (alias Padmakar) Gulabrao,"anil.shirole@sansad.nic.in,  shiroleanil@gmail.com",MH-34,Pune,புனே,पुणे
-17,Puri,OR,Shri Pinaki Misra,pinakimisra@gmail.com,OR-17,Puri,பூரி,पुरी
-12,Purnia,BI,Shri Santosh Kumar,santosh.kumar19@sansad.nic.in,BI-12,Purnia,பூர்னியாவில்,पूर्णिया
-35,Purulia,WB,Dr. Mriganka Mahato,mriganka.mahato@sansad.nic.in,WB-35,Purulia,புருலியா,पुरुलिया
-3,Purvi Champaran,BI,Shri Radha Mohan Singh,rmsingh@sansad.nic.in,BI-3,Purvi Champaran,Purvi சம்பரன்,पूर्वी चंपारण
-36,Rae Bareli,UP,Smt. Sonia Gandhi,soniagandhi@sansad.nic.in,UP-36,Rae Bareli,ரே பரேலி,रायबरेली
-6,Raichur,KA,Shri B.V. Naik,bv.nayak@sansad.nic.in,KA-6,Raichur,ராய்ச்சூர்,रायचूर
-32,Raigad,MH,Shri Anant Gangaram Geete,geete@sansad.nic.in,MH-32,Raigad,ராய்காட்,रायगढ़
-5,Raiganj,WB,Shri Mohammad Salim,md.salim@sansad.nic.in,WB-5,Raiganj,Raiganj,रायगंज
-2,Raigarh,CT,Shri Vishnu Deo Sai,vishnudeo.sai@gov.in,CT-2,Raigarh,ராய்கர்,रायगढ़
-8,Raipur,CT,Shri Ramesh Bais,ramesh.bais@sansad.nic.in,CT-8,Raipur,ராய்ப்பூர்,रायपुर
-25,Rajahmundry,AP,Shri Murali Mohan Maganti,"muralimohan@jayabherigroup.com,  muralimohan.maganti@sansad.nic.in",AP-25,Rajahmundry,ராஜமுந்திரி,राजमुंदरी
-41,Rajampet,AP,Shri Midhun Reddy,pvmr@plrprojects.com,AP-41,Rajampet,Rajampet,राजमपेट
-20,Rajgarh,MP,Shri Rodmal Nagar,"rodmal.nagar@sansad.nic.in,  rodmalnagar@gmail.com",MP-20,Rajgarh,ராஜ்கர்,राजगढ़
-10,Rajkot,GJ,Shri Mohanbhai Kalyanji Kundariya,"mk.kundariya@sansad.nic.in,  mk.kundariya@yahoo.com",GJ-10,Rajkot,ராஜ்கோட்,राजकोट
-1,Rajmahal,JH,Shri Vijay Kumar Hansdak,,JH-1,Rajmahal,Rajmahal,राजमहल
-6,Rajnandgaon,CT,Shri Abhishek Singh,"abhishek.singh19@sansad.nic.in,  cg.abhishek.singh@gmail.com",CT-6,Rajnandgaon,ராஜ்நந்த்காவ்,राजनंदगांव
-22,Rajsamand,RJ,Shri Hariom Singh Rathore,"hariomsingh.rathore@sansad.nic.in,  hariomkelwa@gmail.com",RJ-22,Rajsamand,ராஜச்மன்ட்,राजसमंद
-35,Ramanathapuram,TN,Shri A. Anwhar Raajhaa,raajhaa7786@gmail.com,TN-35,Ramanathapuram,ராமநாதபுரம்,रामनाथपुरम
-7,Rampur,UP,Dr. Nepal Singh,"dr.nepalsingh@sansad.nic.in,",UP-7,Rampur,ராம்பூர்,रामपुर
-9,Ramtek,MH,Shri Krupal Balaji Tumane,kb.tumane@sansad.nic.in,MH-9,Ramtek,ராம்தேக்,रामटेक
-13,Ranaghat,WB,Dr. Tapas Mandal,"tapas.mandal@sansad.nic.in,  tmbckv@gmail.com",WB-13,Ranaghat,Ranaghat,रानाघाट
-8,Ranchi,JH,Shri Ram Tahal Choudhary,"ramtahal.choudhary@sansad.nic.in,",JH-8,Ranchi,ராஞ்சி,रांची
-24,Ratlam,MP,Shri Kantilal Bhuria,,MP-24,Ratlam,ரட்லாம்,रतलाम
-46,Ratnagiri-Sindhudurg,MH,Shri Vinayak Bhaurao Raut,"vinayakbraut@gmail.com,  vb.raut@sansad.nic.in",MH-46,Ratnagiri-Sindhudurg,ரத்னகிரி-சிந்துதுர்க்,रत्नागिरी-सिंधुदुर्ग
-4,Raver,MH,Smt. Raksha Nikhil Khadse,"nr.khadase@sansad.nic.in,  rakshataikhadse@gmail.com",MH-4,Raver,Raver,होमोसेक्सुअल
-10,Rewa,MP,Shri Janardan Mishra,Janardan.BJP@gmail.com,MP-10,Rewa,ரேவா,रीवा
-80,Robertsganj,UP,Shri Chhotelal,,UP-80,Robertsganj,ராபர்ட்ஸ்கஞ்ச்,रोबेर्त्स्गंज
-7,Rohtak,HA,Shri Deepender Singh Hooda,office@deepender.in,HA-7,Rohtak,ரோதக்,रोहतक
-5,Sabarkantha,GJ,Shri Dipsinh Shankarsinh Rathod,dipsinhrathod@gmail.com,GJ-5,Sabarkantha,சபர்கந்தா,साबरकांठा
-5,Sagar,MP,Shri Laxmi Narayan Yadav,"laxminarayan.yadav@sansad.nic.in,  lnyadavsagar@gmail.com",MP-5,Sagar,சாகர்,सागर
-1,Saharanpur,UP,Shri Raghav Lakhanpal,"raghav.lakhanpal@sansad.nic.in,  rlpmla@gmail.com",UP-1,Saharanpur,சஹாரான்பூர்,सहारनपुर
-15,Salem,TN,Shri V. Panneer Selvam,"v.pannerselvam@sansad.nic.in,  vpselvam.salem@gmail.com",TN-15,Salem,சேலம்,सलेम
-71,Salempur,UP,Shri Ravindra Kushawaha,kushawaharavindra@gmail.com,UP-71,Salempur,Salempur,सलेमपुर
-23,Samastipur,BI,Shri Ramchandra Paswan,ramchandra.paswan@sansad.nic.in,BI-23,Samastipur,Samastipur,समस्तीपुर
-3,Sambalpur,OR,Shri Nagendra Kumar Pradhan,"nagendra.pradhan@sansad.nic.in,  nagendrakp1952@gmail.com",OR-3,Sambalpur,சம்பல்பூர்,संबलपुर
-8,Sambhal,UP,Shri Satya Pal Singh,"satyapalsingh.mp@sansad.nic.in,  spsinghsainimbd@gmail.com",UP-8,Sambhal,Sambhal,संभल
-44,Sangli,MH,Shri Sanjay(Kaka) Ramchandra Patil,"sanjaykaka.patil@sansad.nic.in,  sanjaykaka404@gmail.com",MH-44,Sangli,சாங்க்லி,सांगली
-12,Sangrur,PB,Shri Bhagwant Mann,bhagwant.mann@sansad.nic.in,PB-12,Sangrur,Sangrur,Sangrur
-62,Sant Kabir Nagar,UP,Shri Sharad Tripathi,"sharad.tripathi@sansad.nic.in,  sharad.skn@gmail.com",UP-62,Sant Kabir Nagar,சந்த் கபீர் நகர்,संत कबीर नगर
-20,Saran,BI,Shri Rajiv Pratap Rudy,"rudypr@sansad.nic.in,  rprudy.office@gmail.com",BI-20,Saran,சரண்,सरन
-34,Sasaram,BI,Shri Chhedi Paswan,"chhedi.paswan@sansad.nic.in,  chhedipaswan.mp@gmail.com",BI-34,Sasaram,Sasaram,सासाराम
-45,Satara,MH,Shri Udayanraje  Pratapsingh Bhonsle,udayanrajebhonsle@gmail.com,MH-45,Satara,சதாரா,सतारा
-9,Satna,MP,Shri Ganesh Singh,"sganesh@sansad.nic.in,  loksabhasatna@gmail.com",MP-9,Satna,சாத்னாவின்,सतना
-8,Secunderabad,TG,Shri Bandaru Dattatreya,bandaru@sansad.nic.in,TG-8,Secunderabad,செகந்திராபாத்,सिकंदराबाद
-27,Serampore,WB,Shri Kalyan Banerjee,"kalyan.banerjee@sansad.nic.in,",WB-27,Serampore,செராம்பூர்,श्रीरामपुर
-12,Shahdol,MP,Shri Dalpat Singh Paraste,dalpat.paraste@sansad.nic.in,MP-12,Shahdol,Shahdol,शाहडोल
-27,Shahjahanpur,UP,Smt. Krishna Raj,krishna.raj19@sansad.nic.in,UP-27,Shahjahanpur,ஷாஜகான்பூரிலிருந்து,शाहजहांपुर
-4,Sheohar,BI,Smt. Rama Devi,rama.devi19@sansad.nic.in,BI-4,Sheohar,Sheohar,शिवहर
-1,Shillong,ME,Shri Vincent H Pala,"vincentdimo@yahoo.com,  vincentpala@gmail.com,  vincent.pala@sansad.nic.in",ME-1,Shillong,ஷில்லாங்,शिलांग
-4,Shimla,HP,Shri Virender Kashyap,"virenderkashyapbjp@yahoo.co.in,",HP-4,Shimla,சிம்லா,शिमला
-14,Shimoga,KA,Shri B. S. Yeddyurappa,"bs.yeddyurappa@sansad.nic.in,  bsy@yeddyurappa.in",KA-14,Shimoga,ஷிமோகா,शिमोगा
-38,Shirdi,MH,Shri Sadashiv Kisan Lokhande,"sk.lokhande@sansad.nic.in,",MH-38,Shirdi,ஷீர்டி,शिरडी
-36,Shirur,MH,Shri Shivaji Adhalrao Patil,"shivajirao@sansad.nic.in,",MH-36,Shirur,ஷிருர்,शिरुर
-58,Shrawasti,UP,Shri Daddan Mishra,daddan.mishra@sansad.nic.in,UP-58,Shrawasti,Shrawasti,श्रावस्ती
-11,Sidhi,MP,Smt. Riti Pathak,"riti.pathak@sansad.nic.in,  riti.sidhi@gmail.com",MP-11,Sidhi,சித்தியிலிருந்து,सीधी
-5,Sikar,RJ,Shri Sumedhanand Saraswati,"sumedhanand.s@sansad.nic.in,  sss.piprali@gmail.com",RJ-5,Sikar,சிகார்,सीकर
-1,Sikkim,SK,Shri Prem Das Rai,"premdas.rai@sansad.nic.in,  mpsikkim@gmail.com",SK-1,Sikkim,சிக்கிம்,सिक्किम
-2,Silchar,AS,Km. Sushmita Dev,sushmita.dev@sansad.nic.in,AS-2,Silchar,சில்சார்,सिलचर
-10,Singhbhum,JH,Shri Laxman Giluwa,laxman.giluwa@sansad.nic.in,JH-10,Singhbhum,சிங்பும்,सिंहभूम
-3,Sirsa,HA,Shri Charanjeet Singh Rori,charanjeet.rori@sansad.nic.in,HA-3,Sirsa,சிர்சா,सिरसा
-5,Sitamarhi,BI,Shri Ram Kumar Sharma,mpkushwaharksharma@gmail.com,BI-5,Sitamarhi,Sitamarhi,सीतामढ़ी
-30,Sitapur,UP,Shri Rajesh Verma,"verma.rajesh@sansad.nic.in,  suneetkverma@yahoo.co.in",UP-30,Sitapur,சீதாப்புர்,सीतापुर
-31,Sivaganga,TN,Shri P.R. Senthilnathan,"senthilnathan.pr@sansad.nic.in,  senthil.admk.SVG.DS@gmail.com",TN-31,Sivaganga,சிவகங்கை,शिवगंगा
-18,Siwan,BI,Shri Om Prakash Yadav,opyadavmp@gmail.com,BI-18,Siwan,சிவான்,सिवान
-42,Solapur,MH,Shri Sharadkumar Maruti Bansode,"sharad.bansode@sansad.nic.in,  sbansodeg@yahoo.co.in",MH-42,Solapur,சோலாப்பூர்,सोलापुर
-6,Sonipat,HA,Shri Ramesh Chander Kaushik,"ramesh.kaushik@sansad.nic.in,  mp.sonepat@gmail.com",HA-6,Sonipat,சோனிபட்,सोनीपत
-7,South Delhi,DL,Shri Ramesh Bidhuri,"ramesh.bidhuri@sansad.nic.in,  rameshbidhuri@yahoo.in",DL-7,South Delhi,தென் தில்லி,दक्षिण दिल्ली
-2,South Goa,GO,Advocate (Shri) Narendra Keshav Sawaikar,"narendra.sawaikar@sansad.nic.in,  sawaikar.narendra@gmail.com",GO-2,South Goa,தெற்கு கோவா,दक्षिण गोवा
-19,Srikakulam,AP,Shri Kinjarapu Ram Mohan Naidu,"rammohannaidu.k@sansad.nic.in,  rammnk9@gmail.com,  rammohannaidu@gmail.com",AP-19,Srikakulam,ஸ்ரீகாகுளம்,श्रीकाकुलम
-2,Srinagar,JK,Shri Tariq Hameed Karra,"tariq.karra@sansad.nic.in,  karratariq@gmail.com",JK-2,Srinagar,ஸ்ரீநகர்,श्रीनगर
-5,Sriperumbudur,TN,Shri Krishnan Narayanasamy Ramachandran,"knt.ramachandran@sansad.nic.in,  knramachandran.mp@gmail.com",TN-5,Sriperumbudur,ஸ்ரீபெரும்புதூர்,श्रीपेरुमबुदुर
-38,Sultanpur,UP,Shri Feroze Varun Gandhi,"ferozevarun.gandhi@sansad.nic.in,  14ashokaroad@gmail.com",UP-38,Sultanpur,சுல்தான்பூர்,सुल्तानपुर
-2,Sundargarh,OR,Shri Jual Oram,jualoram@sansad.nic.in,OR-2,Sundargarh,சுந்தர்கர்,सुंदरगढ़
-8,Supaul,BI,Smt. Ranjeet Ranjan,ranjeet.ranjan19@sansad.nic.in,BI-8,Supaul,சுபால்,सुपौल
-24,Surat,GJ,Smt. Darshana Vikram Jardosh,mail@darshanajardosh.in,GJ-24,Surat,சூரத்,सूरत
-9,Surendranagar,GJ,Shri Devajibhai Govindbhai Fatepara,mpsnr1419@gmail.com,GJ-9,Surendranagar,சுரேந்தரநகர்,सुरेंद्रनगर
-1,Surguja,CT,Shri Kamalbhan Singh Marabi,kamalbhans.marabi@sansad.nic.in,CT-1,Surguja,சர்குஜா,सरगुजा
-30,Tamluk,WB,Shri Suvendu Adhikari,"adhikari.suvendu@sansad.nic.in,",WB-30,Tamluk,Tamluk,तामलुक
-1,Tehri Garhwal,UT,Smt. Mala Rajya Laxmi Shah,malarajyalaxmishah@gmail.com,UT-1,Tehri Garhwal,டெஹ்ரி கர்வால்,टिहरी गढ़वाल
-37,Tenkasi,TN,Smt. Vasanthi M.,vasanthi.m@sansad.nic.in,TN-37,Tenkasi,தென்காசி,तेनकासी
-9,Tezpur,AS,Shri Ram Prasad Sarmah,"rp.sarmah@sansad.nic.in,  ramsarmah@gmail.com",AS-9,Tezpur,தேஜ்பூர்,तेजपुर
-25,Thane,MH,Shri Rajan Baburao Vichare,"rb.vichare@sansad.nic.in,  rajanbvichare@gmail.com",MH-25,Thane,தானே,थाइन
-30,Thanjavur,TN,Shri Parasuraman K.,parasuraman.k@sansad.nic.in,TN-30,Thanjavur,தஞ்சாவூர்,तंजावुर
-33,Theni,TN,Shri R. Parthipan,r.parthipan@sansad.nic.in,TN-33,Theni,பிறகு நான்,तब मैं
-20,Thiruvananthapuram,KE,Dr. Shashi Tharoor,"office@tharoor.in,  shashi.tharoor@nic.in",KE-20,തിരുവനന്തപുരം ,திருவனந்தபுரம்,तिरुवनंतपुरम
-36,Thoothukkudi,TN,Advocate Jayasingh Thiyagaraj Natterjee,jjtnatterjee@gmail.com,TN-36,Thoothukkudi,தூத்துக்குடி,थूथुकुडी
-10,Thrissur,KE,Shri C. N. Jayadevan,"cn.jayadevan@sansad.nic.in,  cnthrissurmp@gmail.com",KE-10,ത്രിശ്ശൂർ,திருச்சூர்,त्रिशूर
-6,Tikamgarh,MP,Dr. Virendra Kumar,vkumar@sansad.nic.in,MP-6,Tikamgarh,Tikamgarh,टीकमगढ़
-24,Tiruchirappalli,TN,Shri P. Kumar,"p.kumar@sansad.nic.in,  trichy.mp@gmail.com",TN-24,Tiruchirappalli,திருச்சிராப்பள்ளி,तिरुचिरापल्ली
-38,Tirunelveli,TN,Shri K.R.P. Prabakaran,krp.prabakaran@sansad.nic.in,TN-38,Tirunelveli,திருநெல்வேலி,तिरुनेलवेली
-40,Tirupati,AP,Dr. Vara Prasadarao Velagapalli,vvpr53@yahoo.com,AP-40,Tirupati,திருப்பதி,तिरुपति
-18,Tiruppur,TN,Smt. V. Sathyabama,"v.sathyabama@sansad.nic.in,  sathyabama.vasu@gmail.com",TN-18,Tiruppur,திருப்பூர்,तिरुपूर
-1,Tiruvallur,TN,Dr. Ponnusamy Venugopal,p.venugopal@sansad.nic.in,TN-1,Tiruvallur,திருவள்ளூர்,तिरुवल्लुर
-11,Tiruvannamalai,TN,Smt. R. Vanaroja,"r.vanaroja@sansad.nic.in,",TN-11,Tiruvannamalai,திருவண்ணாமலை,तिरुवन्नामलाई
-12,Tonk-Sawai Madhopur,RJ,Shri Sukhbir Singh Jaunpuria,sukhbirs.jaunapuria@sansad.nic.in,RJ-12,Tonk-Sawai Madhopur,டோங்க்-சவாய் மாதோபூர்,टोंक-सवाई माधोपुर
-2,Tripura East,TR,Shri Jitendra Chaudhury,"jitendra.chaudhury@sansad.nic.in,  jchaudhury2008@gmail.com",TR-2,Tripura East,திரிபுரா கிழக்கு,त्रिपुरा पूर्व
-1,Tripura West,TR,Shri Sankar Prasad Datta,sankar.datta@sansad.nic.in,TR-1,Tripura West,திரிபுரா மேற்கு,त्रिपुरा पश्चिम
-19,Tumkur,KA,Shri S.P. Muddahanumegowda,spmuddahanumegowda@gmail.com,KA-19,Tumkur,தும்கூர்,तुमकुर
-2,Tura,ME,Shri Purno Agitok Sangma,pasangma@sansad.nic.in,ME-2,Tura,துரா,तुरा
-19,Udaipur,RJ,Shri Arjunlal Meena,arjunlal.meena@sansad.nic.in,RJ-19,Udaipur,உதய்பூர்,उदयपुर
-5,Udhampur,JK,Dr. Jitendra Singh,drjitendras@gmail.com,JK-5,Udhampur,உதம்பூர்,उधमपुर
-15,Udupi Chikmagalur,KA,Km. Shobha Karandlaje,"shobha.karandlaje@sansad.nic.in,  mpudupichikmagaluru@gmail.com",KA-15,Udupi Chikmagalur,உடுப்பி சிக்மகளூர்,उडुपी चिकमगलूर
-22,Ujiarpur,BI,Shri Nityanand Rai,"nityanand.rai@sansad.nic.in,  nityanandrai85@gmail.com",BI-22,Ujiarpur,Ujiarpur,उजियारपुर लोक सभा निर्वाचन क्षेत्र
-22,Ujjain,MP,Prof. Chintamani Malviya,drcmmalviya@gmail.com,MP-22,Ujjain,உஜ்ஜைன்,उज्जैन
-26,Uluberia,WB,Shri Sultan Ahmed,sultan.ahmed@nic.in,WB-26,Uluberia,Uluberia,उलूबेरिया
-33,Unnao,UP,Dr. Sakshi Ji Swami Maharaj,"sakshi@sansad.nic.in,  swamijisakshijimaharaj@gmail.com",UP-33,Unnao,உன்னாவோ,उन्नाव
-12,Uttara Kannada,KA,Shri Anantkumar Hegde,"anantkh@sansad.nic.in,  mpcanara@gmail.com,  anantkumarhegde@gmail.com",KA-12,Uttara Kannada,உத்தர கன்னட,उत्तर कन्नड़
-3,Vadakara,KE,Shri Ramachandran Mullappally,"Mullappally.r@sansad.nic.in,  mullappally.ramachandran@gmail.com",KE-3,വടകര,Vadakara,Vadakara
-20,Vadodara,GJ,Smt. Ranjanben Dhananjay Bhatt,ranjanbhatt135@gmail.com,GJ-20,Vadodara,வதோதரா,वडोदरा
-16,Vaishali,BI,Shri Rama Kishore Singh,"ramakishore.singh@sansad.nic.in,  rksvaishali@gmail.com",BI-16,Vaishali,வைசாலி,वैशाली
-1,Valmiki Nagar,BI,Shri Satish Chandra Dubey,satishchandra.dubey@sansad.nic.in,BI-1,Valmiki Nagar,வால்மீகி நகர்,वाल्मीकि नगर
-26,Valsad,GJ,Dr. K. C. Patel,kc.patel@sansad.nic.in,GJ-26,Valsad,Valsad,वलसाड
-77,Varanasi,UP,Shri Narendra Modi,appt.pmo@gov.in,UP-77,Varanasi,வாரணாசி,वाराणसी
-8,Vellore,TN,Shri B. Senguttuvan,senguttuvanb.adv@gmail.com,TN-8,Vellore,வேலூர்,वेल्लोर
-18,Vidisha,MP,Smt. Sushma Swaraj,,MP-18,Vidisha,விதிஷா,विदिशा
-29,Vijayawada,AP,Shri Srinivas Kesineni,kesineni.srinivas@sansad.nic.in,AP-29,Vijayawada,விஜயவாடா,विजयवाड़ा
-13,Viluppuram,TN,Shri S. Rajendran,"rajendran.s19@sansad.nic.in
-",TN-13,Viluppuram,விழுப்புரம்,विलुप्पुरम
-34,Virudhunagar,TN,Shri T. Radhakrishnan,mpvirudhunagar@gmail.com,TN-34,Virudhunagar,விருதுநகர்,विरुधुनगर
-21,Visakhapatnam,AP,Dr. Hari Babu Kambhampati,"k.haribabu@gmail.com,  k.haribabu@sansad.nic.in",AP-21,Visakhapatnam,விசாகப்பட்டினம்,विशाखापत्तनम
-20,Vizianagaram,AP,Shri Ashok Gajapathi Raju Pusapati,"agajapathiraju.p@sansad.nic.in,  hm.moca@gov.in",AP-20,Vizianagaram,விஜயநகரம்,विजयनगरम
-15,Warangal,TG,Shri Dayakar Pasunoori,"pasunooridayakar@gmail.com,
-wglmpdayakar@gmail.com",TG-15,Warangal,வாரங்கல்,वारंगल
-8,Wardha,MH,Shri Ramdas Chandrabhanji Tadas,"rc.tadas@sansad.nic.in,  rctadas@gmail.com",MH-8,Wardha,வார்தா,वर्धा
-4,Wayanad,KE,Shri M. I. Shanavas,"shanavaskpcc@yahoo.co.in,  mi.shanavas@sansad.nic.in",KE-4,വയനാട്,வயநாடு,वायनाड
-6,West Delhi,DL,Shri Parvesh Sahib Singh,"parvesh.sahib@sansad.nic.in,  parveshsahibsingh@gmail.com",DL-6,West Delhi,மேற்கு தில்லி,पश्चिमी दिल्ली
-14,Yavatmal-Washim,MH,Ms. Bhavana Pundlikrao Gawali (Patil),gb.pundlikrao@sansad.nic.in,MH-14,Yavatmal-Washim,யாவத்மால்-வாஷிம்.குற்ற,यवतमाल-वाशिम
-5,Zahirabad,TG,Shri Bheemrao Baswanthrao Patil,bbpatil7777@gmail.com,TG-5,Zahirabad,Zahirabad,Zahirabad
+",UP-49
+19,Fatehpur Sikri,UP,Shri Babulal Chaudhary,babulal.mp@sansad.nic.in,UP-19
+10,Ferozpur,PB,Shri Sher Singh Ghubaya,ss.ghubaya@sansad.nic.in,PB-10
+20,Firozabad,UP,Shri Akshay Yadav,"akshay.yadav@sansad.nic.in,  yadavakshay@yahoo.com",UP-20
+12,Gadchiroli-Chimur,MH,Shri Ashok Mahadeorao Nete,"ashok.mahadeorao@sansad.nic.in,  ashoknetempgad@gmail.com",MH-12
+6,Gandhinagar,GJ,Shri Lal Krishna Advani,officelka@gmail.com,GJ-6
+1,Ganganagar,RJ,Shri Nihal Chand Chauhan,mos-mopr@nic.in,RJ-1
+2,Garhwal,UT,Maj Gen  Bhuwan Chandra AVSM (Retd.) Khanduri,"bc.khanduri@nic.in,  khanduribc@gmail.com",UT-2
+7,Gauhati,AS,Smt. Bijoya Chakravarty,"bijoya.chakravarty@sansad.nic.in,  bijoya@nic.in",AS-7
+13,Gautam Buddha Nagar,UP,Dr. Mahesh Sharma,dr.mahesh@sansad.nic.in,UP-13
+38,Gaya,BI,Shri Hari Manjhi,manjhihari@gmail.com,BI-38
+32,Ghatal,WB,Shri Deepak (Dev) Adhikari,"adhikari.deepak@sansad.nic.in,",WB-32
+12,Ghaziabad,UP,Vijay Kumar Singh  (Retd.) General (Dr.),"vksingh.mp@sansad.nic.in,  veekaysingh@gmail.com",UP-12
+75,Ghazipur,UP,Shri Manoj Kumar Sinha,manojsinha.mp@sansad.nic.in,UP-75
+70,Ghosi,UP,Shri Hari Narayan Rajbhar,harinarayan.rajbhar@sansad.nic.in,UP-70
+6,Giridih,JH,Shri Ravindra Kumar Pandey,"rkpandey@sansad.nic.in,",JH-6
+3,Godda,JH,Shri Nishikant Dubey,"nishikant.dubey@sansad.nic.in,  nishikant.dubey.mp@gmail.com",JH-3
+59,Gonda,UP,Shri Kirti Vardhan Singh,kirtivardhan.singh@sansad.nic.in,UP-59
+17,Gopalganj,BI,Shri Janak Ram,"janak.ram@sansad.nic.in,  janakchamarbjp73@gmail.com",BI-17
+64,Gorakhpur,UP,Shri Yogi Adityanath,"yogi.adityanath@sansad.nic.in,  yogiadityanath72@gmail.com",UP-64
+5,Gulbarga,KA,Shri Mallikarjun Kharge,"m.kharge@sansad.nic.in,  mallikarjunkharge@yahoo.in",KA-5
+4,Guna,MP,Shri Jyotiraditya Madhavrao Scindia,office.scindia@yahoo.com,MP-4
+30,Guntur,AP,Shri Jayadev Galla,jayadev.galla@sansad.nic.in,AP-30
+1,Gurdaspur,PB,Shri Vinod Khanna,"vkhanna@sansad.nic.in,",PB-1
+9,Gurgaon,HA,Rao Inderjit Singh,"rao.inderjit@sansad.nic.in,  mos-planning@gov.in",HA-9
+3,Gwalior,MP,Shri Narendra Singh Tomar,ns.tomar@sansad.nic.in,MP-3
+21,Hajipur,BI,Shri Ram Vilas Paswan,ramvilas.p@sansad.nic.in,BI-21
+3,Hamirpur,HP,Shri Anurag Singh Thakur,"hpcapresident@yahoo.com,  mphamirpur@gmail.com",HP-3
+47,Hamirpur,UP,Kunwar Pushpendra Singh Chandel,"kunwarps.chandel@sansad.nic.in,  pushpendra.chandelmahoba@gmail.com",UP-47
+31,Hardoi,UP,Shri Anshul Verma,anshul.verma@sansad.nic.in,UP-31
+5,Hardwar,UT,Dr. Ramesh Pokhriyal Nishank,,UT-5
+16,Hassan,KA,Shri H.D. Devegowda,haradanahalli@yahoo.co.in,KA-16
+16,Hathras,UP,Shri Rajesh Kumar Diwakar,"rk.diwaker@sansad.nic.in,  rajeshhathras@yahoo.com",UP-16
+48,Hatkanangle,MH,Shri Raju alias Devappa Anna Shetti,raju.shetty@sansad.nic.in,MH-48
+10,Haveri,KA,Shri Shivkumar Chanabasappa Udasi,"68southavenue@gmail.com,  udasi.channabasappa@sansad.nic.in",KA-10
+14,Hazaribagh,JH,Shri Jayant Sinha,"jayant.sinha19@sansad.nic.in,  jsinha21@gmail.com",JH-14
+37,Hindupur,AP,Shri Kristappa Nimmala,nimmalakristappa@gmail.com,AP-37
+15,Hingoli,MH,Shri Rajeev Shankarrao Satav,rajeevsatav@gmail.com,MH-15
+4,Hisar,HA,Shri Dushyant Chautala,"dushyant.chautala@sansad.nic.in,  dchautala@gmail.com",HA-4
+28,Hooghly,WB,Dr. (Smt.) Ratna De(Nag),ratna.de@sansad.nic.in,WB-28
+17,Hoshangabad,MP,Shri Uday Pratap Singh,udaypratap_narsinghpur@yahoo.com,MP-17
+5,Hoshiarpur,PB,Shri Vijay Sampla,"vijay.sampla@sansad.nic.in,",PB-5
+25,Howrah,WB,Shri Prasun Banerjee,"prasun.banerjee@sansad.nic.in,  prasuntmcsc@gmail.com",WB-25
+9,Hyderabad,TG,Shri Asaduddin Owaisi,asad.owaisi@sansad.nic.in,TG-9
+13,Idukki,KE,Shri (Adv.) Joice George,"joice.george@sansad.nic.in,  joicegeorgeadv@gmail.com",KE-13
+26,Indore,MP,Sumitra Mahajan (Tai),"speakerloksabha@sansad.nic.in,  s_mahajan@nic.in",MP-26
+1,Inner Manipur,MA,Dr. Thokchom Meinya,meinya@sansad.nic.in,MA-1
+13,Jabalpur,MP,Shri Rakesh Singh,"rakesh.singh@sansad.nic.in,  mpjbp@yahoo.com",MP-13
+22,Jadavpur,WB,Prof. (Dr.) Sugata Bose,"sugata.bose@sansad.nic.in,  sugata.bose@nic.in",WB-22
+16,Jagatsinghpur,OR,Dr. Kulamani Samal,kulamani.samal@sansad.nic.in,OR-16
+36,Jahanabad,BI,Dr. Arun Kumar,"dr.arunkumar@sansad.nic.in,  drarunkumarjahanabad@gmail.com",BI-36
+7,Jaipur,RJ,Shri Ramcharan Bohra,,RJ-7
+6,Jaipur Rural,RJ,Col. Rajyavardhan Singh Rathore,rajyavardhan.rathore@sansad.nic.in,RJ-6
+8,Jajpur,OR,Smt. Rita Tarai,rita.tarai@sansad.nic.in,OR-8
+4,Jalandhar,PB,Shri Santokh Singh Chaudhary,"ss.chaudhary@sansad.nic.in,  santokhschaudhary@gmail.com",PB-4
+45,Jalaun,UP,Shri Bhanu Pratap Singh Verma,bhanus@sansad.nic.in,UP-45
+3,Jalgaon,MH,Shri A.T. (Nana) Patil,atnana.patil@sansad.nic.in,MH-3
+18,Jalna,MH,Shri Raosaheb Patil Danve,raosaheb.danve@sansad.nic.in,MH-18
+18,Jalore,RJ,Shri Devji Mansingram Patel,"dm.patel@sansad.nic.in,  devjimp@gmail.com",RJ-18
+3,Jalpaiguri,WB,Shri Bijoy Chandra Barman,"bc.barman@sansad.nic.in,  bijoychandrabarman@gmail.com",WB-3
+6,Jammu,JK,Shri Jugal Kishore Sharma,jugal.bjp@gmail.com,JK-6
+12,Jamnagar,GJ,Smt. Poonamben Hematbhai Maadam,poonam.maadam@sansad.nic.in,GJ-12
+9,Jamshedpur,JH,Shri Bidyut Baran Mahato,mpbidyutmahato@gmail.com,JH-9
+40,Jamui,BI,Shri Chirag Paswan,office.chiragpaswan@gmail.com,BI-40
+9,Jangipur,WB,Dr. Abhijit Mukherjee,abhijit.mukherjee@sansad.nic.in,WB-9
+3,Janjgir-Champa,CT,Smt. Kamla Devi Patle,kd.patle@sansad.nic.in,CT-3
+73,Jaunpur,UP,Dr. Krishna Pratap Singh,kpsingh.jnp@gmail.com,UP-73
+19,Jaynagar,WB,Smt. Pratima Mondal,"pratima.mondal@sansad.nic.in,  pratimamondal66@yahoo.com",WB-19
+25,Jhalawar-Baran,RJ,Shri Dushyant Singh,dushyant@dholpurpalace.com,RJ-25
+7,Jhanjharpur,BI,Shri Birendra Kumar Chaudhary,bkumar.chaudhary@sansad.nic.in,BI-7
+46,Jhansi,UP,Uma  Bharati Sushree,uma.bharati@sansad.nic.in,UP-46
+33,Jhargram,WB,Dr. Uma Saren,uma.saren@sansad.nic.in,WB-33
+4,Jhunjhunu,RJ,Smt. Santosh Ahlawat,ahlawat.santosh@sansad.nic.in,RJ-4
+16,Jodhpur,RJ,Shri Gajendra Singh Shekhawat,"g.shekhawat@sansad.nic.in,  mpgssjodhpur@gmail.com",RJ-16
+12,Jorhat,AS,Shri Kamakhya Prasad Tasa,"kamakhyap.tasa@sansad.nic.in,  kamakhyatasa@gmail.com",AS-12
+13,Junagadh,GJ,Shri Rajeshbhai Naranbhai Chudasama,"chudasamar.naranbhai@sansad.nic.in,  rajnc@ymail.com,  mp13junagadh@gmail.com",GJ-13
+1,Kachchh,GJ,Shri Vinod Chavda,"chavdav.lakhamashi@sansad.nic.in,  vinod5467@gmail.com",GJ-1
+38,Kadapa,AP,Shri Y. S. Avinash Reddy,ysavinash.reddy@sansad.nic.in,AP-38
+2,Kairana,UP,Shri Hukum Singh,"hukum.singh@sansad.nic.in,  hukumbjp@gmail.com",UP-2
+57,Kaiserganj,UP,Shri Brijbhushan Sharan Singh,bjp2014kaisherganj@gmail.com,UP-57
+23,Kakinada,AP,Shri Narasimham Thota,"thotanarasimhammp@gmail.com,  thotanarasimhamdelhioffice@gmail.com",AP-23
+11,Kalahandi,OR,Shri Arka Keshari Deo,arka.keshari@sansad.nic.in,OR-11
+11,Kaliabor,AS,Shri Gaurav Gogoi,,AS-11
+14,Kallakurichi,TN,Dr. K. Kamaraj,k.kamaraj@sansad.nic.in,TN-14
+24,Kalyan,MH,Dr. Shrikant Eknath Shinde,shrikantshinde87@yahoo.in,MH-24
+6,Kancheepuram,TN,Smt. K. Maragatham,"k.maragatham@sansad.nic.in,  maragathamkmj@gmail.com",TN-6
+13,Kandhamal,OR,Smt. Pratyusha Rajeshwari Singh,"mpkandhamal@gmail.com,  pratyusha.singh@sansad.nic.in",OR-13
+1,Kangra,HP,Shri Shanta Kumar,"shanta.kumar@sansad.nic.in,  skyamini@gmail.com",HP-1
+11,Kanker,CT,Shri Vikram Usendi,"vikramd.usendi@sansad.nic.in,  vikram_usendi@ymail.com",CT-11
+42,Kannauj,UP,Smt. Dimple Yadav,dimpleyadav78@gmail.com,UP-42
+39,Kanniyakumari,TN,Shri Pon Radhakrishnan,ponrk@sansad.nic.in,TN-39
+2,Kannur,KE,Smt. P.K. Sreemathi Teacher,"pk.sreemathi@sansad.nic.in,  pksreemathi@gmail.com",KE-2
+43,Kanpur,UP,Dr. Murli Manohar Joshi,murli@sansad.nic.in,UP-43
+31,Kanthi,WB,Shri Sisir Kumar Adhikari,"sisir.adhikari@nic.in,  sisiradhikari76@yahoo.com",WB-31
+35,Karakat,BI,Shri Upendra Kushwaha,upendra.kushwaha19@sansad.nic.in,BI-35
+10,Karauli-Dholpur,RJ,Dr. Manoj Rajoria,"manoj.rajoria@sansad.nic.in,  dr.manojrajoria001@gmail.com",RJ-10
+1,Karimganj,AS,Shri Radheshyam Biswas,radheshyam.biswas@sansad.nic.in,AS-1
+3,Karimnagar,TG,Shri Vinod Kumar Boianapalli,"vkumar.boianapalli@sansad.nic.in,  vinodkumarboianapalli@yahoo.com",TG-3
+5,Karnal,HA,Shri Ashwini Kumar,ashwinikumar001@gmail.com,HA-5
+23,Karur,TN,Dr. M. Thambi Durai,,TN-23
+1,Kasaragod,KE,Shri P. Karunakaran,"karunakaran.p@sansad.nic.in,  pkarunakaranmp@gmail.com",KE-1
+11,Katihar,BI,Shri Tariq Anwar,tariq.anwar@sansad.nic.in,BI-11
+50,Kaushambi,UP,Shri Vinod Kumar Sonkar,"vinod.sonkar@sansad.nic.in,  bjpvinodsonkar@gmail.com",UP-50
+15,Kendrapara,OR,Shri Baijayant 'Ja' Panda,"office@bjpanda.org,  bj.panda@sansad.nic.in",OR-15
+4,Keonjhar,OR,Smt. Sakuntala Laguri,sakuntala.laguri@sansad.nic.in,OR-4
+3,Khadoor Sahib,PB,Shri Ranjit Singh Brahmpura,,PB-3
+25,Khagaria,BI,Choudhary Mehboob Ali Kaiser,mahboobali.kaiser@sansad.nic.in,BI-25
+8,Khajuraho,MP,Shri Nagendra Singh,nsinghnagod@gmail.com,MP-8
+17,Khammam,TG,Shri Ponguleti Srinivasa Reddy,,TG-17
+28,Khandwa,MP,Shri Nand Kumar Singh Chauhan,,MP-28
+27,Khargone,MP,Shri Subhash Patel,"subhash.patel@sansad.nic.in,",MP-27
+17,Kheda,GJ,Shri Devusinh Jesingbhai Chauhan,devusinh@yahoo.co.in,GJ-17
+28,Kheri,UP,Shri Ajay (Teni) Misra,ajay.kumar19@sansad.nic.in,UP-28
+11,Khunti,JH,Shri Kariya Munda,kariya.munda@sansad.nic.in,JH-11
+10,Kishanganj,BI,Shri Asrarul Haque Mohammad,"masrarul.haque@sansad.nic.in,",BI-10
+5,Kodarma,JH,Dr. Ravindra Kumar Ray,"ravindrak.ray@sansad.nic.in,  rkraibjp@gmail.com",JH-5
+5,Kokrajhar,AS,Shri Naba (Hira) Kumar Sarania,saranianabakumar@yahoo.com,AS-5
+28,Kolar,KA,Dr. K.H. Muniyappa,khmuni@sansad.nic.in,KA-28
+47,Kolhapur,MH,Shri Dhananjay Bhimrao Mahadik,"db.mahadik@sansad.nic.in,",MH-47
+23,Kolkata Dakshin,WB,Shri Subrata Bakshi,,WB-23
+24,Kolkata Uttar,WB,Shri Sudip Bandyopadhyay,"sudip@sansad.nic.in,  sudip_bandyopadhyay2006@yahoo.com",WB-24
+18,Kollam,KE,Shri N.K. Premachandran,"nk.premachandran@sansad.nic.in,  nkprem07@gmail.com",KE-18
+8,Koppal,KA,Shri Sanganna Amarappa Karadi,bjpdpkpl@gmail.com,KA-8
+21,Koraput,OR,Shri Jhina Hikaka,jhina.hikaka@sansad.nic.in,OR-21
+4,Korba,CT,Dr. Banshilal Mahto,"banshilal.mahto@sansad.nic.in,  mahtobanshilal@gmail.com",CT-4
+24,Kota,RJ,Shri Om Birla,"ombirla@yahoo.co.in,  ombirlakota@gmail.com,  birla.om@sansad.nic.in",RJ-24
+14,Kottayam,KE,Shri Jose K. Mani,"josekmanimp@gmail.com,  mani.josek@sansad.nic.in",KE-14
+5,Kozhikode,KE,Shri M. K. Raghavan,"mk.raghavan@sansad.nic.in,  calicutmp@yahoo.co.in",KE-5
+9,Krishnagiri,TN,Shri K. Ashokkumar,k.ashokkumar@sansad.nic.in,TN-9
+12,Krishnanagar,WB,Shri Tapas Paul,"tapas.paul@sansad.nic.in,  t.paul1mp@gmail.com",WB-12
+35,Kurnool,AP,Smt. Renuka Butta,"butta.renuka@sansad.nic.in,  brnk2106@gmail.com",AP-35
+2,Kurukshetra,HA,Shri Raj Kumar Saini,rajkumarsaini1953@gmail.com,HA-2
+65,Kushi Nagar,UP,Shri Rajesh Pandey,"pandey.rajesh@sansad.nic.in,  prajeshmangal@gmail.com",UP-65
+4,Ladakh,JK,Shri Thupstan Chhewang,"thupstan.chhewang@sansad.nic.in,  thupstanc@yahoo.co.in",JK-4
+14,Lakhimpur,AS,Shri Sarbananda Sonowal,sarbananda.sonowal@sansad.nic.in,AS-14
+1,Lakshadweep,LD,Shri Faizal P.P. Mohammed,"mohammed.faizal@sansad.nic.in,  faizalpp786@gmail.com",LD-1
+68,Lalganj,UP,Smt. Neelam Sonker,neelam.sonkar@sansad.nic.in,UP-68
+41,Latur,MH,Dr. Sunil Baliram Gaikwad,"sbgbjp@gmail.com,  dr.sunilbgaikwad@sansad.nic.in,  drsbgaikwadbjp@gmail.com",MH-41
+12,Lohardaga,JH,Shri Sudarshan Bhagat,s.bhagat@sansad.nic.in,JH-12
+35,Lucknow,UP,Shri Rajnath Singh,,UP-35
+7,Ludhiana,PB,Shri Ravneet Singh,ravneetbittu@gmail.com,PB-7
+74,Machhlishahr,UP,Shri Ram Charitra Nishad,"ram.charitra@sansad.nic.in,  anamikaram21@gmail.com",UP-74
+28,Machilipatnam,AP,Shri Konakalla Narayana Rao,knarayana.rao@sansad.nic.in,AP-28
+43,Madha,MH,Shri Vijaysinh Mohite Patil,mpv.shankarrao@sansad.nic.in,MH-43
+13,Madhepura,BI,Shri Rajesh Ranjan  (Pappu  Yadav),"pappu.yadav@sansad.nic.in,  rajesh.ranjan19@sansad.nic.in",BI-13
+6,Madhubani,BI,Shri Hukmdev Narayan Yadav,,BI-6
+32,Madurai,TN,Shri R. Gopalakrishnan,eramgopal@gmail.com,TN-32
+16,Mahabubabad,TG,Dr. (Prof.) Azmeera Seetaram Naik,"aseetaram.naik@sansad.nic.in,  asrnaik9@gmail.com",TG-16
+11,Mahabubnagar,TG,Shri A.P. Jithender Reddy,"jreddy@sansad.nic.in,  jrinfra@gmail.com",TG-11
+19,Maharajganj,BI,Shri Janardan Singh Sigriwal,janardansingh.sigriwal@sansad.nic.in,BI-19
+63,Maharajganj,UP,Shri Pankaj Chowdhary,"pankaj.chowdhary@sansad.nic.in,  pankajchaudharyloksabha91@gmail.com",UP-63
+9,Mahasamund,CT,Shri Chandu Lal Sahu,chandulal.sahu@sansad.nic.in,CT-9
+21,Mainpuri,UP,Shri Tejpratap Singh Yadav,yadavteju@gmail.com,UP-21
+6,Malappuram,KE,Shri E. Ahamed,eahamed@hotmail.com,KE-6
+8,Maldaha Dakshin,WB,Shri Abu Hasem Khan Choudhury,ahk.chowdhury@sansad.nic.in,WB-8
+7,Maldaha Uttar,WB,Smt. Mausam Noor,mausam_bnoor@yahoo.co.in,WB-7
+7,Malkajgiri,TG,Shri Ch. Malla Reddy,"chmalla.reddy@sansad.nic.in,  chmallareddy999@gmail.com",TG-7
+2,Mandi,HP,Shri Ram Swaroop Sharma,"r.swaroop@sansad.nic.in,  mpmandikullu@gmail.com",HP-2
+14,Mandla,MP,Shri Faggan Singh Kulaste,"fskulaste@sansad.nic.in,  fskulaste@yahoo.com,  fskulaste@gmail.com",MP-14
+23,Mandsour,MP,Shri Sudheer Gupta,"sudhirgupta.mp@sansad.nic.in,  sudhirgupta2760@gmail.com",MP-23
+20,Mandya,KA,Shri C.S. Puttaraju,"cs.puttaraju@sansad.nic.in,  cspmdy.mp@gmail.com",KA-20
+8,Mangaldoi,AS,Shri Ramen Deka,"ramen.deka@sansad.nic.in,  ramenguwahati@yahoo.co.in,  ramendeka16@gmail.com",AS-8
+17,Mathura,UP,Smt. Hema Malini,"h.malini@sansad.nic.in,  hema3pol@gmail.com",UP-17
+20,Mathurapur,WB,Shri Choudhury Mohan Jatua,mj.choudhury@sansad.nic.in,WB-20
+33,Maval,MH,Shri Shrirang Appa Barne,"sc.barne@sansad.nic.in,  appabarne@gmail.com",MH-33
+16,Mavelikkara,KE,Shri Suresh Kodikunnil,"kodikunnil.suresh@sansad.nic.in,  kodikunnilsuresh@yahoo.com",KE-16
+28,Mayiladuthurai,TN,Shri R.K. Bharathimohan,"rkm.bharathi@sansad.nic.in,  rkbmp2014@gmail.com",TN-28
+5,Mayurbhanj,OR,Shri Rama Chandra Hansdah,,OR-5
+6,Medak,TG,Shri Kotha Prabhakar Reddy,kprmedakmp@gmail.com,TG-6
+34,Medinipur,WB,Smt. Sandhya Roy,"sandhya.roy@sansad.nic.in,  roysandhya@yahoo.com",WB-34
+10,Meerut,UP,Shri Rajendra Agrawal,"rajendra.agrawal51@gmail.com,  rajendra.agrawal@sansad.nic.in",UP-10
+4,Mehsana,GJ,Smt. Jayshreeben Patel,"jkpatelgujarat@gmail.com,  jk.patel@sansad.nic.in",GJ-4
+79,Mirzapur,UP,Smt. Anupriya Patel,"anupriyasingh.patel@sansad.nic.in,  mirzapur.mp@gmail.com",UP-79
+32,Misrikh,UP,Smt. Anju Bala,"anju.bala@sansad.nic.in,  anjubala32mishrikh@gmail.com",UP-32
+1,Mizoram,MI,Shri C. L. Ruala,rualacl@gmail.com,MI-1
+34,Mohanlalganj,UP,Shri Kaushal Kishore,kishore.kaushal@sansad.nic.in,UP-34
+6,Moradabad,UP,Shri Kunwar Sarvesh Kumar,sarveshsinghbjp@gmail.com,UP-6
+1,Morena,MP,Shri Anoop Mishra,anoop.mishra@sansad.nic.in,MP-1
+30,Mumbai South-Central,MH,Shri Rahul Ramesh Shewale,"rr.shewale@sansad.nic.in,  rahul.shewale2014@gmail.com",MH-30
+26,Mumbai-North,MH,Shri Gopal Chinayya Shetty,helpdeskgopalshetty@gmail.com,MH-26
+29,Mumbai-North-Central,MH,Smt. Poonam Mahajan,poonam.mahajan@sansad.nic.in,MH-29
+28,Mumbai-North-East,MH,Dr. Kirit Somaiya,"kiritbjp@gmail.com,  kiritsomaiya@gmail.com",MH-28
+27,Mumbai-North-West,MH,Shri Gajanan Chandrakant Kirtikar,"gc.kirtikar@sansad.nic.in,  gajanan.kirtikar@yahoo.com",MH-27
+31,Mumbai-South,MH,Shri Arvind Ganpat Sawant,"arvind.sawant@sansad.nic.in,  arvindsawantg@gmail.com",MH-31
+28,Munger,BI,Smt. Veena Devi,veena.devi@sansad.nic.in,BI-28
+11,Murshidabad,WB,Shri Md. Badaruddoza Khan,,WB-11
+3,Muzaffarnagar,UP,Dr. Sanjeev Kumar Balyan,"sanjeevkumar.balyan@sansad.nic.in,  drbalyan@rediffmail.com",UP-3
+15,Muzaffarpur,BI,Shri Ajay Nishad,ajay.nishad@sansad.nic.in,BI-15
+21,Mysore,KA,Shri Prathap Simha,"prathap.simha@sansad.nic.in,",KA-21
+12,Nabarangpur,OR,Shri Balabhadra Majhi,"balabhadra.majhi@sansad.nic.in,  bmajhi86@yahoo.co.in",OR-12
+1,Nagaland,NA,Shri Neiphiu Rio,"neiphiu.rio@sansad.nic.in,  rioneiphiu@gmail.com",NA-1
+29,Nagapattinam,TN,Dr. K. Gopal,gopalnannilam@gmail.com,TN-29
+12,Nagarkurnool,TG,Shri Nandi Yellaiah,"nandiy@sansad.nic.in,  nandiyellaiah@yahoo.co.in",TG-12
+14,Nagaur,RJ,Shri C.R. Chaudhary,"cr.choudhary@sansad.nic.in,  crchaudhary.nagaur@gmail.com",RJ-14
+5,Nagina,UP,Dr. Yashwant Singh,yashwant.singh19@sansad.nic.in,UP-5
+10,Nagpur,MH,Shri Nitin Jairam Gadkari,nitin.gadkari@nic.in,MH-10
+4,Nainital-Udhamsingh Nagar,UT,Shri Bhagat Singh Koshyari,"J123uk@gmail.com,  bs.koshyari@sansad.nic.in",UT-4
+29,Nalanda,BI,Shri Kaushalendra Kumar,kaushalendra.k@sansad.nic.in,BI-29
+13,Nalgonda,TG,Shri Sukender Reddy Gutha,gutha.loksabha@gmail.com,TG-13
+16,Namakkal,TN,Shri P.R. Sundaram,"pr.sundaram@sansad.nic.in,  aiadmkprs@gmail.com",TN-16
+16,Nanded,MH,Shri Ashok Shankarrao Chavan,ashokchavan009@gmail.com,MH-16
+1,Nandurbar,MH,Dr. Heena Vijaykumar Gavit,,MH-1
+34,Nandyal,AP,Shri S.P.Y. Reddy,"spy.reddy@sansad.nic.in,",AP-34
+31,Narasaraopet,AP,Shri Rayapati Sambasiva Rao,rsrdelhi11@gmail.com,AP-31
+26,Narsapuram,AP,Shri Gokaraju Ganga Raju,"goka.raju@sansad.nic.in,  gokarajugangarajump@gmail.com",AP-26
+21,Nashik,MH,Shri Hemant Tukaram Godse,ht.godse@sansad.nic.in,MH-21
+25,Navsari,GJ,Shri C. R. Patil,"cr.patil@sansad.nic.in,  crpatiloffice@ymail.com,  c_r_patil@yahoo.com",GJ-25
+39,Nawada,BI,Shri Giriraj Singh,"giriraj.singh@sansad.nic.in,  girirajbihari@gmail.com",BI-39
+10,Nawgong,AS,Shri Rajen Gohain,"r.gohain@sansad.nic.in,  rajen.gohain@gmail.com",AS-10
+39,Nellore,AP,Shri Mekapati Rajamohan Reddy,rajamohan.reddy@sansad.nic.in,AP-39
+4,New Delhi,DL,Smt. Meenakashi Lekhi,mrs.mlekhi@gmail.com,DL-4
+19,Nilgiris,TN,Shri Gopalakrishnan Chinnaraj,"c.gopalakrishnan@sansad.nic.in,  cgopal777@gmail.com",TN-19
+4,Nizamabad,TG,Smt. Kavitha Kalvakuntla,kalvakuntla.kavitha@sansad.nic.in,TG-4
+AI,Nominated Anglo-Indian,KE,Prof. Richard Hay,profhay@gmail.com,KE-AI
+,Nominated Anglo-Indian,WB,Shri George Baker,georgeb2810@gmail.com,WB-
+2,North East Delhi,DL,Shri Manoj Kumar Tiwari,"mt7tiwari@gmail.com,  tiwari.manoj@sansad.nic.in",DL-2
+1,North Goa,GO,Shri Shripad Yesso Naik,shripad.naik@sansad.nic.in,GO-1
+5,North West Delhi,DL,Dr. Udit Raj,"udit.raj@sansad.nic.in,  dr.uditraj@gmail.com",DL-5
+33,Ongole,AP,Shri Yerram Venkata Subba Reddy,"yvsubba.reddy@sansad.nic.in,  yvsubbareddymp@gmail.com",AP-33
+40,Osmanabad,MH,Prof. Ravindra Vishwanath Gaikwad,prof.ravi@sansad.nic.in,MH-40
+2,Outer Manipur,MA,Shri Thangso Baite,"t.baite@sansad.nic.in,",MA-2
+8,Palakkad,KE,Shri M. B. Rajesh,"mb.rajesh@sansad.nic.in,  mbrajesh05@yahoo.com",KE-8
+13,Palamu,JH,Shri Vishnu Dayal Ram,"vishnudayal.ram@sansad.nic.in,  vishnudayalram.mp@gmail.com",JH-13
+22,Palghar,MH,Shri Chintaman Navsha Wanaga,,MH-22
+15,Pali,RJ,Shri P.P. Chaudhary,"pp.chaudhary@sansad.nic.in,  ppchaudhary@gmail.com",RJ-15
+18,Panchmahal,GJ,Shri Prabhatsinh Pratapsinh Chauhan,mp.panchmahal@prabhatsinh.com,GJ-18
+17,Parbhani,MH,Shri Sanjay Haribhau Jadhav,jadhav.sanjay@sansad.nic.in,MH-17
+2,Paschim Champaran,BI,Dr. Sanjay Jaiswal,"drsanjayjaiswal@gmail.com,  dr.sanjayjaiswal@sansad.nic.in",BI-2
+31,Pataliputra,BI,Shri Ram Kripal Yadav,ramkripal.yadav@sansad.nic.in,BI-31
+3,Patan,GJ,Shri Liladharbhai Khodaji Vaghela,vaghela.liladharbhai@gmail.com,GJ-3
+17,Pathanamthitta,KE,Shri Anto Antony,anto.antony@sansad.nic.in,KE-17
+13,Patiala,PB,Dr. Dharam Vira Gandhi,"dharamv.gandhi@sansad.nic.in,  dvgandhi1951@yahoo.com",PB-13
+30,Patna Sahib,BI,Shri Shatrughan Prasad Sinha,"shatrugn@sansad.nic.in,  shatrughansinha@ymail.com",BI-30
+2,Peddapalle,TG,Shri Balka Suman,"balka.suman@sansad.nic.in,  balkasumantrsv@gmail.com",TG-2
+25,Perambalur,TN,Shri R.P. Marutharajaa,rpmarutharajaa@gmail.com,TN-25
+51,Phulpur,UP,Shri Keshav Prasad (Kushwaha) Maurya,keshav.prasad@sansad.nic.in,UP-51
+26,Pilibhit,UP,Smt. Maneka Sanjay Gandhi,gandhim@sansad.nic.in,UP-26
+21,Pollachi,TN,Shri C. Mahendran,mahendran.c@sansad.nic.in,TN-21
+7,Ponnani,KE,Shri E. T. Mohammed Basheer,basheeret@gmail.com,KE-7
+11,Porbandar,GJ,Shri Vitthalbhai Hansrajbhai Radadiya,,GJ-11
+39,Pratapgarh,UP,Shri Kunwar Haribansh Singh,hbgroupofcompany@gmail.com,UP-39
+1,Puducherry,PO,Shri R. Radhakrishnan,rrrpondy@gmail.com,PO-1
+34,Pune,MH,Shri  Shirole Anil (alias Padmakar) Gulabrao,"anil.shirole@sansad.nic.in,  shiroleanil@gmail.com",MH-34
+17,Puri,OR,Shri Pinaki Misra,pinakimisra@gmail.com,OR-17
+12,Purnia,BI,Shri Santosh Kumar,santosh.kumar19@sansad.nic.in,BI-12
+35,Purulia,WB,Dr. Mriganka Mahato,mriganka.mahato@sansad.nic.in,WB-35
+3,Purvi Champaran,BI,Shri Radha Mohan Singh,rmsingh@sansad.nic.in,BI-3
+36,Rae Bareli,UP,Smt. Sonia Gandhi,soniagandhi@sansad.nic.in,UP-36
+6,Raichur,KA,Shri B.V. Naik,bv.nayak@sansad.nic.in,KA-6
+32,Raigad,MH,Shri Anant Gangaram Geete,geete@sansad.nic.in,MH-32
+5,Raiganj,WB,Shri Mohammad Salim,md.salim@sansad.nic.in,WB-5
+2,Raigarh,CT,Shri Vishnu Deo Sai,vishnudeo.sai@gov.in,CT-2
+8,Raipur,CT,Shri Ramesh Bais,ramesh.bais@sansad.nic.in,CT-8
+25,Rajahmundry,AP,Shri Murali Mohan Maganti,"muralimohan@jayabherigroup.com,  muralimohan.maganti@sansad.nic.in",AP-25
+41,Rajampet,AP,Shri Midhun Reddy,pvmr@plrprojects.com,AP-41
+20,Rajgarh,MP,Shri Rodmal Nagar,"rodmal.nagar@sansad.nic.in,  rodmalnagar@gmail.com",MP-20
+10,Rajkot,GJ,Shri Mohanbhai Kalyanji Kundariya,"mk.kundariya@sansad.nic.in,  mk.kundariya@yahoo.com",GJ-10
+1,Rajmahal,JH,Shri Vijay Kumar Hansdak,,JH-1
+6,Rajnandgaon,CT,Shri Abhishek Singh,"abhishek.singh19@sansad.nic.in,  cg.abhishek.singh@gmail.com",CT-6
+22,Rajsamand,RJ,Shri Hariom Singh Rathore,"hariomsingh.rathore@sansad.nic.in,  hariomkelwa@gmail.com",RJ-22
+35,Ramanathapuram,TN,Shri A. Anwhar Raajhaa,raajhaa7786@gmail.com,TN-35
+7,Rampur,UP,Dr. Nepal Singh,"dr.nepalsingh@sansad.nic.in,",UP-7
+9,Ramtek,MH,Shri Krupal Balaji Tumane,kb.tumane@sansad.nic.in,MH-9
+13,Ranaghat,WB,Dr. Tapas Mandal,"tapas.mandal@sansad.nic.in,  tmbckv@gmail.com",WB-13
+8,Ranchi,JH,Shri Ram Tahal Choudhary,"ramtahal.choudhary@sansad.nic.in,",JH-8
+24,Ratlam,MP,Shri Kantilal Bhuria,,MP-24
+46,Ratnagiri-Sindhudurg,MH,Shri Vinayak Bhaurao Raut,"vinayakbraut@gmail.com,  vb.raut@sansad.nic.in",MH-46
+4,Raver,MH,Smt. Raksha Nikhil Khadse,"nr.khadase@sansad.nic.in,  rakshataikhadse@gmail.com",MH-4
+10,Rewa,MP,Shri Janardan Mishra,Janardan.BJP@gmail.com,MP-10
+80,Robertsganj,UP,Shri Chhotelal,,UP-80
+7,Rohtak,HA,Shri Deepender Singh Hooda,office@deepender.in,HA-7
+5,Sabarkantha,GJ,Shri Dipsinh Shankarsinh Rathod,dipsinhrathod@gmail.com,GJ-5
+5,Sagar,MP,Shri Laxmi Narayan Yadav,"laxminarayan.yadav@sansad.nic.in,  lnyadavsagar@gmail.com",MP-5
+1,Saharanpur,UP,Shri Raghav Lakhanpal,"raghav.lakhanpal@sansad.nic.in,  rlpmla@gmail.com",UP-1
+15,Salem,TN,Shri V. Panneer Selvam,"v.pannerselvam@sansad.nic.in,  vpselvam.salem@gmail.com",TN-15
+71,Salempur,UP,Shri Ravindra Kushawaha,kushawaharavindra@gmail.com,UP-71
+23,Samastipur,BI,Shri Ramchandra Paswan,ramchandra.paswan@sansad.nic.in,BI-23
+3,Sambalpur,OR,Shri Nagendra Kumar Pradhan,"nagendra.pradhan@sansad.nic.in,  nagendrakp1952@gmail.com",OR-3
+8,Sambhal,UP,Shri Satya Pal Singh,"satyapalsingh.mp@sansad.nic.in,  spsinghsainimbd@gmail.com",UP-8
+44,Sangli,MH,Shri Sanjay(Kaka) Ramchandra Patil,"sanjaykaka.patil@sansad.nic.in,  sanjaykaka404@gmail.com",MH-44
+12,Sangrur,PB,Shri Bhagwant Mann,bhagwant.mann@sansad.nic.in,PB-12
+62,Sant Kabir Nagar,UP,Shri Sharad Tripathi,"sharad.tripathi@sansad.nic.in,  sharad.skn@gmail.com",UP-62
+20,Saran,BI,Shri Rajiv Pratap Rudy,"rudypr@sansad.nic.in,  rprudy.office@gmail.com",BI-20
+34,Sasaram,BI,Shri Chhedi Paswan,"chhedi.paswan@sansad.nic.in,  chhedipaswan.mp@gmail.com",BI-34
+45,Satara,MH,Shri Udayanraje  Pratapsingh Bhonsle,udayanrajebhonsle@gmail.com,MH-45
+9,Satna,MP,Shri Ganesh Singh,"sganesh@sansad.nic.in,  loksabhasatna@gmail.com",MP-9
+8,Secunderabad,TG,Shri Bandaru Dattatreya,bandaru@sansad.nic.in,TG-8
+27,Serampore,WB,Shri Kalyan Banerjee,"kalyan.banerjee@sansad.nic.in,",WB-27
+12,Shahdol,MP,Shri Dalpat Singh Paraste,dalpat.paraste@sansad.nic.in,MP-12
+27,Shahjahanpur,UP,Smt. Krishna Raj,krishna.raj19@sansad.nic.in,UP-27
+4,Sheohar,BI,Smt. Rama Devi,rama.devi19@sansad.nic.in,BI-4
+1,Shillong,ME,Shri Vincent H Pala,"vincentdimo@yahoo.com,  vincentpala@gmail.com,  vincent.pala@sansad.nic.in",ME-1
+4,Shimla,HP,Shri Virender Kashyap,"virenderkashyapbjp@yahoo.co.in,",HP-4
+14,Shimoga,KA,Shri B. S. Yeddyurappa,"bs.yeddyurappa@sansad.nic.in,  bsy@yeddyurappa.in",KA-14
+38,Shirdi,MH,Shri Sadashiv Kisan Lokhande,"sk.lokhande@sansad.nic.in,",MH-38
+36,Shirur,MH,Shri Shivaji Adhalrao Patil,"shivajirao@sansad.nic.in,",MH-36
+58,Shrawasti,UP,Shri Daddan Mishra,daddan.mishra@sansad.nic.in,UP-58
+11,Sidhi,MP,Smt. Riti Pathak,"riti.pathak@sansad.nic.in,  riti.sidhi@gmail.com",MP-11
+5,Sikar,RJ,Shri Sumedhanand Saraswati,"sumedhanand.s@sansad.nic.in,  sss.piprali@gmail.com",RJ-5
+1,Sikkim,SK,Shri Prem Das Rai,"premdas.rai@sansad.nic.in,  mpsikkim@gmail.com",SK-1
+2,Silchar,AS,Km. Sushmita Dev,sushmita.dev@sansad.nic.in,AS-2
+10,Singhbhum,JH,Shri Laxman Giluwa,laxman.giluwa@sansad.nic.in,JH-10
+3,Sirsa,HA,Shri Charanjeet Singh Rori,charanjeet.rori@sansad.nic.in,HA-3
+5,Sitamarhi,BI,Shri Ram Kumar Sharma,mpkushwaharksharma@gmail.com,BI-5
+30,Sitapur,UP,Shri Rajesh Verma,"verma.rajesh@sansad.nic.in,  suneetkverma@yahoo.co.in",UP-30
+31,Sivaganga,TN,Shri P.R. Senthilnathan,"senthilnathan.pr@sansad.nic.in,  senthil.admk.SVG.DS@gmail.com",TN-31
+18,Siwan,BI,Shri Om Prakash Yadav,opyadavmp@gmail.com,BI-18
+42,Solapur,MH,Shri Sharadkumar Maruti Bansode,"sharad.bansode@sansad.nic.in,  sbansodeg@yahoo.co.in",MH-42
+6,Sonipat,HA,Shri Ramesh Chander Kaushik,"ramesh.kaushik@sansad.nic.in,  mp.sonepat@gmail.com",HA-6
+7,South Delhi,DL,Shri Ramesh Bidhuri,"ramesh.bidhuri@sansad.nic.in,  rameshbidhuri@yahoo.in",DL-7
+2,South Goa,GO,Advocate (Shri) Narendra Keshav Sawaikar,"narendra.sawaikar@sansad.nic.in,  sawaikar.narendra@gmail.com",GO-2
+19,Srikakulam,AP,Shri Kinjarapu Ram Mohan Naidu,"rammohannaidu.k@sansad.nic.in,  rammnk9@gmail.com,  rammohannaidu@gmail.com",AP-19
+2,Srinagar,JK,Shri Tariq Hameed Karra,"tariq.karra@sansad.nic.in,  karratariq@gmail.com",JK-2
+5,Sriperumbudur,TN,Shri Krishnan Narayanasamy Ramachandran,"knt.ramachandran@sansad.nic.in,  knramachandran.mp@gmail.com",TN-5
+38,Sultanpur,UP,Shri Feroze Varun Gandhi,"ferozevarun.gandhi@sansad.nic.in,  14ashokaroad@gmail.com",UP-38
+2,Sundargarh,OR,Shri Jual Oram,jualoram@sansad.nic.in,OR-2
+8,Supaul,BI,Smt. Ranjeet Ranjan,ranjeet.ranjan19@sansad.nic.in,BI-8
+24,Surat,GJ,Smt. Darshana Vikram Jardosh,mail@darshanajardosh.in,GJ-24
+9,Surendranagar,GJ,Shri Devajibhai Govindbhai Fatepara,mpsnr1419@gmail.com,GJ-9
+1,Surguja,CT,Shri Kamalbhan Singh Marabi,kamalbhans.marabi@sansad.nic.in,CT-1
+30,Tamluk,WB,Shri Suvendu Adhikari,"adhikari.suvendu@sansad.nic.in,",WB-30
+1,Tehri Garhwal,UT,Smt. Mala Rajya Laxmi Shah,malarajyalaxmishah@gmail.com,UT-1
+37,Tenkasi,TN,Smt. Vasanthi M.,vasanthi.m@sansad.nic.in,TN-37
+9,Tezpur,AS,Shri Ram Prasad Sarmah,"rp.sarmah@sansad.nic.in,  ramsarmah@gmail.com",AS-9
+25,Thane,MH,Shri Rajan Baburao Vichare,"rb.vichare@sansad.nic.in,  rajanbvichare@gmail.com",MH-25
+30,Thanjavur,TN,Shri Parasuraman K.,parasuraman.k@sansad.nic.in,TN-30
+33,Theni,TN,Shri R. Parthipan,r.parthipan@sansad.nic.in,TN-33
+20,Thiruvananthapuram,KE,Dr. Shashi Tharoor,"office@tharoor.in,  shashi.tharoor@nic.in",KE-20
+36,Thoothukkudi,TN,Advocate Jayasingh Thiyagaraj Natterjee,jjtnatterjee@gmail.com,TN-36
+10,Thrissur,KE,Shri C. N. Jayadevan,"cn.jayadevan@sansad.nic.in,  cnthrissurmp@gmail.com",KE-10
+6,Tikamgarh,MP,Dr. Virendra Kumar,vkumar@sansad.nic.in,MP-6
+24,Tiruchirappalli,TN,Shri P. Kumar,"p.kumar@sansad.nic.in,  trichy.mp@gmail.com",TN-24
+38,Tirunelveli,TN,Shri K.R.P. Prabakaran,krp.prabakaran@sansad.nic.in,TN-38
+40,Tirupati,AP,Dr. Vara Prasadarao Velagapalli,vvpr53@yahoo.com,AP-40
+18,Tiruppur,TN,Smt. V. Sathyabama,"v.sathyabama@sansad.nic.in,  sathyabama.vasu@gmail.com",TN-18
+1,Tiruvallur,TN,Dr. Ponnusamy Venugopal,p.venugopal@sansad.nic.in,TN-1
+11,Tiruvannamalai,TN,Smt. R. Vanaroja,"r.vanaroja@sansad.nic.in,",TN-11
+12,Tonk-Sawai Madhopur,RJ,Shri Sukhbir Singh Jaunpuria,sukhbirs.jaunapuria@sansad.nic.in,RJ-12
+2,Tripura East,TR,Shri Jitendra Chaudhury,"jitendra.chaudhury@sansad.nic.in,  jchaudhury2008@gmail.com",TR-2
+1,Tripura West,TR,Shri Sankar Prasad Datta,sankar.datta@sansad.nic.in,TR-1
+19,Tumkur,KA,Shri S.P. Muddahanumegowda,spmuddahanumegowda@gmail.com,KA-19
+2,Tura,ME,Shri Purno Agitok Sangma,pasangma@sansad.nic.in,ME-2
+19,Udaipur,RJ,Shri Arjunlal Meena,arjunlal.meena@sansad.nic.in,RJ-19
+5,Udhampur,JK,Dr. Jitendra Singh,drjitendras@gmail.com,JK-5
+15,Udupi Chikmagalur,KA,Km. Shobha Karandlaje,"shobha.karandlaje@sansad.nic.in,  mpudupichikmagaluru@gmail.com",KA-15
+22,Ujiarpur,BI,Shri Nityanand Rai,"nityanand.rai@sansad.nic.in,  nityanandrai85@gmail.com",BI-22
+22,Ujjain,MP,Prof. Chintamani Malviya,drcmmalviya@gmail.com,MP-22
+26,Uluberia,WB,Shri Sultan Ahmed,sultan.ahmed@nic.in,WB-26
+33,Unnao,UP,Dr. Sakshi Ji Swami Maharaj,"sakshi@sansad.nic.in,  swamijisakshijimaharaj@gmail.com",UP-33
+12,Uttara Kannada,KA,Shri Anantkumar Hegde,"anantkh@sansad.nic.in,  mpcanara@gmail.com,  anantkumarhegde@gmail.com",KA-12
+3,Vadakara,KE,Shri Ramachandran Mullappally,"Mullappally.r@sansad.nic.in,  mullappally.ramachandran@gmail.com",KE-3
+20,Vadodara,GJ,Smt. Ranjanben Dhananjay Bhatt,ranjanbhatt135@gmail.com,GJ-20
+16,Vaishali,BI,Shri Rama Kishore Singh,"ramakishore.singh@sansad.nic.in,  rksvaishali@gmail.com",BI-16
+1,Valmiki Nagar,BI,Shri Satish Chandra Dubey,satishchandra.dubey@sansad.nic.in,BI-1
+26,Valsad,GJ,Dr. K. C. Patel,kc.patel@sansad.nic.in,GJ-26
+77,Varanasi,UP,Shri Narendra Modi,appt.pmo@gov.in,UP-77
+8,Vellore,TN,Shri B. Senguttuvan,senguttuvanb.adv@gmail.com,TN-8
+18,Vidisha,MP,Smt. Sushma Swaraj,,MP-18
+29,Vijayawada,AP,Shri Srinivas Kesineni,kesineni.srinivas@sansad.nic.in,AP-29
+13,Viluppuram,TN,Shri S. Rajendran,rajendran.s19@sansad.nic.in,TN-13
+34,Virudhunagar,TN,Shri T. Radhakrishnan,mpvirudhunagar@gmail.com,TN-34
+21,Visakhapatnam,AP,Dr. Hari Babu Kambhampati,"k.haribabu@gmail.com,  k.haribabu@sansad.nic.in",AP-21
+20,Vizianagaram,AP,Shri Ashok Gajapathi Raju Pusapati,"agajapathiraju.p@sansad.nic.in,  hm.moca@gov.in",AP-20
+15,Warangal,TG,Shri Dayakar Pasunoori,"pasunooridayakar@gmail.com, wglmpdayakar@gmail.com",TG-15
+8,Wardha,MH,Shri Ramdas Chandrabhanji Tadas,"rc.tadas@sansad.nic.in,  rctadas@gmail.com",MH-8
+4,Wayanad,KE,Shri M. I. Shanavas,"shanavaskpcc@yahoo.co.in,  mi.shanavas@sansad.nic.in",KE-4
+6,West Delhi,DL,Shri Parvesh Sahib Singh,"parvesh.sahib@sansad.nic.in,  parveshsahibsingh@gmail.com",DL-6
+14,Yavatmal-Washim,MH,Ms. Bhavana Pundlikrao Gawali (Patil),gb.pundlikrao@sansad.nic.in,MH-14
+5,Zahirabad,TG,Shri Bheemrao Baswanthrao Patil,bbpatil7777@gmail.com,TG-5
