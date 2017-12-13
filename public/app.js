@@ -578,9 +578,12 @@ var app = new Vue({
         .replace(/[\[\(]at[\]\)]/g, '@')
         .replace(' ', ',')
         .split(',')
+        .map(function(t) {
+          return t.trim();
+	})
         .filter(function(t) {
-          return t.trim().length > 0;
-        });
+          return t.length > 0;
+	});
 
       return e.join(', ');
     },
