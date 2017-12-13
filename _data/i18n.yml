@@ -35,7 +35,6 @@ en:
     service: "Petition your service provider:"
     gov: "Petition your service provider:"
     mp: "Send a letter to your MP:"
-    mobile: "Petition your mobile operator:"
   states:
     AN: Andaman and Nicobar Islands
     AP: Andhra Pradesh
@@ -132,7 +131,6 @@ hi:
     service: "अपने सेवा प्रदाता को याचिका दें :"
     gov: "अपने सेवा प्रदाता को याचिका दें :"
     mp: "अपने सांसद को एक पत्र भेजें :"
-    mobile: "अपने मोबाइल ऑपरेटर को याचिका दें:"
   mp: सांसद
   headertitle:
     MP: सांसद

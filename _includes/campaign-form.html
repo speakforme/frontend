@@ -38,13 +38,6 @@
       </select>
     </div>
 
-    <div v-if="campaign==='mobile'">
-      <label for="telco">[{$t("headertitle.TELCO")}]</label>
-      <select name="telco" id="select-telco" v-model="telcoCode" class="styled-select">
-        <option :value="telco.code" v-for="(telco, index) in telcos">[{telco.name}]</option>
-      </select>
-    </div>
-
     <div>
       <label for="email">[{$t("email")}]</label>
       <input name="email" size="60" v-model="email" readonly>
