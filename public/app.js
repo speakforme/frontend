@@ -441,8 +441,8 @@ var app = new Vue({
     bcc: function() {
       var code = this.campaign + '-';
       switch (this.campaign) {
-        case 'gov':
-          code += this.service.name;
+        case 'service':
+          code += this.service.code;
           break;
         case 'bank':
           code += this.bank.ifsc;
