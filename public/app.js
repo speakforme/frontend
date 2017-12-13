@@ -408,7 +408,7 @@ var app = new Vue({
       var code = this.campaign + '-';
       switch (this.campaign) {
         case 'service':
-          code += this.service.name;
+          code += this.service.code;
           break;
         case 'bank':
           code += this.serviceName;
@@ -417,7 +417,6 @@ var app = new Vue({
           code = this.constituencyCode;
           break;
       }
-      code = code.replace(/ /g, '_')
       return (code + '@email.speakforme.in').toLowerCase();
     },
     twitter: function() {
