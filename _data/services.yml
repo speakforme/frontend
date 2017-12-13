@@ -1,18 +1,17 @@
-PDS:
-  name: PDS
-  code: pds
-  Department: |
-    Department of Food and Public Distribution, India
+EPFO:
+  name: Employees Provident Fund Org
+  code: epfo
+  department: Minister of State for Labour and Employment
+  personName: Dr. V.P Joy
   address: |
-    Ministry of Consumer Affairs,
-    Food and Public Distribution
-    Department of Food & PD
-    Krishi Bhawan,
-    New Delhi - 110001.
-    Phone: 23382504
-  email: asit.halder@nic.in
-  twitter: jagograhakjago
-  personName: Asit Halder
+      Dr. V.P Joy, IAS
+      Central P.F. Commissioner
+      EPFO Head Office, New Delhi,
+      Bhavishya Nidhi Bhawan,
+      14, Bhikaiji Cama Place,
+      New Delhi - 110 066"
+  email: cpfc@epfindia.gov.in
+  twitter: labourministry
 LPG:
   name: LPG
   code: lpg
@@ -56,38 +55,21 @@ NSAP:
     New Delhi - 110001
   email: manoranjan.kumar@nic.in
   twitter: false
-PMJDY:
-  name: PMJDY
-  code: pmjdy
-  department: Ministry of Finance
-  personName: Shri Arun Jaitley
+PDS:
+  name: PDS
+  code: pds
+  Department: |
+    Department of Food and Public Distribution, India
   address: |
-    Pradhan Mantri Jan Dhan Yojana,
-    Department of Financial names,
-    Ministry of Finance,
-    Room No. 106,
-    2nd Floor, JeevanDeep Building,
-    Parliament Street,
-    New Delhi-110001
-    Phone: 011-23361571/23748738
-  email: missionfi@nic.in
-  twitter:
-    FinMinIndia
-    arunjaitley
-EPFO:
-  name: Employees Provident Fund Org
-  code: epfo
-  department: Minister of State for Labour and Employment
-  personName: Dr. V.P Joy
-  address: |
-      Dr. V.P Joy, IAS
-      Central P.F. Commissioner
-      EPFO Head Office, New Delhi,
-      Bhavishya Nidhi Bhawan,
-      14, Bhikaiji Cama Place,
-      New Delhi - 110 066"
-  email: cpfc@epfindia.gov.in
-  twitter: labourministry
+    Ministry of Consumer Affairs,
+    Food and Public Distribution
+    Department of Food & PD
+    Krishi Bhawan,
+    New Delhi - 110001.
+    Phone: 23382504
+  email: asit.halder@nic.in
+  twitter: jagograhakjago
+  personName: Asit Halder
 PAN:
   name: PAN
   code: pan
@@ -110,3 +92,21 @@ PAN:
     FinMinIndia
     arunjaitley
     adhia03
+PMJDY:
+  name: PMJDY
+  code: pmjdy
+  department: Ministry of Finance
+  personName: Shri Arun Jaitley
+  address: |
+    Pradhan Mantri Jan Dhan Yojana,
+    Department of Financial names,
+    Ministry of Finance,
+    Room No. 106,
+    2nd Floor, JeevanDeep Building,
+    Parliament Street,
+    New Delhi-110001
+    Phone: 011-23361571/23748738
+  email: missionfi@nic.in
+  twitter:
+    FinMinIndia
+    arunjaitley
