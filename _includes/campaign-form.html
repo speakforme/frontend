@@ -55,11 +55,11 @@
 
   <div>
 
-    <label v-if="campaign!=='mp'" for="service-name">[{$t("contempt_notice_msg")}] : <span class="service-name">[{serviceName}]</span></label>
+    <label v-if="campaign!=='mp'" for="service-name">[{$t("contempt_notice_msg")}]: <span class="service-name">[{serviceName}]</span></label>
 
     <label v-if="campaign==='mp'" for="service-name">
         <!-- Send Email: MP_NAME (MP, Constituency)-->
-        [{$t("contempt_notice_msg")}] :
+        [{$t("contempt_notice_msg")}]:
           <!-- MP name goes here -->
           <span class="service-name">
             [{personName}],
