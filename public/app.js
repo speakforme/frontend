@@ -1,4 +1,5 @@
-var banks = window.banks;
+var banks = window.banksList;
+
 var services = window.services;
 var templates = {};
 var responseComponents = {};
@@ -35,7 +36,8 @@ var mailUrlOpts = {
     body: 'body'
   },
   gmail: {
-    base: 'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=',
+    base:
+      'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=',
     subject: 'su',
     cc: 'cc',
     bcc: 'bcc',
@@ -47,7 +49,7 @@ var mailUrlOpts = {
     cc: 'Cc',
     bcc: 'Bcc',
     body: 'Body'
-  },
+  }
 };
 
 var i18n = new VueI18n({
@@ -87,9 +89,10 @@ var app = new Vue({
     // we have loaded so far from a separate file
     // successfully
     localeLoaded: ['en'],
+    banks: {},
     locale: 'en',
-    serviceIndex: 0,
-    bankIndex: 0,
+    serviceIndex: 'PAN',
+    bankIFSC: 'ALLA',
     state: 'UP',
     constituencyCode: 'UP-18',
     mps: {
@@ -137,24 +140,26 @@ var app = new Vue({
       }
     },
     getMailUrl(opts, encodedBody) {
-      return opts.base +
-      encodeURIComponent(this.email) +
-      '&' +
-      opts.subject +
-      '=' +
-      encodeURIComponent(this.subject) +
-      '&' +
-      opts.cc +
-      '=' +
-      encodeURIComponent(this.cc) +
-      '&' +
-      opts.bcc +
-      '=' +
-      encodeURIComponent(this.bcc) +
-      '&' +
-      opts.body +
-      '=' +
-      encodedBody;
+      return (
+        opts.base +
+        encodeURIComponent(this.email) +
+        (opts.base === 'mailto:' ? '?' : '&') +
+        opts.subject +
+        '=' +
+        encodeURIComponent(this.subject) +
+        '&' +
+        opts.cc +
+        '=' +
+        encodeURIComponent(this.cc) +
+        '&' +
+        opts.bcc +
+        '=' +
+        encodeURIComponent(this.bcc) +
+        '&' +
+        opts.body +
+        '=' +
+        encodedBody
+      );
     },
     /**
      * On desktop, we show 3 buttons for gmail/yahoo/mailto
@@ -245,10 +250,16 @@ var app = new Vue({
     // mp/service/bank
     setInitialCampaign: function() {
       // TODO: Use the page template to export a variable
-      if (document.location.pathname === '/mp/') {
-        this.campaign = 'mp';
-      } else if (document.location.pathname === '/service/') {
-        this.campaign = 'service';
+      switch (window.location.pathname) {
+        case '/mp/':
+          this.campaign = 'mp';
+          break;
+        case '/service/':
+          this.campaign = 'gov';
+          break;
+        case '/bank/':
+          this.campaign = 'bank';
+          break;
       }
     }
   },
@@ -258,17 +269,21 @@ var app = new Vue({
     },
     locale: function(newLocale) {
       this.setLocale(newLocale);
-    },
-    serviceIndex: function(i) {
-      if (i === 'bank') {
-        this.campaign = 'bank';
-      } else {
-        this.campaign = 'service';
-      }
     }
   },
   created: function() {
-    this.locale = window.localStorage.getItem('locale') || 'en';
+    var locale = (this.locale = window.localStorage.getItem('locale') ||
+      (window.location.search.split('lang=')[1] + '').substr(0,2) ||
+      window.navigator.languages
+        .map(function(l) {
+          return l.split('-')[0];
+        })
+        .filter(function(l) {
+          return !!i18nMsgs[l];
+        })[0] ||
+      window.navigator.language.split('-')[0]);
+
+    this.setLocale(locale);
 
     var self = this;
 
@@ -301,7 +316,19 @@ var app = new Vue({
 
         break;
 
-      case 'service':
+      case 'bank':
+        for (var i = 0; i < banks.length; i++) {
+          this.banks[banks[i].ifsc] = banks[i];
+        }
+        break;
+
+      case 'gov':
+        // Setup service inside translations
+        console.log(this.services);
+        var msgs = {
+          services: this.services
+        };
+        self.$i18n.mergeLocaleMessage('en', msgs);
         break;
     }
   },
@@ -361,16 +388,27 @@ var app = new Vue({
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
     },
-    fullmailtourl: function () {
-      return this.getMailUrl(mailUrlOpts.mailto, encodeURIComponent(this.response));
+    facebookhref: function () {
+      return 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.href
     },
-    mailtourl: function () {
+    facebookurl: function () {
+      return `https://www.facebook.com/plugins/share_button.php?href=${window.location.href}&layout=button&size=small&mobile_iframe=true&width=59&height=20`
+
+
+    },
+    fullmailtourl: function() {
+      return this.getMailUrl(
+        mailUrlOpts.mailto,
+        encodeURIComponent(this.response)
+      );
+    },
+    mailtourl: function() {
       return this.getMailUrl(mailUrlOpts.mailto, 'Paste+Here');
     },
-    gmailurl: function () {
+    gmailurl: function() {
       return this.getMailUrl(mailUrlOpts.gmail, 'Paste+Here');
     },
-    yahoourl: function () {
+    yahoourl: function() {
       return this.getMailUrl(mailUrlOpts.yahoo, 'Paste+Here');
     },
     mobile: function() {
@@ -384,9 +422,6 @@ var app = new Vue({
         ) && !IEMobile
       );
     },
-    banks: function() {
-      return window.banks;
-    },
     services: function() {
       return window.services;
     },
@@ -397,7 +432,6 @@ var app = new Vue({
           return '';
         case 'bank':
           return 'cabinet@nic.in,urjitrpatel@rbi.org.in,governor@rbi.org.in';
-        case 'service':
         case 'gov':
           return 'cabinet@nic.in,narendramodi@narendramodi.in';
         case 'telco':
@@ -411,10 +445,10 @@ var app = new Vue({
           code += this.service.code;
           break;
         case 'bank':
-          code += this.serviceName;
+          code += this.bank.ifsc;
           break;
         case 'mp':
-          code = this.constituencyCode;
+          code += this.constituencyCode;
           break;
       }
       return (code + '@email.speakforme.in').toLowerCase();
@@ -434,7 +468,7 @@ var app = new Vue({
       switch (this.campaign) {
         case 'bank':
           return 'Threats to make bank accounts inoperable without Aadhaar';
-        case 'service':
+        case 'gov':
           return (
             'Threats to make ' +
             this.service.name +
@@ -447,8 +481,8 @@ var app = new Vue({
     service: function() {
       switch (this.campaign) {
         case 'bank':
-          return this.banks[this.bankIndex];
-        case 'service':
+          return this.banks[this.bankIFSC];
+        case 'gov':
           return this.services[this.serviceIndex];
           break;
         // TODO: use a setter for constituency
@@ -458,6 +492,8 @@ var app = new Vue({
           if (this.constituency) {
             return this.constituency;
           }
+
+          // TODO: Pick a random constituency
           return {
             index: '18',
             name: 'Agra',
@@ -469,15 +505,15 @@ var app = new Vue({
       }
     },
     bank: function() {
-      return this.banks[this.bankIndex];
+      return this.banks[this.bankIFSC];
     },
     personName: function() {
       switch (this.campaign) {
         case 'bank':
           return 'Chairman and MD (' + this.bank.name + ')';
         case 'mp':
-          return this.constituency.mp;
-        case 'service':
+          return this.constituency ? this.constituency.mp : '';
+        case 'gov':
           return this.service.personName;
       }
     },
@@ -509,17 +545,15 @@ var app = new Vue({
 
       switch (this.campaign) {
         case 'bank':
-          return this.templates.bank.trim();
+          template = this.templates.bank;
         case 'service':
-          return this.templates.service.trim();
-          break;
+          template = this.templates.service.trim();
         case 'mp':
-          // TODO: Somehow interpolate the current scope
-          // into this as a template, so we can use {{service.name}}
-          // inside the template
-          return this.templates.mp.trim();
-          break;
+          template = this.templates.mp.trim();
       }
+      return template.trim()
+        .replace(/\(\(addressee\)\)/g, this.personName)
+        .replace(/\(\(address\)\)/g, this.service.address);
     }
   },
   components: responseComponents

@@ -22,18 +22,19 @@
       </p>
     </div>
 
-    <div v-if="campaign==='bank'||campaign == 'service'">
+    <div v-if="campaign == 'gov'">
       <label for="service">[{$t("service")}]</label>
       <select name="service" id="select-service" v-model="serviceIndex" class="styled-select">
-        <option :value="index" v-for="(service,index) in services">[{service.name}]</option>
-        <option value="bank">Bank</option>
+        <option :value="code" v-for="(service, code) in services">
+          [{$t("services."+ code + ".name")}]
+        </option>
       </select>
     </div>
 
     <div v-if="campaign==='bank'">
       <label for="bank">[{$t("bank")}]</label>
-      <select name="bank" id="select-bank" v-model="bankIndex" class="styled-select">
-        <option :value="index" v-for="(bank, index) in banks">[{bank.name}]</option>
+      <select name="bank" id="select-bank" v-model="bankIFSC" class="styled-select">
+        <option :value="bank.ifsc" v-for="(bank, index) in banks">[{bank.name}]</option>
       </select>
     </div>
 
@@ -93,4 +94,7 @@
     >
     [{$t("tweet")}]</a>
   </div>
+
+  <iframe :src="facebookurl" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
 </form>

@@ -1,4 +1,4 @@
--
+PDS:
   name: PDS
   code: PDS
   Department: |
@@ -13,7 +13,7 @@
   email: asit.halder@nic.in
   twitter: jagograhakjago
   personName: Asit Halder
--
+LPG:
   name: LPG
   code: LPG
   department: Ministry of Petroleum and Natural Gas
@@ -26,7 +26,7 @@
     New Delhi - 110001
   email: mahesh.png@gov.in
   twitter: PetroleumMin
--
+MGNREGS:
   name: MGNREGS
   code: MGNREGS
   department: Ministry of Rural Department
@@ -41,7 +41,7 @@
     New Delhi - 110001
   email: aparajitasarangi@gmail.com
   twitter: false
--
+NSAP:
   name: National Social Assistance Programme
   code: NSAP
   department: Ministry of Rural Department
@@ -56,7 +56,7 @@
     New Delhi - 110001
   email: manoranjan.kumar@nic.in
   twitter: false
--
+PMJDY:
   name: PMJDY
   code: PMJDY
   department: Ministry of Finance
@@ -74,7 +74,7 @@
   twitter:
     FinMinIndia
     arunjaitley
--
+EPFO:
   name: Employees Provident Fund Org
   code: EPFO
   department: Minister of State for Labour and Employment
@@ -88,7 +88,7 @@
       New Delhi - 110 066"
   email: cpfc@epfindia.gov.in
   twitter: labourministry
--
+PAN:
   name: PAN
   code: PAN
   department: Ministry of Finance (CBDT)
@@ -103,8 +103,8 @@
     New Delhi-110001
     Phone: 011-23361571/23748738
   email: >
-    fmo@nic.in
-    chairman.cbdt@incometax.gov.in
+    fmo@nic.in,
+    chairman.cbdt@incometax.gov.in,
     rsecy@nic.in
   twitter: >
     FinMinIndia
