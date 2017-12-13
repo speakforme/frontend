@@ -1,11 +1,12 @@
+<link href="//cdn.muicss.com/mui-0.9.31/css/mui.min.css" rel="stylesheet" type="text/css" />
 <div id="content-wrapper">
 <div class="form-panel">
 <div class="mui-panel no-padding">
 <!-- TABS -->
-<ul class="mui-tabs__bar form-tab">
+<ul class="mui-tabs__bar mui-tabs__bar--justified form-tab">
   {% for my_page in site.pages %}
   {% if my_page.header==true %}
-    <li><a class="page-link" data-mui-toggle="tab" data-mui-controls="pane-default-1" href="{{ my_page.url | relative_url }}">{{ my_page.headertitle | escape }}</a></li>
+    <li><a class="page-link" data-mui-toggle="tab" data-mui-controls="{{my_page.headertitle}}" href="{{ my_page.url | relative_url }}">{{ my_page.headertitle | escape }}</a></li>
   {% endif %}
   {% endfor %}
 </ul>
@@ -14,6 +15,11 @@
 
 <form>
 <!-- FORM CONTAINER -->
+{% for my_page in site.pages %}
+{% if my_page.header==true %}
+<div class="mui-tabs__pane mui--is-active tab-active" id="{{my_page.headertitle}}"></div>
+{% endif %}
+{% endfor %}
 <div class="mui-row form-container">
   <div class="mui-col-md-12">
     <fieldset>
@@ -114,6 +120,7 @@
         v-bind:href="mailtourl" target="_blank"
         v-on:click.stop="sendMailto">Other</a>
 
+      <br>
       <p>With a BCC to us ([{bcc}], included) so we can track it. To protect your privacy, we will delete our copy of your email in a few days. We will also send you updates on the campaign’s progress. Please check your spam folder for an acknowledgement from info@speakforme.in (with an unsubscribe link included)</p>
 
     </div>
@@ -138,3 +145,17 @@
 </div>
 </div>
 </div>
+<script src="//cdn.muicss.com/mui-0.9.31/js/mui.min.js"></script>
+<script>
+window.onload = function() {
+  var paneIds = ['mp', 'service'];
+  var currPos=0;
+  {% if campaign==='mp' %}
+  currPos = 0;
+  {% endif %}
+  {% if campaign==='bank' %}
+  currPos = 1;
+  {% endif %}
+  mui.tabs.activate(paneIds[currPos]);
+}
+</script>
