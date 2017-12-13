@@ -417,6 +417,7 @@ var app = new Vue({
           code = this.constituencyCode;
           break;
       }
+      code = code.replace(/ /g, '_')
       return (code + '@email.speakforme.in').toLowerCase();
     },
     twitter: function() {
