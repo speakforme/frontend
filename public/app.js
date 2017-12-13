@@ -539,7 +539,7 @@ var app = new Vue({
           return t.trim().length > 0;
         })
         .map(function(e) {
-          return self.personName + ' <' + e + '>';
+          return self.personName + ' <' + e.trim() + '>';
         })
         .join(', ');
     },
