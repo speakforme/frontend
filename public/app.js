@@ -97,12 +97,18 @@ forEach(Object.keys(window.petitions), function(index, item) {
   var campaignType = getCampaignType()
   if (item.indexOf(campaignType) !== -1) {
     axios.get('/petitions/' + item + '.txt').then(function(response) {
-      responseComponents[campaignType + '-' + item.split('-').pop()] = {
+      var lang = item.split('-').pop()
+      responseComponents[campaignType + '-' + lang] = {
         props: ['addressee', 'address', 'body'],
         delimiters: ['((', '))'],
         template:
         '<textarea @copy="copied" cols="70" rows="10" name="content" id="response-content">' +
         response.data +
+        (
+          (lang === 'en')
+          ? ''
+          : '\n - - - - ENGLISH VERSION OF ABOVE - - - - - \n' + templates[campaignType]
+        ) +
         '</textarea>',
         methods: {
           copied: function() {
@@ -110,7 +116,7 @@ forEach(Object.keys(window.petitions), function(index, item) {
           }
         }
       };
-      app.petitionLocales.push(item.split('-').pop())
+      app.petitionLocales.push(lang)
     })
   }
 })
