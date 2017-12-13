@@ -1,3 +1,7 @@
 # See https://www.netlify.com/docs/redirects/
 # Does a 301 by default, so be careful
-/         /mp/     302
+/         /mp/      302
+/mp       /mp/      301
+/bank     /bank/    301
+/mobile   /mobile/  301
+/service  /service/ 301
