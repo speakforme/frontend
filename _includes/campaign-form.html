@@ -148,14 +148,6 @@
 <script src="//cdn.muicss.com/mui-0.9.31/js/mui.min.js"></script>
 <script>
 window.onload = function() {
-  var paneIds = ['mp', 'service'];
-  var currPos=0;
-  {% if campaign==='mp' %}
-  currPos = 0;
-  {% endif %}
-  {% if campaign==='bank' %}
-  currPos = 1;
-  {% endif %}
-  mui.tabs.activate(paneIds[currPos]);
+  mui.tabs.activate({{campaign}});
 }
 </script>
