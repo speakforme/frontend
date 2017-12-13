@@ -450,7 +450,7 @@ var app = new Vue({
         case 'bank':
           return 'cabinet@nic.in,urjitrpatel@rbi.org.in,governor@rbi.org.in';
         case 'gov':
-          return 'cabinet@nic.in,narendramodi@narendramodi.in';
+          return 'cabinet@nic.in';
         case 'mobile':
           return 'cp@trai.gov.in';
       }
