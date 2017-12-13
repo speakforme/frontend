@@ -98,6 +98,8 @@ var app = new Vue({
     bankIFSC: 'ALLA',
     state: 'UP',
     constituencyCode: 'UP-18',
+    telcoCode: 'airtel',
+    telcos: {},
     mps: {
       'UP-18': {
         index: 18,
@@ -113,7 +115,8 @@ var app = new Vue({
     templates: {
       mp: '',
       bank: '',
-      gov: ''
+      gov: '',
+      mobile: ''
     },
     showcopymsg: false
   },
@@ -143,9 +146,9 @@ var app = new Vue({
       }
     },
     getMailUrl(opts, encodedBody) {
-      return (
+      var url =
         opts.base +
-        encodeURIComponent(opts.fullEmail ? this.email : this.service.email) +
+        encodeURIComponent(opts.fullEmail ? this.email : this.partialEmail) +
         (opts.base === 'mailto:' ? '?' : '&') +
         opts.subject +
         '=' +
@@ -157,12 +160,13 @@ var app = new Vue({
         '&' +
         opts.bcc +
         '=' +
-        encodeURIComponent(this.bcc) +
-        '&' +
-        opts.body +
-        '=' +
-        encodedBody
-      );
+        encodeURIComponent(this.bcc);
+
+      if (encodedBody) {
+        url += '&' + opts.body + '=' + encodedBody;
+      }
+
+      return url;
     },
     /**
      * On desktop, we show 3 buttons for gmail/yahoo/mailto
@@ -263,6 +267,9 @@ var app = new Vue({
         case '/bank/':
           this.campaign = 'bank';
           break;
+        case '/mobile/':
+          this.campaign = 'mobile';
+          break;
       }
     }
   },
@@ -275,8 +282,9 @@ var app = new Vue({
     }
   },
   created: function() {
-    var locale = (this.locale = window.localStorage.getItem('locale') ||
-      (window.location.search.split('lang=')[1] + '').substr(0,2) ||
+    var locale = (this.locale =
+      window.localStorage.getItem('locale') ||
+      (window.location.search.split('lang=')[1] + '').substr(0, 2) ||
       window.navigator.languages
         .map(function(l) {
           return l.split('-')[0];
@@ -324,10 +332,13 @@ var app = new Vue({
           this.banks[banks[i].ifsc] = banks[i];
         }
         break;
+      case 'mobile':
+        for (var i = 0; i < telcos.length; i++) {
+          this.telcos[telcos[i].code] = telcos[i];
+        }
+        break;
 
       case 'gov':
-        // Setup service inside translations
-        console.log(this.services);
         var msgs = {
           services: this.services
         };
@@ -391,13 +402,15 @@ var app = new Vue({
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
     },
-    facebookhref: function () {
-      return 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.href
+    facebookhref: function() {
+      return (
+        'https://www.facebook.com/sharer/sharer.php?u=' + window.location.href
+      );
     },
-    facebookurl: function () {
-      return `https://www.facebook.com/plugins/share_button.php?href=${window.location.href}&layout=button&size=small&mobile_iframe=true&width=59&height=20`
-
-
+    facebookurl: function() {
+      return `https://www.facebook.com/plugins/share_button.php?href=${
+        window.location.href
+      }&layout=button&size=small&mobile_iframe=true&width=59&height=20`;
     },
     fullmailtourl: function() {
       return this.getMailUrl(
@@ -406,13 +419,13 @@ var app = new Vue({
       );
     },
     mailtourl: function() {
-      return this.getMailUrl(mailUrlOpts.mailto, 'Paste+Here');
+      return this.getMailUrl(mailUrlOpts.mailto);
     },
     gmailurl: function() {
-      return this.getMailUrl(mailUrlOpts.gmail, 'Paste+Here');
+      return this.getMailUrl(mailUrlOpts.gmail);
     },
     yahoourl: function() {
-      return this.getMailUrl(mailUrlOpts.yahoo, 'Paste+Here');
+      return this.getMailUrl(mailUrlOpts.yahoo);
     },
     mobile: function() {
       var IEMobile = /IEMobile/i.test(navigator.userAgent);
@@ -429,6 +442,7 @@ var app = new Vue({
       return window.services;
     },
     // This is maintained manually
+    // TODO: Do not break things if this returns undefined
     cc: function() {
       switch (this.campaign) {
         case 'mp':
@@ -436,8 +450,8 @@ var app = new Vue({
         case 'bank':
           return 'cabinet@nic.in,urjitrpatel@rbi.org.in,governor@rbi.org.in';
         case 'gov':
-          return 'cabinet@nic.in,narendramodi@narendramodi.in';
-        case 'telco':
+          return 'cabinet@nic.in';
+        case 'mobile':
           return 'cp@trai.gov.in';
       }
     },
@@ -449,6 +463,9 @@ var app = new Vue({
           break;
         case 'bank':
           code += this.bank.ifsc;
+          break;
+        case 'mobile':
+          code += this.telcoCode;
           break;
         case 'mp':
           code += this.constituencyCode;
@@ -477,12 +494,16 @@ var app = new Vue({
             this.service.name +
             ' inoperable without Aadhaar'
           );
+        case 'mobile':
+          return 'Threats to make mobile connections inoperable without Aadhaar';
         case 'mp':
           return 'An appeal to raise my concerns regarding Aadhaar in Winter Session of Parliament';
       }
     },
     service: function() {
       switch (this.campaign) {
+        case 'mobile':
+          return this.telcos[this.telcoCode];
         case 'bank':
           return this.banks[this.bankIFSC];
         case 'gov':
@@ -510,8 +531,12 @@ var app = new Vue({
     bank: function() {
       return this.banks[this.bankIFSC];
     },
+
+    // IMP: Make sure this does not have a comma
     personName: function() {
       switch (this.campaign) {
+        case 'mobile':
+          return 'Chairman (' + this.telcos[this.telcoCode].name + ')';
         case 'bank':
           return 'Chairman and MD (' + this.bank.name + ')';
         case 'mp':
@@ -524,12 +549,27 @@ var app = new Vue({
       return this.service.name;
     },
     email: function() {
+      var emails = this.partialEmail,
+        self = this;
+
+      return emails
+        .split(', ')
+        .map(function(e) {
+          return self.personName + ' <' + e + '>';
+        })
+        .filter(function(t) {
+          return t.trim().length > 0;
+        })
+        .join(', ');
+    },
+    // Some mail clients can't accept names with emails (Name <email@domain.com>)
+    partialEmail: function() {
       var e = this.service.email;
 
       var self = this;
       // email cleanup
       // TODO: TRIM trailing commas
-      return e
+      e = e
         .replace(';', ',')
         .replace(/[\[\(]dot[\]\)]/g, '.')
         .replace(/[\[\(]at[\]\)]/g, '@')
@@ -537,11 +577,9 @@ var app = new Vue({
         .split(',')
         .filter(function(t) {
           return t.trim().length > 0;
-        })
-        .map(function(e) {
-          return self.personName + ' <' + e.trim() + '>';
-        })
-        .join(', ');
+        });
+
+      return e.join(', ');
     },
     response: function() {
       var template;
@@ -549,15 +587,20 @@ var app = new Vue({
       switch (this.campaign) {
         case 'bank':
           template = this.templates.bank;
-	  break;
+          break;
         case 'gov':
           template = this.templates.gov;
-	  break;
+          break;
         case 'mp':
           template = this.templates.mp;
-	  break;
+          break;
+        case 'mobile':
+          template = this.templates.mobile;
+          break;
       }
-      return template.trim()
+
+      return template
+        .trim()
         .replace(/\(\(addressee\)\)/g, this.personName)
         .replace(/\(\(address\)\)/g, this.service.address);
     }

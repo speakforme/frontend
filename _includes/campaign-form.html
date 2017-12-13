@@ -38,6 +38,13 @@
       </select>
     </div>
 
+    <div v-if="campaign==='mobile'">
+      <label for="telco">[{$t("headertitle.TELCO")}]</label>
+      <select name="telco" id="select-telco" v-model="telcoCode" class="styled-select">
+        <option :value="telco.code" v-for="(telco, index) in telcos">[{telco.name}]</option>
+      </select>
+    </div>
+
     <div>
       <label for="email">[{$t("email")}]</label>
       <input name="email" size="60" v-model="email" readonly>
@@ -77,13 +84,15 @@
 
     <a class="btn btn-email btn-primary" v-if="!mobile"
       v-bind:href="gmailurl" target="_blank"
-      v-on:click.stop="sendGmail">GMail</a>
+      v-on:click.stop="sendGmail">Gmail</a>
     <a class="btn btn-email btn-primary" v-if="!mobile"
       v-bind:href="yahoourl" target="_blank"
       v-on:click.stop="sendYahoo">Yahoo!</a>
     <a class="btn btn-email btn-primary" v-if="!mobile"
       v-bind:href="mailtourl" target="_blank"
       v-on:click.stop="sendMailto">Other</a>
+
+    <p>With a BCC to us so we can track it. To protect your privacy, we will soon delete the email we receive. We will send you updates on the campaign’s progress, but if you prefer not, you can unsubscribe.</p>
 
   </div>
 
