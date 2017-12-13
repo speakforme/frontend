@@ -11,6 +11,18 @@
 
 ആധാറിന്റെ സംബന്ധിച്ച് പൗരന്മാർക്കുള്ള ആശങ്കയുമായി ബന്ധപ്പെട്ട് ലോൿസഭയിൽ ഒരു ഹ്രസ്വസംവാദം നടത്താനാവശ്യപ്പെട്ടുകൊണ്ടുള്ള ഒരു റൂൾ 193 നോട്ടീസിനായി ഈ ലിങ്ക് (link) കാണുക. ശീതകാല സമ്മേളനത്തിനു മുൻപു തന്നെ ഈ നോട്ടീസ് ഫയലു ചെയ്യാൻ താങ്കളോട് അപേക്ഷിക്കുന്നു. അതിലൂടെ ഈ വിഷയത്തിൽ ഒരു ചർച്ച നടക്കുമെന്നും ആ ചർച്ചയിൽ താങ്കൾ‌ വഴി ഞങ്ങൾക്ക് ഗവണ്മെന്റിനെ ചോദ്യം ചെയ്യാൻ സാധിക്കുമെന്നും പ്രതീക്ഷിക്കുന്നു.
 
+-- English version of the above content --
+
+I am getting constant messages from my Bank and phone company to link my Aadhaar number. There are reports on a daily basis about the shoddy implementation of Aadhaar and how it is putting my personal information in danger.
+
+If one does a cursory google search, there is enough material about the pitfalls of Aadhaar being reported. From starvation deaths[^1] to exclusion[^2] to enabling fraud[^3] to mass surveillance[^4], Aadhaar is becoming the basis for a lot of widespread suffering. There have been data leaks by 210 government entities[^5] putting privacy of citizens like me at risk and making them vulnerable to identity theft[^6].
+
+As my representative, I request you to raise these issues regarding Aadhaar in Parliament. I ask you to demand an answer from the Government of the day as to why I am being forced to register for a flawed system. I demand that Aadhaar should be made non-mandatory, as the Supreme Court has already ordered in 2015, and there should be an opt-out clause which would allow those who don’t want to be a part of the system to get out.
+
+Please go to this link for a draft Rule 193 Notice[^7] with an explanatory statement asking for a Short Duration discussion on citizen concerns regarding Aadhaar. You can download any of the notices and file them according to your convenience.
+
+
+
 വളരെയധികം നന്ദി.
 
 വിശ്വസ്തതയോടെ,
