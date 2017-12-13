@@ -6,7 +6,7 @@
   <title>{{ site.title | escape }} {% if page.title %}{{ page.title | escape }} {%endif%}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <link rel="stylesheet" href="{{ "/public/main.css" | relative_url }}"> <!-- remove if creating problems -->
+  <!-- <link rel="stylesheet" href="{{ "/public/main.css" | relative_url }}"> -->
   <link rel="stylesheet" href="{{ "/public/no-class.min.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/public/mui.min.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
