@@ -21,7 +21,7 @@ en:
   send_email: Send Email
   response: Message
   contempt_notice_msg: Send email to
-  tweet: Tweet
+  tweet: Share
   state: State
   constituency: Constituency
   # We show this if automatic copy succeeds
@@ -75,14 +75,24 @@ en:
 ta:
   language_name: தமிழ்
   title: எனக்காக குரல்கொடு
+  headertitle:
+    MP: எம். பி
+    GOV: சேவை வழங்கி
+    TELCO: கைப்பேசி நிறுவனம்
+    BANK: வங்கி
+  mp: நாடாளுமன்ற உறுப்பினர்
+  netafilter:
+    helptext: உங்கள் தொகுதி தெரியவில்லையா?
+    # We mark this as the link.
+    click_here: நேதா ஃபில்டரை பார்க்கவும்.
   service: சேவை
   not_in_list: பட்டியலில் இல்லை
   bank: வங்கி
   email: மின்னஞ்சல்
   send_email: மின்னஞ்சல் அனுப்பு
   response: பதில்
-  contempt_notice_msg: நீதிமன்ற அவமதிப்பு அறிக்கையை அனுப்பு
-  tweet: கீச்சு
+  contempt_notice_msg: மின்னஞ்சலை பெறுநர்க்கு அனுப்பு
+  tweet: பகிர்க
   state: மாநிலம்
   constituency: தொகுதி
   copy_help_msg: >
