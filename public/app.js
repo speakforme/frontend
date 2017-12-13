@@ -148,7 +148,7 @@ var app = new Vue({
     getMailUrl(opts, encodedBody) {
       return (
         opts.base +
-        encodeURIComponent(opts.fullEmail ? this.email : this.service.email) +
+        encodeURIComponent(this.email) +
         (opts.base === 'mailto:' ? '?' : '&') +
         opts.subject +
         '=' +
@@ -338,8 +338,6 @@ var app = new Vue({
         break;
 
       case 'gov':
-        // Setup service inside translations
-        console.log(this.services);
         var msgs = {
           services: this.services
         };
@@ -420,13 +418,13 @@ var app = new Vue({
       );
     },
     mailtourl: function() {
-      return this.getMailUrl(mailUrlOpts.mailto, 'Paste+Here');
+      return this.getMailUrl(mailUrlOpts.mailto);
     },
     gmailurl: function() {
-      return this.getMailUrl(mailUrlOpts.gmail, 'Paste+Here');
+      return this.getMailUrl(mailUrlOpts.gmail);
     },
     yahoourl: function() {
-      return this.getMailUrl(mailUrlOpts.yahoo, 'Paste+Here');
+      return this.getMailUrl(mailUrlOpts.yahoo);
     },
     mobile: function() {
       var IEMobile = /IEMobile/i.test(navigator.userAgent);
@@ -498,8 +496,6 @@ var app = new Vue({
     service: function() {
       switch (this.campaign) {
         case 'mobile':
-          console.log(this.telcos);
-          console.log(this.telcoCode);
           return this.telcos[this.telcoCode];
         case 'bank':
           return this.banks[this.bankIFSC];
@@ -544,12 +540,24 @@ var app = new Vue({
       return this.service.name;
     },
     email: function() {
+      var emails = this.partialEmail,
+        self = this;
+
+      return emails
+        .split(',')
+        .map(function(e) {
+          return self.personName + ' <' + e + '>';
+        })
+        .join(', ');
+    },
+    // Some mail clients can't accept names with emails (Name <email@domain.com>)
+    partialEmail: function() {
       var e = this.service.email;
 
       var self = this;
       // email cleanup
       // TODO: TRIM trailing commas
-      return e
+      e = e
         .replace(';', ',')
         .replace(/[\[\(]dot[\]\)]/g, '.')
         .replace(/[\[\(]at[\]\)]/g, '@')
@@ -557,11 +565,9 @@ var app = new Vue({
         .split(',')
         .filter(function(t) {
           return t.trim().length > 0;
-        })
-        .map(function(e) {
-          return self.personName + ' <' + e.trim() + '>';
-        })
-        .join(', ');
+        });
+
+      return e.join(', ');
     },
     response: function() {
       var template;
