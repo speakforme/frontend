@@ -61,6 +61,16 @@ var i18n = new VueI18n({
   fallbackLocale: 'en'
 });
 
+function getCampaignType() {
+  // TODO: Use the page template to export a variable
+  switch (window.location.pathname) {
+    case '/mp/': return 'mp';
+    case '/service/': return 'gov';
+    case '/bank/': return 'bank';
+    case '/mobile': return 'mobile';  
+  }
+}
+
 forEach(document.querySelectorAll('script[id^=draft-notice-]'), function(
   index,
   el
@@ -83,6 +93,28 @@ forEach(document.querySelectorAll('script[id^=draft-notice-]'), function(
   };
 });
 
+forEach(Object.keys(window.petitions), function(index, item) {
+  var campaignType = getCampaignType()
+  if (item.indexOf(campaignType) !== -1) {
+    axios.get('/petitions/' + item + '.txt').then(function(response) {
+      responseComponents[campaignType + '-' + item.split('-').pop()] = {
+        props: ['addressee', 'address', 'body'],
+        delimiters: ['((', '))'],
+        template:
+        '<textarea @copy="copied" cols="70" rows="10" name="content" id="response-content">' +
+        response.data +
+        '</textarea>',
+        methods: {
+          copied: function() {
+            this.$emit('copied');
+          }
+        }
+      };
+      app.petitionLocales.push(item.split('-').pop())
+    })
+  }
+})
+
 var app = new Vue({
   i18n: i18n,
   delimiters: ['[{', '}]'],
@@ -94,6 +126,7 @@ var app = new Vue({
     localeLoaded: ['en'],
     banks: {},
     locale: 'en',
+    petitionLocales: [''],
     serviceIndex: 'PAN',
     bankIFSC: 'ALLA',
     state: 'UP',
@@ -111,6 +144,7 @@ var app = new Vue({
     },
     constituencies: [],
     campaign: 'mp',
+    petition: responseComponents['mp'],
     mailMethod: null,
     templates: {
       mp: '',
@@ -255,21 +289,14 @@ var app = new Vue({
     },
     // We have 3 values for the campaign:
     // mp/service/bank
-    setInitialCampaign: function() {
-      // TODO: Use the page template to export a variable
-      switch (window.location.pathname) {
-        case '/mp/':
-          this.campaign = 'mp';
-          break;
-        case '/service/':
-          this.campaign = 'gov';
-          break;
-        case '/bank/':
-          this.campaign = 'bank';
-          break;
-        case '/mobile/':
-          this.campaign = 'mobile';
-          break;
+    setInitialCampaign: function () {
+      this.campaign = getCampaignType()
+    },
+    setPetitionLocale: function () {
+      if (responseComponents[this.campaign + '-' + this.locale]) {
+        this.petition = responseComponents[this.campaign + '-' + this.locale]
+      } else {
+        this.petition = responseComponents[this.campaign]
       }
     }
   },
@@ -279,6 +306,11 @@ var app = new Vue({
     },
     locale: function(newLocale) {
       this.setLocale(newLocale);
+      this.setPetitionLocale()
+
+    },
+    petitionLocales: function(newValue) {
+      this.setPetitionLocale()
     }
   },
   created: function() {
@@ -611,5 +643,5 @@ var app = new Vue({
         .replace(/\(\(address\)\)/g, this.service.address);
     }
   },
-  components: responseComponents
+  // components: responseComponents
 });
