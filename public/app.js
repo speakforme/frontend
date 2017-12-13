@@ -1,8 +1,12 @@
-var banks = window.banks;
+var banks = window.banksList;
+
 var services = window.services;
 var templates = {};
 var responseComponents = {};
 
+/**
+ * Util methods start
+ */
 // forEach method, could be shipped as part of an Object Literal/Module
 var forEach = function(array, callback, scope) {
   for (var i = 0; i < array.length; i++) {
@@ -10,10 +14,43 @@ var forEach = function(array, callback, scope) {
   }
 };
 
+String.prototype.paddingLeft = function(paddingValue) {
+  return String(paddingValue + this).slice(-paddingValue.length);
+};
+
 // Handle google-analytics blocks gracefully
 if (!window.gtag) {
   window.gtag = function() {};
 }
+
+/**
+ * Util methds end
+ */
+
+var mailUrlOpts = {
+  mailto: {
+    base: 'mailto:',
+    subject: 'subject',
+    cc: 'cc',
+    bcc: 'bcc',
+    body: 'body'
+  },
+  gmail: {
+    base:
+      'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=',
+    subject: 'su',
+    cc: 'cc',
+    bcc: 'bcc',
+    body: 'body'
+  },
+  yahoo: {
+    base: 'http://compose.mail.yahoo.com/?To=',
+    subject: 'Subject',
+    cc: 'Cc',
+    bcc: 'Bcc',
+    body: 'Body'
+  }
+};
 
 var i18n = new VueI18n({
   locale: window.localStorage.getItem('locale') || 'en',
@@ -48,12 +85,25 @@ var app = new Vue({
   delimiters: ['[{', '}]'],
   el: '#app',
   data: {
+    // This is the list of all locales
+    // we have loaded so far from a separate file
+    // successfully
+    localeLoaded: ['en'],
+    banks: {},
     locale: 'en',
-    serviceIndex: 0,
-    bankIndex: 0,
-    state: 'AN',
-    constituencyIndex: 0,
-    mps: [],
+    serviceIndex: 'PAN',
+    bankIFSC: 'ALLA',
+    state: 'UP',
+    constituencyCode: 'UP-18',
+    mps: {
+      'UP-18': {
+        index: 18,
+        name: 'Agra',
+        state: 'UP',
+        mp: 'Dr. Prof. Ram Shankar',
+        email: 'office.mpagra@gmail.com'
+      }
+    },
     constituencies: [],
     campaign: 'mp',
     mailMethod: null,
@@ -71,50 +121,45 @@ var app = new Vue({
       });
       this.$i18n.locale = val;
       window.localStorage.setItem('locale', val);
-    },
-    openMailLink: function(encodedBody, method) {
-      this.mailMethod = method;
-      var base = 'mailto:',
-        subject = 'subject',
-        bcc = 'bcc';
 
-      switch (method) {
-        case 'gmail':
-          base =
-            'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=';
-          subject = 'su';
-          break;
-        case 'yahoo':
-          base = 'http://compose.mail.yahoo.com/?To=';
-          subject = 'Subject';
-          to = 'To';
-          bcc = 'Bcc';
-          break;
+      if (this.localeLoaded.indexOf(val) === -1) {
+        // Try to load the locale
+        this.$http
+          .get('/locales/' + val + '.json', { responseType: 'json' })
+          .then(
+            function(response) {
+              this.$i18n.mergeLocaleMessage(val, response.body);
+              this.localeLoaded.push[val];
+              this.$forceUpdate();
+            },
+            function(response) {
+              // If there is no such file
+              this.localeLoaded.push[val];
+            }
+          );
       }
-
-      // TODO: use string interpolation after switching to es6
-      var url =
-        base +
+    },
+    getMailUrl(opts, encodedBody) {
+      return (
+        opts.base +
         encodeURIComponent(this.email) +
-        '?' +
-        subject +
+        (opts.base === 'mailto:' ? '?' : '&') +
+        opts.subject +
         '=' +
         encodeURIComponent(this.subject) +
         '&' +
-        bcc +
+        opts.cc +
+        '=' +
+        encodeURIComponent(this.cc) +
+        '&' +
+        opts.bcc +
         '=' +
         encodeURIComponent(this.bcc) +
-        '&body=' +
-        encodedBody;
-
-      if (this.mobile) {
-        window.location.href = url;
-      } else {
-        // Open in new tab
-        // TODO: Make the btn-email-desktop
-        // into a <a href> with dynamic link and new tab opening
-        window.location.href = url;
-      }
+        '&' +
+        opts.body +
+        '=' +
+        encodedBody
+      );
     },
     /**
      * On desktop, we show 3 buttons for gmail/yahoo/mailto
@@ -127,12 +172,26 @@ var app = new Vue({
      *
      * On mobiles: Just open the mailto link with complete body
      */
-    sendEmail: function(method) {
+
+    sendGmail: function(event) {
+      this.sendEmail('gmail', event);
+    },
+
+    sendYahoo: function(event) {
+      this.sendEmail('yahoo', event);
+    },
+
+    sendMailto: function(event) {
+      this.sendEmail('mailto', event);
+    },
+
+    sendEmail: function(method, event) {
       this.mailMethod = method;
       gtag('event', 'sendEmail', {
         email: this.email,
         subject: this.subject,
         bcc: this.bcc,
+        cc: this.cc,
         mobile: this.mobile,
         method: method
       });
@@ -140,21 +199,24 @@ var app = new Vue({
       var encodedBody = encodeURIComponent(this.response);
 
       if (this.mobile) {
-        this.openMailLink(encodedBody);
+        // Do nothing, already opened.
       } else {
         var responseEl = document.querySelector('#response-content');
         responseEl.select();
         try {
-          timeout = 1000;
           var successful = document.execCommand('copy');
-          if (successful) {
-            return;
-          } else {
-            // Ask user to copy
-            this.showcopymsg = true;
-          }
         } catch (err) {
+          successful = false;
+        }
+
+        if (successful) {
+          // TODO: i18n this.
+          alert(this.$t('copied_msg'));
+          return;
+        } else if (!this.showcopymsg) {
+          // Show message asking user to copy, and don't open the new tab
           this.showcopymsg = true;
+          event.preventDefault();
         }
       }
     },
@@ -162,8 +224,7 @@ var app = new Vue({
     // content of the textarea.
     // TODO: See if we can detect a partial copy and not open the mail link
     copied: function() {
-      alert('The message is now copied, paste it in your mail client');
-      this.openMailLink('Paste+here', this.mailMethod);
+      // Do nothing
     },
     tweet: function() {
       gtag('event', 'sendTweet');
@@ -171,9 +232,15 @@ var app = new Vue({
     updateConstituencies: function() {
       var self = this;
 
-      this.constituencies = this.mps.filter(function(mp) {
-        return mp.state === self.state;
-      });
+      this.constituencies = [];
+
+      for (var code in this.mps) {
+        if (code.substr(0, 2) === this.state) {
+          this.constituencies.push(this.mps[code]);
+        }
+      }
+
+      this.constituencyCode = this.constituencies[0].code;
     },
     initTemplates: function() {
       var self = this;
@@ -183,10 +250,16 @@ var app = new Vue({
     // mp/service/bank
     setInitialCampaign: function() {
       // TODO: Use the page template to export a variable
-      if (document.location.pathname === '/mp/') {
-        this.campaign = 'mp';
-      } else if (document.location.pathname === '/service/') {
-        this.campaign = 'service';
+      switch (window.location.pathname) {
+        case '/mp/':
+          this.campaign = 'mp';
+          break;
+        case '/service/':
+          this.campaign = 'gov';
+          break;
+        case '/bank/':
+          this.campaign = 'bank';
+          break;
       }
     }
   },
@@ -194,22 +267,23 @@ var app = new Vue({
     state: function(newState) {
       this.updateConstituencies();
     },
-    constituencyIndex: function(newIndex) {
-      var c = this.constituencies[newIndex];
-    },
     locale: function(newLocale) {
       this.setLocale(newLocale);
-    },
-    serviceIndex: function(i) {
-      if (i === 'bank') {
-        this.campaign = 'bank';
-      } else {
-        this.campaign = 'service';
-      }
     }
   },
   created: function() {
-    this.locale = window.localStorage.getItem('locale') || 'en';
+    var locale = (this.locale = window.localStorage.getItem('locale') ||
+      (window.location.search.split('lang=')[1] + '').substr(0,2) ||
+      window.navigator.languages
+        .map(function(l) {
+          return l.split('-')[0];
+        })
+        .filter(function(l) {
+          return !!i18nMsgs[l];
+        })[0] ||
+      window.navigator.language.split('-')[0]);
+
+    this.setLocale(locale);
 
     var self = this;
 
@@ -219,16 +293,42 @@ var app = new Vue({
 
     switch (this.campaign) {
       case 'mp':
+        var self = this;
         this.$http
           .get('/public/mps.json', { responseType: 'json' })
           .then(function(response) {
-            this.mps = response.body;
-            this.updateConstituencies();
+            // Set this.mps
+            var self = this,
+              msgs = {
+                constituencies: {}
+              };
+            for (var i = 0; i < response.body.length; i++) {
+              var row = response.body[i];
+              self.mps[row.code] = row;
+
+              msgs.constituencies[row.code] = row.name;
+            }
+            self.$i18n.mergeLocaleMessage('en', msgs);
+
+            // Also, set the constituencies inside the english locale
+            self.updateConstituencies();
           });
 
         break;
 
-      case 'service':
+      case 'bank':
+        for (var i = 0; i < banks.length; i++) {
+          this.banks[banks[i].ifsc] = banks[i];
+        }
+        break;
+
+      case 'gov':
+        // Setup service inside translations
+        console.log(this.services);
+        var msgs = {
+          services: this.services
+        };
+        self.$i18n.mergeLocaleMessage('en', msgs);
         break;
     }
   },
@@ -283,10 +383,33 @@ var app = new Vue({
       ];
     },
     constituency: function() {
-      return this.constituencies[this.constituencyIndex];
+      return this.mps[this.constituencyCode];
     },
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
+    },
+    facebookhref: function () {
+      return 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.href
+    },
+    facebookurl: function () {
+      return `https://www.facebook.com/plugins/share_button.php?href=${window.location.href}&layout=button&size=small&mobile_iframe=true&width=59&height=20`
+
+
+    },
+    fullmailtourl: function() {
+      return this.getMailUrl(
+        mailUrlOpts.mailto,
+        encodeURIComponent(this.response)
+      );
+    },
+    mailtourl: function() {
+      return this.getMailUrl(mailUrlOpts.mailto, 'Paste+Here');
+    },
+    gmailurl: function() {
+      return this.getMailUrl(mailUrlOpts.gmail, 'Paste+Here');
+    },
+    yahoourl: function() {
+      return this.getMailUrl(mailUrlOpts.yahoo, 'Paste+Here');
     },
     mobile: function() {
       var IEMobile = /IEMobile/i.test(navigator.userAgent);
@@ -299,15 +422,36 @@ var app = new Vue({
         ) && !IEMobile
       );
     },
-    banks: function() {
-      return window.banks;
-    },
     services: function() {
       return window.services;
     },
+    // This is maintained manually
+    cc: function() {
+      switch (this.campaign) {
+        case 'mp':
+          return '';
+        case 'bank':
+          return 'cabinet@nic.in,urjitrpatel@rbi.org.in,governor@rbi.org.in';
+        case 'gov':
+          return 'cabinet@nic.in,narendramodi@narendramodi.in';
+        case 'telco':
+          return 'cp@trai.gov.in';
+      }
+    },
     bcc: function() {
-      // TODO: Generate <campaign-code>@speakforme.in email address
-      return 'info@speakforme.in';
+      var code = this.campaign + '-';
+      switch (this.campaign) {
+        case 'gov':
+          code += this.service.name;
+          break;
+        case 'bank':
+          code += this.bank.ifsc;
+          break;
+        case 'mp':
+          code += this.constituencyCode;
+          break;
+      }
+      return (code + '@email.speakforme.in').toLowerCase();
     },
     twitter: function() {
       if (this.service.twitter) {
@@ -324,7 +468,7 @@ var app = new Vue({
       switch (this.campaign) {
         case 'bank':
           return 'Threats to make bank accounts inoperable without Aadhaar';
-        case 'service':
+        case 'gov':
           return (
             'Threats to make ' +
             this.service.name +
@@ -337,36 +481,39 @@ var app = new Vue({
     service: function() {
       switch (this.campaign) {
         case 'bank':
-          return this.banks[this.bankIndex];
-        case 'service':
+          return this.banks[this.bankIFSC];
+        case 'gov':
           return this.services[this.serviceIndex];
           break;
-        // TODO: fix this hacky code by making constituency
-        // schema same as service/bank
+        // TODO: use a setter for constituency
+        // and make sure that it works before the mps.json
+        // file is loaded
         case 'mp':
-          var e = '',
-            a = '';
           if (this.constituency) {
-            e = this.constituency.email;
-            a = this.constituency.name;
+            return this.constituency;
           }
+
+          // TODO: Pick a random constituency
           return {
-            email: e,
-            address: a,
-            name: a
+            index: '18',
+            name: 'Agra',
+            state: 'UP',
+            name: 'Dr. Prof. Ram Shankar',
+            email: 'office.mpagra@gmail.com, rs.katheria@sansad.nic.in',
+            code: 'UP-18'
           };
       }
     },
     bank: function() {
-      return this.banks[this.bankIndex];
+      return this.banks[this.bankIFSC];
     },
     personName: function() {
       switch (this.campaign) {
         case 'bank':
           return 'Chairman and MD (' + this.bank.name + ')';
         case 'mp':
-          return this.serviceName;
-        case 'service':
+          return this.constituency ? this.constituency.mp : '';
+        case 'gov':
           return this.service.personName;
       }
     },

@@ -6,7 +6,7 @@ If one does a cursory google search, there is enough material about the pitfalls
 
 As my representative, I request you to raise these issues regarding Aadhaar in Parliament. I ask you to demand an answer from the Government of the day as to why I am being forced to register for a flawed system. I demand that Aadhaar should be made non-mandatory, as the Supreme Court has already ordered in 2015, and there should be an opt-out clause which would allow those who don’t want to be a part of the system to get out.
 
-I’m attaching with this email a Rule 193 Notice with an explanatory statement asking for a Short Duration discussion on citizen concerns regarding Aadhaar in Lok Sabha. I ask you to file this notice before the Winter Session so that there can be a discussion on the topic and we can question the Government through you.
+Please go to this link for a draft Rule 193 Notice[^7] with an explanatory statement asking for a Short Duration discussion on citizen concerns regarding Aadhaar. You can download any of the notices and file them according to your convenience.
 
 Thank you.
 

@@ -12,27 +12,29 @@
 
     <div v-if="campaign==='mp'">
       <label for="constituency">[{$t("constituency")}]</label>
-      <select name="constituency" id="select-constituency" v-model="constituencyIndex" class="styled-select">
-        <option v-bind:selected="i === 0"
-                :value="i"
-                v-for="(constituency, i) in constituencies">
-              [{constituency.cons}]</option>
+      <select name="constituency" v-model="constituencyCode" class="styled-select">
+        <option :value="constituency.code" v-for="(constituency,i) in constituencies">[{$t("constituencies." + constituency.code)}]</option>
       </select>
-      <p>Don't know your constituency? Check <a target="_blank" rel="noopener" href="http://netafilter.in">here</a> for a map.</p>
+      <p>[{$t("netafilter.helptext")}]
+        <a target="_blank" rel="noopener noreferer" href="http://netafilter.in">
+          [{$t("netafilter.click_here")}]
+        </a>
+      </p>
     </div>
 
-    <div v-if="campaign==='bank'||campaign == 'service'">
+    <div v-if="campaign == 'gov'">
       <label for="service">[{$t("service")}]</label>
       <select name="service" id="select-service" v-model="serviceIndex" class="styled-select">
-        <option :value="index" v-for="(service,index) in services">[{service.name}]</option>
-        <option value="bank">Bank</option>
+        <option :value="code" v-for="(service, code) in services">
+          [{$t("services."+ code + ".name")}]
+        </option>
       </select>
     </div>
 
     <div v-if="campaign==='bank'">
       <label for="bank">[{$t("bank")}]</label>
-      <select name="bank" id="select-bank" v-model="bankIndex" class="styled-select">
-        <option :value="index" v-for="(bank, index) in banks">[{bank.name}]</option>
+      <select name="bank" id="select-bank" v-model="bankIFSC" class="styled-select">
+        <option :value="bank.ifsc" v-for="(bank, index) in banks">[{bank.name}]</option>
       </select>
     </div>
 
@@ -44,7 +46,7 @@
     <label for="content">[{$t("response")}]</label>
       <component :is="campaign"
         @copied="copied"
-        :addressee="service.name"
+        :addressee="personName"
         :address="service.address"
         :body="response"></component>
 
@@ -53,19 +55,35 @@
 
   <div>
 
-    <label for="service-name">[{$t("contempt_notice_msg")}] : <span class="service-name">[{serviceName}]</span></label>
+    <label v-if="campaign!=='mp'" for="service-name">[{$t("contempt_notice_msg")}] : <span class="service-name">[{serviceName}]</span></label>
 
-    <button id="btn-email-mobile" class="btn-email btn-primary" v-if="mobile"
-      v-on:click.stop.prevent="sendEmail()">[{$t("send_email")}]</button>
+    <label v-if="campaign==='mp'" for="service-name">
+        <!-- Send Email: MP_NAME (MP, Constituency)-->
+        [{$t("contempt_notice_msg")}] :
+          <!-- MP name goes here -->
+          <span class="service-name">
+            [{personName}],
+            ([{$t("mp")}],
+            [{$t("constituencies." + constituencyCode)}])
+          </span>
+    </label>
+    <br>
+
+    <a id="btn-email-mobile" class="btn btn-email btn-primary" v-if="mobile"
+      v-bind:href="fullmailtourl"
+      v-on:click.stop="sendMailto">[{$t("send_email")}]</a>
 
     <p v-if="showcopymsg" class="success-box">[{$t("copy_msg")}]</p>
 
-    <button class="btn-email btn-primary" v-if="!mobile"
-      v-on:click.stop.prevent="sendEmail('gmail')">GMail</button>
-    <button class="btn-email btn-primary" v-if="!mobile"
-      v-on:click.stop.prevent="sendEmail('yahoo')">Yahoo!</button>
-    <button class="btn-email button-unstyled" v-if="!mobile"
-      v-on:click.stop.prevent="sendEmail('other')">Other</button>
+    <a class="btn btn-email btn-primary" v-if="!mobile"
+      v-bind:href="gmailurl" target="_blank"
+      v-on:click.stop="sendGmail">GMail</a>
+    <a class="btn btn-email btn-primary" v-if="!mobile"
+      v-bind:href="yahoourl" target="_blank"
+      v-on:click.stop="sendYahoo">Yahoo!</a>
+    <a class="btn btn-email btn-primary" v-if="!mobile"
+      v-bind:href="mailtourl" target="_blank"
+      v-on:click.stop="sendMailto">Other</a>
 
   </div>
 
@@ -76,4 +94,7 @@
     >
     [{$t("tweet")}]</a>
   </div>
+
+  <iframe :src="facebookurl" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
 </form>

@@ -3,9 +3,22 @@ email: info@speakforme.in
 description: >
   Speak for Me
 baseurl: ""
-url: "https://beta.speakforme.in"
+url: "https://speakforme.in"
 twitter_username: speakforme
 github_username:  speakforme
 # Build settings
 markdown: kramdown
 google_analytics: UA-82421266-2
+exclude:
+  - _locales
+  - _scripts
+  - package.json
+  - package-lock.json
+  - HACKING.md
+  - Gulpfile.js
+  - Gemfile.lock
+  - Gemfile
+  - CNAME
+# https://www.netlify.com/docs/redirects/
+include:
+  - _redirects

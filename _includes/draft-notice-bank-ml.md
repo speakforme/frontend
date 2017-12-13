@@ -1,0 +1,73 @@
+((addressee))
+
+സര്‍/മാഡം,
+
+
+വിഷയം : ആധാര്‍ ഇല്ലെങ്കില്‍ ബാങ്ക അക്കുണ്ടുകള്‍ പ്രവര്‍ത്തനരഹിതമാക്കപ്പെടുമെന്നുള്ള ഭീഷണി
+
+ആധാര്‍ ബാങ്ക് അക്കൗണ്ടുകളളുമായി ബന്ധിപ്പിച്ചില്ലെങ്കില്‍ എന്റെ ബാങ്കക്കുണ്ടുകള്‍ മരവിപ്പിക്കുമെന്നുള്ള ഭീഷണികളെക്കുറിച്ചുള്ള എന്റെ ഉത്കണ്ഠയും നിരാശയും ഞാനിവിടെ രേഖപ്പെടുത്തിക്കൊള്ളട്ടെ. നിങ്ങളുടെ ബാങ്കുമായുള്ള എന്റെ ബന്ധത്തെയും അതു വഴി ഞാന്‍ ബാങ്കിന്റെ വ്യ്വഹാരത്തിനു കൊണ്ടുവരുന്ന മൂല്യത്തെയും അപ്പാടെ ചോദ്യം ചെയ്യുന്ന നീക്കമാണു മുന്‍പറഞ്ഞ ഭീഷണികള്‍. ഞാനുമായുള്ള ഇടപാടുള്‍ക്കോ അതിലുള്‍പ്പെട്ടിട്ടുള്ള എന്റെ പണത്തിനോ അതിന്മേൽ എനിക്ക് അവകാശപ്പെട്ട നിയന്ത്രണത്തിനോ നിങ്ങള്‍ യാതൊരു വിലയും കല്പിക്കുന്നില്ല എന്ന എന്റെ ആശങ്കയും ഞാന്‍ പ്രകടിപ്പിക്കുകയാണ്.
+
+ആധാര്‍ ഒരു മാന്ത്രിക വടിയൊന്നുമല്ലെന്നും അത്  UIDAIയുടെ ഡാറ്റാബേസില്‍ നിന്നും സ്ഥിരീകരിക്കപ്പെടാത്ത വിവരങ്ങള്‍ നേടാനുള്ള ഒരു വഴി മാത്രമാണെന്നും താങ്കളും സമ്മതിക്കുമെന്ന് എനിക്കുറപ്പുണ്ട്. 
+
+ബിനാമി ആധാര്‍ ബാങ്ക് അക്കൗണ്ടുകള്‍ക്ക് ലോണ്‍ വെയിവര്‍ നല്കാനിടയായ മഹാരാഷ്ട്ര ആധാര്‍ കുംഭകോണത്തില്‍ [^0] നിന്നും, അതുപോലുള്ള മറ്റ് പല തട്ടിപ്പുകളളെക്കുറിച്ചുള്ള വാര്‍ത്തകളില്‍ നിന്നും ആധാറിനു ഒരാളെ സവിശേഷമായി തിരിച്ചറീയാന്‍ കഴിവില്ലെന്നും അതിനെ ബാങ്ക് അക്കൗണ്ടുകളുമായോ സിം കാര്‍ഡുകളളുമായോ മറ്റെന്തിങ്കിലുമായോ ബന്ധിപ്പിക്കുന്നത് ബുദ്ധിശൂന്യതയാണെന്നും താങ്കളും മനസ്സിലാക്കിയിട്ടുണ്ട് എന്ന് വിശ്വസിക്കട്ടെ.  സാമ്പ്രദായികമായുള്ള KYC [^1] പദ്ധിതകളെ നേര്‍പ്പിക്കുന്നതിനെക്കുറീച്ച് എപ്പോഴും ആശങ്ക പുലര്‍ത്തുന്ന RBI പല തവണ പറഞ്ഞിട്ടുള്ളത് ആധാര്‍ ഒരു തേഡ് പാര്‍ട്ടി തിരിച്ചറിയല്‍ സംവിധാനമെന്നതിനപ്പുറം ഒന്നുമല്ല എന്നാണ്. ലോകത്തെമ്പാടുമുള്ള ബാങ്കുകളില്‍ തേഡ് പാര്‍ട്ടി തിരിച്ചറിയല്‍ സംവിധാനങ്ങള്‍ക്ക് യാതൊരു പ്രസക്തിയും കല്പിക്കാറില്ല. ഇത് കൂടാടെ ഫിനാന്‍ഷ്യല്‍ ആക്ഷന്‍ ടാസ്ക് ഫോഴ്സ് (FATF), ആര്‍ബിഐയുടെ തന്നെ മാര്‍ഗ്ഗനിര്‍ദ്ദേശങ്ങള്‍ മുതലായവയ്ക്ക് വിപരീതമാണ് ആധാര്‍ എന്ന ഈ തേഡ് പാര്‍ട്ടി തിരിച്ചറിയല്‍ സംവിധാനം. ഇത്തരത്തില്‍ ഉപഭോക്താക്കളുടെ വിവരങ്ങളെ ഒരു മേൽനോട്ടവുമില്ലാതെ മാറ്റിമറിക്കുന്ന ആധാറിന്റെ ഉപയോഗം പ്രിവന്ഷന്‍ ഓഫ് മണി ലോണ്ടറിങ്ങ് ആക്ട് (PMLA) യുടെ ഉദ്ദേശങ്ങള്‍ക്കും നേര്‍ വിപരീതമാണ്. 
+
+ആധാര്‍ ഡാറ്റാബേസിനെയും, അതില്‍ ആള്‍ക്കാരെ ചേര്‍ക്കുക, ഓരോ നമ്പറും സാക്ഷ്യപ്പെടുത്തുക, ആ നമ്പറുമായി ബന്ധപ്പെടുത്തിയിരിക്കുന്ന വിവരങ്ങള്‍ സാക്ഷ്യപ്പെടുത്തിയ അധികാരികളില്‍ നിന്നാണു വരുന്നത് എന്ന് ഉറപ്പാക്കുക, വിവരങ്ങള്‍ പുതുക്കക, അതിലേക്കുള്ള ലഭ്യത പരിമിതിപ്പെടുത്തുക മുലായ നടപടിക്രമങ്ങള്‍ ഇതു വരെ ഒരു സര്‍ക്കാര്‍ ഏജൻസിയും പരിശോധിച്ചിട്ടില്ല. കൂടാതെ, ഇങ്ങനെ ആള്‍ക്കാരെയും അവരുടെ മേല്‍വിലാസവും എന്തിനു, ഒരാളുടെ അസ്തിത്വം തന്നെ തിരിച്ചറിയാന്‍ പറ്റും എന്ന് അവകാശപ്പെടുന്ന ആധാര്‍ സംവിധാനത്തില്‍ എന്തെങ്കിലും ഒക്കെ തിരിച്ചറിയുന്നതില്‍ പിഴവു വന്നാല്‍ ഒരു ഏജന്‍സിയും ഉത്തരവാദിത്തം ഏറ്റെടുക്കാന്‍ ബാധ്യസ്ഥരല്ല. ഇങ്ങനെ ഉള്ള ആധാര്‍ എന്ന സംവിധാനം ഉപയോഗിക്കുന്നവര്‍ ശരിക്കുള്ള ഉപഭോക്താക്കളെയും വ്യാജന്മാരെയും തിരിച്ചറിയാനുള്ള കഴിവ് ഫലത്തില്‍  കളഞ്ഞുകുളിക്കുകയാണ്.
+
+ആധാര്‍ നമ്പര്‍ ചേര്‍ക്കാനായുള്ള താങ്കളുടെ ബാങ്കിന്റെ പരിശ്രമങ്ങള്‍ക്കുള്ള മറുപടിയായി ഞാന്‍ താഴെ പറഞ്ഞിരിക്കുന്ന കാര്യങ്ങളിലേക്ക് താങ്കളുടെ ശ്രദ്ധ ക്ഷണിക്കുന്നു. 
+
+1. ഉപഭോക്താക്കളെ ആധാറുമായി അക്കൗണ്ട് ബന്ധിപ്പിക്കാനായി ഭീഷണിപ്പെടുത്തുന്ന നിങ്ങളുടെ കത്തുകളും ഈ മെയിലുകളും അടിസ്ഥാനമാക്കിയിരിക്കുന്നത് ഡോ. അജയ് ഭൂഷണ്‍ പാണ്ടെ (സിഇഓ, UIDAI) ജൂലൈ 14 2017 നു പുറത്തിറക്കിയ  13012/79/2017/Legal-UIDAI (No. 4 of 2017) എന്ന അറിയിപ്പിനെ ആണ്. താഴെ കൊടുത്തിരിക്കുന്നത് അതില്‍ നിന്നുള്ള ഉദ്ധരണിയാണ്.
+
+        a.  Para 2 of the said notification relies on Notification No.2/F .No. P.12011/11/2016-ES Cell-DOR [^3] citing powers conferred by sub-section (1) read with clause (h), clause (i), clause (j) and clause (k) of sub-section (2) of section 73 of the Prevention of Money-laundering Act, 2002 (15 of 2003) on June 1st 2017 as the basis to freeze bank accounts if they are not linked to Aadhaar.
+
+        b.  While clause (h) of the Prevention of Money-laundering Act, 2002 (15 of 2003) was omitted by s. 29 with effect from 15.2.2013 and clause (i), clause (j) and clause (k) of sub-section (2) of section 73 of the Prevention of Money-laundering Act, 2002 (15 of 2003)does not allow for freezing of any asset or making it inoperable. Any rule claiming to make accounts inoperative is therefore invalid as it is a rule that cannot be made under the PMLA. Using invalid rules or pretend laws amounts to criminal misconduct.
+
+        c.  Furthermore under section 74 of the Prevention of Money-laundering Act, 2002 (15 of 2003) every rule made under this Act shall be laid, as soon as may be after it is made, before each House of Parliament, while it is in session, for a total period of thirty days which may be comprised in one session or in two or more successive sessions, and if, before the expiry of the session immediately following the session or the successive sessions aforesaid, both Houses agree in making any modification in the rule or both Houses agree that the rule should not be made, the rule shall thereafter have effect only in such modified form or be of no effect, as the case may be; so, however, that any such modification or annulment shall be without prejudice to the validity of anything previously done under that rule. The rules being cited in the said notification by Dr. Pandey in para 2 have not been laid before, and approved by, the Parliament as required by parliamentary procedure and is therefore not law. Using this notification to force linkage to Aadhaar amounts to using pretend laws and is a criminal misconduct.
+
+        d.  Para 3 and para 7 of the said notification relies on section 12A Aadhaar (Enrolment and Update) (Second Amendment) Regulations, 2017 (No. 2 of 2017) and the Aadhaar (Enrolment and Update) (Third Amendment) (No. 3 of 2017) that may require any Scheduled Bank which requires Aadhaar to set up enrolment centres. Section 54 of the The Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act 2016[^4] does not provide any power to the UIDAI to make regulations to cause any entity to set up enrolment centres. Section 12A and all notifications, including notification No. 13012/79/2017/Legal-UIDAI (No. 4 of 2017) of July 14th, 2017 [^2]  relying on it are, therefore, invalid.
+
+        e.  Furthermore, the use of Aadhaar for linking to other databases, retention, storage or publishing is not only not permitted but prohibited and also a punishable offence under sections 8, 29 and 37 the The Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act 2016[^4]. Anyone asking to retain, link, store or publish the Aadhaar, would be in violation of the Aadhaar Act.
+
+        f.  Para 8 of the said notification threaten action under section 42 of the The Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act 2016 [^4] for non compliance of the directions of the said notification. Section 42 is only applicable to offences created under the Act or its Regulations. Since banks do not come under the Aadhaar Act or its Regulations, there cannot be any penalty for any non compliance of illegal and invalid notifications. Complying with notifications based on illegal and invalid notifications that are coercive or cause criminal misconduct cannot cause such compliance to be legal, valid or to be excused as laid down under the precedent of the Nuremberg trials.
+
+        g.  Furthermore section 7 of the The Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act 2016  states  that "Provided that if an Aadhaar number is not assigned to an individual, the individual shall be offered alternate and viable means of identification for delivery of the subsidy, benefit or service.” All bank customers have already provided many alternate means of identification on the basis of which you have been providing them with banking services since independence.
+
+2. ആധാറിന്റെ സൃഷ്ടി, ആധാറീന്റെയും ആധാര്‍ ആക്ടിന്റെയും നിയമപരമായും അല്ലാതെയുമുള്ള സാധുത, പൗരന്മാര്‍ക്കും മറ്റ് സ്ഥാപനങ്ങള്‍ക്കും രാജ്യത്തിന്റെ തന്നെ സാമ്പത്തികവ്യവസ്ഥക്കും അത് വരുത്തിവെക്കാവുന്ന ഹാനി, ഫോണ്‍/ബാങ്കിങ്ങ്/പാന്‍ മുതലായവയുമായി ആധര്‍ ബന്ധിപ്പിക്കുന്നതിന്റെ സാധുത, ഇങ്ങനെ ആധാറിനെ സംബന്ധിച്ച് ഒട്ടനവധി പി.ഐ.എല്ലുകള്‍ 2012 മുതല്‍ സുപ്രീംകോടതിയുടെ മുന്നിലുണ്ട്. ഇതിലൊക്കെ തീര്‍പ്പു കല്പിക്കുന്നിടം വരെ ആധാറിന്റെ ഉപയോഗം പരിമിതപ്പെടുത്തുന്ന നിരവധി ഉത്തരവുകള്‍ വളരെ വ്യക്തമായ ഭാഷയില്‍ തന്നെ സുപ്രീം കോടതി ഇറക്കിയിട്ടുണ്ട്. ആധാര്‍ നിര്‍ബന്ധമാക്കരുതെന്നും അതില്ലാത്തത് കൊണ്ട് ഒരാളെയും ക്ലേശിപ്പിക്കരുതെന്നും ഒക്കെ ഈ ഉത്തരവുകള്‍ എടുത്തു പറയുന്നുമുണ്ട്. ഈ പി.ഐ.എല്ലുകളില്‍ ഒരു തീര്‍പ്പുണ്ടാവുന്നതു വരെ മേല്‍പ്പറഞ്ഞ ഉത്തരവുകള്‍ നിലനില്‍ക്കുന്നതാണെന്നും കോടതി അടിവരയിട്ട് പറഞ്ഞിട്ടുണ്ട്.
+
+    a. ഈ വിഷയത്തില്‍ September 23, 2013 ലെ  ആദ്യത്തെ ഉത്തരവില്‍ [^5] നിന്നും : “In the meanwhile, no person should suffer for  not  getting the Aadhaar card inspite of the fact that some authority had  issued a circular making it mandatory”. ഏതെങ്കിലും അധികൃതര്‍ ആധാര്‍ നിര്‍ബന്ധമാക്കിയിട്ടുണ്ടെങ്കില്‍പോലും അതിന്റെ പേരില്‍ ആരെയും ക്ലേശിപ്പിക്കാന്‍ പാടില്ല എന്നും ആധാര്‍ ഇല്ലാത്തതു മൂലം സേവനം നിര്‍ത്തുമെന്ന് ഭീഷണിപ്പെടുത്തുകയോ നിര്‍ത്തലാക്കുകയോ ചെയ്താല്‍ അത് ഒരാളെ ക്ലേശിപ്പിക്കുകയും അങ്ങനെ കോടതിയലക്ഷ്യം ആകുമെന്നാണ് സുപ്രീംകോടതി പറയുന്നത്. 
+
+    b. ഈ വിഷയത്തില്‍ August 11, 2015 [^6] ലെ ഉത്തരവില്‍ നിന്നും : “The learned Attorney General had stated that the respondent Union of India would ensure that Aadhaar cards would only be issued on a consensual basis after informing the public at large about the fact that the preparation of Aadhaar card involving the parting of biometric information of the individual, which shall however not be used for any purpose other than a social benefit schemes”. അതിനാല്‍ താഴെ പറഞ്ഞിരിക്കുന്ന പ്രകാരം കോടതി ഉത്തരവായിട്ടുണ്ട് :
+
+        i.  “The Unique Identification Number or the Aadhaar card will not be used by the respondents for any purpose other than the PDS Scheme and in particular for the purpose of distribution of foodgrains, etc. and cooking fuel, such as kerosene. The Aadhaar card may also be used for the purpose of the LPG Distribution Scheme;”
+
+        ii. “The information about an individual obtained by the Unique Identification Authority of India while issuing an Aadhaar card shall not be used for any other purpose, save as above, except as may be directed by a Court for the purpose of criminal investigation”.
+
+    c.  ഈ വിഷയത്തില്‍ October 15, 2015 [^7] ല്‍ 5 അംഗ ബെഞ്ചിന്റെ ഉത്തരവ് :
+
+        i. “After hearing the learned Attorney General for India and other learned senior counsels, we are of the view that in paragraph 3 of the Order dated 11.08.2015 [^6]  if we add, apart from the other two Schemes, namely, P.D.S. Scheme and the L.P.G. Distribution Scheme, the Schemes like The Mahatma Gandhi National Rural Employment Guarantee Scheme (MGNREGS), National Social Assistance Programme (Old Age Pensions, Widow Pensions, Disability Pensions) Prime Minister's Jan Dhan Yojana (PMJDY) and Employees' Providend Fund Organisation (EPFO) for the present, it would not dilute earlier order passed by this Court. Therefore, we now include the aforesaid Schemes apart from the other two Schemes that this Court has permitted in its earlier order dated 11.08.2015” . This does not include use of Aadhaar in banking. Anyone using of Aadhaar for banking would amount to a contempt of the Supreme Court of India.
+
+        ii. “We impress upon the Union of India that it shall strictly follow all the earlier orders passed by this Court commencing from 23.09.2013” [^5].
+
+        iii.“We will also make it clear that the Aadhaar card Scheme is purely voluntary and it cannot be made mandatory till the matter is finally decided by this Court one way or the other”.
+
+3.  ആധാര്‍ ആക്ട് Act 2016 [^3] നെയും സുപ്രീം കോടതി ഉത്തരവുകളേയും പരിഗണിച്ച് നിങ്ങളുടെ ഉപഭോക്താക്കളുടെ നിക്ഷേപങ്ങളെയും മുതല്‍മുടക്കുകളേയും അവകാശങ്ങളേയും ഒക്കെ കോടതിയലക്ഷ്യത്തില്‍ നിന്നും നിയമപ്രാബല്യമില്ലാത്ത ഉത്തരവുകളില്‍ നിന്നും മറ്റ് നിയമലംഘനങ്ങളില്‍ നിന്നും സംരക്ഷിക്കുന്നതിനായും, ആധാര്‍ നിര്‍ബന്ധമാക്കാനുള്ള നിര്‍ദ്ദേശങ്ങള്‍ വരുമ്പോള്‍ മേല്പറഞ്ഞ ഉത്തരവുകളെയും ആധാര്‍ ആക്ടിനെയും ചൂണ്ടിക്കാണീക്കുകയും ഇത്തരത്തില്‍ നിങ്ങളുടെ ഉപഭോക്താക്കള്‍ക്കെതിരെയുള്ള ബലപ്രയോഗത്തില്‍ നിന്നും സംരക്ഷിക്കുന്നതിനായും  നിങ്ങള്‍ എടുക്കുന്ന നടപടികള്‍ നിങ്ങളുടെ ഉപഭോക്താക്കളുമായി പങ്കു വെക്കുന്നത് നിങ്ങളുടെ ബാങ്കിനുമേലുള്ള വിശ്വാസത്തിന് ഉറപ്പു കൂട്ടാന്‍ ഉപകരിക്കും എന്ന് ഞാന്‍ ചൂണ്ടിക്കാണിക്കട്ടെ. നിങ്ങളുടെ ഉപഭോക്താക്കളെ ആരും ആധാറിന്റെ പേരില്‍ ഭീഷണിപ്പെടുത്താതിരിക്കാനും അവരുടെ അക്കുണ്ടുകളുടെ നടത്തിപ്പിനു ഒരു തടസ്സവും നേരിടാതിരിക്കാനും അവര്‍ക്ക് എല്ലാ വിധ സേവങ്ങളും കൃത്യമായും, സുതാര്യമായും, നീതിയുക്തമല്ലാത്ത മുറകളില്‍ നിന്നു സംരക്ഷിച്ച് കൊണ്ടും ലഭ്യമാക്കാനും, ആധാറില്ല എന്ന കാരണം കാണിച്ച് കൊടുക്കല്‍വാങ്ങലുകള്‍ തടയാതിരിക്കാനും, അപ്രകാരം നിങ്ങളുടെ ഉപഭോക്താക്കളെ മനക്ലേശത്തില്‍ നിന്നും മറ്റ് രീതിയിലുള്ള അലട്ടലുകളില്‍ നിന്നും സംരക്ഷിക്കാനും, സര്‍വ്വോപരി ബാങ്കിങ്ങ് വ്യവഹാരങ്ങളില്‍ നിന്നും ആധാറീനെ നീക്കം ചെയ്യാനും നിങ്ങളെടുക്കുന്ന മഹനീയ നടപടികള്‍ നിങ്ങളുടെ ഉപഭോക്താക്കളുമായി പങ്കുവെക്കും എന്ന് വിശ്വസിക്കുന്നു.
+
+*  നിങ്ങള്‍ പിന്തുടരുകയും നിങ്ങളുടെ ഉപയോക്താക്കളെ പിന്തുടരാന്‍ നിര്‍ബന്ധിതരാക്കുകയും ചെയ്യുന്ന എല്ലാ അറിയിപ്പുകളും നിയമപ്രാബല്യമുള്ളതാണെന്നു ഉറപ്പു വരുത്തേണ്ടത് താങ്കളുടെ ജോലിയാണെന്ന് സമ്മതിക്കും എന്ന് ഞാന്‍ വിശ്വസിക്കുകയാണ്.  Notification No.2/F .No. P.12011/11/2016-ES Cell-DOR ഉം No. 13012/79/2017/Legal-UIDAI (No. 4 of 2017) ഉം നിയമവിരുദ്ധമായ അറിയിപ്പുകളാണെന്നും, ഇത്തരം നിയമവിരുദ്ധമായ നിര്‍ദ്ദേശങ്ങള്‍ താങ്കളുടെ സ്ഥാപനം നടപ്പാക്കുകയില്ലെന്നുമുള്ള ഉറപ്പ് ഈ ബാങ്ക് അതിന്റെ ഉപഭോക്താക്കളെ നിയമലംഘനങ്ങളില്‍ നിന്നും അവരുടെ മുതല്‍ കളവു പോകുന്നതില്‍ നിന്നും സംരക്ഷിക്കുന്ന ഒരു സ്ഥാപനമാണെന്ന വിശ്വാസത്തെ സുദൃഢമാക്കും. 
+
+*  നിങ്ങളുടെ ബാങ്കില്‍ ആധാര്‍ ഉപയോഗിക്കയില്ല എന്ന നിങ്ങളുടെ ഉറപ്പ്, നിങ്ങളുടെ ബാങ്ക് സുപ്രീംകോടതിയുടെ മുന്‍പാകെ കോടതിയലക്ഷ്യത്തിലല്ലെന്നും അങ്ങനെ നിങ്ങളുടെ ഉപഭോക്താക്കളെയും കോടതിയലക്ഷ്യക്കുറ്റത്തില്‍ നിന്നും നിങ്ങള്‍ സംരക്ഷിക്കുന്നുവെന്നുമുള്ള വിശ്വാസം ഊട്ടിയുറപ്പിക്കന്ന ഒന്നായിരിക്കും.
+
+*  ഞാനുമായുള്ള വ്യവഹാരത്തിനു നിങ്ങള്‍ വില കല്‍പിക്കുന്നുണ്ടെന്നും, അങ്ങനെ എന്റെ നിക്ഷേപത്തെയും അതിന്മേലുള്ള എന്റെ നിയന്ത്രണത്തെയും നിങ്ങള്‍ സംരക്ഷിക്കുന്നുണ്ടെന്നും ഉറപ്പുതരുന്ന ഒരു മെയില്‍ അല്ലെങ്കില്‍ മറ്റ് രീതിയിലുള്ള അറിയിപ്പ് നിങ്ങളുടെ ബാങ്കുമായി തുടര്‍ന്നും ഇടപാടുകള്‍ നടത്താന്‍ എനിക്കു കൂടുതല്‍ വിശ്വാസം തരുന്നതായിരിക്കും.
+
+എന്നുമുള്ള പിന്തുണയ്ക്ക് നന്ദി പറഞ്ഞകൊണ്ട് 
+
+വിശ്വാസത്തോടെ,
+
+References:
+
+[^0]: http://www.sundayguardianlive.com/opinion/11519-maharashtra-case-shows-pitfalls-aadhaar-use
+[^1]: https://medium.com/@anupamsaraph/how-does-linking-your-aadhaar-to-your-bank-account-destroy-the-banking-system-5bb0379f2886
+[^2]: https://uidai.gov.in/images/tenders/Notifications_in_connection_with_Regulations_12A_15072017.pdf
+[^3]: http://egazette.nic.in/WriteReadData/2017/176407.pdf
+[^4]: https://uidai.gov.in/legal-framework/acts.html
+[^5]: http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/1811046.pdf
+[^6]: http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/2274938.pdf
+[^7]: http://supremecourtofindia.nic.in/jonew/ropor/rop/all/389939.pdf
