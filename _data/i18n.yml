@@ -21,7 +21,7 @@ en:
   send_email: Send Email
   response: Message
   contempt_notice_msg: Send email to
-  tweet: Tweet
+  tweet: Share
   state: State
   constituency: Constituency
   # We show this if automatic copy succeeds
@@ -92,7 +92,7 @@ ta:
   send_email: மின்னஞ்சல் அனுப்பு
   response: பதில்
   contempt_notice_msg: மின்னஞ்சலை பெறுநர்க்கு அனுப்பு
-  tweet: கீச்சு
+  tweet: பகிர்க
   state: மாநிலம்
   constituency: தொகுதி
   copy_help_msg: >
