@@ -392,7 +392,7 @@ var app = new Vue({
       return 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.href
     },
     facebookurl: function () {
-      return `https://www.facebook.com/plugins/share_button.php?href=${'http://google.com'}&layout=button&size=small&mobile_iframe=true&width=59&height=20`
+      return `https://www.facebook.com/plugins/share_button.php?href=${window.location.href}&layout=button&size=small&mobile_iframe=true&width=59&height=20`
 
 
     },
