@@ -98,6 +98,8 @@ var app = new Vue({
     bankIFSC: 'ALLA',
     state: 'UP',
     constituencyCode: 'UP-18',
+    telcoCode: 'airtel',
+    telcos: {},
     mps: {
       'UP-18': {
         index: 18,
@@ -113,7 +115,8 @@ var app = new Vue({
     templates: {
       mp: '',
       bank: '',
-      gov: ''
+      gov: '',
+      mobile: ''
     },
     showcopymsg: false
   },
@@ -263,6 +266,9 @@ var app = new Vue({
         case '/bank/':
           this.campaign = 'bank';
           break;
+        case '/mobile/':
+          this.campaign = 'mobile';
+          break;
       }
     }
   },
@@ -275,8 +281,9 @@ var app = new Vue({
     }
   },
   created: function() {
-    var locale = (this.locale = window.localStorage.getItem('locale') ||
-      (window.location.search.split('lang=')[1] + '').substr(0,2) ||
+    var locale = (this.locale =
+      window.localStorage.getItem('locale') ||
+      (window.location.search.split('lang=')[1] + '').substr(0, 2) ||
       window.navigator.languages
         .map(function(l) {
           return l.split('-')[0];
@@ -322,6 +329,11 @@ var app = new Vue({
       case 'bank':
         for (var i = 0; i < banks.length; i++) {
           this.banks[banks[i].ifsc] = banks[i];
+        }
+        break;
+      case 'mobile':
+        for (var i = 0; i < telcos.length; i++) {
+          this.telcos[telcos[i].code] = telcos[i];
         }
         break;
 
@@ -391,13 +403,15 @@ var app = new Vue({
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
     },
-    facebookhref: function () {
-      return 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.href
+    facebookhref: function() {
+      return (
+        'https://www.facebook.com/sharer/sharer.php?u=' + window.location.href
+      );
     },
-    facebookurl: function () {
-      return `https://www.facebook.com/plugins/share_button.php?href=${window.location.href}&layout=button&size=small&mobile_iframe=true&width=59&height=20`
-
-
+    facebookurl: function() {
+      return `https://www.facebook.com/plugins/share_button.php?href=${
+        window.location.href
+      }&layout=button&size=small&mobile_iframe=true&width=59&height=20`;
     },
     fullmailtourl: function() {
       return this.getMailUrl(
@@ -483,6 +497,10 @@ var app = new Vue({
     },
     service: function() {
       switch (this.campaign) {
+        case 'mobile':
+          console.log(this.telcos);
+          console.log(this.telcoCode);
+          return this.telcos[this.telcoCode];
         case 'bank':
           return this.banks[this.bankIFSC];
         case 'gov':
@@ -512,6 +530,8 @@ var app = new Vue({
     },
     personName: function() {
       switch (this.campaign) {
+        case 'mobile':
+          return 'Chairman, ' + this.telcos[this.telcoCode].name;
         case 'bank':
           return 'Chairman and MD (' + this.bank.name + ')';
         case 'mp':
@@ -549,15 +569,20 @@ var app = new Vue({
       switch (this.campaign) {
         case 'bank':
           template = this.templates.bank;
-	  break;
+          break;
         case 'gov':
           template = this.templates.gov;
-	  break;
+          break;
         case 'mp':
           template = this.templates.mp;
-	  break;
+          break;
+        case 'mobile':
+          template = this.templates.mobile;
+          break;
       }
-      return template.trim()
+
+      return template
+        .trim()
         .replace(/\(\(addressee\)\)/g, this.personName)
         .replace(/\(\(address\)\)/g, this.service.address);
     }
