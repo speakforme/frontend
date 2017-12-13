@@ -67,7 +67,7 @@ function getCampaignType() {
     case '/mp/': return 'mp';
     case '/service/': return 'gov';
     case '/bank/': return 'bank';
-    case '/mobile': return 'mobile';  
+    case '/mobile/': return 'mobile';
   }
 }
 
@@ -373,7 +373,7 @@ var app = new Vue({
         }
         break;
 
-      case 'gov':
+      case '':
         var msgs = {
           services: this.services
         };
