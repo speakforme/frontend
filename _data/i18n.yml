@@ -21,7 +21,7 @@ en:
   send_email: Send Email
   response: Message
   contempt_notice_msg: Send email to
-  tweet: Tweet
+  tweet: Share
   state: State
   constituency: Constituency
   # We show this if automatic copy succeeds
@@ -35,6 +35,7 @@ en:
     service: "Petition your service provider:"
     gov: "Petition your service provider:"
     mp: "Send a letter to your MP:"
+    mobile: "Petition your mobile operator:"
   states:
     AN: Andaman and Nicobar Islands
     AP: Andhra Pradesh
@@ -75,14 +76,24 @@ en:
 ta:
   language_name: தமிழ்
   title: எனக்காக குரல்கொடு
+  headertitle:
+    MP: எம். பி
+    GOV: சேவை வழங்கி
+    TELCO: கைப்பேசி நிறுவனம்
+    BANK: வங்கி
+  mp: நாடாளுமன்ற உறுப்பினர்
+  netafilter:
+    helptext: உங்கள் தொகுதி தெரியவில்லையா?
+    # We mark this as the link.
+    click_here: நேதா ஃபில்டரை பார்க்கவும்.
   service: சேவை
   not_in_list: பட்டியலில் இல்லை
   bank: வங்கி
   email: மின்னஞ்சல்
   send_email: மின்னஞ்சல் அனுப்பு
   response: பதில்
-  contempt_notice_msg: நீதிமன்ற அவமதிப்பு அறிக்கையை அனுப்பு
-  tweet: கீச்சு
+  contempt_notice_msg: மின்னஞ்சலை பெறுநர்க்கு அனுப்பு
+  tweet: பகிர்க
   state: மாநிலம்
   constituency: தொகுதி
   copy_help_msg: >
@@ -121,6 +132,7 @@ hi:
     service: "अपने सेवा प्रदाता को याचिका दें :"
     gov: "अपने सेवा प्रदाता को याचिका दें :"
     mp: "अपने सांसद को एक पत्र भेजें :"
+    mobile: "अपने मोबाइल ऑपरेटर को याचिका दें:"
   mp: सांसद
   headertitle:
     MP: सांसद
@@ -248,12 +260,11 @@ te:
   language_name: తెలుగు
   title: నా కోసం మాట్లాడండి
   headertitle:
-    MP: MP
+    MP: పార్లమెంటు సభ్యుడు
     GOV: సేవా ప్రదాత
     TELCO: మొబైల్ ఆపరేటర్
     BANK: బ్యాంక్
-  mp: పార్లమెంటు సభ్యుడు
-  netafilter:
+    netafilter: netafilter
     helptext: మీ నియోజకవర్గం తెలియదా?
     # We mark this as the link.
     click_here: Netafilter ను శోధన చేయండి
@@ -267,13 +278,13 @@ te:
   tweet: ట్వీట్
   state: రాష్ట్రం
   constituency: నియోజకవర్గం
-  copied_msg: మేము బ్రౌజర్లో మీ సందేశాన్ని కాపీ చేసాము. ఇమెయిల్ క్లయింట్లో దాన్ని పేస్ట్ చేయి
+  copied_msg: మేము బ్రౌజర్లో మీ సందేశాన్ని కాపీ చేసాము. ఇ-మెయిల్ క్లయింట్లో దాన్ని అతికించు
   copy_help_msg: >
-    మేము ప్రతిస్పందనను కాపీ చేయలేకపోయాము,
-    దయచేసి మాన్యువల్గా ప్రతిస్పందనను కాపీ చేయండి
+    మేము మీ ప్రతిస్పందనను నకలు చేయలేకపోయాము,
+    దయచేసి మీ స్వతహాగా ప్రతిస్పందనను నకలు చేయండి
   petition:
     bank: "మీ బ్యాంకు పిటిషన్:"
-    service: "మీ సర్వీస్ ప్రొవైడర్ పిటిషన్:"
-    mp: "మీ MP కి ఒక లేఖ పంపండి:"
+    service: "మీ సేవాకర్త పిటిషన్:"
+    mp: "మీ పార్లమెంటు సభ్యుడుకి ఒక లేఖ పంపండి:"
 
 

@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>{{ site.title | escape }} {% if page.title %}{{ page.title | escape }} {%endif%}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <link rel="stylesheet" href="{{ "/public/main.css" | relative_url }}">
@@ -19,6 +19,7 @@
   <script src="/dist/app.min.js"></script>
   {% else %}
   <!-- If you add a file here, make sure you add it to Gulpfile.js as well -->
+  <script src="/public/axios.js"></script>
   <script src="/public/vue.js"></script>
   <script src="/public/vue-resource.js"></script>
   <script src="/public/vue-i18n.js"></script>

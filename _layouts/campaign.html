@@ -24,6 +24,14 @@ layout: default
   <!-- ADD campaign specific data here -->
   <!-- This is the generic service notice for "services" -->
 
+  <script>
+    window.petitions = {}
+    {% for petition in site.petitions %}
+    window.petitions['{{petition.slug}}'] = {}
+    {% endfor %}
+
+  </script>
+
   {% for notice in page.drafts %}
     <script id="draft-notice-{{notice}}" type="text/template">{% include draft-notice-{{notice}}.md %}</script>
 
@@ -32,6 +40,8 @@ layout: default
       window.services = {{site.data.services | jsonify}}
     {% elsif notice == 'mp' %}
       window.states   = {{site.data.states | jsonify}}
+    {% elsif notice == 'mobile' %}
+      window.telcos   = {{site.data.telcos | jsonify}}
     {% elsif notice == 'bank' %}
       window.banksList= {{site.data.banks | jsonify}}
     {% endif %}
