@@ -75,6 +75,16 @@ en:
 ta:
   language_name: தமிழ்
   title: எனக்காக குரல்கொடு
+  headertitle:
+    MP: எம். பி
+    GOV: சேவை வழங்கி
+    TELCO: கைப்பேசி நிறுவனம்
+    BANK: வங்கி
+  mp: நாடாளுமன்ற உறுப்பினர்
+  netafilter:
+    helptext: உங்கள் தொகுதி தெரியவில்லையா?
+    # We mark this as the link.
+    click_here: நேதா ஃபில்டரை பார்க்கவும்.
   service: சேவை
   not_in_list: பட்டியலில் இல்லை
   bank: வங்கி
