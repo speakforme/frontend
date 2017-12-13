@@ -110,7 +110,7 @@ var app = new Vue({
     templates: {
       mp: '',
       bank: '',
-      service: ''
+      gov: ''
     },
     showcopymsg: false
   },
@@ -541,14 +541,14 @@ var app = new Vue({
         .join(', ');
     },
     response: function() {
-      var template = '';
+      var template;
 
       switch (this.campaign) {
         case 'bank':
           template = this.templates.bank;
 	  break;
-        case 'service':
-          template = this.templates.service;
+        case 'gov':
+          template = this.templates.gov;
 	  break;
         case 'mp':
           template = this.templates.mp;
