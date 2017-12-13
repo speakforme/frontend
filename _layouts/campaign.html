@@ -32,8 +32,6 @@ layout: default
       window.services = {{site.data.services | jsonify}}
     {% elsif notice == 'mp' %}
       window.states   = {{site.data.states | jsonify}}
-    {% elsif notice == 'mobile' %}
-      window.telcos   = {{site.data.telcos | jsonify}}
     {% elsif notice == 'bank' %}
       window.banksList= {{site.data.banks | jsonify}}
     {% endif %}
