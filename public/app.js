@@ -29,6 +29,7 @@ if (!window.gtag) {
 
 var mailUrlOpts = {
   mailto: {
+    fullEmail: true,
     base: 'mailto:',
     subject: 'subject',
     cc: 'cc',
@@ -36,6 +37,7 @@ var mailUrlOpts = {
     body: 'body'
   },
   gmail: {
+    fullEmail: true,
     base:
       'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=',
     subject: 'su',
@@ -44,6 +46,7 @@ var mailUrlOpts = {
     body: 'body'
   },
   yahoo: {
+    fullEmail: false,
     base: 'http://compose.mail.yahoo.com/?To=',
     subject: 'Subject',
     cc: 'Cc',
@@ -142,7 +145,7 @@ var app = new Vue({
     getMailUrl(opts, encodedBody) {
       return (
         opts.base +
-        encodeURIComponent(this.email) +
+        encodeURIComponent(opts.fullEmail ? this.email : this.service.email) +
         (opts.base === 'mailto:' ? '?' : '&') +
         opts.subject +
         '=' +
