@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 
 gulp.task('js:prod', function() {
   return gulp
-    .src(['public/vue.min.js', 'public/vue-i18n.js', 'public/vue-resource.js'])
+    .src(['public/axios.min.js', 'public/vue.min.js', 'public/vue-i18n.js', 'public/vue-resource.js'])
     .pipe(gp_concat('app-single.js'))
     .pipe(gulp.dest('dist'))
     .pipe(gp_rename('app.min.js'))
