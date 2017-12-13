@@ -1,3 +1,144 @@
+<div id="content-wrapper">
+<div class="form-panel">
+<div class="mui-panel no-padding">
+<!-- TABS -->
+<ul class="mui-tabs__bar form-tab">
+  {% for my_page in site.pages %}
+  {% if my_page.header==true %}
+    <li><a class="page-link" data-mui-toggle="tab" data-mui-controls="pane-default-1" href="{{ my_page.url | relative_url }}">{{ my_page.headertitle | escape }}</a></li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+<!-- END TABS -->
+
+<form>
+<!-- FORM CONTAINER -->
+<div class="mui-row form-container">
+  <div class="mui-col-md-12">
+    <fieldset>
+    <!-- MP FORM -->
+    <div v-if="campaign==='mp'" class="mui-textfield mui-col-md-6">
+      <label for="state" class="uppercase">[{$t("state")}]</label><br>
+      <select name="state" id="select-state" v-model="state" class="styled-select">
+        <option v-bind:selected="i === 0"
+              :value="code" v-for="(code, i) in states">
+            [{$t("states." + code)}]
+        </option>
+      </select>
+    </div>
+    <div v-if="campaign==='mp'" class="mui-textfield mui-col-md-6">
+      <label for="constituency" class="uppercase">[{$t("constituency")}]</label><br>
+      <select name="constituency" v-model="constituencyCode" class="styled-select">
+        <option :value="constituency.code" v-for="(constituency,i) in constituencies">[{$t("constituencies." + constituency.code)}]</option>
+      </select>
+      <p class="helper-text">[{$t("netafilter.helptext")}]
+        <a target="_blank" rel="noopener noreferer" href="http://netafilter.in">
+          [{$t("netafilter.click_here")}]
+        </a>
+      </p>
+    </div>
+    <!-- END MP FORM -->
+
+    <!-- GOV FORM -->
+    <div v-if="campaign == 'gov'" class="mui-textfield mui-col-md-6">
+      <label for="service" class="uppercase">[{$t("service")}]</label>
+      <select name="service" id="select-service" v-model="serviceIndex" class="styled-select">
+        <option :value="code" v-for="(service, code) in services">
+          [{$t("services."+ code + ".name")}]
+        </option>
+      </select>
+    </div>
+    <!-- END GOV FORM -->
+
+    <!-- BANK FORM -->
+    <div v-if="campaign==='bank'" class="mui-textfield mui-col-md-6">
+      <label for="bank" class="uppercase">[{$t("bank")}]</label><br>
+      <select name="bank" id="select-bank" v-model="bankIFSC" class="styled-select">
+        <option :value="bank.ifsc" v-for="(bank, index) in banks">[{bank.name}]</option>
+      </select>
+    </div>
+    <!-- END BANK FORM -->
+
+    <!-- MOBILE FORM -->
+    <div v-if="campaign==='mobile'" class="mui-textfield mui-col-md-6">
+      <label for="telco" class="uppercase">[{$t("headertitle.TELCO")}]</label>
+      <select name="telco" id="select-telco" v-model="telcoCode" class="styled-select">
+        <option :value="telco.code" v-for="(telco, index) in telcos">[{telco.name}]</option>
+      </select>
+    </div>
+    <!-- END MOBILE FORM -->
+    <div>
+      <label for="email">[{$t("email")}]</label>
+      <input name="email" size="60" v-model="email" readonly>
+    </div>
+
+    <label for="content">[{$t("response")}]</label>
+    <component :is="petition"
+      @copied="copied"
+      :addressee="personName"
+      :address="service.address"
+      :body="response"></component>
+    </fieldset>
+
+    <!-- MORE: needs testing -->
+    <div>
+
+      <label v-if="campaign!=='mp'" for="service-name">[{$t("contempt_notice_msg")}]: <span class="service-name">[{serviceName}]</span></label>
+
+      <label v-if="campaign==='mp'" for="service-name">
+          <!-- Send Email: MP_NAME (MP, Constituency)-->
+          [{$t("contempt_notice_msg")}]:
+            <!-- MP name goes here -->
+            <span class="service-name">
+              [{personName}],
+              ([{$t("mp")}],
+              [{$t("constituencies." + constituencyCode)}])
+            </span>
+      </label>
+      <br>
+
+      <a id="btn-email-mobile" class="btn btn-email btn-primary" v-if="mobile"
+        v-bind:href="fullmailtourl"
+        v-on:click.stop="sendMailto">[{$t("send_email")}]</a>
+
+      <p v-if="showcopymsg" class="success-box">[{$t("copy_msg")}]</p>
+
+      <a class="btn btn-email btn-primary" v-if="!mobile"
+        v-bind:href="gmailurl" target="_blank"
+        v-on:click.stop="sendGmail">Gmail</a>
+      <a class="btn btn-email btn-primary" v-if="!mobile"
+        v-bind:href="yahoourl" target="_blank"
+        v-on:click.stop="sendYahoo">Yahoo!</a>
+      <a class="btn btn-email btn-primary" v-if="!mobile"
+        v-bind:href="mailtourl" target="_blank"
+        v-on:click.stop="sendMailto">Other</a>
+
+      <p>With a BCC to us ([{bcc}], included) so we can track it. To protect your privacy, we will delete our copy of your email in a few days. We will also send you updates on the campaign’s progress. Please check your spam folder for an acknowledgement from info@speakforme.in (with an unsubscribe link included)</p>
+
+    </div>
+
+    <div v-if="twitter">
+      <h3>[{$t("tweet")}]</h3>
+      <a class="twitter-share-button"
+        v-bind:href="tweeturl"
+      >
+      [{$t("tweet")}]</a>
+    </div>
+
+    <iframe :src="facebookurl" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+    <!-- END MORE -->
+
+
+  </div>
+</div>
+<!-- END FORM CONTAINER -->
+</form>
+</div>
+</div>
+</div>
+
 <form>
   <fieldset>
 
@@ -60,50 +201,6 @@
   </fieldset>
 
 
-  <div>
-
-    <label v-if="campaign!=='mp'" for="service-name">[{$t("contempt_notice_msg")}]: <span class="service-name">[{serviceName}]</span></label>
-
-    <label v-if="campaign==='mp'" for="service-name">
-        <!-- Send Email: MP_NAME (MP, Constituency)-->
-        [{$t("contempt_notice_msg")}]:
-          <!-- MP name goes here -->
-          <span class="service-name">
-            [{personName}],
-            ([{$t("mp")}],
-            [{$t("constituencies." + constituencyCode)}])
-          </span>
-    </label>
-    <br>
-
-    <a id="btn-email-mobile" class="btn btn-email btn-primary" v-if="mobile"
-      v-bind:href="fullmailtourl"
-      v-on:click.stop="sendMailto">[{$t("send_email")}]</a>
-
-    <p v-if="showcopymsg" class="success-box">[{$t("copy_msg")}]</p>
-
-    <a class="btn btn-email btn-primary" v-if="!mobile"
-      v-bind:href="gmailurl" target="_blank"
-      v-on:click.stop="sendGmail">Gmail</a>
-    <a class="btn btn-email btn-primary" v-if="!mobile"
-      v-bind:href="yahoourl" target="_blank"
-      v-on:click.stop="sendYahoo">Yahoo!</a>
-    <a class="btn btn-email btn-primary" v-if="!mobile"
-      v-bind:href="mailtourl" target="_blank"
-      v-on:click.stop="sendMailto">Other</a>
-
-    <p>With a BCC to us ([{bcc}], included) so we can track it. To protect your privacy, we will delete our copy of your email in a few days. We will also send you updates on the campaign’s progress. Please check your spam folder for an acknowledgement from info@speakforme.in (with an unsubscribe link included)</p>
-
-  </div>
-
-  <div v-if="twitter">
-    <h3>[{$t("tweet")}]</h3>
-    <a class="twitter-share-button"
-      v-bind:href="tweeturl"
-    >
-    [{$t("tweet")}]</a>
-  </div>
-
-  <iframe :src="facebookurl" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+  
 
 </form>

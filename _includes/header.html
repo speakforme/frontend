@@ -1,9 +1,7 @@
+<!--
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-
-    <!-- <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a> -->
-
     <nav class="site-nav">
         <h2>Petition your</h2>
       {% for my_page in site.pages %}
@@ -19,5 +17,20 @@
       </select>
     </nav>
   </div>
+</header>
+-->
 
+<header id="header">
+  <div class="mui-appbar mui--appbar-line-height navbar-styles">
+    <div class="mui-container-fluid navbar-container">
+      <img src="../assets/Logo_website.png" alt="" class="mui--align-middle navbar-logo">
+      <div class="mui-dropdown mui--pull-right navbar-language-dropdown">
+        <select name="lang" class="select-lang mui-btn dropdown-styles" v-model="locale">
+        {% for lang in site.data.i18n %}
+          <option value="{{lang[0]}}">{{lang[1].language_name}}</option>
+        {% endfor %}
+      </select>
+      </div>
+    </div>
+  </div>
 </header>
