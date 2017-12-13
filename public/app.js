@@ -282,9 +282,12 @@ var app = new Vue({
     }
   },
   created: function() {
+    var autodetect = window.location.search.split('lang=');
+    autodetect = autodetect[autodetect.length - 1].substr(0,2);
+
     var locale = (this.locale =
       window.localStorage.getItem('locale') ||
-      (window.location.search.split('lang=')[1] + '').substr(0, 2) ||
+      autodetect ||
       window.navigator.languages
         .map(function(l) {
           return l.split('-')[0];
