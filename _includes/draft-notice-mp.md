@@ -18,3 +18,4 @@ Sincerely,
 [^4]: http://www.wired.co.uk/article/india-aadhaar-biometrics-privacy
 [^5]: https://tech.economictimes.indiatimes.com/news/corporate/210-govt-websites-made-public-aadhaar-details-uidai/61719345
 [^6]: https://scroll.in/article/833230/explainer-aadhaar-is-vulnerable-to-identity-theft-because-of-its-design-and-the-way-it-is-used
+[^7]: https://www.dropbox.com/sh/xfhxq3x9iwl77zx/AABdFxh6y0YMrLOs5Jh6_i68a?dl=0
