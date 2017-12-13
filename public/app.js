@@ -442,7 +442,7 @@ var app = new Vue({
       var code = this.campaign + '-';
       switch (this.campaign) {
         case 'gov':
-          code += this.service.name;
+          code += this.service.code;
           break;
         case 'bank':
           code += this.bank.ifsc;
