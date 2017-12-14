@@ -454,9 +454,10 @@ var app = new Vue({
       }&layout=button&size=small&mobile_iframe=true&width=59&height=20`;
     },
     fullmailtourl: function() {
+      var response_content = document.querySelector('#response-content').value;
       return this.getMailUrl(
         mailUrlOpts.mailto,
-        encodeURIComponent(this.response)
+        encodeURIComponent(response_content)
       );
     },
     mailtourl: function() {
