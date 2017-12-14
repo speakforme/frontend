@@ -1,1 +1,29 @@
-check back in a few hours
+/* In alphabetical order */
+
+  Name: Anivar A Aravind
+  Title: Executive Director, Indic Project
+  Twitter: @anivar
+
+  Name: Hrishikesh Bhaskaran
+  Twitter: @stultus
+  Title: Secretary, Swathanthra Malayalam Computing
+  
+  Name: Kiran Jonnalagadda
+  Title: Co-founder, Internet Freedom Foundation
+  Twitter: @jackerhack
+  
+  Name: Nikhil Pahwa
+  Title: Co-founder, Internet Freedom Foundation
+  Twitter: @nixxin
+
+  Name: Rajesh Mehar
+  Title: Common Citizen
+  Twitter: @rajeshmehar
+  
+  Name: Siddhesh Poyarekar
+  Twitter: @siddhesh_p
+
+  Name: Thejesh GN 
+  Twitter: @thej  
+  
+  Github contributors : https://github.com/speakforme/frontend/graphs/contributors
