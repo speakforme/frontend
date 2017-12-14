@@ -247,6 +247,7 @@ var app = new Vue({
         bcc: this.bcc,
         cc: this.cc,
         mobile: this.mobile,
+        locale: this.locale,
         method: method
       });
 
