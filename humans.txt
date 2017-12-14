@@ -26,4 +26,38 @@
   Name: Thejesh GN 
   Twitter: @thej  
   
+  Name: Arnav Gupta
+  Title: Cofounder, Coding Blocks
+  Twitter: @championswimmer
+  
+  Name: Hrishikesh Bhaskaran
+  Twitter: @stultus
+  Title: Secretary of Swathanthra Malayalam Computing
+  
+  Name: Siddhesh Poyarekar
+  Twitter: @siddhesh_p
+  
+  Name: Ashik
+  Organisation: Swathanthra Malayalam Computing 
+  
+  Name: Vasundhar Boddapati
+  Twitter: @vasundhar
+  Organisation: APJ Kalaam Academy 
+  
+  Name: Godavar
+  Twitter: @godavar
+  Title: poet and all-round ranter
+  
+  Name: Abhay Rana
+  Twitter: @captn3m0
+  
+  Name: Shreyas Satish 
+  Twitter: @shreyas_satish
+  
+  Name: Dr. Anupam Saraph
+  Twitter: @AnupamSaraph
+  Title: Internationally renowned expert on governance of complex systems
+  
+  
+  
   Github contributors : https://github.com/speakforme/frontend/graphs/contributors
