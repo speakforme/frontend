@@ -372,6 +372,15 @@ var app = new Vue({
             // Also, set the constituencies inside the english locale
             self.updateConstituencies();
           });
+        this.$http
+          .get('https://ipapi.co/json', { responseType: 'json' })
+          .then(function(response) {
+            if (response.data['country'] === 'IN') {
+              if (app.states.includes(response.data['region_code'])) {
+                app.state = response.data['region_code']
+              }
+            }
+          });
 
         break;
 
