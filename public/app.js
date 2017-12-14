@@ -128,10 +128,10 @@ forEach(Object.keys(window.petitions), function(index, item) {
   }
 })
 
-axios.get('http://ip-api.com/json/?fields=lat,lon,timezone,query,status,region,countryCode').then(function(response) {
-  if (response.data['status'] === 'success' && response.data['countryCode'] === 'IN') {
-    if (app.states.includes(response.data['region'])) {
-      app.state = response.data['region']
+axios.get('https://ipapi.co/json').then(function(response) {
+  if (response.data['country'] === 'IN') {
+    if (app.states.includes(response.data['region_code'])) {
+      app.state = response.data['region_code']
     }
   }
 }
