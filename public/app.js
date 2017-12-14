@@ -170,7 +170,7 @@ var app = new Vue({
   methods: {
     setLocale: function(val) {
       gtag('event', 'setLocale', {
-        lang: val
+        'event_category': val
       });
       this.$i18n.locale = val;
       window.localStorage.setItem('locale', val);
@@ -242,13 +242,8 @@ var app = new Vue({
     sendEmail: function(method, event) {
       this.mailMethod = method;
       gtag('event', 'sendEmail', {
-        email: this.email,
-        subject: this.subject,
-        bcc: this.bcc,
-        cc: this.cc,
-        mobile: this.mobile,
-        locale: this.locale,
-        method: method
+        'event_category': this.locale,
+        'event_label': method
       });
 
       var encodedBody = encodeURIComponent(this.response);
