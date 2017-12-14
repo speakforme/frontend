@@ -128,15 +128,6 @@ forEach(Object.keys(window.petitions), function(index, item) {
   }
 })
 
-axios.get('https://ipapi.co/json').then(function(response) {
-  if (response.data['country'] === 'IN') {
-    if (app.states.includes(response.data['region_code'])) {
-      app.state = response.data['region_code']
-    }
-  }
-}
-);
-
 var app = new Vue({
   i18n: i18n,
   delimiters: ['[{', '}]'],
@@ -380,6 +371,15 @@ var app = new Vue({
 
             // Also, set the constituencies inside the english locale
             self.updateConstituencies();
+          });
+        this.$http
+          .get('https://ipapi.co/json', { responseType: 'json' })
+          .then(function(response) {
+            if (response.data['country'] === 'IN') {
+              if (app.states.includes(response.data['region_code'])) {
+                app.state = response.data['region_code']
+              }
+            }
           });
 
         break;
