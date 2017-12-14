@@ -409,6 +409,15 @@ var app = new Vue({
           ', please stop harrassing me for my aadhaar. @speakforme'
       );
     },
+    whatsapptext: function() {
+      // TODO: localize this as well
+      // TODO: find a better WhatsApp message
+      return encodeURIComponent(
+        'Fed up of being coerced into Aadhaar? Tell your Member of' +
+        ' Parliament and service providers to #SpeakForMe.' +
+        '\nVisit https://speakforme.in.'
+      );
+    },
     states: function() {
       return [
         'AN',
@@ -451,6 +460,9 @@ var app = new Vue({
     },
     constituency: function() {
       return this.mps[this.constituencyCode];
+    },
+    whatsappurl: function() {
+      return 'https://api.whatsapp.com/send?text=' + this.whatsapptext;
     },
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
