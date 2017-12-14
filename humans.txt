@@ -1,9 +1,27 @@
 /* In alphabetical order */
 
+  Name: Abhay Rana
+  Twitter: @captn3m0
+  
+  Name: Dr. Anupam Saraph
+  Twitter: @AnupamSaraph
+  Title: Internationally renowned expert on governance of complex systems
+  
   Name: Anivar A Aravind
   Title: Executive Director, Indic Project
   Twitter: @anivar
 
+  Name: Arnav Gupta
+  Title: Cofounder, Coding Blocks
+  Twitter: @championswimmer
+
+  Name: Ashik
+  Organisation: Swathanthra Malayalam Computing 
+  
+  Name: Godavar
+  Twitter: @godavar
+  Title: poet and all-round ranter
+  
   Name: Hrishikesh Bhaskaran
   Twitter: @stultus
   Title: Secretary, Swathanthra Malayalam Computing
@@ -23,41 +41,15 @@
   Name: Siddhesh Poyarekar
   Twitter: @siddhesh_p
 
-  Name: Thejesh GN 
-  Twitter: @thej  
-  
-  Name: Arnav Gupta
-  Title: Cofounder, Coding Blocks
-  Twitter: @championswimmer
-  
-  Name: Hrishikesh Bhaskaran
-  Twitter: @stultus
-  Title: Secretary of Swathanthra Malayalam Computing
-  
-  Name: Siddhesh Poyarekar
-  Twitter: @siddhesh_p
-  
-  Name: Ashik
-  Organisation: Swathanthra Malayalam Computing 
-  
-  Name: Vasundhar Boddapati
-  Twitter: @vasundhar
-  Organisation: APJ Kalaam Academy 
-  
-  Name: Godavar
-  Twitter: @godavar
-  Title: poet and all-round ranter
-  
-  Name: Abhay Rana
-  Twitter: @captn3m0
-  
   Name: Shreyas Satish 
   Twitter: @shreyas_satish
   
-  Name: Dr. Anupam Saraph
-  Twitter: @AnupamSaraph
-  Title: Internationally renowned expert on governance of complex systems
-  
+  Name: Thejesh GN 
+  Twitter: @thej  
+      
+  Name: Vasundhar Boddapati
+  Twitter: @vasundhar
+  Organisation: APJ Kalaam Academy 
   
   
   Github contributors : https://github.com/speakforme/frontend/graphs/contributors
