@@ -109,7 +109,7 @@ hi:
   language_name: हिंदी
   title: मेरे लिए बोलो
   service: संस्था
-  not_in_list: सूची पर नहीं
+  not_in_list: सूची में नहीं
   bank: बैंक
   email: ईमेल
   send_email: ईमेल भेजें
