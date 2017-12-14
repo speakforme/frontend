@@ -128,6 +128,15 @@ forEach(Object.keys(window.petitions), function(index, item) {
   }
 })
 
+axios.get('http://ip-api.com/json/?fields=lat,lon,timezone,query,status,region,countryCode').then(function(response) {
+  if (response.data['status'] === 'success' && response.data['countryCode'] === 'IN') {
+    if (app.states.includes(response.data['region'])) {
+      app.state = response.data['region']
+    }
+  }
+}
+);
+
 var app = new Vue({
   i18n: i18n,
   delimiters: ['[{', '}]'],
