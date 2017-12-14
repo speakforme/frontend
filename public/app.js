@@ -101,6 +101,13 @@ forEach(Object.keys(window.petitions), function(index, item) {
       responseComponents[campaignType + '-' + lang] = {
         props: ['addressee', 'address', 'body'],
         delimiters: ['((', '))'],
+	text:
+        response.data +
+        (
+          (lang === 'en')
+          ? ''
+          : '\n - - - - ENGLISH VERSION OF ABOVE - - - - - \n' + templates[campaignType]
+        ),
         template:
         '<textarea @copy="copied" cols="70" rows="10" name="content" id="response-content">' +
         response.data +
@@ -454,9 +461,12 @@ var app = new Vue({
       }&layout=button&size=small&mobile_iframe=true&width=59&height=20`;
     },
     fullmailtourl: function() {
+      var response = this.petition.text !== undefined ? this.petition.text : this.response;
       return this.getMailUrl(
         mailUrlOpts.mailto,
-        encodeURIComponent(this.response)
+        encodeURIComponent(response.trim()
+        .replace(/\(\(addressee\)\)/g, this.personName)
+        .replace(/\(\(address\)\)/g, this.service.address))
       );
     },
     mailtourl: function() {
