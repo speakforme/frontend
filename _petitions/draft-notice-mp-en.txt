@@ -2,17 +2,13 @@
 ---
 ((addressee))
 
-I am getting constant messages from my bank and my phone company to link my Aadhaar number. However there are daily reports about the shoddy implementation of Aadhaar and how it is putting my personal information in danger.
+હું મારી બેંક ફોન કંપની દ્વારા મારા આધાર નંબરને લિંક કરવા માટે સતત સંદેશા પ્રાપ્ત કરી રહ્યો છું. જો કે, આધારના બોગસ અમલીકરણ અને તે કેવી રીતે મારી વ્યક્તિગત માહિતી જોખમમાં મૂકી રહી છે તે વિશે દૈનિક રિપોર્ટ્સ હાજર છે. 
+ફક્ત સરળ ગૂગલ સર્ચની મદદ થી પણ, આધારની મુશ્કેલીઓ વિશેની પૂરતી રિપોર્ટ્સ ઉપલબ્ધ છે. ભૂખમરાથી[^૧] લઈને બાકાતી[^૨] તથા ફ્રોડ[^૩] તથા મોટા પાયે જાસૂસી[^૪] વગેરે મુદ્દાઓ આધાર ના લીધે સરળતાથી શક્ય બન્યા છે. અત્યાર સુધીમાં ઓછામાં ઓછી ૨૧૦ સરકારી સંસ્થાઓનો[^૫]  ડેટા લીક થયેલ છે જે મારી ગોપનીયતા ને ખતરામાં મૂકે છે તથા મને ઓળખાણની ચોરી[^૬]  વિરુદ્ધ લાચાર બનાવે છે. 
+મારા પ્રતિનિધિ તરીકે, હું તમને વિનંતી કરું છુ કે આ મુદ્દાઓ સંસદમાં ઉઠાવવામાં આવે. હું તમને સરકાર તરફથી  જવાબ ની માગણી કરવા માંગું છું કે શા માટે મને અપૂર્ણ સિસ્ટમ માટે રજીસ્ટર કરવા માટે ફરજ પાડવામાં આવી રહી છે. હું માંગણી કરું છું કે માનનીય સુપ્રીમ કોર્ટના ૨૦૧૫ ના ઓર્ડર મુજબ આધાર ને મરજિયાત બનાવવામાં આવે. જે લોકો આ સિસ્ટમનો ભાગ બનવા માંગતા ન હોય તેવા લોકોને એ માટે પરવાનગી આપવા માટે એક ઓપ્ટ-આઉટ ક્લોઝ હોવો જોઈએ.
+કૃપા કરીને ડ્રાફ્ટ રૂલ 193 નોટિસ[^૭]  માટે આ લિંકની મુલાકાત લો અને આધાર સંબંધિત નાગરિક ચિંતા દર્શવવા માટે ટૂંકી મુદતની ચર્ચા (ડીબેટ) માટે એક સ્પષ્ટીકૃત નિવેદન લો. આપ આ લિન્ક પરથી કોઈ પણ નોટિસ ડાઉનલોડ કરી શકો છો અને તમારી અનુકૂળતા મુજબ તેને ફાઇલ કરી શકો છો.
+આભાર
 
-Even with a cursory google search, enough reports about the pitfalls of Aadhaar are available. From starvation deaths[^1] to exclusion[^2] to enabling fraud[^3] to mass surveillance[^4], Aadhaar is becoming the basis for a lot of widespread suffering. There have been data leaks by 210 government entities[^5] putting privacy of citizens like me at risk and making them vulnerable to identity theft[^6].
-
-As my representative, I request you to raise these issues regarding Aadhaar in Parliament. I ask you to demand an answer from the Government of the day as to why I am being forced to register for a flawed system. I demand that Aadhaar should be made non-mandatory, as the Supreme Court has already ordered in 2015, and that there should be an opt-out clause allowing those who don’t want to be a part of the system to get out.
-
-Please go to this link for a draft Rule 193 Notice[^7] with an explanatory statement asking for a Short Duration discussion on citizen concerns regarding Aadhaar. You can download any of the notices and file them according to your convenience.
-
-Thank you.
-
-Sincerely,
+અંતઃકરણપૂર્વક, 
 
 [^1]: http://www.livemint.com/Opinion/FNWYVUxeXUw8rHbdirTe4H/Hunger-Starvation-and-Aadhaar.html
 [^2]: http://indianexpress.com/article/opinion/columns/a-welfare-test-for-aadhaar-upa-nda-aadhaar-card-4921582/
