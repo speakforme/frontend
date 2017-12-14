@@ -3,8 +3,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ site.title | escape }} {% if page.title %}{{ page.title | escape }} {%endif%}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  {% if page.title %}
+    {% capture title %}{{ site.title | escape }} {{ page.title | escape }}{% endcapture %}
+  {% else %}
+    {% capture title %}{{ site.title | escape }}{% endcapture %}
+  {% endif %}
+  {% capture description %}{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endcapture %}
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+
+  <meta name="theme-color" content="#70c6b7"/>
+
+  <meta name="description" content="{{ description }}">
+
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+  <!-- TODO: Add thumbnail image -->
+  <!-- <meta property="og:image" content="{{ image }}"> -->
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:see_also" content="{{ site.url }}{{ site.baseurl }}">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="{{ title }}">
+  <meta itemprop="description" content="{{ description }}">
+  <!-- TODO: Add thumbnail image -->
+  <!-- <meta itemprop="image" content="{{ image }}"> -->
+
+  <meta name="twitter:card" content="{% if image %}summary_large_image{% else %}summary{% endif %}">
+  <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <!-- TODO: Add thumbnail image -->
+  <!-- <meta name="twitter:image" content="{{ image }}"> -->
 
   <link rel="stylesheet" href="{{ "/public/main.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/public/no-class.min.css" | relative_url }}">
