@@ -409,12 +409,18 @@ var app = new Vue({
           ', please stop harrassing me for my aadhaar. @speakforme'
       );
     },
+    messengerText: function() {
+      // TODO: localize this as well
+      // TODO: find a better message
+      return encodeURIComponent(
+        'Fed up of being coerced into Aadhaar? Tell your Member of' +
+        ' Parliament and service providers to #SpeakForMe.'
+      );
+    },
     whatsapptext: function() {
       // TODO: localize this as well
       // TODO: find a better WhatsApp message
       return encodeURIComponent(
-        'Fed up of being coerced into Aadhaar? Tell your Member of' +
-        ' Parliament and service providers to #SpeakForMe.' +
         '\nVisit https://speakforme.in.'
       );
     },
@@ -462,7 +468,10 @@ var app = new Vue({
       return this.mps[this.constituencyCode];
     },
     whatsappurl: function() {
-      return 'https://api.whatsapp.com/send?text=' + this.whatsapptext;
+      return 'https://api.whatsapp.com/send?text=' + this.messengerText + this.whatsapptext;
+    },
+    telegramurl: function() {
+      return 'https://telegram.me/share/url?text=' + this.messengerText + '&url=https://speakforme.in';
     },
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
