@@ -483,7 +483,8 @@ var app = new Vue({
       }&layout=button&size=small&mobile_iframe=true&width=59&height=20`;
     },
     fullmailtourl: function() {
-      var response = this.petition.text !== undefined ? this.petition.text : this.response;
+      var response = this.petition !==undefined && this.petition.text !== undefined ?
+                      this.petition.text : this.response;
       return this.getMailUrl(
         mailUrlOpts.mailto,
         encodeURIComponent(response.trim()
