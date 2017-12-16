@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% capture image %}{{ site.url }}{{ site.baseurl }}{{ site.thumbnail }}{% endcapture %}
+    <title>{{page.title}}</title>
+    <meta name="description" content="{{ description }}">
+
+    <meta name="theme-color" content="#70c6b7"/>
+
+    <meta name="description" content="{{ description }}">
+
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+
+    <meta property="og:image" content="{{ image }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:see_also" content="{{ site.url }}{{ site.baseurl }}">
+    <meta property="og:type" content="website">
+
+    <meta itemprop="name" content="{{ title }}">
+    <meta itemprop="description" content="{{ description }}">
+
+    <meta itemprop="image" content="{{ image }}">
+
+    <meta name="twitter:card" content="{% if image %}summary_large_image{% else %}summary{% endif %}">
+    <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:image" content="{{ image }}">
+
+    <link rel="stylesheet" href="{{ "/public/all.css" | relative_url }}">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include google-analytics.inc %}
+    {% endif %}
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <script src="/public/all.js"></script>
+
+    <script>
+      window.petitions = {
+        {% for petition in site.petitions %}
+          {% assign slugparts = petition.slug | split: "-" %}
+          {% if slugparts.last == page.language or slugparts.last == 'en' %}
+            {{petition.slug | jsonify}}: {{petition.content | jsonify}},
+          {% endif %}
+        {% endfor %}
+      };
+      window.locales = {
+        {% for locale in site.locales %}
+          {% assign slugparts = petition.slug | split: "-" %}
+          {% if slugparts.last == page.language or slugparts.last == 'en' %}
+            {{petition.slug | jsonify}}: {{petition.content | jsonify}},
+          {% endif %}
+        {% endfor %}
+      };
+      window.services = {{site.data.services | jsonify}};
+      window.states = {{site.data.states | jsonify}};
+      window.telcos = {{site.data.telcos | jsonify}};
+      window.banksList = {{site.data.banks | jsonify}};
+      window.i18n = {{site.data.i18n | jsonify}};
+    </script>
+  </body>
+
+</html>

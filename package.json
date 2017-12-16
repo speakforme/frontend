@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "speakforme.in",
   "dependencies": {
+    "inferno": "^3.10.1",
+    "inferno-component": "^3.10.1",
+    "inferno-scripts": "5.0.0"
+  },
+  "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-cli": "^1.4.0",
     "gulp-concat": "^2.6.1",
@@ -11,9 +16,11 @@
     "gulp-yaml": "^1.0.1",
     "yamljs": "^0.3.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "inferno-scripts start",
+    "build": "inferno-scripts build",
+    "test": "inferno-scripts test --env=jsdom",
+    "eject": "inferno-scripts eject"
   },
   "repository": {
     "type": "git",
