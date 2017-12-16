@@ -1,0 +1,19 @@
+---
+---
+((addressee))
+
+હું મારી બેંક ફોન કંપની દ્વારા મારા આધાર નંબરને લિંક કરવા માટે સતત સંદેશા પ્રાપ્ત કરી રહ્યો છું. જો કે, આધારના બોગસ અમલીકરણ અને તે કેવી રીતે મારી વ્યક્તિગત માહિતી જોખમમાં મૂકી રહી છે તે વિશે દૈનિક રિપોર્ટ્સ હાજર છે. 
+ફક્ત સરળ ગૂગલ સર્ચની મદદ થી પણ, આધારની મુશ્કેલીઓ વિશેની પૂરતી રિપોર્ટ્સ ઉપલબ્ધ છે. ભૂખમરાથી[^૧] લઈને બાકાતી[^૨] તથા ફ્રોડ[^૩] તથા મોટા પાયે જાસૂસી[^૪] વગેરે મુદ્દાઓ આધાર ના લીધે સરળતાથી શક્ય બન્યા છે. અત્યાર સુધીમાં ઓછામાં ઓછી ૨૧૦ સરકારી સંસ્થાઓનો[^૫]  ડેટા લીક થયેલ છે જે મારી ગોપનીયતા ને ખતરામાં મૂકે છે તથા મને ઓળખાણની ચોરી[^૬]  વિરુદ્ધ લાચાર બનાવે છે. 
+મારા પ્રતિનિધિ તરીકે, હું તમને વિનંતી કરું છુ કે આ મુદ્દાઓ સંસદમાં ઉઠાવવામાં આવે. હું તમને સરકાર તરફથી  જવાબ ની માગણી કરવા માંગું છું કે શા માટે મને અપૂર્ણ સિસ્ટમ માટે રજીસ્ટર કરવા માટે ફરજ પાડવામાં આવી રહી છે. હું માંગણી કરું છું કે માનનીય સુપ્રીમ કોર્ટના ૨૦૧૫ ના ઓર્ડર મુજબ આધાર ને મરજિયાત બનાવવામાં આવે. જે લોકો આ સિસ્ટમનો ભાગ બનવા માંગતા ન હોય તેવા લોકોને એ માટે પરવાનગી આપવા માટે એક ઓપ્ટ-આઉટ ક્લોઝ હોવો જોઈએ.
+કૃપા કરીને ડ્રાફ્ટ રૂલ 193 નોટિસ[^૭]  માટે આ લિંકની મુલાકાત લો અને આધાર સંબંધિત નાગરિક ચિંતા દર્શવવા માટે ટૂંકી મુદતની ચર્ચા (ડીબેટ) માટે એક સ્પષ્ટીકૃત નિવેદન લો. આપ આ લિન્ક પરથી કોઈ પણ નોટિસ ડાઉનલોડ કરી શકો છો અને તમારી અનુકૂળતા મુજબ તેને ફાઇલ કરી શકો છો.
+આભાર
+
+અંતઃકરણપૂર્વક, 
+
+[^1]: http://www.livemint.com/Opinion/FNWYVUxeXUw8rHbdirTe4H/Hunger-Starvation-and-Aadhaar.html
+[^2]: http://indianexpress.com/article/opinion/columns/a-welfare-test-for-aadhaar-upa-nda-aadhaar-card-4921582/
+[^3]: https://scroll.in/article/852689/sophisticated-aadhaar-related-bank-fraud-has-left-police-in-delhi-and-noida-baffled
+[^4]: http://www.wired.co.uk/article/india-aadhaar-biometrics-privacy
+[^5]: https://tech.economictimes.indiatimes.com/news/corporate/210-govt-websites-made-public-aadhaar-details-uidai/61719345
+[^6]: https://scroll.in/article/833230/explainer-aadhaar-is-vulnerable-to-identity-theft-because-of-its-design-and-the-way-it-is-used
+[^7]: https://www.dropbox.com/sh/xfhxq3x9iwl77zx/AABdFxh6y0YMrLOs5Jh6_i68a?dl=0
