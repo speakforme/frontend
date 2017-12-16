@@ -191,6 +191,7 @@ var app = new Vue({
             }
           );
       }
+      window.history.replaceState({'locale': val}, "", window.location.href.split("?")[0]+"?lang="+val);
     },
     getMailUrl(opts, encodedBody) {
       var url =
@@ -415,7 +416,7 @@ var app = new Vue({
       return encodeURIComponent(
         'Fed up of being coerced into Aadhaar? Tell your Member of' +
         ' Parliament and service providers to #SpeakForMe.' +
-        '\nVisit https://speakforme.in.'
+        '\nVisit '+window.location.href+'.'
       );
     },
     states: function() {
