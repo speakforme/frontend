@@ -97,12 +97,25 @@ forEach(Object.keys(window.petitions), function(index, item) {
   var campaignType = getCampaignType()
   if (item.indexOf(campaignType) !== -1) {
     axios.get('/petitions/' + item + '.txt').then(function(response) {
-      responseComponents[campaignType + '-' + item.split('-').pop()] = {
+      var lang = item.split('-').pop()
+      responseComponents[campaignType + '-' + lang] = {
         props: ['addressee', 'address', 'body'],
         delimiters: ['((', '))'],
+	text:
+        response.data +
+        (
+          (lang === 'en')
+          ? ''
+          : '\n - - - - ENGLISH VERSION OF ABOVE - - - - - \n' + templates[campaignType]
+        ),
         template:
         '<textarea @copy="copied" cols="70" rows="10" name="content" id="response-content">' +
         response.data +
+        (
+          (lang === 'en')
+          ? ''
+          : '\n - - - - ENGLISH VERSION OF ABOVE - - - - - \n' + templates[campaignType]
+        ) +
         '</textarea>',
         methods: {
           copied: function() {
@@ -110,7 +123,7 @@ forEach(Object.keys(window.petitions), function(index, item) {
           }
         }
       };
-      app.petitionLocales.push(item.split('-').pop())
+      app.petitionLocales.push(lang)
     })
   }
 })
@@ -157,7 +170,7 @@ var app = new Vue({
   methods: {
     setLocale: function(val) {
       gtag('event', 'setLocale', {
-        lang: val
+        'event_category': val
       });
       this.$i18n.locale = val;
       window.localStorage.setItem('locale', val);
@@ -178,6 +191,7 @@ var app = new Vue({
             }
           );
       }
+      window.history.replaceState({'locale': val}, "", window.location.href.split("?")[0]+"?lang="+val);
     },
     getMailUrl(opts, encodedBody) {
       var url =
@@ -229,12 +243,8 @@ var app = new Vue({
     sendEmail: function(method, event) {
       this.mailMethod = method;
       gtag('event', 'sendEmail', {
-        email: this.email,
-        subject: this.subject,
-        bcc: this.bcc,
-        cc: this.cc,
-        mobile: this.mobile,
-        method: method
+        'event_category': this.locale,
+        'event_label': method
       });
 
       var encodedBody = encodeURIComponent(this.response);
@@ -318,8 +328,8 @@ var app = new Vue({
     autodetect = autodetect[autodetect.length - 1].substr(0,2);
 
     var locale = (this.locale =
-      window.localStorage.getItem('locale') ||
       autodetect ||
+      window.localStorage.getItem('locale') ||
       window.navigator.languages
         .map(function(l) {
           return l.split('-')[0];
@@ -359,6 +369,15 @@ var app = new Vue({
             // Also, set the constituencies inside the english locale
             self.updateConstituencies();
           });
+        this.$http
+          .get('https://ipapi.co/json', { responseType: 'json' })
+          .then(function(response) {
+            if (response.data['country'] === 'IN') {
+              if (app.states.includes(response.data['region_code'])) {
+                app.state = response.data['region_code']
+              }
+            }
+          });
 
         break;
 
@@ -389,6 +408,14 @@ var app = new Vue({
         'Hey ' +
           this.twitter +
           ', please stop harrassing me for my aadhaar. @speakforme'
+      );
+    },
+    messengerText: function() {
+      // TODO: localize this as well
+      // TODO: find a better message
+      return encodeURIComponent(
+        'Fed up of being coerced into Aadhaar? Tell your Member of' +
+        ' Parliament and service providers to #SpeakForMe.'
       );
     },
     states: function() {
@@ -434,6 +461,14 @@ var app = new Vue({
     constituency: function() {
       return this.mps[this.constituencyCode];
     },
+    whatsappurl: function() {
+      return 'https://api.whatsapp.com/send?text=' + this.messengerText +
+	     encodeURIComponent('Visit ' + window.location.href);
+    },
+    telegramurl: function() {
+      return 'https://telegram.me/share/url?text=' + this.messengerText + '&url=' +
+             window.location.href;
+    },
     tweeturl: function() {
       return 'https://twitter.com/intent/tweet?text=' + this.tweettext;
     },
@@ -448,9 +483,13 @@ var app = new Vue({
       }&layout=button&size=small&mobile_iframe=true&width=59&height=20`;
     },
     fullmailtourl: function() {
+      var response = this.petition !==undefined && this.petition.text !== undefined ?
+                      this.petition.text : this.response;
       return this.getMailUrl(
         mailUrlOpts.mailto,
-        encodeURIComponent(this.response)
+        encodeURIComponent(response.trim()
+        .replace(/\(\(addressee\)\)/g, this.personName)
+        .replace(/\(\(address\)\)/g, this.service.address))
       );
     },
     mailtourl: function() {

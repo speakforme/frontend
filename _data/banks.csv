@@ -1,10 +1,11 @@
 name,email,twitter,ifsc
 Allahabad Bank,"cmd@allahabadbank.in,customercare@allahabadbank.in",Allahabad_Bank,ALLA
+American Express,"kaushal.saru@aexp.com,adlakha.manoj@aexp.com",amexindia,AMEX
 Andhra Bank,cmd@andhrabank.co.in,bank_andhra,ANDB
-AU Small Finance Bank,"customercare@aubank.in, pramod.khetawat@aubank.in, “Uttam Tibrewal” <uttam@aufin.in>, “Deepak Jain” <deepak.jain@aufin.in>",aubankindia,AUBL
+AU Small Finance Bank,"customercare@aubank.in, pramod.khetawat@aubank.in,uttam@aufin.inDeepak Jain,deepak.jain@aufin.in",aubankindia,AUBL
 Axis Bank,shikha.sharma@axisbank.com,AxisBank,UTIB
 Bandhan Bank,"getintouch@bandhanbank.com, nand.singh@bandhanbank.com",bandhanbank_in,BDBL
-Bank of Baroda,"cmd@bankofbaroda.com,md.ceo@bankofbaroda.com",bankofbaroda,BARB
+Bank of Baroda,"cmd@bankofbaroda.com, ""P S Jayakumar [Managing Director & CEO]"" <md.ceo@bankofbaroda.com>",bankofbaroda,BARB
 Bank of India,cmd@bankofindia.co.in,BOI_Tweets,BKID
 Bank of Maharashtra,mdceo@mahabank.co.in,bomrochd,MAHB
 Canara Bank,cmdscrt@canarabank.com,canarabanktweet,CNRB
@@ -19,10 +20,10 @@ DCB Bank,muralim.natrajan@dcbbank.com,DCBBank,DCBL
 Dena Bank,cmd@denabank.co.in,dena_bank,BKDN
 Deutsche Bank,"customer.care@db.com,head.services@db.com,nalanda.kadam@db.com",DeutscheBank,DEUT
 Dhanlaxmi Bank,sreeram.g@dhanbank.co.in,,DLXB
-Equitas Small Finance Bank,vasudevanpn@equitas.in,EquitasBank,ESFB
-ESAF Small Finance Bank,,,ESAF
+Equitas Small Finance Bank,,EquitasBank,ESFB
+ESAF Small Finance Bank,paul@esafbank.com,ESAFBank,ESAF
 Federal Bank,secretarial@federalbank.co.in,FederalBankLtd,FDRL
-Fincare Small Finance Bank,,,FSFB
+Fincare Small Finance Bank,,fincarebank,FSFB
 HDFC Bank,aditya.puri@hdfcbank.com,HDFC_Bank,HDFC
 HSBC India,complaints.india@hsbc.co.in,HSBC_IN,HSBC
 ICICI Bank,chanda.kochhar@icicibank.com,icicibank,ICIC
@@ -35,23 +36,24 @@ Jammu and Kashmir Bank,vc.sharma@jkbmail.com  ,JandKBank,JAKA
 Janalakshmi Small Finance Bank,customercare@janalakshmi.com,Janalakshmi_MFI,--
 Karnataka Bank,mdsec@ktkbank.com,KarnatakaBank,KARB
 Karur Vysya Bank,customerservice@kvbmail.com.,KVB_Ltd,KVBL
-Kotak Mahindra Bank,"ceo@kotak.com,countryhead.consumer@kotak.com, uday.kotak@kotak.com"
+Kotak Mahindra Bank,"ceo@kotak.com,countryhead.consumer@kotak.com, uday.kotak@kotak.com",,KKBK
 Lakshmi Vilas Bank,Ravishankar.Swaminathan@lvbank.in,LVBankLtd,LAVB
-Nainital Bank,"chairman@nainitalbank.co.in, operations@nainitalbank.co.in"
+Nainital Bank,"chairman@nainitalbank.co.in, operations@nainitalbank.co.in",,
 Oriental Bank of Commerce,cmd@obc.co.in,OBCIndOfficial,ORBC
+PayTM Payments Bank,renu@paytm.com,PaytmBank,PYTM
 Punjab and Sindh Bank,cmd@psb.org.in,PunjabSind_Bank,PSIB
 Punjab National Bank,cmd@pnb.co.in,Indiapnb,PUNB
 RBL Bank,principalnodalofficer@rblbank.com.,rblbank,RATN
 South Indian Bank,"customercare@sib.co.in, head@sib.co.in",OfficialSIBLtd,SIBL
 Standard Chartered Bank,Zarin.Daruwala@sc.com,StanChart,SCBL
 State Bank of India,chairman@sbi.co.in,theofficialsbi,SBIN
-Suryoday Small Finance Bank,,,SURY
+Suryoday Small Finance Bank,,SuryodayBank,SURY
 Syndicate Bank,hocmdsec@syndicatebank.co.in,banksyndicate,SYNB
 Tamilnad Mercantile Bank,customerservice@tmbank.in,tmbltd,TMBL
 UCO Bank,cmdsec.calcutta@ucobank.co.in,UCO_BANK,UCBA
 Ujjivan Small Finance Bank,samit.ghosh@ujjivan.com,UjjivanSFB,USFB
 Union Bank of India,cmd@unionbankofindia.com,UnionBankTweets,UBIN
 United Bank of India,cmdunitedbank@unitedbank.co.in,bankatunited,UTBI
-Utkarsh Small Finance Bank,,,UTKS
+Utkarsh Small Finance Bank,,Utkarshbank,UTKS
 Vijaya Bank,cmd@vijayabank.co.in,VijayaBankIndia,VIJB
-YES Bank,"yestouch@yesbank.in, head.grievanceredressal@yesbank.in, principal.nodalofficer@yesbank.in, rana.kapoor@yesbankltd.com"
+YES Bank,"yestouch@yesbank.in, head.grievanceredressal@yesbank.in, principal.nodalofficer@yesbank.in, rana.kapoor@yesbankltd.com",,YESB

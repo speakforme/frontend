@@ -6,6 +6,7 @@ baseurl: ""
 url: "https://speakforme.in"
 twitter_username: speakforme
 github_username:  speakforme
+thumbnail: /public/thumbnail.png
 # Build settings
 markdown: kramdown
 google_analytics: UA-82421266-2
@@ -22,6 +23,7 @@ exclude:
 # https://www.netlify.com/docs/redirects/
 include:
   - _redirects
+  - _headers
 collections:
   petitions:
     output: true
