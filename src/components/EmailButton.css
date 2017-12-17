@@ -17,6 +17,7 @@
   line-height: 48px;
   font-weight: bold;
   margin: 0 4px;
+  border-radius: 3px;
   flex: 0 0 auto;
   min-width: 128px;
   text-align: center;

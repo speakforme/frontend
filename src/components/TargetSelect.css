@@ -1,0 +1,29 @@
+.TargetSelect-group {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.TargetSelect {
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #666;
+  height: 48px;
+  line-height: 48px;
+  font-weight: bold;
+  margin: 0 4px;
+  border-radius: 3px;
+  flex: 0 0 auto;
+  min-width: 256px;
+  text-decoration: none;
+  padding: 0 8px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.TargetSelect > option {
+  height: 48px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;  
+}

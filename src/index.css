@@ -15,4 +15,9 @@ body, input, button, select, option, textarea {
   box-sizing: border-box;
 }
 
-.btn-gmail { background-color: #f00; }
+.btn-gmail { background-color: #ea4335; }
+.btn-yahoo { background-color: #410093; }
+.btn-twitter { background-color: #1da1f2; }
+.btn-facebook { background-color: #3b5998; }
+.btn-whatsapp { background-color: #075e54; }
+.btn-default { background-color: #666666; }

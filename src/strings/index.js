@@ -1,2 +1,2 @@
-export campaigns from './campaigns';
-export ui from './ui';
+import * as en from './en';
+export default en;

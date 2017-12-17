@@ -30,6 +30,8 @@ class EmailButton extends Component {
     let base, params;
     let {subject, body, name, to, cc, bcc} = this.props;
 
+    console.log('type', type);
+
     // Windows chokes on long URLs, so we avoid them
     if(!includeBody) body = '';
 
@@ -62,6 +64,7 @@ class EmailButton extends Component {
           subject && `su=${subject}`,
           body && `body=${body}`
         ];
+        break;
       case 'yahoo':
         base = `http://compose.mail.yahoo.com/`;
         params = [
@@ -71,6 +74,7 @@ class EmailButton extends Component {
           subject && `Subject=${subject}`,
           body && `Body=${body}`
         ];
+        break;
       default:
         base = `mailto:${to}`;
         params = [
@@ -79,6 +83,7 @@ class EmailButton extends Component {
           subject && `subject=${subject}`,
           body && `body=${body}`
         ];
+        break;
     }
 
     return `${base}?${params.filter(p => p).join('&')}`;
@@ -102,7 +107,7 @@ class EmailButton extends Component {
           <a className="EmailButton-view">View Petition</a>
           <a className="EmailButton btn-gmail" href={gmail} target="_blank">Gmail</a>
           <a className="EmailButton btn-yahoo" href={yahoo} target="_blank">Yahoo!</a>
-          <a className="EmailButton btn-other" href={other} target="_blank">Other</a>
+          <a className="EmailButton btn-default" href={other} target="_blank">Other</a>
         </div>
       );
     }
