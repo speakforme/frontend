@@ -1,0 +1,24 @@
+.EmailButton-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.EmailButton-view {
+  line-height: 48px;
+  padding: 0 20px;
+  flex: 0 0 auto;
+  color: #f45;
+}
+
+.EmailButton {
+  background-color: #f45;
+  color: #fff;
+  border: none;
+  line-height: 48px;
+  font-weight: bold;
+  margin: 0 4px;
+  flex: 0 0 auto;
+  min-width: 128px;
+  text-align: center;
+  text-decoration: none;
+}
