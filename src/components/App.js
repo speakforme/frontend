@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Logo height={48} width={48} />
+          <Logo className="App-logo" />
           <div className="App-title">{title}</div>
         </header>
         <section className="App-intro">

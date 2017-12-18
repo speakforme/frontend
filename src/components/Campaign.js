@@ -6,12 +6,11 @@ import './Campaign.css';
 class Campaign extends Component {
   state = {}
   onTarget = (target) => {
+    // The currently selected target.
     this.setState({ target });
   }
   render() {
     const {
-      campaignId,
-      petition,
       title,
       categories,
       targets,
@@ -19,23 +18,30 @@ class Campaign extends Component {
       target_prompt
     } = this.props;
     const { target } = this.state;
+    let { subject, body, name, ...rest } = { ...this.props.petition, ...target };
 
+    // Replace ((variables)) in the subject, name and body with values
+    [subject, body, name] = [subject, body, name].map(
+      str => (str || '').replace(/\(\((.*?)\)\)/g, (m, key) => rest[key] || '')
+    );
+
+    const petition = { subject, body, name, ...rest };
     const targetRequired = !!(categories || targets);
     const targetSelected = !!target;
-
-    // TODO: Add target's information to the petition object
 
     return (
       <div className="Campaign">
         <h2 className="Camapign-title">{title}</h2>
-        {targetRequired && (
-          <TargetSelect
-            {...{ categories, targets, category_prompt, target_prompt }}
-            onSelect={this.onTarget} />
-        )}
-        {(!targetRequired || targetSelected) && (
-          <EmailButton {...petition} />
-        )}
+        <div className="Campaign-form">
+          {targetRequired && (
+            <TargetSelect
+              {...{ categories, targets, category_prompt, target_prompt }}
+              onSelect={this.onTarget} />
+          )}
+          {(!targetRequired || targetSelected) && (
+            <EmailButton {...petition} />
+          )}
+        </div>
       </div>
     );
   }

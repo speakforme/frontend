@@ -36,14 +36,24 @@
   height: 48px;
   line-height: 48px;
   display: flex;
+  align-items: center;
 }
 
 .App-logo {
+  width: 36px;
+  height: 36px;
   flex: 0 0 auto;
+}
+
+.App-logo path {
+  fill: #fff;
 }
 
 .App-title {
   flex: 1 1 0;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .App-intro {

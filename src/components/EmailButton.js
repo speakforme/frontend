@@ -1,4 +1,5 @@
 import Component from 'inferno-component';
+import EmailModal from './EmailModal';
 import './EmailButton.css';
 
 const supportsLongUrls = (function() {
@@ -26,19 +27,13 @@ const supportsMailto = (function() {
 })();
 
 class EmailButton extends Component {
+  state = {};
   getMailUrl(type, includeBody) {
     let base, params;
     let {subject, body, name, to, cc, bcc} = this.props;
 
-    console.log('type', type);
-
     // Windows chokes on long URLs, so we avoid them
     if(!includeBody) body = '';
-
-    // Replace ((variables)) in the subject, name and body with values
-    [subject, body, name] = [subject, body, name].map(
-      str => (str || '').replace(/\(\((.*?)\)\)/g, (m, key) => this.props[key] || '')
-    );
 
     // Yahoo cannot handle the "Name <email>" format
     const addrOnly = ['yahoo'].includes(type);
@@ -89,12 +84,20 @@ class EmailButton extends Component {
     return `${base}?${params.filter(p => p).join('&')}`;
   }
 
+  copyBody = event => {
+    this.setState({ showModal: true });
+    event.preventDefault();
+  }
+
   render() {
     if (supportsMailto) {
       const url = this.getMailUrl('mailto', supportsLongUrls);
       return (
         <div className="EmailButton-group">
-          <a className="EmailButton-view">View Petition</a>
+          <a // eslint-disable-line jsx-a11y/anchor-is-valid
+            className="EmailButton-view"
+            onClick={() => this.setState({ showModal: true })}
+          >View Petition</a>
           <a className="EmailButton" href={url} target="_blank">Send Email</a>
         </div>
       );
@@ -102,12 +105,28 @@ class EmailButton extends Component {
       const gmail = this.getMailUrl('gmail', supportsLongUrls);
       const yahoo = this.getMailUrl('yahoo', supportsLongUrls);
       const other = this.getMailUrl('mailto', supportsLongUrls);
+      const showModal = !!this.state.showModal;
+
       return (
         <div className="EmailButton-group">
-          <a className="EmailButton-view">View Petition</a>
-          <a className="EmailButton btn-gmail" href={gmail} target="_blank">Gmail</a>
-          <a className="EmailButton btn-yahoo" href={yahoo} target="_blank">Yahoo!</a>
-          <a className="EmailButton btn-default" href={other} target="_blank">Other</a>
+          <a // eslint-disable-line jsx-a11y/anchor-is-valid
+            className="EmailButton-view"
+            onClick={() => this.setState({ showModal: true })}
+          >View Petition</a>
+          <a className="EmailButton btn-gmail" href={gmail} target="_blank"
+            onClick={supportsLongUrls || this.copyBody}
+          >Gmail</a>
+          <a className="EmailButton btn-yahoo" href={yahoo} target="_blank"
+            onClick={supportsLongUrls || this.copyBody}
+          >Yahoo!</a>
+          <a className="EmailButton btn-default" href={other} target="_blank"
+            onClick={supportsLongUrls || this.copyBody}
+          >Other</a>
+          <EmailModal
+            show={showModal}
+            {...this.props}
+            onClose={() => this.setState({ showModal: false })}
+          ></EmailModal>
         </div>
       );
     }

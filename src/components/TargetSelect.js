@@ -20,8 +20,7 @@ class TargetSelect extends Component {
     const {
       categories,
       category_prompt,
-      target_prompt,
-      onSelect
+      target_prompt
     } = this.props;
     const targets = this.state.targets || this.props.targets;
 
