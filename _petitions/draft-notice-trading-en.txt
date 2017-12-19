@@ -78,22 +78,17 @@ CC
 3. Dr Urjit R Patel, Governor, Reserve Bank of India, 16th floor, Central Office Building, Shahid Bhagat Singh Marg, Mumbai - 400 001 urjitrpatel@rbi.org.in, governor@rbi.org.in
 4. Registrar, Supreme Court of India, Tilak Marg, New Delhi-110 201 For the attention of the bench hearing WP(C) 494/2012
 
-[^0]:
-http://www.sundayguardianlive.com/opinion/11519-maharashtra-case-shows-pitfalls-aadhaar-use
-[^1]:
-https://medium.com/@anupamsaraph/how-does-linking-your-aadhaar-to-your-bank-account-destroy-the-banking-system-5bb0379f2886
-[^2]:
-https://medium.com/@anupamsaraph/how-does-linking-your-aadhaar-to-your-bank-account-destroy-the-banking-system-5bb0379f2886
-[^3]:
-https://uidai.gov.in/images/tenders/Notifications_in_connection_with_Regulations_12A_15072017.pdf
-[^4]: http://egazette.nic.in/WriteReadData/2017/176407.pdf [^5]:
-http://lawmin.nic.in/ld/P-ACT/2003/The%20Prevention%20of%20Money-laudering%20Act,%202002.pdf
-[^6]: http://164.100.47.194/Loksabha/PapersLaid/SearchPaperslaid.aspx [^7]:
-http://mpa.nic.in/mpa/manual/Manual_English/Chapter/chapter-11.htm [^8]:
-https://uidai.gov.in/legal-framework/acts.html [^9]:
-https://uidai.gov.in/images/tenders/Notifications_in_connection_with_Regulations_12A_15072017.pdf
-[^10]: http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/1811046.pdf
-[^11]: http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/2274938.pdf
-[^12]: http://supremecourtofindia.nic.in/jonew/ropor/rop/all/389939.pdf [^13]:
-http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/2274938.pdf [^14]:
-http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/1811046.pdf
+[^0]:http://www.sundayguardianlive.com/opinion/11519-maharashtra-case-shows-pitfalls-aadhaar-use
+[^1]:https://medium.com/@anupamsaraph/how-does-linking-your-aadhaar-to-your-bank-account-destroy-the-banking-system-5bb0379f2886
+[^2]:https://medium.com/@anupamsaraph/how-does-linking-your-aadhaar-to-your-bank-account-destroy-the-banking-system-5bb0379f2886
+[^3]:https://uidai.gov.in/images/tenders/Notifications_in_connection_with_Regulations_12A_15072017.pdf
+[^4]:http://egazette.nic.in/WriteReadData/2017/176407.pdf [^5]:http://lawmin.nic.in/ld/P-ACT/2003/The%20Prevention%20of%20Money-laudering%20Act,%202002.pdf
+[^6]:http://164.100.47.194/Loksabha/PapersLaid/SearchPaperslaid.aspx
+[^7]:http://mpa.nic.in/mpa/manual/Manual_English/Chapter/chapter-11.htm
+[^8]:https://uidai.gov.in/legal-framework/acts.html
+[^9]:https://uidai.gov.in/images/tenders/Notifications_in_connection_with_Regulations_12A_15072017.pdf
+[^10]:http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/1811046.pdf
+[^11]:http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/2274938.pdf
+[^12]:http://supremecourtofindia.nic.in/jonew/ropor/rop/all/389939.pdf
+[^13]:http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/2274938.pdf
+[^14]:http://supremecourtofindia.nic.in/jonew/bosir/orderpdfold/1811046.pdf
