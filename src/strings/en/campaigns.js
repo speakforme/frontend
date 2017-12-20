@@ -15,17 +15,15 @@
         name, to, cc,
         subject, body, tweet
       },
-      ui: {
-        title: 'MP campaign',
-        category_prompt: 'Select State', // For MP campaign only
-        target_prompt: 'Select Constituency' // For MP, bank, telco, gov campaigns
-      },
+      title: 'MP campaign',
+      category_prompt: 'Select State', // For MP campaign only
+      target_prompt: 'Select Constituency', // For MP, bank, telco, gov campaigns
       // Targets causes a dropdown to be displayed for this campaign.
       targets: {
         <target_code>: {
           name, to, cc, // For the email
           twitter,
-          display_name, // optional, if different from name used in email
+          title, // optional, if different from name used in email
           // other fields for substitution, e.g.
         }
       }
@@ -48,49 +46,23 @@ export default {
     title: 'Ask your MP to help',
     category_prompt: 'Select State', // For MP campaign only
     target_prompt: 'Select Constituency', // For MP, bank, telco, gov campaigns
-    petition: {
-      subject: 'Subject for MPs',
-      body: 'Hello ((addressee)), Aadhaar is awful.'
-    },
-    categories: {
-      up: {
-        title: 'Uttar Pradesh',
-        targets: {
-          up18: {
-            title: 'Agra',
-            name: 'Dr. Prof. Ram Shankar',
-            to: ['office.mpagra@gmail.com', 'rs.katheria@sansad.nic.in']
-          },
-          up19: {
-            title: 'Fatehpur Sikri',
-            name: 'Shri Babulal Chaudhary',
-            to: 'babulal.mp@sansad.nic.in'
-          }
-        }
-      },
-      gj: {
-        title: 'Gujarat',
-        targets: {
-        }
-      }
-    }
   },
   srikrishna: {
     title: 'Remind the data protection committee to protect your Aadhaar data.',
-    petition: {
-      to: 'dataprotection@committee.gov.in',
-      subject: 'Subject for Sri Krishna Committee',
-      body: 'This is something.'
-    }
   },
   bank: {
     title: 'Tell the banks to stop threatening you.',
-    petition: {
-      to: 'dataprotection@committee.gov.in',
-      subject: 'Subject for Sri Krishna Committee',
-      body: 'This is something.'
-    }
+    target_prompt: 'Select Bank', // For MP, bank, telco, gov campaigns
   },
-  mobile: {},
-  gov: {}
+  telcos: {
+    title: 'Ask telcos to stop spamming you.',
+    target_prompt: 'Select Telco'
+  },
+  gov: {
+    title: 'Ask public services: is this your job?',
+    target_prompt: 'Select Service Provider'
+  },
+  uidai: {
+    title: 'Tell the UIDAI to back off.'
+  }
 };

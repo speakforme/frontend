@@ -57,7 +57,7 @@
 }
 
 .App-intro {
-
+  padding: 64px 0;
 }
 
 .App-campaign:nth-of-type(2n) {

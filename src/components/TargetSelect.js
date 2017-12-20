@@ -6,6 +6,7 @@ class TargetSelect extends Component {
   onCategory = event => {
     const categoryId = event.target.value;
     this.setState({
+      selectedCategory: categoryId,
       targets: this.props.categories[categoryId].targets
     });
   }
@@ -13,6 +14,9 @@ class TargetSelect extends Component {
   onTarget = event => {
     const targetId = event.target.value;
     const targets = this.state.targets || this.props.targets;
+    this.setState({
+      selectedTarget: targetId
+    });
     this.props.onSelect(targets[targetId]);
   }
 
@@ -22,6 +26,7 @@ class TargetSelect extends Component {
       category_prompt,
       target_prompt
     } = this.props;
+    const { selectedCategory, selectedTarget } = this.state;
     const targets = this.state.targets || this.props.targets;
 
     return (
@@ -30,7 +35,10 @@ class TargetSelect extends Component {
           <select className="TargetSelect" onChange={this.onCategory}>
             <option>{category_prompt}</option>
             {Object.keys(categories).map(categoryId => (
-              <option value={categoryId}>{categories[categoryId].title}</option>
+              <option
+                selected={selectedCategory === categoryId}
+                value={categoryId}
+              >{categories[categoryId].title || categories[categoryId].name}</option>
             ))}
           </select>
         )}
@@ -38,7 +46,10 @@ class TargetSelect extends Component {
           <select className="TargetSelect" onChange={this.onTarget}>
             <option>{target_prompt}</option>
             {Object.keys(targets).map(targetId => (
-              <option value={targetId}>{targets[targetId].title}</option>
+              <option
+                selected={selectedTarget === targetId}
+                value={targetId}
+              >{targets[targetId].title || targets[targetId].name}</option>
             ))}
           </select>
         )}
