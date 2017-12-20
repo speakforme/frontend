@@ -72,11 +72,11 @@ const toPetition = ({ body, attributes }) => ({ body, ...attributes });
 const states = {}
 for (const state in enStates) states[state] = { title: enStates[state], targets: {} };
 for (const { name, state, mp, email, code } of mps) states[state].targets[code] = {
-  name: mp, title: `${name} (${mp})`, to: email
+  name: mp, title: `${name} (${mp})`, email
 }
 
 const enAll = merge(en, {
-  ui: {},
+  ui: i18n.en,
   campaigns: {
     bank: {
       petition: toPetition(enPetitionBank),
@@ -98,8 +98,14 @@ const enAll = merge(en, {
       petition: toPetition(enPetitionUidai)
     }
   }
-});
+}, {
+  campaigns: {
+    bank: {
+      petition: {
 
-console.log(enAll);
+      }
+    }
+  }
+});
 
 export default enAll;

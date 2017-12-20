@@ -33,14 +33,18 @@ class Campaign extends Component {
       <div className="Campaign">
         <h2 className="Camapign-title">{title}</h2>
         <div className="Campaign-form">
-          {targetRequired && (
-            <TargetSelect
-              {...{ categories, targets, category_prompt, target_prompt }}
-              onSelect={this.onTarget} />
-          )}
-          {(!targetRequired || targetSelected) && (
-            <EmailButton {...petition} />
-          )}
+          <div>
+            {targetRequired && (
+              <TargetSelect
+                {...{ categories, targets, category_prompt, target_prompt }}
+                onSelect={this.onTarget} />
+            )}
+          </div>
+          <div>
+            {(!targetRequired || targetSelected) && (
+              <EmailButton {...petition} />
+            )}
+          </div>
         </div>
       </div>
     );

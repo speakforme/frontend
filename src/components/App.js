@@ -17,6 +17,7 @@ class App extends Component {
         <header className="App-header">
           <Logo className="App-logo" />
           <div className="App-title">{title}</div>
+          {/* <LanguageSelect /> */}
         </header>
         <section className="App-intro">
           <h1>{headline}</h1>
