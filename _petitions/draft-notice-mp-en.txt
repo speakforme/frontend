@@ -2,9 +2,9 @@
 ---
 ((addressee))
 
-I am getting constant messages from my bank and my phone company to link my Aadhaar number. However there are daily reports about the shoddy implementation of Aadhaar and how it is putting my personal information in danger.
+I am getting constant messages from my bank and my phone company to link my Aadhaar number. However, there are daily reports about the shoddy implementation of Aadhaar and how it is putting my personal information in danger.
 
-Even with a cursory google search, enough reports about the pitfalls of Aadhaar are available. From starvation deaths[^1] to exclusion[^2] to enabling fraud[^3] to mass surveillance[^4], Aadhaar is becoming the basis for a lot of widespread suffering. There have been data leaks by 210 government entities[^5] putting privacy of citizens like me at risk and making them vulnerable to identity theft[^6].
+Even with a cursory google search, enough reports about the pitfalls of Aadhaar are available. From starvation deaths[^1] to exclusion[^2] to enabling fraud[^3] to mass surveillance[^4], Aadhaar is becoming the basis for a lot of widespread suffering. There have been data leaks by 210 government entities[^5] putting the privacy of citizens like me at risk, and making us vulnerable to identity theft[^6].
 
 As my representative, I request you to raise these issues regarding Aadhaar in Parliament. I ask you to demand an answer from the Government of the day as to why I am being forced to register for a flawed system. I demand that Aadhaar should be made non-mandatory, as the Supreme Court has already ordered in 2015, and that there should be an opt-out clause allowing those who don’t want to be a part of the system to get out.
 
