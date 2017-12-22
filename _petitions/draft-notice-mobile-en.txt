@@ -1,4 +1,6 @@
 ---
+cc: cp@trai.gov.in
+subject: Threats to make mobile connections inoperable without Aadhaar
 ---
 ((addressee))
 

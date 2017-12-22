@@ -1,27 +1,20 @@
+﻿---
 ---
-cc: >
-  cabinet@nic.in,
-  urjitrpatel@rbi.org.in,
-  governor@rbi.org.in
-subject: Threats to make bank accounts inoperable without Aadhaar
----
-((addressee))
+மதிப்பிற்குரிய ((addressee)) அவர்களுக்கு,
 
-Dear Sir/Madam,
+பொருள் : ஆதார் இணைப்பற்ற வங்கி கணக்குகளை முடக்கும் செயல் பற்றி.
 
-Subject: Threats to make bank accounts inoperable without Aadhaar
+ஆதார் எண்ணை என் வங்கி கணக்குடன் இணைக்காவிடில் அதை முடக்கும் வண்ணம் அச்சுறுத்தும் செய்திகள், எனக்கு மிகுந்த வருத்தத்தையும் வேதனையையும் தருகிறது. இத்தகைய செயல் வங்கி நிர்வாகத்தின் மேலும், தங்களுடன் இருக்கும் வணிக உறவின் மேலும் நம்பிக்கையற்ற தன்மையை உண்டாக்குகிறது. என் கணக்கின் பாதுகாப்பு தன்மையையும் உரிமையையும் அடிப்படை வாடிக்கையாளர் சேவையின் நீதியையும் தங்கள் வாங்கி மதிக்க தவறுகிறது என அச்சப்படுகிறேன்.
 
-I am disappointed and concerned about threats to freeze my bank accounts were I to not to link them to Aadhaar. This is questioning my relationship with your bank and the value of the business I have brought to you. I am threatened that you neither value my business, nor are willing to protect my money and continued access to it.
+பெரும் ஆபத்துக்குள்ளாக்குதல் :
 
-Creating High Risks
+ஆதார் என்பது எவ்வித தணிக்கையும் நடைபெறாமல் UIDAI-யின் தரவுதளத்திலிருந்து குடிமக்களுக்கு தன்னார்வ முறையில் மட்டுமே அளிக்கப்படும் எண் - என்பதை தாங்கள் நன்கு அறிந்திருப்பீர்கள் என்னும் நம்பிக்கை எனக்கு இருக்கிறது. இந்நிலையில் ஆதார் எண்ணை அனைவரின் வங்கி கணக்குகளுடன் இணைப்பது என்பது, தங்களின் வாடிக்கையாளர்களையும் ஒட்டுமொத்த வங்கியின் சேவைகளையும் பெரும் ஆபத்துக்குள்ளாக்கும் செயலாகும்.
 
-1. I am sure you agree that Aadhaar is not a magic wand, it is merely a number to access an unaudited or unverified record from UIDAI’s database. Linking the Aadhaar to bank accounts is, therefore, exposing your customers and the entire banking sector to very high risks.
+சமீபத்தில் மகாரஷ்டிர மாநிலத்தில் பினாமி கணக்குகளால் ஊழல் நடைபெற்றது. அக்கணக்குகள் ஆதாரின் மூலமாகவே செயல்படுத்தப்பட்டன [^0]. இது ஆதார் ஒரு நல்ல அடையாள எண் இல்லை என்பதையும், அதை முறையே வங்கி கணக்குகளுடனோ, கைபேசி கணக்குகளுடனோ, இணைப்பது நல்லறிவற்ற செயலாக்கம் என்பதையை உறுதிபடுத்துகிறது. RBI-யின் [^1] வழிகாட்டுதலே ஆதாரை அதிகபட்சம் மூன்றாம் நிலை அடையாளமாக மட்டுமே கருதலாம் என்கிறது. இவ்வகையான மூன்றாம் நிலை இணைப்பை அடையாளமாக கருதப்படுவது உலக வங்கி நடப்புகளில் எங்கும் செல்லாத முறையாகும். ஆதார் பயன்பாடு, RBIஇன் நடைமுறை பரிந்துரைக்கும், Financial Action Task Force (FATF)இன் பரிந்துரைக்கும் எதிராக மட்டுமின்றி வாடிக்கையாளரின் கணக்குள் பரிபோகாமல் இருபத்துக்கான முன்னுரிமைக்கும், Prevention of Money Laundering Act (PMLA) சட்டத்துக்கும் புறம்பாக உள்ளது .
 
-2. I trust that you are aware that the Maharashtra Aadhaar Scam of loan waiver to benami Aadhaar bank accounts [^0], among other things, calls to question the ability of Aadhaar to uniquely identify anyone and the sanity to link it to bank accounts, SIM cards or anything at all. The RBI has always been wary of the dilution of its traditional KYC [^1] and has repeatedly highlighted that at best, Aadhaar is a 3rd party ID. 3rd party IDs are unacceptable in banking across the world, the use of Aadhaar is contrary to the recommendations of the Financial Action Task Force (FATF), against the RBI's own extant guidelines, destroys customer records from banks and would be contrary to the purpose of the Prevention of Money Laundering Act (PMLA).
+ஆதார் எவ்வித பாதுகப்பாளராலும் தணிக்கை செய்யப்படாத, பொறுப்பேற்காத அடையாள எண்ணாகவே இருந்து வருகிறது (ஒருவரின் முகவரியோ, இருப்போ உறுதிசெய்யப்படுவதில்லை). மேலும், ஆதாரின் தரவுத்தளுமும், அதன் உட்செயல்முறைகளும், சான்றளிக்கும் விதமும், எண்ணை அடையாளத்துடன் அங்கீகரிக்கும் முறையும், தணிக்கை செய்ப்படாத முறையிலேயே தொடர்ந்து இயங்கி கொண்டிருக்கிறது. எனவே, ஆதாரை பயன்படுத்தவாதல் ஒரு பயனாளரை தவறாக அடையாளம் காண நேரிடுவது மட்டுமின்றி, உயிரற்ற - போலி அடையாளங்களை உருவாக்கவும் முடியும்.
 
-3. I trust you do not find it amusing that the government believes that Aadhaar identifies anyone at all, provides proof of the persons authorisation or consent to opening bank accounts or even to do bank transactions [^2]. The Aadhaar database and its processes to identify at enrolment, certify each number, authenticate the data associated with the number as having come from the certifying authority, update the data and restrict and track access of the data have never been audited. Furthermore no authority certifies and takes liability for identifying anyone, any address, resident status or even the existence of the person. I hope you recognise that by using it, the user is destroying the ability to distinguish real customers from ghosts.
-
-4. As bank accounts linked to Aadhaar become Aadhaar enabled they allow AEPS to transfer money into or from such account as soon as they are linked to Aadhaar. Such money transfers do not leave money trail and therefore facilitate money laundering in ways that was not possible with National Electronics Funds Transfer System (NEFT) or Real Time Gross Settlement (RTGS). This means all money transfers through the AEPS to or from such bank account will be un-traceable and therefore, also irreversible. Money transfers to such account can now be hijacked by a “phishing” account that links itself to such Aadhaar number to receive money meant for the victim. Such money transfers may become impossible to track and reverse, as they do not leave any money trail. Crime committed using duplicate accounts opened with anyone’s Aadhaar number will point to the victim, not the fraudster. This will also leave the victims defenseless and deprive them of recourse to justice.
+தற்போது வங்கிகளின் மூலமாக நடைபெறும் National Electronics Funds Transfer System(NEFT) அல்லது Real Time Gross Settlement (RTGS) நிதி பரிவர்த்தணைக்களுக்கான சுவடுகளை பதிவு செய்வதால் பணமோசடிகளை தடுக்கவும், அகற்றவும் முடிகிறது. ஆனால் ஆதாரை மையமாக வைத்து நடைபெறும் Aadhaar Enabled Payment Service (AEPS) பண மற்றும் வணிக பரிவர்த்தணைகளை பதிவு செய்வதில்லை. இதனால் பணமோசடிக்கான வசதிகளை ஆதார் ஏற்படுத்துவது மட்டுமில்லாமல், கட்டாயபடுத்தப்படும்போது பணமோசடிகளுக்கு வழி வகுக்குகிறது. சுவடற்ற பண பரிவர்த்தணையால்  மறுசீரமைக்கவும் பரிசோதனை செய்ய முடியாத காரணத்தாலும், AEPS மூலம் பரிவர்த்தணை நடக்கும் போது, ‘phishing’ கணக்குகள், ஆதாரல் சரிபார்க்கப்பட்ட போலியான கணக்குகளுக்குள் பணத்தை செலுத்தவும் பெற்றுக்கொள்ளவும் முடியும். இதனால் வணிக குற்றவாளிகள் தப்பிப்பது மட்டுமில்லாமல், அடையாளபடுத்தப்பட்ட நிரபராதிகள் பெரும் இன்னலுக்குள்ளாவார்கள். அவ்வாறன நிலை பாதிக்க்ப்பட்டவர்களுக்கு எவ்வித சட்ட உதவியிலிருந்து நீக்கிவிடுவதோடு நீதியும் மறுக்கப்படும்.
 
 Illegal and invalid notifications
 

@@ -119,7 +119,7 @@ export function getStrings(lang) {
         categories: cats
       },
       telcos: {
-        petition: getPetition(lang, 'telcos'),
+        petition: getPetition(lang, 'mobile'),
         targets: addVariables(index(telcos, telco => telco.code))
       },
       uidai: {

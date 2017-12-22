@@ -26,6 +26,7 @@ exclude:
 # https://www.netlify.com/docs/redirects/
 include:
   - _redirects
+  - _headers
 collections:
   petitions:
     output: true
