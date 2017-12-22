@@ -1,4 +1,9 @@
 ---
+cc: >
+  cabinet@nic.in,
+  urjitrpatel@rbi.org.in,
+  governor@rbi.org.in
+subject: Threats to make bank accounts inoperable without Aadhaar
 ---
 ((addressee))
 

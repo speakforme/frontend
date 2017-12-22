@@ -1,23 +1,32 @@
 import Component from 'inferno-component';
 import Logo from './Logo';
 import Campaign from './Campaign';
+import LanguageSelect from './LanguageSelect';
+import { getStrings } from '../strings';
 import './App.css';
 
-import strings from '../strings';
-
-const {
-  campaigns,
-  ui: { title, headline, description, explanation }
-} = strings;
-
 class App extends Component {
+  state = { lang: 'en', strings: getStrings('en') }
+
+  onLanguageChange = (lang) => {
+    this.setState({ lang, strings: getStrings(lang) });
+  }
+
+  getChildContext() {
+    return this.state;
+  }
+
   render() {
+    const {
+      campaigns,
+      ui: { title, headline, description, explanation }
+    } = this.state.strings;
     return (
       <div className="App">
         <header className="App-header">
           <Logo className="App-logo" />
           <div className="App-title">{title}</div>
-          {/* <LanguageSelect /> */}
+          <LanguageSelect value={this.state.lang} onChange={this.onLanguageChange}/>
         </header>
         <section className="App-intro">
           <h1>{headline}</h1>

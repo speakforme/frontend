@@ -1,6 +1,5 @@
 import Component from 'inferno-component';
 import EmailModal from './EmailModal';
-import strings from '../strings';
 import './EmailButton.css';
 
 import {
@@ -8,8 +7,6 @@ import {
   supportsLongUrls,
   getMailUrl
 } from '../lib/email';
-
-const { ui: { view_email, send_email } } = strings;
 
 class EmailButton extends Component {
   state = {};
@@ -32,6 +29,7 @@ class EmailButton extends Component {
   render() {
     const url = supportsMailto && getMailUrl('mailto', this.props, supportsLongUrls);
     const { showModal, copied } = this.state;
+    const { strings: { ui: { view_email, send_email } } } = this.context;
 
     return (
       <div className="EmailButton-group">

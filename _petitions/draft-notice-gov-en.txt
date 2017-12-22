@@ -1,4 +1,6 @@
 ---
+cc: cabinet@nic.in
+subject: Threats to make ((title)) inoperable without Aadhaar
 ---
 ((address))
 

@@ -1,7 +1,6 @@
 import Component from 'inferno-component';
 import './EmailModal.css';
-import { supportsLongUrls, getMailUrl } from '../lib/email';
-import strings from '../strings';
+import { supportsLongUrls, getMailUrl, getRecipients } from '../lib/email';
 
 class EmailModal extends Component {
   state = {}
@@ -15,9 +14,10 @@ class EmailModal extends Component {
 
   render() {
     const {
-      show, copied, email, cc, bcc, subject,
+      show, copied, email, cc, bcc, subject, name,
       body, onClose, setTextArea, setOuter
     } = this.props;
+    const { strings } = this.context;
     const gmail = getMailUrl('gmail', this.props, supportsLongUrls);
     const yahoo = getMailUrl('yahoo', this.props, supportsLongUrls);
     const other = getMailUrl('mailto', this.props, supportsLongUrls);
@@ -36,15 +36,15 @@ class EmailModal extends Component {
           }</p>
           <label className="EmailModal-field">
             <div className="EmailModal-label">To</div>
-            <input readOnly value={email} />
+            <input readOnly value={getRecipients(email, name)} />
           </label>
           <label className="EmailModal-field">
             <div className="EmailModal-label">Cc</div>
-            <input readOnly value={cc} />
+            <input readOnly value={getRecipients(cc, name)} />
           </label>
           <label className="EmailModal-field">
             <div className="EmailModal-label">Bcc</div>
-            <input readOnly value={bcc} />
+            <input readOnly value={getRecipients(bcc, name)} />
           </label>
           <label className="EmailModal-field">
             <div className="EmailModal-label">Subject</div>
