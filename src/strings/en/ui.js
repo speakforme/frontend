@@ -8,7 +8,7 @@ export default {
   send_email: 'Send Email',
   send_gmail: 'Gmail',
   send_yahoo: 'Yahoo',
-  send_other: 'Other'
+  send_other: 'Other',
   // In the email preview, field names
   to: 'To',
   cc: 'Cc',
