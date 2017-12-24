@@ -23,19 +23,29 @@ languages:
   - te
 default_lang: en
 exclude_from_localization:
+  - .bundle
+  - .git
+  - .sass-cache
+  - _data
+  - _includes
+  - _layouts
+  - _locales
+  - _petitions
+  - _sass
+  - _scripts
+  - _site
   - config
   - dist
-  - locales
+  - node_modules
   - public
-  - scripts
   - src
-parallel_localization: false
+  - vendor
+parallel_localization: true
 exclude:
   - _locales
   - _scripts
   - src
   - config
-  - scripts
   - package.json
   - package-lock.json
   - HACKING.md
