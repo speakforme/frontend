@@ -111,64 +111,9 @@ layout: default
             <div class="TargetSelect-group">
               <select class="TargetSelect">
                 <option value="undefined">Select Bank</option>
-                <option value="ALLA">Allahabad Bank</option>
-                <option value="AMEX">American Express</option>
-                <option value="ANDB">Andhra Bank</option>
-                <option value="AUBL">AU Small Finance Bank</option>
-                <option value="UTIB">Axis Bank</option>
-                <option value="BDBL">Bandhan Bank</option>
-                <option value="BARB">Bank of Baroda</option>
-                <option value="BKID">Bank of India</option>
-                <option value="MAHB">Bank of Maharashtra</option>
-                <option value="CNRB">Canara Bank</option>
-                <option value="CLBL">Capital Small Finance Bank</option>
-                <option value="CSBK">Catholic Syrian Bank</option>
-                <option value="CBIN">Central Bank of India</option>
-                <option value="CITI">Citibank</option>
-                <option value="CIUB">City Union Bank</option>
-                <option value="CORP">Corporation Bank</option>
-                <option value="DBSS">DBS Bank</option>
-                <option value="DCBL">DCB Bank</option>
-                <option value="BKDN">Dena Bank</option>
-                <option value="DEUT">Deutsche Bank</option>
-                <option value="DLXB">Dhanlaxmi Bank</option>
-                <option value="ESFB">Equitas Small Finance Bank</option>
-                <option value="ESAF">ESAF Small Finance Bank</option>
-                <option value="FDRL">Federal Bank</option>
-                <option value="FSFB">Fincare Small Finance Bank</option>
-                <option value="HDFC">HDFC Bank</option>
-                <option value="HSBC">HSBC India</option>
-                <option value="ICIC">ICICI Bank</option>
-                <option value="IBKL">IDBI Bank</option>
-                <option value="IDFB">IDFC Bank</option>
-                <option value="IDIB">Indian Bank</option>
-                <option value="IOBA">Indian Overseas Bank</option>
-                <option value="INDB">IndusInd Bank</option>
-                <option value="JAKA">Jammu and Kashmir Bank</option>
-                <option value="--">Janalakshmi Small Finance Bank</option>
-                <option value="KARB">Karnataka Bank</option>
-                <option value="KVBL">Karur Vysya Bank</option>
-                <option value="KKBK">Kotak Mahindra Bank</option>
-                <option value="LAVB">Lakshmi Vilas Bank</option>
-                <option value="">Nainital Bank</option>
-                <option value="ORBC">Oriental Bank of Commerce</option>
-                <option value="PYTM">PayTM Payments Bank</option>
-                <option value="PSIB">Punjab and Sindh Bank</option>
-                <option value="PUNB">Punjab National Bank</option>
-                <option value="RATN">RBL Bank</option>
-                <option value="SIBL">South Indian Bank</option>
-                <option value="SCBL">Standard Chartered Bank</option>
-                <option value="SBIN">State Bank of India</option>
-                <option value="SURY">Suryoday Small Finance Bank</option>
-                <option value="SYNB">Syndicate Bank</option>
-                <option value="TMBL">Tamilnad Mercantile Bank</option>
-                <option value="UCBA">UCO Bank</option>
-                <option value="USFB">Ujjivan Small Finance Bank</option>
-                <option value="UBIN">Union Bank of India</option>
-                <option value="UTBI">United Bank of India</option>
-                <option value="UTKS">Utkarsh Small Finance Bank</option>
-                <option value="VIJB">Vijaya Bank</option>
-                <option value="YESB">YES Bank</option>
+                {% for bank in site.data.banks %}
+                <option value="{{bank.ifsc}}">{{site.data.banknames[bank.ifsc]}}</option>
+                {% endfor %}
               </select>
             </div>
           </div>
@@ -184,16 +129,9 @@ layout: default
             <div class="TargetSelect-group">
               <select class="TargetSelect">
                 <option value="undefined">Select Telco</option>
-                <option value="aircel">Aircel</option>
-                <option value="airtel">Airtel</option>
-                <option value="bsnl">BSNL Mobile</option>
-                <option value="idea">Idea</option>
-                <option value="jio">Jio</option>
-                <option value="mtnl">MTNL</option>
-                <option value="mts">MTS India</option>
-                <option value="tatadocomo">Tata Docomo</option>
-                <option value="telenor">Telenor</option>
-                <option value="vodafone">Vodafone</option>
+                {% for telco in site.data.telcos %}
+                <option value="{{telco.code}}">{{site.data.telconames[telco.code]}}</option>
+                {% endfor %}
               </select>
             </div>
           </div>
@@ -209,13 +147,9 @@ layout: default
             <div class="TargetSelect-group">
               <select class="TargetSelect">
                 <option value="undefined">Select Service Provider</option>
-                <option value="EPFO">Dr. V.P Joy</option>
-                <option value="LPG">Shri K.M.Mahesh</option>
-                <option value="MGNREGS">Smt Aparajita Sarangi</option>
-                <option value="NSAP">Shri Manoranjan Kumar</option>
-                <option value="PDS">Asit Halder</option>
-                <option value="PAN">Shri Sushil Chandra</option>
-                <option value="PMJDY">Shri Arun Jaitley</option>
+                {% for service in site.data.services %}
+                <option value="{{service[0]}}">{{service[1].name}}</option>
+                {% endfor %}
               </select>
             </div>
           </div>
