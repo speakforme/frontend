@@ -6,28 +6,28 @@ layout: default
   <div class="App">
     <header class="App-header">
       {% include logo.svg %}
-      <div class="App-title">Speak For Me</div>
+      <div class="App-title">{{site.data.i18n.title}}</div>
       {% include lang-selector.html %}
     </header>
     <section class="App-intro">
-      <h1>Tired of the relentless Aadhaar drumbeat?</h1>
+      <h1>{{site.data.ui.headline}}?</h1>
       <p></p>
-      <p>These petitions will open in your mail app so you can read and edit them before sending.</p>
+      <p>{{site.data.ui.explanation}}</p>
     </section>
     <section class="App-campaign">
       <div class="Campaign">
-        <h2 class="Camapign-title">Ask your MP to help</h2>
+        <h2 class="Camapign-title">{{site.data.campaigns.mp.title}}</h2>
         <div class="Campaign-form">
           <div>
             <div class="TargetSelect-group">
               <select class="TargetSelect">
-                <option v-model="state" value="undefined">Select State</option>
+                <option v-model="state" value="undefined">{{site.data.campaigns.mp.category_prompt}}</option>
                 {% for state in site.data.states %}
                 <option value="{{ state[0] }}">{{ state[1] }}</option>
                 {% endfor %}
               </select>
               <select class="TargetSelect">
-                <option value="undefined">Select Constituency</option>
+                <option value="undefined">{{site.data.campaigns.mp.target_prompt}}</option>
                 {% for constituency in site.data.constituencies %}
                 <option v-if="state=='substr({{constituency[0]}},0,2)'" value="{{ constituency[0] }}">{{ constituency[1] }}</option>
                 {% endfor %}
@@ -35,7 +35,7 @@ layout: default
             </div>
           </div>
           <div>
-            <div class="EmailButton-group"><a class="EmailButton-view">View Email</a><a target="_blank" class="EmailButton">Send Email</a>
+            <div class="EmailButton-group"><a class="EmailButton-view">{{site.data.ui.view_email}}</a><a target="_blank" class="EmailButton">{{site.data.ui.send_email}}</a>
               <div class="EmailModal-outer ">
                 <div class="EmailModal">
                   <button class="EmailModal-close">×</button>
