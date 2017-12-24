@@ -1,6 +1,5 @@
 EPFO:
   name: Employees Provident Fund Org
-  code: epfo
   department: Minister of State for Labour and Employment
   personName: Dr. V.P Joy
   address: |
@@ -14,7 +13,6 @@ EPFO:
   twitter: labourministry
 LPG:
   name: LPG
-  code: lpg
   department: Ministry of Petroleum and Natural Gas
   personName: Shri K.M.Mahesh
   address: |
@@ -27,7 +25,6 @@ LPG:
   twitter: PetroleumMin
 MGNREGS:
   name: MGNREGS
-  code: mgnregs
   department: Ministry of Rural Department
   personName: Smt Aparajita Sarangi
   address: |
@@ -42,7 +39,6 @@ MGNREGS:
   twitter: false
 NSAP:
   name: National Social Assistance Programme
-  code: nsap
   department: Ministry of Rural Department
   personName: Shri Manoranjan Kumar
   address: |
@@ -57,7 +53,6 @@ NSAP:
   twitter: false
 PDS:
   name: PDS
-  code: pds
   Department: |
     Department of Food and Public Distribution, India
   address: |
@@ -72,7 +67,6 @@ PDS:
   personName: Asit Halder
 PAN:
   name: PAN
-  code: pan
   department: Ministry of Finance (CBDT)
   personName: Shri Sushil Chandra
   address: |
@@ -94,7 +88,6 @@ PAN:
     adhia03
 PMJDY:
   name: PMJDY
-  code: pmjdy
   department: Ministry of Finance
   personName: Shri Arun Jaitley
   address: |

@@ -1,0 +1,545 @@
+AN-1: Andaman and Nicobar Islands
+AP-18: Araku
+AP-19: Srikakulam
+AP-20: Vizianagaram
+AP-21: Visakhapatnam
+AP-22: Anakapalle
+AP-23: Kakinada
+AP-24: Amalapuram
+AP-25: Rajahmundry
+AP-26: Narsapuram
+AP-27: Eluru
+AP-28: Machilipatnam
+AP-29: Vijayawada
+AP-30: Guntur
+AP-31: Narasaraopet
+AP-32: Bapatla
+AP-33: Ongole
+AP-34: Nandyal
+AP-35: Kurnool
+AP-36: Anantapur
+AP-37: Hindupur
+AP-38: Kadapa
+AP-39: Nellore
+AP-40: Tirupati
+AP-41: Rajampet
+AP-42: Chittoor
+AR-1: Arunachal West
+AR-2: Arunachal East
+AS-10: Nawgong
+AS-11: Kaliabor
+AS-12: Jorhat
+AS-13: Dibrugarh
+AS-14: Lakhimpur
+AS-1: Karimganj
+AS-2: Silchar
+AS-3: Autonomous District
+AS-4: Dhubri
+AS-5: Kokrajhar
+AS-6: Barpeta
+AS-7: Gauhati
+AS-8: Mangaldoi
+AS-9: Tezpur
+BI-10: Kishanganj
+BI-11: Katihar
+BI-12: Purnia
+BI-13: Madhepura
+BI-14: Darbhanga
+BI-15: Muzaffarpur
+BI-16: Vaishali
+BI-17: Gopalganj
+BI-18: Siwan
+BI-19: Maharajganj
+BI-1: Valmiki Nagar
+BI-20: Saran
+BI-21: Hajipur
+BI-22: Ujiarpur
+BI-23: Samastipur
+BI-24: Begusarai
+BI-25: Khagaria
+BI-26: Bhagalpur
+BI-27: Banka
+BI-28: Munger
+BI-29: Nalanda
+BI-2: Paschim Champaran
+BI-30: Patna Sahib
+BI-31: Pataliputra
+BI-32: Arrah
+BI-33: Buxar
+BI-34: Sasaram
+BI-35: Karakat
+BI-36: Jahanabad
+BI-37: Aurangabad
+BI-38: Gaya
+BI-39: Nawada
+BI-3: Purvi Champaran
+BI-40: Jamui
+BI-4: Sheohar
+BI-5: Sitamarhi
+BI-6: Madhubani
+BI-7: Jhanjharpur
+BI-8: Supaul
+BI-9: Araria
+CH-: Chandigarh
+CT-10: Bastar
+CT-11: Kanker
+CT-1: Surguja
+CT-2: Raigarh
+CT-3: Janjgir-Champa
+CT-4: Korba
+CT-5: Bilaspur
+CT-6: Rajnandgaon
+CT-7: Durg
+CT-8: Raipur
+CT-9: Mahasamund
+DD-1: Daman and Diu
+DL-1: Chandni Chowk
+DL-2: North East Delhi
+DL-3: East Delhi
+DL-4: New Delhi
+DL-5: North West Delhi
+DL-6: West Delhi
+DL-7: South Delhi
+DN-1: Dadra and Nagar Haveli
+GJ-10: Rajkot
+GJ-11: Porbandar
+GJ-12: Jamnagar
+GJ-13: Junagadh
+GJ-14: Amreli
+GJ-15: Bhavnagar
+GJ-16: Anand
+GJ-17: Kheda
+GJ-18: Panchmahal
+GJ-19: Dahod
+GJ-1: Kachchh
+GJ-20: Vadodara
+GJ-21: Chhota Udaipur
+GJ-22: Bharuch
+GJ-23: Bardoli
+GJ-24: Surat
+GJ-25: Navsari
+GJ-26: Valsad
+GJ-2: Banaskantha
+GJ-3: Patan
+GJ-4: Mehsana
+GJ-5: Sabarkantha
+GJ-6: Gandhinagar
+GJ-7: Ahmedabad East
+GJ-8: Ahmedabad West
+GJ-9: Surendranagar
+GO-1: North Goa
+GO-2: South Goa
+HA-10: Faridabad
+HA-1: Ambala
+HA-2: Kurukshetra
+HA-3: Sirsa
+HA-4: Hisar
+HA-5: Karnal
+HA-6: Sonipat
+HA-7: Rohtak
+HA-8: Bhiwani-Mahendragarh
+HA-9: Gurgaon
+HP-1: Kangra
+HP-2: Mandi
+HP-3: Hamirpur
+HP-4: Shimla
+JH-10: Singhbhum
+JH-11: Khunti
+JH-12: Lohardaga
+JH-13: Palamu
+JH-14: Hazaribagh
+JH-1: Rajmahal
+JH-2: Dumka
+JH-3: Godda
+JH-4: Chatra
+JH-5: Kodarma
+JH-6: Giridih
+JH-7: Dhanbad
+JH-8: Ranchi
+JH-9: Jamshedpur
+JK-1: Baramulla
+JK-2: Srinagar
+JK-3: Anantnag
+JK-4: Ladakh
+JK-5: Udhampur
+JK-6: Jammu
+KA-10: Haveri
+KA-11: Dharwad
+KA-12: Uttara Kannada
+KA-13: Davanagere
+KA-14: Shimoga
+KA-15: Udupi Chikmagalur
+KA-16: Hassan
+KA-17: Dakshina Kannada
+KA-18: Chitradurga
+KA-19: Tumkur
+KA-1: Chikkodi
+KA-20: Mandya
+KA-21: Mysore
+KA-22: Chamrajanagar
+KA-23: Bangalore Rural
+KA-24: Bangalore North
+KA-25: Bangalore Central
+KA-26: Bangalore South
+KA-27: Chikkballapur
+KA-28: Kolar
+KA-2: Belgaum
+KA-3: Bagalkot
+KA-4: Bijapur
+KA-5: Gulbarga
+KA-6: Raichur
+KA-7: Bidar
+KA-8: Koppal
+KA-9: Bellary
+KE-10: Thrissur
+KE-11: Chalakudy
+KE-12: Ernakulam
+KE-13: Idukki
+KE-14: Kottayam
+KE-15: Alappuzha
+KE-16: Mavelikkara
+KE-17: Pathanamthitta
+KE-18: Kollam
+KE-19: Attingal
+KE-1: Kasaragod
+KE-20: Thiruvananthapuram
+KE-2: Kannur
+KE-3: Vadakara
+KE-4: Wayanad
+KE-5: Kozhikode
+KE-6: Malappuram
+KE-7: Ponnani
+KE-8: Palakkad
+KE-9: Alathur
+KE-AI: Nominated Anglo-Indian
+LD-1: Lakshadweep
+MA-1: Inner Manipur
+MA-2: Outer Manipur
+ME-1: Shillong
+ME-2: Tura
+MH-10: Nagpur
+MH-11: Bhandara-Gondiya
+MH-12: Gadchiroli-Chimur
+MH-13: Chandrapur
+MH-14: Yavatmal-Washim
+MH-15: Hingoli
+MH-16: Nanded
+MH-17: Parbhani
+MH-18: Jalna
+MH-19: Aurangabad
+MH-1: Nandurbar
+MH-20: Dindori
+MH-21: Nashik
+MH-22: Palghar
+MH-23: Bhiwandi
+MH-24: Kalyan
+MH-25: Thane
+MH-26: Mumbai-North
+MH-27: Mumbai-North-West
+MH-28: Mumbai-North-East
+MH-29: Mumbai-North-Central
+MH-2: Dhule
+MH-30: Mumbai South-Central
+MH-31: Mumbai-South
+MH-32: Raigad
+MH-33: Maval
+MH-34: Pune
+MH-35: Baramati
+MH-36: Shirur
+MH-37: Ahmednagar
+MH-38: Shirdi
+MH-39: Beed
+MH-3: Jalgaon
+MH-40: Osmanabad
+MH-41: Latur
+MH-42: Solapur
+MH-43: Madha
+MH-44: Sangli
+MH-45: Satara
+MH-46: Ratnagiri-Sindhudurg
+MH-47: Kolhapur
+MH-48: Hatkanangle
+MH-4: Raver
+MH-5: Buldhana
+MH-6: Akola
+MH-7: Amravati
+MH-8: Wardha
+MH-9: Ramtek
+MI-1: Mizoram
+MP-10: Rewa
+MP-11: Sidhi
+MP-12: Shahdol
+MP-13: Jabalpur
+MP-14: Mandla
+MP-15: Balaghat
+MP-16: Chhindwara
+MP-17: Hoshangabad
+MP-18: Vidisha
+MP-19: Bhopal
+MP-1: Morena
+MP-20: Rajgarh
+MP-21: Dewas
+MP-22: Ujjain
+MP-23: Mandsour
+MP-24: Ratlam
+MP-25: Dhar
+MP-26: Indore
+MP-27: Khargone
+MP-28: Khandwa
+MP-29: Betul
+MP-2: Bhind
+MP-3: Gwalior
+MP-4: Guna
+MP-5: Sagar
+MP-6: Tikamgarh
+MP-7: Damoh
+MP-8: Khajuraho
+MP-9: Satna
+NA-1: Nagaland
+OR-10: Bolangir
+OR-11: Kalahandi
+OR-12: Nabarangpur
+OR-13: Kandhamal
+OR-14: Cuttack
+OR-15: Kendrapara
+OR-16: Jagatsinghpur
+OR-17: Puri
+OR-18: Bhubaneswar
+OR-19: Aska
+OR-1: Bargarh
+OR-20: Berhampur
+OR-21: Koraput
+OR-2: Sundargarh
+OR-3: Sambalpur
+OR-4: Keonjhar
+OR-5: Mayurbhanj
+OR-6: Balasore
+OR-7: Bhadrak
+OR-8: Jajpur
+OR-9: Dhenkanal
+PB-10: Ferozpur
+PB-11: Bathinda
+PB-12: Sangrur
+PB-13: Patiala
+PB-1: Gurdaspur
+PB-2: Amritsar
+PB-3: Khadoor Sahib
+PB-4: Jalandhar
+PB-5: Hoshiarpur
+PB-6: Anandpur Sahib
+PB-7: Ludhiana
+PB-8: Fatehgarh Sahib
+PB-9: Faridkot
+PO-1: Puducherry
+RJ-10: Karauli-Dholpur
+RJ-11: Dausa
+RJ-12: Tonk-Sawai Madhopur
+RJ-13: Ajmer
+RJ-14: Nagaur
+RJ-15: Pali
+RJ-16: Jodhpur
+RJ-17: Barmer
+RJ-18: Jalore
+RJ-19: Udaipur
+RJ-1: Ganganagar
+RJ-20: Banswara
+RJ-21: Chittorgarh
+RJ-22: Rajsamand
+RJ-23: Bhilwara
+RJ-24: Kota
+RJ-25: Jhalawar-Baran
+RJ-2: Bikaner
+RJ-3: Churu
+RJ-4: Jhunjhunu
+RJ-5: Sikar
+RJ-6: Jaipur Rural
+RJ-7: Jaipur
+RJ-8: Alwar
+RJ-9: Bharatpur
+SK-1: Sikkim
+TG-10: Chevella
+TG-11: Mahabubnagar
+TG-12: Nagarkurnool
+TG-13: Nalgonda
+TG-14: Bhongir
+TG-15: Warangal
+TG-16: Mahabubabad
+TG-17: Khammam
+TG-1: Adilabad
+TG-2: Peddapalle
+TG-3: Karimnagar
+TG-4: Nizamabad
+TG-5: Zahirabad
+TG-6: Medak
+TG-7: Malkajgiri
+TG-8: Secunderabad
+TG-9: Hyderabad
+TN-10: Dharmapuri
+TN-11: Tiruvannamalai
+TN-12: Arani
+TN-13: Viluppuram
+TN-14: Kallakurichi
+TN-15: Salem
+TN-16: Namakkal
+TN-17: Erode
+TN-18: Tiruppur
+TN-19: Nilgiris
+TN-1: Tiruvallur
+TN-20: Coimbatore
+TN-21: Pollachi
+TN-22: Dindigul
+TN-23: Karur
+TN-24: Tiruchirappalli
+TN-25: Perambalur
+TN-26: Cuddalore
+TN-27: Chidambaram
+TN-28: Mayiladuthurai
+TN-29: Nagapattinam
+TN-2: Chennai North
+TN-30: Thanjavur
+TN-31: Sivaganga
+TN-32: Madurai
+TN-33: Theni
+TN-34: Virudhunagar
+TN-35: Ramanathapuram
+TN-36: Thoothukkudi
+TN-37: Tenkasi
+TN-38: Tirunelveli
+TN-39: Kanniyakumari
+TN-3: Chennai South
+TN-4: Chennai Central
+TN-5: Sriperumbudur
+TN-6: Kancheepuram
+TN-7: Arakkonam
+TN-8: Vellore
+TN-9: Krishnagiri
+TR-1: Tripura West
+TR-2: Tripura East
+UP-10: Meerut
+UP-11: Baghpat
+UP-12: Ghaziabad
+UP-13: Gautam Buddha Nagar
+UP-14: Bulandshahr
+UP-15: Aligarh
+UP-16: Hathras
+UP-17: Mathura
+UP-18: Agra
+UP-19: Fatehpur Sikri
+UP-1: Saharanpur
+UP-20: Firozabad
+UP-21: Mainpuri
+UP-22: Etah
+UP-23: Badaun
+UP-24: Aonla
+UP-25: Bareilly
+UP-26: Pilibhit
+UP-27: Shahjahanpur
+UP-28: Kheri
+UP-29: Dhaurahra
+UP-2: Kairana
+UP-30: Sitapur
+UP-31: Hardoi
+UP-32: Misrikh
+UP-33: Unnao
+UP-34: Mohanlalganj
+UP-35: Lucknow
+UP-36: Rae Bareli
+UP-37: Amethi
+UP-38: Sultanpur
+UP-39: Pratapgarh
+UP-3: Muzaffarnagar
+UP-40: Farrukhabad
+UP-41: Etawah
+UP-42: Kannauj
+UP-43: Kanpur
+UP-44: Akbarpur
+UP-45: Jalaun
+UP-46: Jhansi
+UP-47: Hamirpur
+UP-48: Banda
+UP-49: Fatehpur
+UP-4: Bijnor
+UP-50: Kaushambi
+UP-51: Phulpur
+UP-52: Allahabad
+UP-53: Barabanki
+UP-54: Faizabad
+UP-55: Ambedkar Nagar
+UP-56: Bahraich
+UP-57: Kaiserganj
+UP-58: Shrawasti
+UP-59: Gonda
+UP-5: Nagina
+UP-60: Domariyaganj
+UP-61: Basti
+UP-62: Sant Kabir Nagar
+UP-63: Maharajganj
+UP-64: Gorakhpur
+UP-65: Kushi Nagar
+UP-66: Deoria
+UP-67: Bansgaon
+UP-68: Lalganj
+UP-69: Azamgarh
+UP-6: Moradabad
+UP-70: Ghosi
+UP-71: Salempur
+UP-72: Ballia
+UP-73: Jaunpur
+UP-74: Machhlishahr
+UP-75: Ghazipur
+UP-76: Chandauli
+UP-77: Varanasi
+UP-78: Bhadohi
+UP-79: Mirzapur
+UP-7: Rampur
+UP-80: Robertsganj
+UP-8: Sambhal
+UP-9: Amroha
+UT-1: Tehri Garhwal
+UT-2: Garhwal
+UT-3: Almora
+UT-4: Nainital-Udhamsingh Nagar
+UT-5: Hardwar
+WB-10: Baharampur
+WB-11: Murshidabad
+WB-12: Krishnanagar
+WB-13: Ranaghat
+WB-14: Bangaon
+WB-15: Barrackpur
+WB-16: Dum Dum
+WB-17: Barasat
+WB-18: Basirhat
+WB-19: Jaynagar
+WB-1: Coochbehar
+WB-20: Mathurapur
+WB-21: Diamond Harbour
+WB-22: Jadavpur
+WB-23: Kolkata Dakshin
+WB-24: Kolkata Uttar
+WB-25: Howrah
+WB-26: Uluberia
+WB-27: Serampore
+WB-28: Hooghly
+WB-29: Arambagh
+WB-2: Alipurduars
+WB-30: Tamluk
+WB-31: Kanthi
+WB-32: Ghatal
+WB-33: Jhargram
+WB-34: Medinipur
+WB-35: Purulia
+WB-36: Bankura
+WB-37: Bishnupur
+WB-38: Bardhaman Purba
+WB-39: Bardhaman-Durgapur
+WB-3: Jalpaiguri
+WB-40: Asansol
+WB-41: Bolpur
+WB-42: Birbhum
+WB-4: Darjeeling
+WB-5: Raiganj
+WB-6: Balurghat
+WB-7: Maldaha Uttar
+WB-8: Maldaha Dakshin
+WB-9: Jangipur
+WB-AI: Nominated Anglo-Indian
