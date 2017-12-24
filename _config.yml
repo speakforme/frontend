@@ -10,6 +10,26 @@ thumbnail: /public/thumbnail.png
 # Build settings
 markdown: kramdown
 google_analytics: UA-82421266-2
+languages:
+  - en
+  - ta
+  - hi
+  - gu
+  - bn
+  - kn
+  - ml
+  - mr
+  - pb
+  - te
+default_lang: en
+exclude_from_localization:
+  - config
+  - dist
+  - locales
+  - public
+  - scripts
+  - src
+parallel_localization: false
 exclude:
   - _locales
   - _scripts
@@ -23,6 +43,7 @@ exclude:
   - Gemfile.lock
   - Gemfile
   - CNAME
+  - vendor
 # https://www.netlify.com/docs/redirects/
 include:
   - _redirects
