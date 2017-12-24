@@ -1,0 +1,34 @@
+language_name: हिंदी
+title: मेरे लिए बोलो
+service: संस्था
+not_in_list: सूची में नहीं
+bank: बैंक
+email: ईमेल
+send_email: ईमेल भेजें
+response: संदेश
+contempt_notice_msg: ईमेल भेजें
+tweet: ट्वीट
+state: राज्य
+constituency: चुनाव क्षेत्र
+netafilter:
+  helptext: चुनाव क्षेत्र नहीं पता?
+  # We mark this as the link.
+  click_here: नेता फ़िल्टर पर पता करे
+copied_msg: >
+  हमने आपके ब्राउज़र पर ईमेल की नक़ल की है,
+  मेल क्लाइंट खुलते ही पेस्ट करे
+copy_help_msg: >
+   जवाब कॉपी नहीं हुआ।  कृपया मैसेज कॉपी करे
+petition:
+  bank: "अपने बैंक को याचिका दें:"
+  service: "अपने सेवा प्रदाता को याचिका दें :"
+  gov: "अपने सेवा प्रदाता को याचिका दें :"
+  mp: "अपने सांसद को एक पत्र भेजें :"
+  mobile: "अपने मोबाइल ऑपरेटर को याचिका दें:"
+mp: सांसद
+headertitle:
+  MP: सांसद
+  GOV: सेवा प्रदाता
+  # Sounds better than मोबाइल संचालक
+  TELCO: मोबाइल ऑपरेटर
+  BANK: बैंक

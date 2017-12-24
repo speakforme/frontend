@@ -1,0 +1,18 @@
+bn:
+  language_name: বাংলা
+  title: Speak for Me (আমার হয়ে বোলো )
+  service: সেবা
+  not_in_list: তালিকাতে না
+  bank: ব্যাংক
+  email: ই-মেইল
+  send_email: ইমেইল পাঠান
+  response: আবেদন
+  contempt_notice_msg: ইমেল প্রাপক
+  tweet: টুইট
+  state: রাজ্য
+  constituency: নির্বাচনক্ষেত্র
+  petition:
+    bank: "আপনার ব্যাঙ্ক কে লিখুন"
+    service: "কেন্দ্রীয় পরিষেবা কে লিখুন"
+    gov: "কেন্দ্রীয় পরিষেবা কে লিখুন"
+    mp: "আপনার নির্বাচনক্ষেত্রের সংসদ সদস্য কে লিখুন"

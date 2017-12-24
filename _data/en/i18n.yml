@@ -1,0 +1,34 @@
+language_name: English
+title: Speak For Me
+headertitle:
+  MP: MP
+  GOV: Service Provider
+  TELCO: Mobile Operator
+  BANK: Bank
+mp: Member of Parliament
+netafilter:
+  helptext: Don't know your constituency?
+  # We mark this as the link.
+  click_here: Check Netafilter
+service: Service
+not_in_list: Not on the list
+bank: Bank
+email: Email
+send_email: Send Email
+response: Message
+contempt_notice_msg: Send email to
+tweet: Share
+state: State
+constituency: Constituency
+# We show this if automatic copy succeeds
+copied_msg: The message is now copied, paste it in your mail client
+# And this if it fails
+copy_help_msg: >
+  We couldn't copy the response,
+  Please copy the response manually
+petition:
+  bank: "Petition your Bank:"
+  service: "Petition your service provider:"
+  gov: "Petition your service provider:"
+  mp: "Send a letter to your MP:"
+  mobile: "Petition your mobile operator:"

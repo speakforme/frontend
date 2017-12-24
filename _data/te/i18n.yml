@@ -1,0 +1,29 @@
+language_name: తెలుగు
+title: నా కోసం మాట్లాడండి
+headertitle:
+  MP: పార్లమెంటు సభ్యుడు
+  GOV: సేవా ప్రదాత
+  TELCO: మొబైల్ ఆపరేటర్
+  BANK: బ్యాంక్
+  netafilter: netafilter
+  helptext: మీ నియోజకవర్గం తెలియదా?
+  # We mark this as the link.
+  click_here: Netafilter ను శోధన చేయండి
+service: సేవ
+not_in_list: జాబితాలో లేదు
+bank: బ్యాంకు
+email: ఇ-మెయిల్
+send_email: ఇ-మెయిల్ పంపించండి
+response: సందేశం
+contempt_notice_msg: ఇ-మెయిల్ పంపించండి
+tweet: ట్వీట్
+state: రాష్ట్రం
+constituency: నియోజకవర్గం
+copied_msg: మేము బ్రౌజర్లో మీ సందేశాన్ని కాపీ చేసాము. ఇ-మెయిల్ క్లయింట్లో దాన్ని అతికించు
+copy_help_msg: >
+  మేము మీ ప్రతిస్పందనను నకలు చేయలేకపోయాము,
+  దయచేసి మీ స్వతహాగా ప్రతిస్పందనను నకలు చేయండి
+petition:
+  bank: "మీ బ్యాంకు పిటిషన్:"
+  service: "మీ సేవాకర్త పిటిషన్:"
+  mp: "మీ పార్లమెంటు సభ్యుడుకి ఒక లేఖ పంపండి:"
