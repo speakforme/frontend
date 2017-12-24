@@ -1,8 +1,7 @@
 ---
-layout: home
-title: Speak for Me
+lang: en
+title: campaign
+layout: single
+permalink: /
 ---
-
-* [MP/CM](/mp/)
-* [service provider](/service/)
-* [Send a response to the Shrikrishna Committee on Data Protection](/consultation/)
+HELLO WORLD

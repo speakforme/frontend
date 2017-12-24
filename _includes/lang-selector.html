@@ -1,0 +1,7 @@
+<select class="LanguageSelect">
+{% for lang in site.languages %}
+  {% capture selected %}{% if site.active_lang == lang %}selected{%endif%}{%endcapture%}
+  <option {{selected}} value="{{lang}}">{{ site.data[lang].i18n.language_name }}</option>
+{% endfor %}
+</select>
+{{site.active_lang}}

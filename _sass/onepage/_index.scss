@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body, input, button, select, option, textarea {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn-gmail { background-color: #ea4335; }
+.btn-yahoo { background-color: #410093; }
+.btn-twitter { background-color: #1da1f2; }
+.btn-facebook { background-color: #3b5998; }
+.btn-whatsapp { background-color: #075e54; }
+.btn-default { background-color: #666666; }
+
+#modal { position: absolute; top: 0; left: 0; width: 0; height: 0; }

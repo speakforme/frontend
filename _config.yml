@@ -23,6 +23,7 @@ languages:
   - te
 default_lang: en
 exclude_from_localization:
+  - pages
   - .bundle
   - .git
   - .sass-cache
@@ -40,6 +41,10 @@ exclude_from_localization:
   - public
   - src
   - vendor
+  - _headers
+  - _redirects
+  - favicon.ico
+  - humans.txt
 parallel_localization: true
 exclude:
   - _locales
@@ -58,6 +63,3 @@ exclude:
 include:
   - _redirects
   - _headers
-collections:
-  petitions:
-    output: true

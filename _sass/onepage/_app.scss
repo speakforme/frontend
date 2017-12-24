@@ -1,0 +1,65 @@
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.App > * {
+  position: relative;
+}
+
+.App > *::before {
+  content: ' ';
+  position: absolute;
+  background: inherit;
+  top: 0;
+  bottom: 0;
+  left: -999%;
+  right: 100%;
+}
+
+.App > *::after {
+  content: ' ';
+  position: absolute;
+  background: inherit;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: -999%;
+}
+
+.App-header {
+  background-color: #f45;
+  color: #fff;
+  height: 48px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.App-logo {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+}
+
+.App-logo path {
+  fill: #fff;
+}
+
+.App-title {
+  flex: 1 1 0;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.App-intro {
+  padding: 64px 0;
+}
+
+.App-campaign:nth-of-type(2n) {
+  background-color: #eee;
+}

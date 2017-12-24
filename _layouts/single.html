@@ -1,310 +1,266 @@
-<body>
-  <div id="app">
-    <div class="App">
-      <header class="App-header">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" preserveAspectRatio="xMidYMid meet" class="App-logo">
-          <path d="M 19.505314,2 C 10.229108,12.14855 9.9969313,27.58969 18.807872,38 l 2.355285,-2.12298 c -1.730252,-2.11323 -3.020804,-4.52435 -3.892725,-7.08234 1.278749,-0.55733 2.602298,-1.05467 4.009154,-1.467 -0.523422,-1.19222 -0.930979,-2.38458 -1.192694,-3.6059 -1.311858,0.38164 -2.562369,0.8455 -3.772892,1.3676 -0.581966,-3.27426 -0.528396,-6.66691 0.13577,-9.90787 1.113356,0.46522 2.262304,0.8754 3.433827,1.24154 0.232645,-1.22131 0.581464,-2.44275 1.046727,-3.60593 -1.188766,-0.36399 -2.352661,-0.79194 -3.450296,-1.2773 0.995806,-2.71406 2.458919,-5.22968 4.381166,-7.35894 z m -9.45068,4.91441 -1.7152097,3.46057 c 1.250396,1.01774 2.6171147,1.97708 4.0710657,2.82042 0.319844,-1.25042 0.72686,-2.47163 1.192123,-3.66384 C 12.323136,8.74639 11.130556,7.84495 10.054634,6.91441 Z m 15.441409,0.43622 c -6.775407,6.77542 -6.775407,17.79635 0,24.57173 l 2.384256,-2.03548 c -1.015948,-1.016 -1.852398,-2.22072 -2.492162,-3.54345 2.015171,-0.3364 4.11965,-0.52762 6.27243,-0.52762 v -3.78026 c -2.561944,0 -5.072237,0.22792 -7.46456,0.67809 -0.323207,-1.70085 -0.358776,-3.48233 -0.06985,-5.24442 2.407412,0.44903 4.932976,0.69857 7.534419,0.69857 v -3.78025 c -2.218065,0 -4.36351,-0.19391 -6.437709,-0.55548 0.636286,-1.41193 1.51259,-2.75957 2.657441,-3.98073 z M 12.17763,27.18227 c -1.366718,0.81424 -2.6459647,1.71601 -3.8382057,2.67566 l 1.7152097,3.45992 c 1.017766,-0.90147 2.122883,-1.71567 3.315123,-2.4717 -0.494344,-1.22136 -0.872261,-2.44256 -1.192127,-3.66388 z"></path>
-        </svg>
-        <div class="App-title">Speak For Me</div>
-        <select class="LanguageSelect">
-          <option value="en">English</option>
-          <option value="ta">தமிழ்</option>
-          <option value="hi">हिंदी</option>
-          <option value="gu">ગુજરાતી</option>
-          <option value="bn">বাংলা</option>
-          <option value="kn">ಕನ್ನಡ</option>
-          <option value="ml">മലയാളം</option>
-          <option value="mr">मराठी</option>
-          <option value="pb">ਪੰਜਾਬੀ</option>
-          <option value="te">తెలుగు</option>
-        </select>
-      </header>
-      <section class="App-intro">
-        <h1>Tired of the relentless Aadhaar drumbeat?</h1>
-        <p></p>
-        <p>These petitions will open in your mail app so you can read and edit them before sending.</p>
-      </section>
-      <section class="App-campaign">
-        <div class="Campaign">
-          <h2 class="Camapign-title">Ask your MP to help</h2>
-          <div class="Campaign-form">
-            <div>
-              <div class="TargetSelect-group">
-                <select class="TargetSelect">
-                  <option value="undefined">Select State</option>
-                  <option value="AN">Andaman and Nicobar Islands</option>
-                  <option value="AP">Andhra Pradesh</option>
-                  <option value="AR">Arunachal Pradesh</option>
-                  <option value="AS">Assam</option>
-                  <option value="BI">Bihar</option>
-                  <option value="CH">Chandigarh</option>
-                  <option value="CT">Chhattisgarh</option>
-                  <option value="DN">Dadra and Nagar Haveli</option>
-                  <option value="DD">Daman and Diu</option>
-                  <option value="DL">Delhi</option>
-                  <option value="GO">Goa</option>
-                  <option value="GJ">Gujarat</option>
-                  <option value="HA">Haryana</option>
-                  <option value="HP">Himachal Pradesh</option>
-                  <option value="JK">Jammu and Kashmir</option>
-                  <option value="JH">Jharkhand</option>
-                  <option value="KA">Karnataka</option>
-                  <option value="KE">Kerala</option>
-                  <option value="LD">Lakshadweep</option>
-                  <option value="MP">Madhya Pradesh</option>
-                  <option value="MH">Maharashtra</option>
-                  <option value="MA">Manipur</option>
-                  <option value="ME">Meghalaya</option>
-                  <option value="MI">Mizoram</option>
-                  <option value="NA">Nagaland</option>
-                  <option value="OR">Odisha</option>
-                  <option value="PO">Puducherry</option>
-                  <option value="PB">Punjab</option>
-                  <option value="RJ">Rajasthan</option>
-                  <option value="SK">Sikkim</option>
-                  <option value="TG">Telangana</option>
-                  <option value="TN">Tamil Nadu</option>
-                  <option value="TR">Tripura</option>
-                  <option value="UP">Uttar Pradesh</option>
-                  <option value="UT">Uttarakhand</option>
-                  <option value="WB">West Bengal</option>
-                </select>
-                <select class="TargetSelect">
-                  <option value="undefined">Select Constituency</option>
-                  <option value="AN-1">Andaman and Nicobar Islands (Shri Bishnu Pada Ray)</option>
-                </select>
-              </div>
+---
+layout: default
+---
+<link rel="stylesheet" type="text/css" href="/public/single.css">
+<div id="app">
+  <div class="App">
+    <header class="App-header">
+      {% include logo.svg %}
+      <div class="App-title">Speak For Me</div>
+      {% include lang-selector.html %}
+    </header>
+    <section class="App-intro">
+      <h1>Tired of the relentless Aadhaar drumbeat?</h1>
+      <p></p>
+      <p>These petitions will open in your mail app so you can read and edit them before sending.</p>
+    </section>
+    <section class="App-campaign">
+      <div class="Campaign">
+        <h2 class="Camapign-title">Ask your MP to help</h2>
+        <div class="Campaign-form">
+          <div>
+            <div class="TargetSelect-group">
+              <select class="TargetSelect">
+                <option v-model="state" value="undefined">Select State</option>
+                {% for state in site.data.states %}
+                <option value="{{ state[0] }}">{{ state[1] }}</option>
+                {% endfor %}
+              </select>
+              <select class="TargetSelect">
+                <option value="undefined">Select Constituency</option>
+                {% for constituency in site.data.constituencies %}
+                <option v-if="state=='substr({{constituency[0]}},0,2)'" value="{{ constituency[0] }}">{{ constituency[1] }}</option>
+                {% endfor %}
+              </select>
             </div>
-            <div>
-              <div class="EmailButton-group"><a class="EmailButton-view">View Email</a><a target="_blank" class="EmailButton">Send Email</a>
-                <div class="EmailModal-outer ">
-                  <div class="EmailModal">
-                    <button class="EmailModal-close">×</button>
-                    <p>Copy the petition below and choose your email app to paste in. The address will be filled automatically.</p>
-                    <label class="EmailModal-field">
-                      <div class="EmailModal-label">To</div>
-                      <input readonly="" value="Shri Bishnu Pada Ray<andamanmp@gmail.com>">
-                    </label>
-                    <label class="EmailModal-field">
-                      <div class="EmailModal-label">Cc</div>
-                      <input readonly="">
-                    </label>
-                    <label class="EmailModal-field">
-                      <div class="EmailModal-label">Bcc</div>
-                      <input readonly="">
-                    </label>
-                    <label class="EmailModal-field">
-                      <div class="EmailModal-label">Subject</div>
-                      <input readonly="">
-                    </label>
-                    <textarea readonly="" class="EmailModal-body">
-                      I am getting constant messages from my bank and my phone company to link my Aadhaar number. However there are daily reports about the shoddy implementation of Aadhaar and how it is putting my personal information in danger. Even with a cursory google search, enough reports about the pitfalls of Aadhaar are available. From starvation deaths[^1] to exclusion[^2] to enabling fraud[^3] to mass surveillance[^4], Aadhaar is becoming the basis for a lot of widespread suffering. There have been data leaks by 210 government entities[^5] putting privacy of citizens like me at risk and making them vulnerable to identity theft[^6]. As my representative, I request you to raise these issues regarding Aadhaar in Parliament. I ask you to demand an answer from the Government of the day as to why I am being forced to register for a flawed system. I demand that Aadhaar should be made non-mandatory, as the Supreme Court has already ordered in 2015, and that there should be an opt-out clause allowing those who don’t want to be a part of the system to get out. Please go to this link for a draft Rule 193 Notice[^7] with an explanatory statement asking for a Short Duration discussion on citizen concerns regarding Aadhaar. You can download any of the notices and file them according to your convenience. Thank you. Sincerely, [^1]: http://www.livemint.com/Opinion/FNWYVUxeXUw8rHbdirTe4H/Hunger-Starvation-and-Aadhaar.html [^2]: http://indianexpress.com/article/opinion/columns/a-welfare-test-for-aadhaar-upa-nda-aadhaar-card-4921582/ [^3]: https://scroll.in/article/852689/sophisticated-aadhaar-related-bank-fraud-has-left-police-in-delhi-and-noida-baffled [^4]: http://www.wired.co.uk/article/india-aadhaar-biometrics-privacy [^5]: https://tech.economictimes.indiatimes.com/news/corporate/210-govt-websites-made-public-aadhaar-details-uidai/61719345 [^6]: https://scroll.in/article/833230/explainer-aadhaar-is-vulnerable-to-identity-theft-because-of-its-design-and-the-way-it-is-used [^7]: https://www.dropbox.com/sh/xfhxq3x9iwl77zx/AABdFxh6y0YMrLOs5Jh6_i68a?dl=0
-                    </textarea>
-                    <div class="EmailButton-group"><a href="https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;tf=1&amp;source=mailto&amp;to=Shri%20Bishnu%20Pada%20Ray%3Candamanmp%40gmail.com%3E" target="_blank" class="EmailButton btn-gmail">Gmail</a><a href="http://compose.mail.yahoo.com/?To=andamanmp%40gmail.com" target="_blank" class="EmailButton btn-yahoo">Yahoo!</a><a href="mailto:Shri%20Bishnu%20Pada%20Ray%3Candamanmp%40gmail.com%3E?" target="_blank" class="EmailButton btn-default">Other</a></div>
-                  </div>
+          </div>
+          <div>
+            <div class="EmailButton-group"><a class="EmailButton-view">View Email</a><a target="_blank" class="EmailButton">Send Email</a>
+              <div class="EmailModal-outer ">
+                <div class="EmailModal">
+                  <button class="EmailModal-close">×</button>
+                  <p>Copy the petition below and choose your email app to paste in. The address will be filled automatically.</p>
+                  <label class="EmailModal-field">
+                    <div class="EmailModal-label">To</div>
+                    <input readonly="" value="Shri Bishnu Pada Ray<andamanmp@gmail.com>">
+                  </label>
+                  <label class="EmailModal-field">
+                    <div class="EmailModal-label">Cc</div>
+                    <input readonly="">
+                  </label>
+                  <label class="EmailModal-field">
+                    <div class="EmailModal-label">Bcc</div>
+                    <input readonly="">
+                  </label>
+                  <label class="EmailModal-field">
+                    <div class="EmailModal-label">Subject</div>
+                    <input readonly="">
+                  </label>
+                  <textarea readonly="" class="EmailModal-body">
+                    I am getting constant messages from my bank and my phone company to link my Aadhaar number. However there are daily reports about the shoddy implementation of Aadhaar and how it is putting my personal information in danger. Even with a cursory google search, enough reports about the pitfalls of Aadhaar are available. From starvation deaths[^1] to exclusion[^2] to enabling fraud[^3] to mass surveillance[^4], Aadhaar is becoming the basis for a lot of widespread suffering. There have been data leaks by 210 government entities[^5] putting privacy of citizens like me at risk and making them vulnerable to identity theft[^6]. As my representative, I request you to raise these issues regarding Aadhaar in Parliament. I ask you to demand an answer from the Government of the day as to why I am being forced to register for a flawed system. I demand that Aadhaar should be made non-mandatory, as the Supreme Court has already ordered in 2015, and that there should be an opt-out clause allowing those who don’t want to be a part of the system to get out. Please go to this link for a draft Rule 193 Notice[^7] with an explanatory statement asking for a Short Duration discussion on citizen concerns regarding Aadhaar. You can download any of the notices and file them according to your convenience. Thank you. Sincerely, [^1]: http://www.livemint.com/Opinion/FNWYVUxeXUw8rHbdirTe4H/Hunger-Starvation-and-Aadhaar.html [^2]: http://indianexpress.com/article/opinion/columns/a-welfare-test-for-aadhaar-upa-nda-aadhaar-card-4921582/ [^3]: https://scroll.in/article/852689/sophisticated-aadhaar-related-bank-fraud-has-left-police-in-delhi-and-noida-baffled [^4]: http://www.wired.co.uk/article/india-aadhaar-biometrics-privacy [^5]: https://tech.economictimes.indiatimes.com/news/corporate/210-govt-websites-made-public-aadhaar-details-uidai/61719345 [^6]: https://scroll.in/article/833230/explainer-aadhaar-is-vulnerable-to-identity-theft-because-of-its-design-and-the-way-it-is-used [^7]: https://www.dropbox.com/sh/xfhxq3x9iwl77zx/AABdFxh6y0YMrLOs5Jh6_i68a?dl=0
+                  </textarea>
+                  <div class="EmailButton-group"><a href="https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;tf=1&amp;source=mailto&amp;to=Shri%20Bishnu%20Pada%20Ray%3Candamanmp%40gmail.com%3E" target="_blank" class="EmailButton btn-gmail">Gmail</a><a href="http://compose.mail.yahoo.com/?To=andamanmp%40gmail.com" target="_blank" class="EmailButton btn-yahoo">Yahoo!</a><a href="mailto:Shri%20Bishnu%20Pada%20Ray%3Candamanmp%40gmail.com%3E?" target="_blank" class="EmailButton btn-default">Other</a></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="App-campaign">
-        <div class="Campaign">
-          <h2 class="Camapign-title">Remind the data protection committee to protect your Aadhaar data.</h2>
-          <div class="Campaign-form">
-            <div></div>
-            <div>
-              <div class="EmailButton-group"><a class="EmailButton-view">View Email</a><a target="_blank" class="EmailButton">Send Email</a>
-                <div class="EmailModal-outer ">
-                  <div class="EmailModal">
-                    <button class="EmailModal-close">×</button>
-                    <p>Copy the petition below and choose your email app to paste in. The address will be filled automatically.</p>
-                    <label class="EmailModal-field">
-                      <div class="EmailModal-label">To</div>
-                      <input readonly="">
-                    </label>
-                    <label class="EmailModal-field">
-                      <div class="EmailModal-label">Cc</div>
-                      <input readonly="">
-                    </label>
-                    <label class="EmailModal-field">
-                      <div class="EmailModal-label">Bcc</div>
-                      <input readonly="">
-                    </label>
-                    <label class="EmailModal-field">
-                      <div class="EmailModal-label">Subject</div>
-                      <input readonly="">
-                    </label>
-                    <textarea readonly="" class="EmailModal-body"></textarea>
-                    <div class="EmailButton-group"><a href="https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;tf=1&amp;source=mailto&amp;to=" target="_blank" class="EmailButton btn-gmail">Gmail</a><a href="http://compose.mail.yahoo.com/?To=" target="_blank" class="EmailButton btn-yahoo">Yahoo!</a><a href="mailto:?" target="_blank" class="EmailButton btn-default">Other</a></div>
-                  </div>
+      </div>
+    </section>
+    <section class="App-campaign">
+      <div class="Campaign">
+        <h2 class="Camapign-title">Remind the data protection committee to protect your Aadhaar data.</h2>
+        <div class="Campaign-form">
+          <div></div>
+          <div>
+            <div class="EmailButton-group"><a class="EmailButton-view">View Email</a><a target="_blank" class="EmailButton">Send Email</a>
+              <div class="EmailModal-outer ">
+                <div class="EmailModal">
+                  <button class="EmailModal-close">×</button>
+                  <p>Copy the petition below and choose your email app to paste in. The address will be filled automatically.</p>
+                  <label class="EmailModal-field">
+                    <div class="EmailModal-label">To</div>
+                    <input readonly="">
+                  </label>
+                  <label class="EmailModal-field">
+                    <div class="EmailModal-label">Cc</div>
+                    <input readonly="">
+                  </label>
+                  <label class="EmailModal-field">
+                    <div class="EmailModal-label">Bcc</div>
+                    <input readonly="">
+                  </label>
+                  <label class="EmailModal-field">
+                    <div class="EmailModal-label">Subject</div>
+                    <input readonly="">
+                  </label>
+                  <textarea readonly="" class="EmailModal-body"></textarea>
+                  <div class="EmailButton-group"><a href="https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;tf=1&amp;source=mailto&amp;to=" target="_blank" class="EmailButton btn-gmail">Gmail</a><a href="http://compose.mail.yahoo.com/?To=" target="_blank" class="EmailButton btn-yahoo">Yahoo!</a><a href="mailto:?" target="_blank" class="EmailButton btn-default">Other</a></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="App-campaign">
-        <div class="Campaign">
-          <h2 class="Camapign-title">Tell the banks to stop threatening you.</h2>
-          <div class="Campaign-form">
-            <div>
-              <div class="TargetSelect-group">
-                <select class="TargetSelect">
-                  <option value="undefined">Select Bank</option>
-                  <option value="ALLA">Allahabad Bank</option>
-                  <option value="AMEX">American Express</option>
-                  <option value="ANDB">Andhra Bank</option>
-                  <option value="AUBL">AU Small Finance Bank</option>
-                  <option value="UTIB">Axis Bank</option>
-                  <option value="BDBL">Bandhan Bank</option>
-                  <option value="BARB">Bank of Baroda</option>
-                  <option value="BKID">Bank of India</option>
-                  <option value="MAHB">Bank of Maharashtra</option>
-                  <option value="CNRB">Canara Bank</option>
-                  <option value="CLBL">Capital Small Finance Bank</option>
-                  <option value="CSBK">Catholic Syrian Bank</option>
-                  <option value="CBIN">Central Bank of India</option>
-                  <option value="CITI">Citibank</option>
-                  <option value="CIUB">City Union Bank</option>
-                  <option value="CORP">Corporation Bank</option>
-                  <option value="DBSS">DBS Bank</option>
-                  <option value="DCBL">DCB Bank</option>
-                  <option value="BKDN">Dena Bank</option>
-                  <option value="DEUT">Deutsche Bank</option>
-                  <option value="DLXB">Dhanlaxmi Bank</option>
-                  <option value="ESFB">Equitas Small Finance Bank</option>
-                  <option value="ESAF">ESAF Small Finance Bank</option>
-                  <option value="FDRL">Federal Bank</option>
-                  <option value="FSFB">Fincare Small Finance Bank</option>
-                  <option value="HDFC">HDFC Bank</option>
-                  <option value="HSBC">HSBC India</option>
-                  <option value="ICIC">ICICI Bank</option>
-                  <option value="IBKL">IDBI Bank</option>
-                  <option value="IDFB">IDFC Bank</option>
-                  <option value="IDIB">Indian Bank</option>
-                  <option value="IOBA">Indian Overseas Bank</option>
-                  <option value="INDB">IndusInd Bank</option>
-                  <option value="JAKA">Jammu and Kashmir Bank</option>
-                  <option value="--">Janalakshmi Small Finance Bank</option>
-                  <option value="KARB">Karnataka Bank</option>
-                  <option value="KVBL">Karur Vysya Bank</option>
-                  <option value="KKBK">Kotak Mahindra Bank</option>
-                  <option value="LAVB">Lakshmi Vilas Bank</option>
-                  <option value="">Nainital Bank</option>
-                  <option value="ORBC">Oriental Bank of Commerce</option>
-                  <option value="PYTM">PayTM Payments Bank</option>
-                  <option value="PSIB">Punjab and Sindh Bank</option>
-                  <option value="PUNB">Punjab National Bank</option>
-                  <option value="RATN">RBL Bank</option>
-                  <option value="SIBL">South Indian Bank</option>
-                  <option value="SCBL">Standard Chartered Bank</option>
-                  <option value="SBIN">State Bank of India</option>
-                  <option value="SURY">Suryoday Small Finance Bank</option>
-                  <option value="SYNB">Syndicate Bank</option>
-                  <option value="TMBL">Tamilnad Mercantile Bank</option>
-                  <option value="UCBA">UCO Bank</option>
-                  <option value="USFB">Ujjivan Small Finance Bank</option>
-                  <option value="UBIN">Union Bank of India</option>
-                  <option value="UTBI">United Bank of India</option>
-                  <option value="UTKS">Utkarsh Small Finance Bank</option>
-                  <option value="VIJB">Vijaya Bank</option>
-                  <option value="YESB">YES Bank</option>
-                </select>
-              </div>
+      </div>
+    </section>
+    <section class="App-campaign">
+      <div class="Campaign">
+        <h2 class="Camapign-title">Tell the banks to stop threatening you.</h2>
+        <div class="Campaign-form">
+          <div>
+            <div class="TargetSelect-group">
+              <select class="TargetSelect">
+                <option value="undefined">Select Bank</option>
+                <option value="ALLA">Allahabad Bank</option>
+                <option value="AMEX">American Express</option>
+                <option value="ANDB">Andhra Bank</option>
+                <option value="AUBL">AU Small Finance Bank</option>
+                <option value="UTIB">Axis Bank</option>
+                <option value="BDBL">Bandhan Bank</option>
+                <option value="BARB">Bank of Baroda</option>
+                <option value="BKID">Bank of India</option>
+                <option value="MAHB">Bank of Maharashtra</option>
+                <option value="CNRB">Canara Bank</option>
+                <option value="CLBL">Capital Small Finance Bank</option>
+                <option value="CSBK">Catholic Syrian Bank</option>
+                <option value="CBIN">Central Bank of India</option>
+                <option value="CITI">Citibank</option>
+                <option value="CIUB">City Union Bank</option>
+                <option value="CORP">Corporation Bank</option>
+                <option value="DBSS">DBS Bank</option>
+                <option value="DCBL">DCB Bank</option>
+                <option value="BKDN">Dena Bank</option>
+                <option value="DEUT">Deutsche Bank</option>
+                <option value="DLXB">Dhanlaxmi Bank</option>
+                <option value="ESFB">Equitas Small Finance Bank</option>
+                <option value="ESAF">ESAF Small Finance Bank</option>
+                <option value="FDRL">Federal Bank</option>
+                <option value="FSFB">Fincare Small Finance Bank</option>
+                <option value="HDFC">HDFC Bank</option>
+                <option value="HSBC">HSBC India</option>
+                <option value="ICIC">ICICI Bank</option>
+                <option value="IBKL">IDBI Bank</option>
+                <option value="IDFB">IDFC Bank</option>
+                <option value="IDIB">Indian Bank</option>
+                <option value="IOBA">Indian Overseas Bank</option>
+                <option value="INDB">IndusInd Bank</option>
+                <option value="JAKA">Jammu and Kashmir Bank</option>
+                <option value="--">Janalakshmi Small Finance Bank</option>
+                <option value="KARB">Karnataka Bank</option>
+                <option value="KVBL">Karur Vysya Bank</option>
+                <option value="KKBK">Kotak Mahindra Bank</option>
+                <option value="LAVB">Lakshmi Vilas Bank</option>
+                <option value="">Nainital Bank</option>
+                <option value="ORBC">Oriental Bank of Commerce</option>
+                <option value="PYTM">PayTM Payments Bank</option>
+                <option value="PSIB">Punjab and Sindh Bank</option>
+                <option value="PUNB">Punjab National Bank</option>
+                <option value="RATN">RBL Bank</option>
+                <option value="SIBL">South Indian Bank</option>
+                <option value="SCBL">Standard Chartered Bank</option>
+                <option value="SBIN">State Bank of India</option>
+                <option value="SURY">Suryoday Small Finance Bank</option>
+                <option value="SYNB">Syndicate Bank</option>
+                <option value="TMBL">Tamilnad Mercantile Bank</option>
+                <option value="UCBA">UCO Bank</option>
+                <option value="USFB">Ujjivan Small Finance Bank</option>
+                <option value="UBIN">Union Bank of India</option>
+                <option value="UTBI">United Bank of India</option>
+                <option value="UTKS">Utkarsh Small Finance Bank</option>
+                <option value="VIJB">Vijaya Bank</option>
+                <option value="YESB">YES Bank</option>
+              </select>
             </div>
-            <div></div>
           </div>
+          <div></div>
         </div>
-      </section>
-      <section class="App-campaign">
-        <div class="Campaign">
-          <h2 class="Camapign-title">Ask telcos to stop spamming you.</h2>
-          <div class="Campaign-form">
-            <div>
-              <div class="TargetSelect-group">
-                <select class="TargetSelect">
-                  <option value="undefined">Select Telco</option>
-                  <option value="aircel">Aircel</option>
-                  <option value="airtel">Airtel</option>
-                  <option value="bsnl">BSNL Mobile</option>
-                  <option value="idea">Idea</option>
-                  <option value="jio">Jio</option>
-                  <option value="mtnl">MTNL</option>
-                  <option value="mts">MTS India</option>
-                  <option value="tatadocomo">Tata Docomo</option>
-                  <option value="telenor">Telenor</option>
-                  <option value="vodafone">Vodafone</option>
-                </select>
-              </div>
+      </div>
+    </section>
+    <section class="App-campaign">
+      <div class="Campaign">
+        <h2 class="Camapign-title">Ask telcos to stop spamming you.</h2>
+        <div class="Campaign-form">
+          <div>
+            <div class="TargetSelect-group">
+              <select class="TargetSelect">
+                <option value="undefined">Select Telco</option>
+                <option value="aircel">Aircel</option>
+                <option value="airtel">Airtel</option>
+                <option value="bsnl">BSNL Mobile</option>
+                <option value="idea">Idea</option>
+                <option value="jio">Jio</option>
+                <option value="mtnl">MTNL</option>
+                <option value="mts">MTS India</option>
+                <option value="tatadocomo">Tata Docomo</option>
+                <option value="telenor">Telenor</option>
+                <option value="vodafone">Vodafone</option>
+              </select>
             </div>
-            <div></div>
           </div>
+          <div></div>
         </div>
-      </section>
-      <section class="App-campaign">
-        <div class="Campaign">
-          <h2 class="Camapign-title">Ask public services: is this your job?</h2>
-          <div class="Campaign-form">
-            <div>
-              <div class="TargetSelect-group">
-                <select class="TargetSelect">
-                  <option value="undefined">Select Service Provider</option>
-                  <option value="EPFO">Dr. V.P Joy</option>
-                  <option value="LPG">Shri K.M.Mahesh</option>
-                  <option value="MGNREGS">Smt Aparajita Sarangi</option>
-                  <option value="NSAP">Shri Manoranjan Kumar</option>
-                  <option value="PDS">Asit Halder</option>
-                  <option value="PAN">Shri Sushil Chandra</option>
-                  <option value="PMJDY">Shri Arun Jaitley</option>
-                </select>
-              </div>
+      </div>
+    </section>
+    <section class="App-campaign">
+      <div class="Campaign">
+        <h2 class="Camapign-title">Ask public services: is this your job?</h2>
+        <div class="Campaign-form">
+          <div>
+            <div class="TargetSelect-group">
+              <select class="TargetSelect">
+                <option value="undefined">Select Service Provider</option>
+                <option value="EPFO">Dr. V.P Joy</option>
+                <option value="LPG">Shri K.M.Mahesh</option>
+                <option value="MGNREGS">Smt Aparajita Sarangi</option>
+                <option value="NSAP">Shri Manoranjan Kumar</option>
+                <option value="PDS">Asit Halder</option>
+                <option value="PAN">Shri Sushil Chandra</option>
+                <option value="PMJDY">Shri Arun Jaitley</option>
+              </select>
             </div>
-            <div></div>
           </div>
+          <div></div>
         </div>
-      </section>
-      <section class="App-campaign">
-        <div class="Campaign">
-          <h2 class="Camapign-title">Tell the UIDAI to back off.</h2>
-          <div class="Campaign-form">
-            <div></div>
-            <div>
-              <div class="EmailButton-group"><a class="EmailButton-view">View Email</a><a target="_blank" class="EmailButton">Send Email</a>
-                <div class="EmailModal-outer ">
-                  <div
+      </div>
+    </section>
+    <section class="App-campaign">
+      <div class="Campaign">
+        <h2 class="Camapign-title">Tell the UIDAI to back off.</h2>
+        <div class="Campaign-form">
+          <div></div>
+          <div>
+            <div class="EmailButton-group"><a class="EmailButton-view">View Email</a><a target="_blank" class="EmailButton">Send Email</a>
+              <div class="EmailModal-outer ">
+                <div
 class="EmailModal">
-                    <button class="EmailModal-close">×</button>
-                    <p>Copy the petition below and choose your email app to paste in. The address will be filled automatically.</p>
-                    <label class="EmailModal-field">
-                      <div class="EmailModal-label">To</div>
-                      <input readonly="">
-                    </label>
-                    <label class="EmailModal-field">
-                      <div class="EmailModal-label">Cc</div>
-                      <input readonly="">
-                    </label>
-                    <label class="EmailModal-field">
-                      <div class="EmailModal-label">Bcc</div>
-                      <input readonly="">
-                    </label>
-                    <label class="EmailModal-field">
-                      <div class="EmailModal-label">Subject</div>
-                      <input readonly="">
-                    </label>
-                    <textarea readonly="" class="EmailModal-body">Dr AB Pandey Chief Executive Officer (CEO), Unique Identification Authority of India -UIDAI 3rd Floor, Tower II, Jeevan Bharati Building, Connaught Circus, New Delhi - 110001 We are shocked that you have been continuing to service authentication and KYC requests for UID numbers and provide associated data for purposes beyond that approved by the Supreme Court of India. This is an unbelievable disrespect of the rule of law and of the repeated orders of the Supreme Court of India. Your actions are resulting in coercing children, elderly and others alike to have to register for an UID number against their free will. Your actions also constitute an illegal functional creep that cannot be morally or legally justified. Your actions reek of creating a fait accompli before the court finally decides on the matter and hence does not uphold the promise of justice, liberty, equality or fraternity. We draw you're attention to the Hon’ble Supreme Court’s orders of 11 August 2015 restricting the use of Aadhaar to PDS Scheme, the distribution of foodgrains, and cooking fuel, such as kerosene and LPG. This was extended to allow its use for the Mahatma Gandhi National Rural Employment Guarantee Scheme (MGNREGS), National Social Assistance Programme (Old Age Pensions, Widow Pensions, Disability Pensions) Prime Minister's Jan Dhan Yojana (PMJDY) and Employees' Provident Fund Organisation (EPFO) in its orders of 15 October 2015. The Court also stated that the information about an individual obtained by the Unique Identification Authority of India while issuing an Aadhaar card shall not be used for any other purpose. The use of the UID number/Aadhaar or information associated with it for any purposes other than that allowed by the court as well as it being mandated for any purposes not allowed by the court is a contempt of the rule of law and the orders of the Hon’ble Supreme Court of India. We require that you: 1. Immediately cease providing any authentication and/or KYC or support and use of the UID number for purposes other than those permitted by the Supreme Court of India. 2. Cease to provide any UID authentication or KYC to any organisation mandating the use of UID number for the permitted purposes. 3. Issue notifications and wide publicity in the electronic and print media including radio and television networks, as required by the orders of the Hon’ble Supreme Court dated August 16, 2016, to make it clear that you will not A. Provide authentication and KYC services beyond those permitted by the Supreme Court or B. Cause or allow any agencies to cause anyone to require registering for an UID number or C. Allow anyone to suffer for want of it and that UID number. We trust you will share your compliance of the orders within 7 days, publish widely your decision to abide by the orders of the Supreme Court and not cause us to seek other remedies and relief for your failure to respect the rule of law. Sincerely yours, CC: 1. Shri Nripendra Mishra, Principal Secretary to Prime Minister, 152, South Block, Raisina Hill, New Delhi-110011 2. Chief Justice of India, ℅ Chief Justice's Conference Secretariat, Supreme Court of India, Tilak Marg, New Delhi-110 201
-                    </textarea>
-                    <div class="EmailButton-group"><a href="https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;tf=1&amp;source=mailto&amp;to=" target="_blank" class="EmailButton btn-gmail">Gmail</a><a href="http://compose.mail.yahoo.com/?To=" target="_blank" class="EmailButton btn-yahoo">Yahoo!</a><a href="mailto:?" target="_blank" class="EmailButton btn-default">Other</a></div>
-                  </div>
+                  <button class="EmailModal-close">×</button>
+                  <p>Copy the petition below and choose your email app to paste in. The address will be filled automatically.</p>
+                  <label class="EmailModal-field">
+                    <div class="EmailModal-label">To</div>
+                    <input readonly="">
+                  </label>
+                  <label class="EmailModal-field">
+                    <div class="EmailModal-label">Cc</div>
+                    <input readonly="">
+                  </label>
+                  <label class="EmailModal-field">
+                    <div class="EmailModal-label">Bcc</div>
+                    <input readonly="">
+                  </label>
+                  <label class="EmailModal-field">
+                    <div class="EmailModal-label">Subject</div>
+                    <input readonly="">
+                  </label>
+                  <textarea readonly="" class="EmailModal-body">Dr AB Pandey Chief Executive Officer (CEO), Unique Identification Authority of India -UIDAI 3rd Floor, Tower II, Jeevan Bharati Building, Connaught Circus, New Delhi - 110001 We are shocked that you have been continuing to service authentication and KYC requests for UID numbers and provide associated data for purposes beyond that approved by the Supreme Court of India. This is an unbelievable disrespect of the rule of law and of the repeated orders of the Supreme Court of India. Your actions are resulting in coercing children, elderly and others alike to have to register for an UID number against their free will. Your actions also constitute an illegal functional creep that cannot be morally or legally justified. Your actions reek of creating a fait accompli before the court finally decides on the matter and hence does not uphold the promise of justice, liberty, equality or fraternity. We draw you're attention to the Hon’ble Supreme Court’s orders of 11 August 2015 restricting the use of Aadhaar to PDS Scheme, the distribution of foodgrains, and cooking fuel, such as kerosene and LPG. This was extended to allow its use for the Mahatma Gandhi National Rural Employment Guarantee Scheme (MGNREGS), National Social Assistance Programme (Old Age Pensions, Widow Pensions, Disability Pensions) Prime Minister's Jan Dhan Yojana (PMJDY) and Employees' Provident Fund Organisation (EPFO) in its orders of 15 October 2015. The Court also stated that the information about an individual obtained by the Unique Identification Authority of India while issuing an Aadhaar card shall not be used for any other purpose. The use of the UID number/Aadhaar or information associated with it for any purposes other than that allowed by the court as well as it being mandated for any purposes not allowed by the court is a contempt of the rule of law and the orders of the Hon’ble Supreme Court of India. We require that you: 1. Immediately cease providing any authentication and/or KYC or support and use of the UID number for purposes other than those permitted by the Supreme Court of India. 2. Cease to provide any UID authentication or KYC to any organisation mandating the use of UID number for the permitted purposes. 3. Issue notifications and wide publicity in the electronic and print media including radio and television networks, as required by the orders of the Hon’ble Supreme Court dated August 16, 2016, to make it clear that you will not A. Provide authentication and KYC services beyond those permitted by the Supreme Court or B. Cause or allow any agencies to cause anyone to require registering for an UID number or C. Allow anyone to suffer for want of it and that UID number. We trust you will share your compliance of the orders within 7 days, publish widely your decision to abide by the orders of the Supreme Court and not cause us to seek other remedies and relief for your failure to respect the rule of law. Sincerely yours, CC: 1. Shri Nripendra Mishra, Principal Secretary to Prime Minister, 152, South Block, Raisina Hill, New Delhi-110011 2. Chief Justice of India, ℅ Chief Justice's Conference Secretariat, Supreme Court of India, Tilak Marg, New Delhi-110 201
+                  </textarea>
+                  <div class="EmailButton-group"><a href="https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;tf=1&amp;source=mailto&amp;to=" target="_blank" class="EmailButton btn-gmail">Gmail</a><a href="http://compose.mail.yahoo.com/?To=" target="_blank" class="EmailButton btn-yahoo">Yahoo!</a><a href="mailto:?" target="_blank" class="EmailButton btn-default">Other</a></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </div>
-  <div id="modal"></div>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <script type="text/javascript" src="https://d33wubrfki0l68.cloudfront.net/js/67415262a9af4a1607b7684d71207f62e8dc8cbd/all/static/js/main.js"></script>
-</body>
+</div>
+<div id="modal"></div>
