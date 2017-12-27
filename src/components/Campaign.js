@@ -11,6 +11,7 @@ class Campaign extends Component {
   }
   render() {
     const {
+      id,
       title,
       categories,
       targets,
@@ -28,23 +29,18 @@ class Campaign extends Component {
     const petition = { subject, body, name, ...rest };
     const targetRequired = !!(categories || targets);
     const targetSelected = !!target;
+    const bcc = `${id}${target ? `-${target.code.toLowerCase()}` : ''}@email.speakforme.in`;
 
     return (
       <div className="Campaign">
         <h2 className="Camapign-title">{title}</h2>
         <div className="Campaign-form">
-          <div>
-            {targetRequired && (
-              <TargetSelect
-                {...{ categories, targets, category_prompt, target_prompt }}
-                onSelect={this.onTarget} />
-            )}
-          </div>
-          <div>
-            {(!targetRequired || targetSelected) && (
-              <EmailButton {...petition} />
-            )}
-          </div>
+          {targetRequired ? (
+            <TargetSelect
+              {...{ categories, targets, category_prompt, target_prompt }}
+              onSelect={this.onTarget} />
+          ) : <div className="Campaign-spacer"/>}
+          <EmailButton {...petition} bcc={bcc} disabled={targetRequired && !targetSelected}/>
         </div>
       </div>
     );

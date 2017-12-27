@@ -24,7 +24,7 @@ export const supportsMailto = (function() {
 
 export function getRecipients(emails, name, addrOnly) {
   if (!Array.isArray(emails)) emails = emails ? emails.split(/,\s*/g) : [];
-  if (!addrOnly && name) emails = emails.map(email => `${name}<${email}>`);
+  if (name) emails = emails.map(email => `${name}<${email}>`);
   return emails.join(',');
 }
 
@@ -38,8 +38,9 @@ export function getMailUrl(type, {subject, body, name, email, cc, bcc}, includeB
   const addrOnly = ['yahoo'].includes(type);
 
   // Encode recipient lists
-  [email, cc, bcc] = [email, cc, bcc].map(emails =>
-    encodeURIComponent(getRecipients(emails, name, addrOnly)));
+  email = encodeURIComponent(getRecipients(email, !addrOnly && name));
+  cc = encodeURIComponent(getRecipients(cc));
+  bcc = encodeURIComponent(getRecipients(bcc));
 
   // Encode the subject and body
   [subject, body] = [subject, body].map(encodeURIComponent);

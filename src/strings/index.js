@@ -61,13 +61,14 @@ function index(array, getKey) {
 
 // Convert loaded JSON-frontmatter files
 function getPetition(lang, campaign) {
-  const loc = petitions[`draft-notice-${campaign}-${lang}`];
+  const loc = lang !== 'en' && petitions[`draft-notice-${campaign}-${lang}`];
   const en = petitions[`draft-notice-${campaign}-en`];
-  return merge(
+  const { body, attributes } = merge(
     loc || {},
     en,
     loc ? { body: `${loc.body}\n\nEnglish Version:\n\n${en.body}` } : {}
   );
+  return { body, ...attributes };
 }
 
 // Add variables like "addressee" to use for template replacement.
@@ -99,11 +100,12 @@ export function getStrings(lang) {
   };
 
   for (const { name, state, mp, email, code } of mps) cats[state].targets[code] = {
-    name: mp, email,
-    title: `${getText(lang, 'constituencies', code) || name} (${mp})`,
+    name: mp, email, title: `${getText(lang, 'constituencies', code) || name} (${mp})`,
   }
 
-  return merge(en, newStrings[lang] || {}, {
+  for (const state in cats) cats[state].targets = addVariables(cats[state].targets);
+
+  const merged = merge(en, newStrings[lang] || {}, {
     ui: i18n[lang],
     campaigns: {
       bank: {
@@ -127,6 +129,10 @@ export function getStrings(lang) {
       }
     }
   });
+
+  console.log('Localized data', merged);
+
+  return merged;
 }
 
 export const languages = Object.keys(i18n).map(code => ({ code, name: i18n[code].language_name }));

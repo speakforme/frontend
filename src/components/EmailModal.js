@@ -17,10 +17,10 @@ class EmailModal extends Component {
       show, copied, email, cc, bcc, subject, name,
       body, onClose, setTextArea, setOuter
     } = this.props;
-    const { strings } = this.context;
-    const gmail = getMailUrl('gmail', this.props, supportsLongUrls);
-    const yahoo = getMailUrl('yahoo', this.props, supportsLongUrls);
-    const other = getMailUrl('mailto', this.props, supportsLongUrls);
+    const { send_gmail, send_yahoo, send_other } = this.context.strings.ui;
+    const gmailUrl = getMailUrl('gmail', this.props, supportsLongUrls);
+    const yahooUrl = getMailUrl('yahoo', this.props, supportsLongUrls);
+    const otherUrl = getMailUrl('mailto', this.props, supportsLongUrls);
 
     return (
       <div className={`EmailModal-outer ${show ? 'EmailModal-outer-shown' : ''}`}
@@ -40,11 +40,11 @@ class EmailModal extends Component {
           </label>
           <label className="EmailModal-field">
             <div className="EmailModal-label">Cc</div>
-            <input readOnly value={getRecipients(cc, name)} />
+            <input readOnly value={getRecipients(cc)} />
           </label>
           <label className="EmailModal-field">
             <div className="EmailModal-label">Bcc</div>
-            <input readOnly value={getRecipients(bcc, name)} />
+            <input readOnly value={getRecipients(bcc)} />
           </label>
           <label className="EmailModal-field">
             <div className="EmailModal-label">Subject</div>
@@ -54,10 +54,10 @@ class EmailModal extends Component {
             className='EmailModal-body'
             ref={setTextArea}
             value={body} readOnly />
-          <div className="EmailButton-group">
-            <a className="EmailButton btn-gmail" href={gmail} target="_blank">Gmail</a>
-            <a className="EmailButton btn-yahoo" href={yahoo} target="_blank">Yahoo!</a>
-            <a className="EmailButton btn-default" href={other} target="_blank">Other</a>
+          <div className="EmailModal-buttongroup">
+            <a className="EmailModal-button btn-gmail" href={gmailUrl} target="_blank">{send_gmail}</a>
+            <a className="EmailModal-button btn-yahoo" href={yahooUrl} target="_blank">{send_yahoo}</a>
+            <a className="EmailModal-button btn-default" href={otherUrl} target="_blank">{send_other}</a>
           </div>
         </div>
       </div>

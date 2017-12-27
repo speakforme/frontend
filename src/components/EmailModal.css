@@ -65,3 +65,21 @@
   resize: none;
   padding: 8px 0;
 }
+
+.EmailModal-buttongroup {
+  flex: 0 0 auto;
+  display: flex;
+}
+
+.EmailModal-button {
+  flex: 1 0 0;
+  border: none;
+  line-height: 48px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  margin: 4px;
+}

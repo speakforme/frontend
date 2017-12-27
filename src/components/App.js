@@ -35,7 +35,7 @@ class App extends Component {
         </section>
         {
           Object.keys(campaigns).map(campaignId => (
-            <section className="App-campaign">
+            <section className="App-campaign" key={campaignId}>
               <Campaign id={campaignId} {...campaigns[campaignId]} />
             </section>
           ))

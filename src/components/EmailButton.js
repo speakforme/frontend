@@ -27,25 +27,28 @@ class EmailButton extends Component {
   setOuter = outer => this.outer = outer;
 
   render() {
-    const url = supportsMailto && getMailUrl('mailto', this.props, supportsLongUrls);
+    const { disabled } = this.props;
+    const url = !disabled && supportsMailto && getMailUrl('mailto', this.props, supportsLongUrls);
     const { showModal, copied } = this.state;
-    const { strings: { ui: { view_email, send_email } } } = this.context;
+    const { view_email, send_email } = this.context.strings.ui;
 
     return (
       <div className="EmailButton-group">
-        <a // eslint-disable-line jsx-a11y/anchor-is-valid
-          className="EmailButton-view"
-          onClick={() => this.setState({ showModal: true })}
-        >{view_email}</a>
-        <a className="EmailButton"
-          href={url || null} onClick={!url && this.showModal}
+        <button // eslint-disable-line jsx-a11y/anchor-is-valid
+          className={`EmailButton-view ${disabled && 'EmailButton-view-disabled'}`}
+          onClick={!disabled && (() => this.setState({ showModal: true }))}
+        >{view_email}</button>
+        <button // eslint-disable-line jsx-a11y/anchor-is-valid
+          className={`EmailButton ${disabled && 'EmailButton-disabled'}`}
+          href={url || null} onClick={!url && !disabled && this.showModal}
           target="_blank"
-        >{send_email}</a>
+        >{send_email}</button>
         <EmailModal
           show={!!showModal}
           {...this.props}
           setTextArea={this.setTextArea}
           setOuter={this.setOuter}
+          copied={copied}
           onClose={() => this.setState({ showModal: false })}
         ></EmailModal>
       </div>

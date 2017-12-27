@@ -8,7 +8,7 @@ class LanguageSelect extends Component {
   }
 
   render() {
-    const { value, onChange } = this.props;
+    const { value } = this.props;
     return (
       <select className='LanguageSelect' onChange={this.onChange}>
         {languages.map(({ code, name }) => (

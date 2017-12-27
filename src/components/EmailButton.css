@@ -1,27 +1,38 @@
 .EmailButton-group {
+  flex: 0 1 320px;
   display: flex;
   justify-content: flex-end;
+  margin: 4px 0;
 }
 
 .EmailButton-view {
-  line-height: 48px;
-  padding: 0 20px;
-  flex: 0 0 auto;
+  display: block;
+  min-height: 48px;
+  flex: 1 0 0;
   color: #f45;
   cursor: pointer;
+  border: none;
+  background: transparent;
 }
 
 .EmailButton {
+  flex: 1 0 0;
   background-color: #f45;
   color: #fff;
   border: none;
-  line-height: 48px;
+  height: 48px;
   font-weight: bold;
-  margin: 0 4px;
   border-radius: 3px;
-  flex: 0 0 auto;
-  min-width: 128px;
-  text-align: center;
-  text-decoration: none;
   cursor: pointer;
+  margin: 0 4px;
+}
+
+.EmailButton-view-disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+.EmailButton-disabled {
+  background-color: #ccc;
+  cursor: default;
 }
