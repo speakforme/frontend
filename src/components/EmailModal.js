@@ -15,7 +15,7 @@ class EmailModal extends Component {
   render() {
     const {
       show, copied, email, cc, bcc, subject, name,
-      body, onClose, setTextArea, setOuter
+      body, onClose, onSend, setTextArea, setOuter
     } = this.props;
     const { send_gmail, send_yahoo, send_other } = this.context.strings.ui;
     const gmailUrl = getMailUrl('gmail', this.props, supportsLongUrls);
@@ -55,9 +55,24 @@ class EmailModal extends Component {
             ref={setTextArea}
             value={body} readOnly />
           <div className="EmailModal-buttongroup">
-            <a className="EmailModal-button btn-gmail" href={gmailUrl} target="_blank">{send_gmail}</a>
-            <a className="EmailModal-button btn-yahoo" href={yahooUrl} target="_blank">{send_yahoo}</a>
-            <a className="EmailModal-button btn-default" href={otherUrl} target="_blank">{send_other}</a>
+            <a
+              className="EmailModal-button btn-gmail"
+              href={gmailUrl}
+              target="_blank"
+              onClick={() => onSend('gmail')}
+            >{send_gmail}</a>
+            <a
+              className="EmailModal-button btn-yahoo"
+              href={yahooUrl}
+              target="_blank"
+              onClick={() => onSend('yahoo')}
+            >{send_yahoo}</a>
+            <a
+              className="EmailModal-button btn-default"
+              href={otherUrl}
+              target="_blank"
+              onClick={() => onSend('mailto')}
+            >{send_other}</a>
           </div>
         </div>
       </div>

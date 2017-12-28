@@ -5,26 +5,25 @@
   margin: 4px 0;
 }
 
-.EmailButton-view {
-  display: block;
-  min-height: 48px;
+.EmailButton, .EmailButton-view {
   flex: 1 0 0;
-  color: #f45;
+  border-radius: 3px;
   cursor: pointer;
+  margin: 0 4px;
+  line-height: 48px;
   border: none;
+  text-align: center;
+}
+
+.EmailButton-view {
+  color: #f45;
   background: transparent;
 }
 
 .EmailButton {
-  flex: 1 0 0;
   background-color: #f45;
   color: #fff;
-  border: none;
-  height: 48px;
   font-weight: bold;
-  border-radius: 3px;
-  cursor: pointer;
-  margin: 0 4px;
 }
 
 .EmailButton-view-disabled {

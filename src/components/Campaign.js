@@ -4,10 +4,16 @@ import TargetSelect from './TargetSelect';
 import './Campaign.css';
 
 class Campaign extends Component {
-  state = {}
+  state = {
+    completed: JSON.parse(window.localStorage[`campaign-${this.props.id}-completed`] || 'false')
+  }
   onTarget = (target) => {
     // The currently selected target.
     this.setState({ target });
+  }
+  onComplete = (method) => {
+    window.localStorage[`campaign-${this.props.id}-completed`] = JSON.stringify(this.state.target || true);
+    this.setState({ completed: this.state.target || true });
   }
   render() {
     const {
@@ -18,7 +24,7 @@ class Campaign extends Component {
       category_prompt,
       target_prompt
     } = this.props;
-    const { target } = this.state;
+    const { completed, target } = this.state;
     let { subject, body, name, ...rest } = { ...this.props.petition, ...target };
 
     // Replace ((variables)) in the subject, name and body with values
@@ -31,7 +37,17 @@ class Campaign extends Component {
     const targetSelected = !!target;
     const bcc = `${id}${target ? `-${target.code.toLowerCase()}` : ''}@email.speakforme.in`;
 
-    return (
+    return completed ? (
+      <div className="Campaign-completed">
+        <p className="Campaign-title">{title}</p>
+        <p className="Campaign-summary">
+          {completed.title || completed.name ?
+            `Email sent to ${completed.title || completed.name}` :
+            'Email sent'}{' '}
+          <a onClick={() => this.setState({ completed: false })}>Send again</a>
+        </p>
+      </div>
+    ) : (
       <div className="Campaign">
         <h2 className="Camapign-title">{title}</h2>
         <div className="Campaign-form">
@@ -40,7 +56,12 @@ class Campaign extends Component {
               {...{ categories, targets, category_prompt, target_prompt }}
               onSelect={this.onTarget} />
           ) : <div className="Campaign-spacer"/>}
-          <EmailButton {...petition} bcc={bcc} disabled={targetRequired && !targetSelected}/>
+          <EmailButton
+            {...petition}
+            bcc={bcc}
+            disabled={targetRequired && !targetSelected}
+            onSend={this.onComplete}
+          />
         </div>
       </div>
     );

@@ -11,16 +11,32 @@ import {
 class EmailButton extends Component {
   state = {};
 
-  showModal = event => {
+  sendEmail = event => {
+    // If both mailto and long URLs are supported
+    // If it does not support long URLs, try to copy the body.
+    // If mailto is not supported, or if copy failed, show the modal and stop.
+    // If mailto is supported and copy succeeded, continue to the email app
+    // after showing an alert.
+
     let copied = false;
+
     if (!supportsLongUrls && this.el) {
       this.outer.style.display = 'flex';
       this.el.select();
       try { copied = document.execCommand('copy'); } catch (e) {}
       this.outer.style.display = '';
     }
-    this.setState({ showModal: true, copied });
-    event.preventDefault();
+
+    if (!supportsMailto || !supportsLongUrls) {
+      this.setState({ showModal: true, copied });
+    }
+
+    if (!supportsMailto || (!supportsLongUrls && !copied)) {
+      event.preventDefault();
+    } else {
+      if (copied) alert('The petition has been copied. Paste it in your email app.');
+      this.props.onSend && this.props.onSend('mailto');
+    }
   }
 
   setTextArea = el => this.el = el;
@@ -34,15 +50,15 @@ class EmailButton extends Component {
 
     return (
       <div className="EmailButton-group">
-        <button // eslint-disable-line jsx-a11y/anchor-is-valid
+        <a // eslint-disable-line jsx-a11y/anchor-is-valid
           className={`EmailButton-view ${disabled && 'EmailButton-view-disabled'}`}
           onClick={!disabled && (() => this.setState({ showModal: true }))}
-        >{view_email}</button>
-        <button // eslint-disable-line jsx-a11y/anchor-is-valid
+        >{view_email}</a>
+        <a // eslint-disable-line jsx-a11y/anchor-is-valid
           className={`EmailButton ${disabled && 'EmailButton-disabled'}`}
-          href={url || null} onClick={!url && !disabled && this.showModal}
+          href={url || null} onClick={!disabled && this.sendEmail}
           target="_blank"
-        >{send_email}</button>
+        >{send_email}</a>
         <EmailModal
           show={!!showModal}
           {...this.props}
