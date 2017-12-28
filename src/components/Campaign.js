@@ -3,6 +3,10 @@ import EmailButton from './EmailButton';
 import TargetSelect from './TargetSelect';
 import './Campaign.css';
 
+function replaceVariables(str, ctx) {
+  return (str || '').replace(/\(\((.*?)\)\)/g, (m, key) => ctx[key] || '');
+}
+
 class Campaign extends Component {
   state = {
     completed: JSON.parse(window.localStorage[`campaign-${this.props.id}-completed`] || 'false')
@@ -25,12 +29,12 @@ class Campaign extends Component {
       target_prompt
     } = this.props;
     const { completed, target } = this.state;
-    let { subject, body, name, ...rest } = { ...this.props.petition, ...target };
+    const { campaign_completed, campaign_completed_target, send_again } = this.context.strings.ui;
 
-    // Replace ((variables)) in the subject, name and body with values
-    [subject, body, name] = [subject, body, name].map(
-      str => (str || '').replace(/\(\((.*?)\)\)/g, (m, key) => rest[key] || '')
-    );
+    let { subject, body, name, ...rest } = { ...this.props.petition, ...target };
+    subject = replaceVariables(subject, rest);
+    body = replaceVariables(body, rest);
+    name = replaceVariables(name, rest);
 
     const petition = { subject, body, name, ...rest };
     const targetRequired = !!(categories || targets);
@@ -39,12 +43,16 @@ class Campaign extends Component {
 
     return completed ? (
       <div className="Campaign-completed">
-        <p className="Campaign-title">{title}</p>
         <p className="Campaign-summary">
-          {completed.title || completed.name ?
-            `Email sent to ${completed.title || completed.name}` :
-            'Email sent'}{' '}
-          <a onClick={() => this.setState({ completed: false })}>Send again</a>
+          {replaceVariables(
+            completed === true ? campaign_completed : campaign_completed_target,
+            completed
+          )}: {title}{' '}
+          <a // eslint-disable-line jsx-a11y/anchor-is-valid
+            className="Campaign-redo"
+            tabIndex={0}
+            onClick={() => this.setState({ completed: false })}
+          >{send_again}</a>
         </p>
       </div>
     ) : (

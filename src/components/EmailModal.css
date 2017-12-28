@@ -43,6 +43,10 @@
   cursor: pointer;
 }
 
+.EmailModal-close::-moz-focus-inner {
+  border: 0;
+}
+
 .EmailModal-field {
   flex: 0 0 auto;
   line-height: 48px;

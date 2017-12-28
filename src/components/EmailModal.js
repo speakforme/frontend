@@ -3,21 +3,16 @@ import './EmailModal.css';
 import { supportsLongUrls, getMailUrl, getRecipients } from '../lib/email';
 
 class EmailModal extends Component {
-  state = {}
-
-  componentDidMount() {
-    // let copied = false;
-    // this.el.select();
-    // try { copied = document.execCommand('copy'); } catch (e) {}
-    // this.setState({ copied });
-  }
-
   render() {
     const {
       show, copied, email, cc, bcc, subject, name,
       body, onClose, onSend, setTextArea, setOuter
     } = this.props;
-    const { send_gmail, send_yahoo, send_other } = this.context.strings.ui;
+    const {
+      send_gmail, send_yahoo, send_other,
+      to_label, cc_label, bcc_label, subject_label,
+      choose_msg, choose_paste_msg, choose_copy_paste_msg
+    } = this.context.strings.ui;
     const gmailUrl = getMailUrl('gmail', this.props, supportsLongUrls);
     const yahooUrl = getMailUrl('yahoo', this.props, supportsLongUrls);
     const otherUrl = getMailUrl('mailto', this.props, supportsLongUrls);
@@ -30,24 +25,24 @@ class EmailModal extends Component {
         <div className="EmailModal" onClick={e => e.stopPropagation()}>
           <button className="EmailModal-close" onClick={onClose}>×</button>
           <p>{
-            supportsLongUrls ? 'Choose your email app below. The petition will be filled automatically.' :
-            copied ? 'The petition has been copied. Choose your email app below and paste it in.' :
-            'Copy the petition below and choose your email app to paste in. The address will be filled automatically.'
+            supportsLongUrls ? choose_msg :
+            copied ? choose_paste_msg :
+            choose_copy_paste_msg
           }</p>
           <label className="EmailModal-field">
-            <div className="EmailModal-label">To</div>
+            <div className="EmailModal-label">{to_label}</div>
             <input readOnly value={getRecipients(email, name)} />
           </label>
           <label className="EmailModal-field">
-            <div className="EmailModal-label">Cc</div>
+            <div className="EmailModal-label">{cc_label}</div>
             <input readOnly value={getRecipients(cc)} />
           </label>
           <label className="EmailModal-field">
-            <div className="EmailModal-label">Bcc</div>
+            <div className="EmailModal-label">{bcc_label}</div>
             <input readOnly value={getRecipients(bcc)} />
           </label>
           <label className="EmailModal-field">
-            <div className="EmailModal-label">Subject</div>
+            <div className="EmailModal-label">{subject_label}</div>
             <input readOnly value={subject} />
           </label>
           <textarea
@@ -60,18 +55,21 @@ class EmailModal extends Component {
               href={gmailUrl}
               target="_blank"
               onClick={() => onSend('gmail')}
+              tabIndex={0}
             >{send_gmail}</a>
             <a
               className="EmailModal-button btn-yahoo"
               href={yahooUrl}
               target="_blank"
               onClick={() => onSend('yahoo')}
+              tabIndex={0}
             >{send_yahoo}</a>
             <a
               className="EmailModal-button btn-default"
               href={otherUrl}
               target="_blank"
               onClick={() => onSend('mailto')}
+              tabIndex={0}
             >{send_other}</a>
           </div>
         </div>

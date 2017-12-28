@@ -34,7 +34,8 @@ class EmailButton extends Component {
     if (!supportsMailto || (!supportsLongUrls && !copied)) {
       event.preventDefault();
     } else {
-      if (copied) alert('The petition has been copied. Paste it in your email app.');
+      // We use an alert here to avoid the popup blocker.
+      if (copied) alert(this.context.strings.ui.paste_msg);
       this.props.onSend && this.props.onSend('mailto');
     }
   }
@@ -53,11 +54,12 @@ class EmailButton extends Component {
         <a // eslint-disable-line jsx-a11y/anchor-is-valid
           className={`EmailButton-view ${disabled && 'EmailButton-view-disabled'}`}
           onClick={!disabled && (() => this.setState({ showModal: true }))}
+          tabIndex={disabled ? -1 : 0}
         >{view_email}</a>
         <a // eslint-disable-line jsx-a11y/anchor-is-valid
           className={`EmailButton ${disabled && 'EmailButton-disabled'}`}
           href={url || null} onClick={!disabled && this.sendEmail}
-          target="_blank"
+          target="_blank" tabIndex={disabled ? -1 : 0}
         >{send_email}</a>
         <EmailModal
           show={!!showModal}
