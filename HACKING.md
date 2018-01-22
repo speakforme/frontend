@@ -1,6 +1,6 @@
 # Notes for developers:
 
-This is a Jekyll+Vue.JS project, hosted on Netlify. We have a separate backend at [mail-server][https://github.com/speakforme/mail-server].
+This is a Jekyll+Vue.JS project, hosted on Netlify. We have a separate backend at [campaign](https://github.com/speakforme/campaign).
 
 * All vuejs code is in `public/app.js`
 * All stylesheet is managed via `_sass`
