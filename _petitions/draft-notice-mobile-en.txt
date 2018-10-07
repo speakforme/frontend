@@ -3,59 +3,64 @@
 ((addressee))
 
 Subject: Request to delink my Aadhaar Number & irrevocably purge all
-        Aadhaar-related information
+Aadhaar-related information
 
-Dear Sirs,
+Dear Sir/Madam,
 
-I am a current an active user of your company’s cellular services.
+I am a current and active user of your company’s cellular services.
 
-Based on your repeated compulsions and with due respect to the government
-guidelines to which reference was made, I had submitted my Aadhaar details
-to you, for which to sign up, and/or, to continue using your services without
-interruption.
+Based on your repeated compulsions, and in adherence to the government
+guidelines that were referred by you, I had submitted my Aadhaar details to
+you, to sign up for and/or to continue using your services without interruption.
 
-As you may be aware, the law which enabled you to demand my Aadhaar details
-was challenged in the Supreme Court of India, and the highest court has now
+As you may be aware, the law which enabled you to demand my Aadhaar details was
+challenged in the Supreme Court of India, and the highest court has now
 given its verdict.
 
-On September 27th 2018, the Supreme Court of India declared that Aadhaar
-cannot be used by private entities and any such access, use or storage of
-Aadhaar details will be held in violation of the Fundamental Rights.
+On September 27th 2018, the Supreme Court of India declared that Aadhaar cannot
+be used by private entities and any such access, use or storage of Aadhaar
+details will be held in violation of the Fundamental Rights.
 
-In exercising my fundamental rights and according to Aadhaar (Authentication)
+As your customer, I don't want you to push the Government of India to try and
+bring another law to enable linking of Aadhaar with private entities. The said
+linking has been rightly held unconstitutional by the Supreme Court and any
+attempts to change that will only show you in bad light.
+
+In exercising my fundamental rights and in accordance to Aadhaar
+(Authentication)
 Regulations 2006, Section 16(5) , I demand that you immediately take the
 following actions:
 
 1.  Delink my Aadhaar identifier from all your systems,
 
-2.  Irrecoverably purge my Aadhaar related information from
-    all your systems,
+2.  Irrecoverably purge my Aadhaar related information from all your systems,
 
-3.  Irrecoverably purge any record, older than six months, that
-    contains my Aadhaar related information,
+3.  Irrecoverably purge any record, older than six months, that contains my
+Aadhaar related information,
 
-4.  Ensure Irrecoverable purging of my Aadhaar related information
-    with any third parties, to whom you have shared my information,
-    including any records that are six months or more older,
+4.  Ensure irrecoverable purging of my Aadhaar related information from any
+third parties, to whom you have shared my information, including any records
+that are six months or more older,
 
-5.  Implement all necessary steps to guarantee that no Aadhaar
-    number (including any number submitted by someone else) gets
-    linked to my phone number without explicit written consent from me,
+5.  Implement all necessary steps to guarantee that no Aadhaar number
+(including a number submitted by someone else) gets linked to my phone number
+without explicit written consent from me,
 
-6.  Complete all the requirements under Aadhaar (Authentication)
-    Regulations 2016, Sections (6), (7) and (8),
+6.  Complete all the requirements under Aadhaar (Authentication) Regulations
+2016, Sections (6), (7) and (8),
 
-7.  Confirm your complete addressal and completion of my
-    above requests (1-6) within a period of 15 days from today.
+7.  Confirm your complete addressal and completion of my above requests (1-6)
+within a period of 15 days from today.
 
-Please acknowledge your receipt of this email requesting delinking
-and deletion of Aadhaar information through email or registered post.
+Please acknowledge your receipt of this email requesting delinking and deletion
+of Aadhaar information through email or registered post.
 
-Do note that if you fail to comply with my above requests during
-this period without my written consent, you shall be liable for any damages,
-data leaks or misuse of my identity information under relevant sections
+Do note that if you fail to comply with my above requests during this period
+without my written consent, you shall be liable for any damages, data leaks or
+misuse of my identity information under relevant sections
 of Information Technology Act, 2000 and various other provisions as applicable,
 without prejudice to any other cause that may be applicable in this respect.
+
 
 References:
 
@@ -65,7 +70,7 @@ https://www.supremecourtofindia.nic.in/supremecourt/2012/35071/35071_2012_Judgem
 Aadhaar Authentication Regulations, 2016
 https://www.uidai.gov.in/images/regulation_1_to_5_15092016.pdf
 
+
 Thanking you, in anticipation,
-Your's Faithfully,
 
-
+Yours faithfully,
