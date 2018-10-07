@@ -407,7 +407,9 @@ var app = new Vue({
       return encodeURIComponent(
         'Hey ' +
           this.twitter +
-          ', please stop harrassing me for my aadhaar. @speakforme'
+          ', Supreme Court has ruled that Aadhaar usage by private parties is illegal,' +
+          ' so please de-link my Aadhaar' +
+          ' @speakforme'
       );
     },
     messengerText: function() {
