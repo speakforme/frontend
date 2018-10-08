@@ -1,7 +1,7 @@
 import Component from 'inferno-component';
 import Logo from './Logo';
 import Campaign from './Campaign';
-import LanguageSelect from './LanguageSelect';
+// import LanguageSelect from './LanguageSelect';
 import { getStrings } from '../strings';
 import './App.css';
 
@@ -26,7 +26,7 @@ class App extends Component {
         <header className="App-header">
           <Logo className="App-logo" />
           <div className="App-title">{title}</div>
-          <LanguageSelect value={this.state.lang} onChange={this.onLanguageChange}/>
+          {/* <LanguageSelect value={this.state.lang} onChange={this.onLanguageChange}/> */}
         </header>
         <section className="App-intro">
           <h1>{headline}</h1>

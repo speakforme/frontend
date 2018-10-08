@@ -1,6 +1,6 @@
 ---
 cc: cp@trai.gov.in
-subject: Threats to make mobile connections inoperable without Aadhaar
+subject: Request to delink my Aadhaar Number & irrevocably purge all Aadhaar-related information
 ---
 ((addressee))
 
