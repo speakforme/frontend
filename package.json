@@ -73,7 +73,7 @@
   "bugs": {
     "url": "https://github.com/speakforme/frontend/issues"
   },
-  "homepage": "https://speakforme.in/all",
+  "homepage": "https://speakforme.in/optout",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
