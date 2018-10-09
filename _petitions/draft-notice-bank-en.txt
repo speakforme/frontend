@@ -1,4 +1,9 @@
 ---
+cc: >
+  cabinet@nic.in,
+  urjitrpatel@rbi.org.in,
+  governor@rbi.org.in
+subject: Request to delink my Aadhaar Number & irrevocably purge all Aadhaar-related information
 ---
 ((addressee))
 
@@ -73,7 +78,3 @@ https://www.uidai.gov.in/images/regulation_1_to_5_15092016.pdf
 Thanking you, in anticipation,
 
 Yours faithfully,
-
-
-
-

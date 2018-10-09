@@ -13,6 +13,9 @@ google_analytics: UA-82421266-2
 exclude:
   - _locales
   - _scripts
+  - src
+  - config
+  - scripts
   - package.json
   - package-lock.json
   - HACKING.md

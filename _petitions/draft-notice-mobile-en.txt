@@ -1,4 +1,6 @@
 ---
+cc: cp@trai.gov.in
+subject: Request to delink my Aadhaar Number & irrevocably purge all Aadhaar-related information
 ---
 ((addressee))
 

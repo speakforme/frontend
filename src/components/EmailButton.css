@@ -1,0 +1,37 @@
+.EmailButton-group {
+  flex: 0 1 320px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 4px 0;
+}
+
+.EmailButton, .EmailButton-view {
+  flex: 1 0 0;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 4px;
+  line-height: 48px;
+  border: none;
+  text-align: center;
+}
+
+.EmailButton-view {
+  color: #f45;
+  background: transparent;
+}
+
+.EmailButton {
+  background-color: #f45;
+  color: #fff;
+  font-weight: bold;
+}
+
+.EmailButton-view-disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+.EmailButton-disabled {
+  background-color: #ccc;
+  cursor: default;
+}
