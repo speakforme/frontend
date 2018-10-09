@@ -27,6 +27,7 @@
   flex-direction: column;
   padding: 48px;
   position: relative;
+  overflow: auto;
 }
 
 .EmailModal-close {
@@ -55,12 +56,17 @@
 }
 
 .EmailModal-label {
-  flex: 0 0 128px;
+  flex: 1 1 25%;
+  min-width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .EmailModal-field input {
-  flex: 1;
+  flex: 1 1 75%;
   border: none;
+  min-width: 0px;
 }
 
 .EmailModal-body {
@@ -68,6 +74,7 @@
   border: none;
   resize: none;
   padding: 8px 0;
+  min-height: 15em;
 }
 
 .EmailModal-buttongroup {
