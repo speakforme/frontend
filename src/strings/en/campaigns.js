@@ -1,10 +1,10 @@
 export default {
   banks: {
-    title: 'Ask your bank to unlink your Aadhaar',
-    target_prompt: 'Select bank', // For MP, bank, telco, gov campaigns
+    title: 'Delink Aadhaar from your bank',
+    target_prompt: 'Select bank',
   },
   telcos: {
-    title: 'Ask your mobile operator to unlink your Aadhaar',
+    title: 'Delink Aadhaar from your mobile operator',
     target_prompt: 'Select mobile operator'
   },
 };
