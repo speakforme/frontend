@@ -4,8 +4,7 @@ export default {
   decription: 'Tell service providers to delink your Aadhaar.',
   explanation: 'Were you forced into giving companies your Aadhaar? Use the Supreme Court judgement to demand that they delink and delete your Aadhaar details.',
   // Button labels
-  view_email: 'View Email',
-  send_email: 'Send Email',
+  send_email: 'Send Email…',
   send_gmail: 'Gmail',
   send_yahoo: 'Yahoo',
   send_other: 'Other',

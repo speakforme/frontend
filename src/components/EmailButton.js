@@ -47,15 +47,10 @@ class EmailButton extends Component {
     const { disabled } = this.props;
     const url = !disabled && supportsMailto && getMailUrl('mailto', this.props, supportsLongUrls);
     const { showModal, copied } = this.state;
-    const { view_email, send_email } = this.context.strings.ui;
+    const { send_email } = this.context.strings.ui;
 
     return (
       <div className="EmailButton-group">
-        <a // eslint-disable-line jsx-a11y/anchor-is-valid
-          className={`EmailButton-view ${disabled && 'EmailButton-view-disabled'}`}
-          onClick={!disabled && (() => this.setState({ showModal: true }))}
-          tabIndex={disabled ? -1 : 0}
-        >{view_email}</a>
         <a // eslint-disable-line jsx-a11y/anchor-is-valid
           className={`EmailButton ${disabled && 'EmailButton-disabled'}`}
           href={url || null} onClick={!disabled && this.sendEmail}
