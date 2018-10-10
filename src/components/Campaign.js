@@ -8,15 +8,25 @@ function replaceVariables(str, ctx) {
 }
 
 class Campaign extends Component {
-  state = {
-    completed: JSON.parse(window.localStorage[`campaign-${this.props.id}-completed`] || 'false')
+  constructor() {
+    super();
+    const key = `campaign-${this.props.id}-completed`;
+    try {
+      this.state = { completed: JSON.parse(window.localStorage[key] || 'false') };
+    } catch (e) {
+      this.state = { completed: false };
+    }
   }
+
   onTarget = (target) => {
     // The currently selected target.
     this.setState({ target });
   }
   onComplete = (method) => {
-    window.localStorage[`campaign-${this.props.id}-completed`] = JSON.stringify(this.state.target || true);
+    const key = `campaign-${this.props.id}-completed`;
+    try {
+      window.localStorage[key] = JSON.stringify(this.state.target || true);
+    } catch(e) {}
     this.setState({ completed: this.state.target || true });
   }
   render() {
@@ -32,6 +42,7 @@ class Campaign extends Component {
     const { campaign_completed, campaign_completed_target, send_again } = this.context.strings.ui;
 
     let { subject, body, name, ...rest } = { ...this.props.petition, ...target };
+
     subject = replaceVariables(subject, rest);
     body = replaceVariables(body, rest);
     name = replaceVariables(name, rest);
@@ -58,7 +69,7 @@ class Campaign extends Component {
     ) : (
       <div className="Campaign">
         <h2 className="Camapign-title">{title}</h2>
-        <div className="Campaign-form">
+        <form className="Campaign-form">
           {targetRequired ? (
             <TargetSelect
               {...{ categories, targets, category_prompt, target_prompt }}
@@ -70,7 +81,7 @@ class Campaign extends Component {
             disabled={targetRequired && !targetSelected}
             onSend={this.onComplete}
           />
-        </div>
+        </form>
       </div>
     );
   }

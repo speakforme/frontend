@@ -58,13 +58,14 @@ export function getMailUrl(type, {subject, body, name, email, cc, bcc}, includeB
       ];
       break;
     case 'yahoo':
+    // http://compose.mail.yahoo.com/?to=TO&subject=SUBJECTMap&body=BODY
       base = `http://compose.mail.yahoo.com/`;
       params = [
-        `To=${email}`,
-        cc && `Cc=${cc}`,
-        bcc && `Bcc=${bcc}`,
-        subject && `Subject=${subject}`,
-        body && `Body=${body}`
+        `to=${email}`,
+        cc && `cc=${cc}`,
+        bcc && `bcc=${bcc}`,
+        subject && `subject=${subject}`,
+        body && `body=${body}`
       ];
       break;
     default:

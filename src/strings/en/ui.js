@@ -1,11 +1,10 @@
 export default {
   title: 'Speak For Me',
-  headline: 'Opt out.',
-  decription: 'Tell service providers to unlink your Aadhaar.',
-  explanation: 'Tell service providers to unlink you Aadhaar. These templates will open in your mail app so you can read and edit them before sending.',
+  headline: 'OPT OUT: Delink your Aadhaar',
+  decription: 'Tell service providers to delink your Aadhaar.',
+  explanation: 'Were you forced by companies to give your Aadhaar? Use the Supreme Court judgement to demand that they delink and delete your Aadhaar details.',
   // Button labels
-  view_email: 'View Email',
-  send_email: 'Send Email',
+  send_email: 'Send Email…',
   send_gmail: 'Gmail',
   send_yahoo: 'Yahoo',
   send_other: 'Other',
