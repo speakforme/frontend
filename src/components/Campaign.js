@@ -42,7 +42,7 @@ class Campaign extends Component {
     const { campaign_completed, campaign_completed_target, send_again } = this.context.strings.ui;
 
     let { subject, body, name, ...rest } = { ...this.props.petition, ...target };
-    
+
     subject = replaceVariables(subject, rest);
     body = replaceVariables(body, rest);
     name = replaceVariables(name, rest);
@@ -69,7 +69,7 @@ class Campaign extends Component {
     ) : (
       <div className="Campaign">
         <h2 className="Camapign-title">{title}</h2>
-        <div className="Campaign-form">
+        <form className="Campaign-form">
           {targetRequired ? (
             <TargetSelect
               {...{ categories, targets, category_prompt, target_prompt }}
@@ -81,7 +81,7 @@ class Campaign extends Component {
             disabled={targetRequired && !targetSelected}
             onSend={this.onComplete}
           />
-        </div>
+        </form>
       </div>
     );
   }
