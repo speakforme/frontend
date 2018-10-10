@@ -2,7 +2,7 @@ export default {
   title: 'Speak For Me',
   headline: 'OPT OUT: Delink your Aadhaar',
   decription: 'Tell service providers to delink your Aadhaar.',
-  explanation: 'Were you forced into giving companies your Aadhaar? Use the Supreme Court judgement to demand that they delink and delete your Aadhaar details.',
+  explanation: 'Were you forced by companies to give your Aadhaar? Use the Supreme Court judgement to demand that they delink and delete your Aadhaar details.',
   // Button labels
   send_email: 'Send Email…',
   send_gmail: 'Gmail',
