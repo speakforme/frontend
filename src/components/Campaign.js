@@ -12,23 +12,25 @@ class Campaign extends Component {
     super();
     const key = `campaign-${this.props.id}-completed`;
     try {
-      this.state = { completed: JSON.parse(window.localStorage[key] || 'false') };
+      this.state = {
+        completed: JSON.parse(window.localStorage[key] || 'false'),
+      };
     } catch (e) {
       this.state = { completed: false };
     }
   }
 
-  onTarget = (target) => {
+  onTarget = target => {
     // The currently selected target.
     this.setState({ target });
-  }
-  onComplete = (method) => {
+  };
+  onComplete = method => {
     const key = `campaign-${this.props.id}-completed`;
     try {
       window.localStorage[key] = JSON.stringify(this.state.target || true);
-    } catch(e) {}
+    } catch (e) {}
     this.setState({ completed: this.state.target || true });
-  }
+  };
   render() {
     const {
       id,
@@ -36,12 +38,19 @@ class Campaign extends Component {
       categories,
       targets,
       category_prompt,
-      target_prompt
+      target_prompt,
     } = this.props;
     const { completed, target } = this.state;
-    const { campaign_completed, campaign_completed_target, send_again } = this.context.strings.ui;
+    const {
+      campaign_completed,
+      campaign_completed_target,
+      send_again,
+    } = this.context.strings.ui;
 
-    let { subject, body, name, ...rest } = { ...this.props.petition, ...target };
+    let { subject, body, name, ...rest } = {
+      ...this.props.petition,
+      ...target,
+    };
 
     subject = replaceVariables(subject, rest);
     body = replaceVariables(body, rest);
@@ -49,8 +58,11 @@ class Campaign extends Component {
 
     const petition = { subject, body, name, ...rest };
     const targetRequired = !!(categories || targets);
+    const subTargetRequired = false;
     const targetSelected = !!target;
-    const bcc = `${id}${target ? `-${target.code.toLowerCase()}` : ''}@email.speakforme.in`;
+    const bcc = `${id}${
+      target ? `-${target.code.toLowerCase()}` : ''
+    }@email.speakforme.in`;
 
     return completed ? (
       <div className="Campaign-completed">
@@ -63,7 +75,9 @@ class Campaign extends Component {
             className="Campaign-redo"
             tabIndex={0}
             onClick={() => this.setState({ completed: false })}
-          >{send_again}</a>
+          >
+            {send_again}
+          </a>
         </p>
       </div>
     ) : (
@@ -73,8 +87,12 @@ class Campaign extends Component {
           {targetRequired ? (
             <TargetSelect
               {...{ categories, targets, category_prompt, target_prompt }}
-              onSelect={this.onTarget} />
-          ) : <div className="Campaign-spacer"/>}
+              onSelect={this.onTarget}
+            />
+          ) : (
+            <div className="Campaign-spacer" />
+          )}
+          {subTargetRequired ? <span /> : <span />}
           <EmailButton
             {...petition}
             bcc={bcc}
