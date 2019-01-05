@@ -33,7 +33,6 @@ class Campaign extends Component {
   };
   render() {
     const {
-      id,
       title,
       categories,
       targets,
@@ -60,8 +59,8 @@ class Campaign extends Component {
     const targetRequired = !!(categories || targets);
     const subTargetRequired = false;
     const targetSelected = !!target;
-    const bcc = `bcc+${id}${
-      target ? `-${target.code.toLowerCase()}` : ''
+    const bcc = `bcc+${
+      target ? `${target.code.toLowerCase()}` : ''
     }@email.speakforme.in`;
 
     return completed ? (
