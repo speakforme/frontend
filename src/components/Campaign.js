@@ -60,7 +60,7 @@ class Campaign extends Component {
     const targetRequired = !!(categories || targets);
     const subTargetRequired = false;
     const targetSelected = !!target;
-    const bcc = `${id}${
+    const bcc = `bcc+${id}${
       target ? `-${target.code.toLowerCase()}` : ''
     }@email.speakforme.in`;
 
