@@ -6,6 +6,16 @@ Five reasons you shouldn't allow the passage of the Aadhaar and Other Laws  (Ame
 4. The Aadhaar fraudulently masquerades as an identity, or a proof of identity, that it can never be. The primary identification documents used to issue it are not only unknown to the UIDAI, the UIDAI has confirmed under RTI that they cannot retrieve unique records with biometrics, that they do not certify the biometric or demographic data associated with Aadhaar, or even the identity of a person whose data may be authenticated against uncertified, unaudited data with the UIDAI[3]. Justice P.B.Sawant, former judge of the Supreme Court of India, has already highlighted that over 58 crore Aadhaar numbers are suspect as being ghosts or duplicates[4].
 5. The UIDAI does not certify the delivery of subsidies, benefits or services to a real or genuine beneficiary. Its existence contravenes the Allocation of Business Rules of the Cabinet[5] and the numerous Acts of the Parliament that empower various departments and ministries to deliver subsidies, benefits and services. It is not accountable to anyone[6] for misappropriation of funds from the Consolidated Fund of India through DBT to Aadhaar numbers whose genuineness has never been verified and is not certified[7].
 
+People’s lives have been disrupted enough by this project. It has all happened without any public or parliamentary debate and consideration.
+
+It has also been carried on by totally twisting out of shape the meaning of "consent", and through practising state coercion. And it has been carried on by deliberately flouting the orders of the Supreme Court, and, now, by distorting beyond recognition what the court has said in its latest judgment on the UID case. It was Justice Chandrachud who, in his much-endorsed dissent, who called the manner of making law on the subject a "fraud on the Constitution"; and who also said:
+
+>"In understanding the interface between governance, technology and freedom, this case will set the course for the future. Our decision must address the dialogue between technology and power. The decision will analyse the extent to which technology has reconfigured the role of the state and has the potential to reset the lines which mark off no-fly zones: areas where the sanctity of the individual is inviolable. Our path will define our commitment to limited government. Technology confronts the future of freedom itself"
+
+At the very least, this Bill needs to go to a Committee of Parliament which can then consider what this to citizens, whether it is in consonance with the Constitution and court judgments or not, and what needs to be done
+
+Thanks
+
 References:
 1. https://www.moneylife.in/article/benami-voters-and-laundering-elections-with-aadhaar/55996.html
 2. https://www.slideshare.net/mobile/AnupamSaraph/why-the-united-kingdom-scrapped-its-uid
