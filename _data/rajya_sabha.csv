@@ -38,7 +38,7 @@ name,party,state,email,code,index
 "Chowdhury, Prof. Jogen",AITC,WB,,RS-37,37
 "Daimary, Shri Biswajit",BPF,AS,,RS-38,38
 "Dalwai, Shri Husain",INC,MH,,RS-39,39
-"Dasgupta, Shri Swapan",NOM.,NOM,,RS-40,40
+"Dasgupta, Shri Swapan",,NOM,,RS-40,40
 "Deb, Shri Pratap Keshari",BJD,OR,,RS-41,41
 "Desai, Shri Anil",SS,MH,,RS-42,42
 "Dhindsa, Sardar Sukhdev Singh",SAD,PB,,RS-43,43
@@ -69,7 +69,7 @@ name,party,state,email,code,index
 "Hembram, Smt. Sarojini",BJD,OR,,RS-68,68
 "Hussain, Shri Syed Nasir",INC,KA,,RS-69,69
 "Irani, Smt. Smriti Zubin",BJP,GJ,,RS-70,70
-"Jadhav, Dr. Narendra",NOM.,NOM,,RS-71,71
+"Jadhav, Dr. Narendra",,NOM,,RS-71,71
 "Jain, Dr. Anil",BJP,UP,,RS-72,72
 "Jaitley, Shri Arun",BJP,UP,,RS-73,73
 "Jatiya, Dr. Satyanarayan",BJP,MP,,RS-74,74
@@ -91,7 +91,7 @@ name,party,state,email,code,index
 "Ketkar, Shri Kumar",INC,MH,,RS-90,90
 "Khan, Shri Javed Ali",SP,UP,,RS-91,91
 "Khan, Shri Mohd. Ali",INC,AP,,RS-92,92
-"Kom, Smt. M.C. Mary",NOM.,NOM,,RS-93,93
+"Kom, Smt. M.C. Mary",,NOM,,RS-93,93
 "Kore, Dr. Prabhakar",BJP,KA,,RS-94,94
 "Kujur, Shri Santiuse",INC,AS,,RS-95,95
 "Lachungpa, Shri Hishey",SDF,SK,,RS-96,96
@@ -219,7 +219,7 @@ name,party,state,email,code,index
 "Thakur, Smt. Viplove",INC,HP,,RS-218,218
 "Tlau, Shri Ronald Sapa",INC,MI,,RS-219,219
 "Tomar, Shri Vijay Pal Singh",BJP,UP,,RS-220,220
-"Tulsi, Shri K.T.S.",NOM.,NOM,,RS-221,221
+"Tulsi, Shri K.T.S.",,NOM,,RS-221,221
 "Tundiya, Mahant Shambhuprasadji",BJP,GJ,,RS-222,222
 "Uikey, Smt. Sampatiya",BJP,MP,,RS-223,223
 "Vadodia, Shri Lal Sinh",BJP,GJ,,RS-224,224
