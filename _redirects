@@ -1,4 +1,2 @@
 # See https://www.netlify.com/docs/redirects/
 # Does a 301 by default, so be careful
-/         /optout/      302
-/mp/	  /optout/	302
