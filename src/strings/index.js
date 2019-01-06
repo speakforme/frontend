@@ -13,6 +13,7 @@
 import { campaigns, ui } from './en';
 import bankData from './data/banks.csv';
 import telcoData from './data/telcos.csv';
+import states from './data/states.json';
 import rajaSabhaData from './data/rajya_sabha.csv';
 import bankPetition from './petitions/draft-notice-bank-en.txt';
 import telcoPetition from './petitions/draft-notice-mobile-en.txt';
@@ -28,6 +29,26 @@ function fixData(array) {
     indexed[object.code] = object;
   }
   return indexed;
+}
+
+function fixRajyaSabhaData(campaignData, rajyaSabhaMembers) {
+  campaignData.categories = {};
+  states['NOM'] = 'Nominated';
+  for (let stateCode in states) {
+    campaignData.categories[stateCode] = {
+      name: states[stateCode],
+      targets: {},
+    };
+  }
+
+  for (const row of rajyaSabhaMembers) {
+    let stateCode = row.state;
+    if (row.name) row.addressee = row.name;
+    row.title = row.name + (row.party.length > 0 ? ` (${row.party})` : '');
+    if (campaignData.categories[stateCode]) {
+      campaignData.categories[stateCode].targets[row.code] = row;
+    }
+  }
 }
 
 // Get petition in the format we need.
@@ -46,7 +67,7 @@ if (campaigns.telcos) {
 }
 
 if (campaigns.rajya_sabha) {
-  campaigns.rajya_sabha.targets = fixData(rajaSabhaData);
+  fixRajyaSabhaData(campaigns.rajya_sabha, rajaSabhaData);
   campaigns.rajya_sabha.petition = fixPetition(rajyaSabhaPetition);
 }
 

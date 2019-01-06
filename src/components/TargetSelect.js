@@ -1,22 +1,6 @@
 import Component from 'inferno-component';
 import './TargetSelect.css';
 
-import states from '../strings/data/states.json';
-
-states['NOM'] = 'Nominated';
-
-const getTargetDisplay = (target, target_prompt) => {
-  if (target_prompt !== 'Find Your Representative') {
-    return target.title || target.name;
-  } else {
-    const statePrefix = states[target.state]
-      ? states[target.state] + ' - '
-      : '';
-    const partySuffix = target.party ? ` (${target.party})` : '';
-    return statePrefix + target.name + partySuffix;
-  }
-};
-
 class TargetSelect extends Component {
   state = {};
   onCategory = event => {
@@ -61,7 +45,7 @@ class TargetSelect extends Component {
             <option>{target_prompt}</option>
             {Object.keys(targets).map(targetId => (
               <option selected={selectedTarget === targetId} value={targetId}>
-                {getTargetDisplay(targets[targetId], target_prompt)}
+                {targets[targetId].title || targets[targetId].name}
               </option>
             ))}
           </select>
