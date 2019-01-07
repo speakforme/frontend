@@ -1,8 +1,8 @@
 export default {
   title: 'Speak For Me',
-  headline: 'CHANGETITLE (src/strings/en/ui.js)',
-  decription: 'Speak For Me: Ask Rajya Sabha to stop the Aadhaar Amendment',
-  explanation: 'CHANGEEXPLANATION (src/strings/en/ui.js)',
+  headline: 'Appeal to the Rajya Sabha to oppose the Aadhaar Amendment Act',
+  decription: 'Speak For Me: Ask Rajya Sabha to oppose the Aadhaar Amendment',
+  explanation: '',
   // Button labels
   send_email: 'Send Email…',
   send_gmail: 'Gmail',
