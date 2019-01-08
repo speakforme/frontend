@@ -2,30 +2,26 @@ import Component from 'inferno-component';
 import './TargetSelect.css';
 
 class TargetSelect extends Component {
-  state = {}
+  state = {};
   onCategory = event => {
     const categoryId = event.target.value;
     this.setState({
       selectedCategory: categoryId,
-      targets: this.props.categories[categoryId].targets
+      targets: this.props.categories[categoryId].targets,
     });
-  }
+  };
 
   onTarget = event => {
     const targetId = event.target.value;
     const targets = this.state.targets || this.props.targets;
     this.setState({
-      selectedTarget: targetId
+      selectedTarget: targetId,
     });
     this.props.onSelect(targets[targetId]);
-  }
+  };
 
   render() {
-    const {
-      categories,
-      category_prompt,
-      target_prompt
-    } = this.props;
+    const { categories, category_prompt, target_prompt } = this.props;
     const { selectedCategory, selectedTarget } = this.state;
     const targets = this.state.targets || this.props.targets;
 
@@ -38,7 +34,9 @@ class TargetSelect extends Component {
               <option
                 selected={selectedCategory === categoryId}
                 value={categoryId}
-              >{categories[categoryId].title || categories[categoryId].name}</option>
+              >
+                {categories[categoryId].title || categories[categoryId].name}
+              </option>
             ))}
           </select>
         )}
@@ -46,10 +44,9 @@ class TargetSelect extends Component {
           <select className="TargetSelect" onChange={this.onTarget}>
             <option>{target_prompt}</option>
             {Object.keys(targets).map(targetId => (
-              <option
-                selected={selectedTarget === targetId}
-                value={targetId}
-              >{targets[targetId].title || targets[targetId].name}</option>
+              <option selected={selectedTarget === targetId} value={targetId}>
+                {targets[targetId].title || targets[targetId].name}
+              </option>
             ))}
           </select>
         )}

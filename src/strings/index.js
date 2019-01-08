@@ -13,8 +13,11 @@
 import { campaigns, ui } from './en';
 import bankData from './data/banks.csv';
 import telcoData from './data/telcos.csv';
+import states from './data/states.json';
+import rajaSabhaData from './data/rajya_sabha.csv';
 import bankPetition from './petitions/draft-notice-bank-en.txt';
 import telcoPetition from './petitions/draft-notice-mobile-en.txt';
+import rajyaSabhaPetition from './petitions/draft-notice-rs-en.txt';
 
 // Get the CSV data into the format we need.
 function fixData(array) {
@@ -22,9 +25,30 @@ function fixData(array) {
   for (const object of array) {
     if (object.ifsc) object.code = object.ifsc;
     if (object.name) object.addressee = object.name;
+    if (object.code) object.code = object.code;
     indexed[object.code] = object;
   }
   return indexed;
+}
+
+function fixRajyaSabhaData(campaignData, rajyaSabhaMembers) {
+  campaignData.categories = {};
+  states['NOM'] = 'Nominated';
+  for (let stateCode in states) {
+    campaignData.categories[stateCode] = {
+      name: states[stateCode],
+      targets: {},
+    };
+  }
+
+  for (const row of rajyaSabhaMembers) {
+    let stateCode = row.state;
+    if (row.name) row.addressee = row.name;
+    row.title = row.name + (row.party.length > 0 ? ` (${row.party})` : '');
+    if (campaignData.categories[stateCode]) {
+      campaignData.categories[stateCode].targets[row.code] = row;
+    }
+  }
 }
 
 // Get petition in the format we need.
@@ -32,10 +56,20 @@ function fixPetition({ body, attributes }) {
   return { body, ...attributes };
 }
 
-campaigns.banks.petition = fixPetition(bankPetition);
-campaigns.banks.targets = fixData(bankData);
-campaigns.telcos.petition = fixPetition(telcoPetition);
-campaigns.telcos.targets = fixData(telcoData);
+if (campaigns.banks) {
+  campaigns.banks.petition = fixPetition(bankPetition);
+  campaigns.banks.targets = fixData(bankData);
+}
+
+if (campaigns.telcos) {
+  campaigns.telcos.petition = fixPetition(telcoPetition);
+  campaigns.telcos.targets = fixData(telcoData);
+}
+
+if (campaigns.rajya_sabha) {
+  fixRajyaSabhaData(campaigns.rajya_sabha, rajaSabhaData);
+  campaigns.rajya_sabha.petition = fixPetition(rajyaSabhaPetition);
+}
 
 export default { campaigns, ui };
 export function getStrings(/* lang */) {
@@ -163,9 +197,6 @@ export function getStrings(/* lang */) {
 // const enAll = getStrings('en');
 // console.log(enAll);
 // export default enAll;
-
-
-
 
 /*
 {

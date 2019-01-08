@@ -1,0 +1,87 @@
+Dear Sir/Madam
+
+The Lok Sabha has passed the Aadhaar Amendment Act without discussion, on Friday, January 4, 2019.
+
+The basic purpose of the amendment is to give private business interests the ability to use the Aadhaar system.  This was in the Aadhaar Act of 2016 in section 57, and the Supreme Court struck that down. This can be reversed through two legal processes: a successful petition to review the judgment and passage of amendments, or an entirely new Act, that in effect amends the Constitution.
+
+The provisions of the Amendment are therefore contrary to the privacy judgment of August 24, 2017 and the UID judgment of September 26, 2018.
+
+As a Rajya Sabha member, there are some things you need to consider before the Amendment Act comes up for discussion in the Rajya Sabha:
+
+Firstly, the Aadhaar Act was passed as a Money Bill. The Court was able to uphold the Act only after the majority opinion struck down section 57, which allows business interests to use the Aadhaar system.
+
+Secondly, the Supreme Court only allowed the use of Aadhaar for section 7 – which is for delivery of services, benefits and subsidies. However, evidence was presented in Court pointing to failures in linking and in authentication, critical parts of the Aadhaar system, that have and continue to result in starvation deaths and widespread disruptions in  delivery of legitimate subsidies. The Court noted that the Attorney General had submitted that the government would take care of this.
+
+Thirdly, the Amendment Act allows not only offline verification, but also authentication, supposedly with the consent of the individual. After the judgment of the court, the use of the Aadhaar system by private/business interests is prohibited.
+
+Fourth, Section 33 of the 2016 Act allowed disclosure of the information held in the UIDAI database if authorised by an officer not below that of a Jt Secretary. The court struck that down. It is now being e-enacted in the Amendment Act saying it can be no officer lower than a `Secretary’.
+
+Fifth, the amendment proposes a penalty up to Rs one crore if any entity does not follow its instructions. The reason for this clause is extraordinary, and deserving of great caution in endorsing it without question.
+Banks have had instructions given to them that they must have enrolments centres in at least 10% of their branches, or they will be punished. This is being done under Regulation 12A, issued by the UIDAI. Then they impose performance conditions on banks.
+
+Sixth, the Amendment Act makes the UIDAI more powerful than any other agency in the country.
+Seventh, there are too many major changes – some contrary to the Supreme Court judgment on privacy and, even more so, the judgment on the UID project and the Aadhaar Act 2016, some reflecting the tenuous state of the technology being deployed in the project, and some that confer overarching power upon a single agency.
+
+Eighth, the Aadhaar Act 2016 undermined the Rajya Sabha, and was passed as a Money Bill. Justice Chandrachud in his judgment in WP 494 of 2012 clearly declares the passage of the Aadhaar Act as a fraud on the Constitution. Passing an amendment to a fraudulent Act is furthering the fraud.
+
+Ninth, the Aadhaar Act has undermined democratic processes, worse than Cambridge Analytica (globally condemned for its role in damaging the US elections of 2016), by enabling private parties in the ecosystem of Aadhaar to manipulate voters by targeting subsidies[1], benefits and services, rather than ensuring no one is excluded.
+
+Tenth, the Aadhaar Act undermines the sovereignty of the people of India by turning the power to the ecosystem of Aadhaar to become sovereigns over the citizens by deciding even their very existence. This is one of the key reasons the UK rejected its national ID[2].
+
+Eleventh, the Aadhaar system fraudulently masquerades as an identity, or a proof of identity, that it can never be. The primary identification documents used to issue it are not only unknown to the UIDAI, the UIDAI has confirmed under RTI that they cannot retrieve unique records with biometrics, that they do not certify the biometric or demographic data associated with Aadhaar, or even the identity of a person whose data may be authenticated against uncertified, unaudited data with the UIDAI[3]. Justice P.B.Sawant, former judge of the Supreme Court of India, has already highlighted that over 58 crore Aadhaar numbers are suspect as being ghosts or duplicates[4].
+
+Twelfth, the UIDAI does not certify the delivery of subsidies, benefits or services to a real or genuine beneficiary. Its existence contravenes the Allocation of Business Rules of the Cabinet[5] and the numerous Acts of the Parliament that empower various departments and ministries to deliver subsidies, benefits and services. It is not accountable to anyone[6] for misappropriation of funds from the Consolidated Fund of India, through DBT to Aadhaar numbers whose genuineness has never been verified and is not certified[7].
+
+At the very least, this Bill needs to go to a Committee of Parliament, which can then consider what this means to citizens, whether it is indeed in consonance with the Constitution and court judgments, and what further needs to be done to safeguard the people.
+Thanking you in advance for speaking up in the Rajya Sabha to prevent this Amendment Bill from being hastily pressed into law without due process,
+
+Yours sincerely
+
+
+
+PS: the following pages carry detailed explanations of the brief points presented above, together with detailed references that you should find useful for further background reading.
+
+Explanations:
+
+Firstly, This amendment attempts to get past that by a convoluted method - offline verification ‘as may be specified by regulations’ (this is leaving it to the UIDAI to experiment on us, and includes things like virtual ID), ‘other forms using the number’. It is not possible for the Government to use the cover of a Money Bill for this purpose, as the unequivocal purpose of the listed Amendments are aimed at allowing private business interests access to the data and system set up under the UIDAI, and the assent of the Rajya Sabha is needed to create legislation that overrides a Constitutional opinion.
+
+Secondly, in this amendment, they say only:
+“Provided that the requesting entity shall, in case of failure to authenticate due to illness, injury or infirmity owing to old age or otherwise, or any technical or other reasons, provide such alternate and viable means of identification of the individual, as may be specified by regulations.”
+
+That's all. It leaves it to the requesting entity to decide what to do. There is no protection for the rights of the poor.
+
+It is so striking that so much is being done for businesses and nothing at all for the poor; yet this project was created in order to ensure the poor can efficiently access their entitlements. It is clear that this amendment, in other words, does nothing for the poor, only for business interests. And it is that which the court said could not be done using this project, created through public expenditure.
+
+Thirdly, in para 367 of the majority judgment, the judges had said only that:
+“If such a person voluntary wants to offer Aadhaar card as a proof of his/her identity, there may not be a problem.”
+This does not amount to allowing the use of the Aadhaar system, not even voluntarily. It does not even confer official recognition upon a mere print of the number, without an assured authentication, for the purpose of subsidy and welfare deliveries, and not at all for the benefit of the business sector. Therefore, businesses are unlikely to accept an unauthenticated printout, easily duplicated or fraudulently altered, in lieu of a verified number, hence the need for a legally legislated amendment to the residual Act that will work around the objections of the Court.
+
+
+Fourth, the present condition shows that merely raising the level of authority of the competent officer is no protection at all.
+The government has appointed Mr AB Pandey as, first, the CEO of the UIDAI; then, as the head of the GSTN; and then as the Revenue Secretary. This means that a single person holding the rank of Secretary already has access to all the information, as head of UIDAI, which can be put to use as the Revenue Secretary, or even as the head of GSTN.
+
+Fifth, the amendment gives UIDAI the extraordinary power to make rules, issue directions, decide what other ‘agencies’ must do and then levy penalties under section 42 of the Aadhaar Act 2016, which is a general provision – and all this is made applicable to banks, making them agents of the UIDAI, without recourse to the banking regulator, RBI.
+
+Sixth, the amendment makes the UIDAI into the most powerful agency in the country:
+
+It decides how identities shall be given, and may accept or reject enrolment applications;
+It can omit or disable numbers; it can demand that people re-enrol; it can compel agencies, including banks, to act to fulfil what the UIDAI needs; it can give contracts to entities that may include those with blatant conflicts of interest, such as Khosla Labs; it can make regulations that can do all of this – and more;
+No failures, whether biometric or any other, can be proceeded against when the failure is of the UIDAI;
+In addition, the Amendment Act which exempts the UIDAI from all taxes:
+“50A. Notwithstanding anything contained in the Income Tax Act, 1961 or any other enactment for the time being in force relating to tax on income, profits or gains, the Authority shall not be liable to pay income tax or any other tax in respect of its income, profits or gains.”
+On June 30, 2010, the UIDAI put up a Draft Bill on its web site. It was there for 14 days. Many people sent in their comments. No changes were made to incorporate any of the changes requested – except one: draft section 58, which exempted the Authority from all taxes was removed at the instance of the then-Finance Minister, Mr Pranab Mukherjee, who saw no reason for this exemption for an agency that planned on charging for its services. What justifies the exemption now?
+Seventh, regarding the excessive power conferred upon an agency, the explanation here (8) by technologists who continue to critically examine the project will help understand some of the abiding concerns about the risks in the deployment of technology, about which Parliament and the people are not told, while discussing the making of the law – about consent, voluntariness,  private and business interest, and the growing power of the UIDAI over people, entities, and systems. These must be discussed and debated before it can go any further. This debate did not take place in the Lok Sabha, and this lacuna should be addressed in the Rajya Sabha.
+Justice Chandrachud who, in his landmark dissent in the recently concluded case, called the manner of making law on the subject a ‘fraud on the Constitution’, also said:
+“In understanding the interface between governance, technology and freedom, this case will set the course for the future. Our decision must address the dialogue between technology and power. The decision will analyse the extent to which technology has reconfigured the role of the state and has the potential to reset the lines which mark off no-fly zones: areas where the sanctity of the individual is inviolable. Our path will define our commitment to limited government.”
+
+Technology confronts the future of freedom itself.
+
+References
+1. https://www.moneylife.in/article/benami-voters-and-laundering-elections-with-aadhaar/55996.html
+2. https://www.slideshare.net/mobile/AnupamSaraph/why-the-united-kingdom-scrapped-its-uid
+3. https://www.sundayguardianlive.com/news/uidai-database-defective-targeting-subsidies-benefits
+4. https://indianexpress.com/article/opinion/columns/aadhaar-uidai-biometrics-the-numbers-dont-add-up-5512538/
+5. https://cabsec.gov.in/aob_first.php?page=1
+6. https://www.sundayguardianlive.com/news/uidai-no-skin-system
+7. https://www.sundayguardianlive.com/opinion/government-must-ensure-clean-delivery-benefits
+8. https://medium.com/karana/what-uidai-doesnt-tell-you-about-offline-use-of-aadhaar-cc4d249adf4e
