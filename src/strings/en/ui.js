@@ -2,7 +2,7 @@ export default {
   title: 'Speak For Me',
   headline: 'Appeal to the Rajya Sabha to oppose the Aadhaar Amendment Act',
   decription: 'Speak For Me: Ask Rajya Sabha to oppose the Aadhaar Amendment',
-  explanation: '',
+  explanation: 'You can write to any or all RS MPs of your state.',
   // Button labels
   send_email: 'Send Email…',
   send_gmail: 'Gmail',
