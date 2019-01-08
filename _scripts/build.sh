@@ -16,3 +16,4 @@ mkdir -p _site/locales
 cp ./_locales/*.json _site/locales/
 # Build the one page app
 npm run build
+cp humans.txt _site/
