@@ -20,6 +20,16 @@ class TargetSelect extends Component {
     this.props.onSelect(targets[targetId]);
   };
 
+  componentDidMount = () => {
+    if(this.props.targets && (Object.keys(this.props.targets).length === 1)) {
+      const targetId = this.props.targets[Object.keys(this.props.targets)[0]].code;
+      this.setState({
+        selectedTarget: targetId,
+      });
+      this.props.onSelect(this.props.targets[targetId]);
+    }
+  }
+
   render() {
     const { categories, category_prompt, target_prompt } = this.props;
     const { selectedCategory, selectedTarget } = this.state;
