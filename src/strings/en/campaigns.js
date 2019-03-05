@@ -6,7 +6,7 @@ export default {
   // 
     cbdt: {
         title: 'Ask CBDT to stop linking Aadhaar to PAN',
-        target_prompt: 'Select Recepient',
+        target_prompt: 'Select Recipient',
     },
   // banks: {
   //   title: 'Delink Aadhaar from your bank',
