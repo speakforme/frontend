@@ -13,11 +13,13 @@
 import { campaigns, ui } from './en';
 import bankData from './data/banks.csv';
 import telcoData from './data/telcos.csv';
+import cbdtData from './data/cbdt.csv';
 import states from './data/states.json';
 import rajaSabhaData from './data/rajya_sabha.csv';
 import bankPetition from './petitions/draft-notice-bank-en.txt';
 import telcoPetition from './petitions/draft-notice-mobile-en.txt';
 import rajyaSabhaPetition from './petitions/draft-notice-rs-en.txt';
+import cbdtPetition from './petitions/draft-notice-cbdt-en.txt';
 
 // Get the CSV data into the format we need.
 function fixData(array) {
@@ -69,6 +71,11 @@ if (campaigns.telcos) {
 if (campaigns.rajya_sabha) {
   fixRajyaSabhaData(campaigns.rajya_sabha, rajaSabhaData);
   campaigns.rajya_sabha.petition = fixPetition(rajyaSabhaPetition);
+}
+
+if (campaigns.cbdt) {
+    campaigns.cbdt.petition = fixPetition(cbdtPetition);
+    campaigns.cbdt.targets = fixData(cbdtData);
 }
 
 export default { campaigns, ui };
