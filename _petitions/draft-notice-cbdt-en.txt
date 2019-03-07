@@ -54,7 +54,11 @@ For a summary of the risks of the SRDH system, see https://medium.com/karana/the
 
 i. A recent RTI reply from the UIDAI has revealed an astonishing fact: that the UIDAI does not have a Chief Information Security Officer. See https://www.moneylife.in/article/Aadhaar-truth-uidai-never-appointed-a-chief-information-security-officer-reveals-rti/56267.html
 
-j. Breaches of various databases holding Aadhaar numbers have been reported since the judgment, other than the Telangana breach cited above, and including on 19 February, 2019, at https://techcrunch.com/2019/02/18/Aadhaar-indane-leak/ (Indane gas company leaks - it is estimated that over 6.7 million customers could be affected) end January 2019, at https://techcrunch.com/2019/01/31/Aadhaar-data-leak/ (Jharkhand government web site) at the World Economic Forum, the Global Risk Report 2019 named Aadhaar as having suffered multiple breaches, compromising over 1.1 billion people. See the report dated 19 February 2019 at https://www.moneylife.in/article/Aadhaar-data-breach-largest-in-the-world-says-wefs-global-risk-report-and-avast/56384.html
+j. Breaches of various databases holding Aadhaar numbers have been reported since the judgment, other than the Telangana breach cited above, and including:
+
+- on 19 February, 2019, at https://techcrunch.com/2019/02/18/Aadhaar-indane-leak/ (Indane gas company leaks - it is estimated that over 6.7 million customers could be affected)
+- end January 2019, at https://techcrunch.com/2019/01/31/Aadhaar-data-leak/ (Jharkhand government web site)
+- at the World Economic Forum, the Global Risk Report 2019 named Aadhaar as having suffered multiple breaches, compromising over 1.1 billion people. See the report dated 19 February 2019 at https://www.moneylife.in/article/Aadhaar-data-breach-largest-in-the-world-says-wefs-global-risk-report-and-avast/56384.html
 
 Another report by Avast Software made a similar assessment. Both had Rachna Khaira's investigative report for the Tribune for reference, but seem to have found reason to endorse it. The assessment also seems to point to 'lax cybersecurity protocols' as the possible reason for the breaches. That the UIDAI routinely denies leaks from its database, even when it has had to blacklist operatives, launch investigations, penalise connected persons, is part of the problem.
 
