@@ -1,8 +1,8 @@
 export default {
   title: 'Speak For Me',
-  headline: 'Appeal to the Rajya Sabha to oppose the Aadhaar Amendment Act',
-  decription: 'Speak For Me: Ask Rajya Sabha to oppose the Aadhaar Amendment',
-  explanation: 'You can write to any or all RS MPs of your state.',
+  headline: 'Appeal to the CBDT seeking reassurance regarding Aadhaar-PAN Linking',
+  decription: 'Speak For Me: Ask CBDT to withdraw order mandating the linking of PAN and Aadhaar, or, in the alternative, extend the deadline for the linking of the two until such time sufficient safeguards are installed to protect our fundamental right to privacy.',
+  explanation: 'Ask CBDT to withdraw order mandating the linking of PAN and Aadhaar, or, in the alternative, extend the deadline for the linking of the two until such time sufficient safeguards are installed to protect our fundamental right to privacy.',
   // Button labels
   send_email: 'Send Email…',
   send_gmail: 'Gmail',
