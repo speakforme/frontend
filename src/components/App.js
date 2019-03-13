@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     const {
       campaigns,
-      ui: { title, headline, description, explanation }
+      ui: { title, headline, description, explanation, email_collection_note }
     } = this.state.strings;
     return (
       <div className="App">
@@ -40,6 +40,9 @@ class App extends Component {
             </section>
           ))
         }
+        <section className="App-notice">
+          <p>{email_collection_note}</p>
+        </section>
       </div>
     );
   }

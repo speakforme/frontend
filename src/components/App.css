@@ -62,3 +62,9 @@
 .App-campaign:nth-of-type(2n) {
   background-color: #eee;
 }
+
+.App-notice {
+  color: #aaa;
+  font-size: 14px;
+  font-style: italic;
+}
