@@ -3,6 +3,7 @@ export default {
   headline: 'Appeal to the CBDT seeking reassurance regarding Aadhaar-PAN Linking',
   decription: 'Speak For Me: Ask CBDT to withdraw order mandating the linking of PAN and Aadhaar, or, in the alternative, extend the deadline for the linking of the two until such time sufficient safeguards are installed to protect our fundamental right to privacy.',
   explanation: 'Ask CBDT to withdraw order mandating the linking of PAN and Aadhaar, or, in the alternative, extend the deadline for the linking of the two until such time sufficient safeguards are installed to protect our fundamental right to privacy.',
+  email_collection_note: 'SpeakForMe is included as a BCC recipient. We count the number of emails sent, and may contact you if further action is required on your part. The contents of your email are not stored, and your email address will not be shared with anyone else. You may remove us from BCC if you prefer to not be counted or contacted.',
   // Button labels
   send_email: 'Send Email…',
   send_gmail: 'Gmail',

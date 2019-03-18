@@ -4,7 +4,7 @@
   "description": "speakforme.in",
   "dependencies": {
     "autoprefixer": "7.1.5",
-    "babel-core": "6.26.0",
+    "babel-core": "^6.26.3",
     "babel-eslint": "8.0.1",
     "babel-jest": "21.2.0",
     "babel-loader": "7.1.2",
@@ -29,7 +29,7 @@
     "file-loader": "1.1.5",
     "fs-extra": "4.0.2",
     "html-webpack-plugin": "2.30.1",
-    "http-proxy-middleware": "0.17.4",
+    "http-proxy-middleware": "^0.19.1",
     "inferno": "^3.10.1",
     "inferno-component": "^3.10.1",
     "inferno-dev-utils": "^4.0.0",
