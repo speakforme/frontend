@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "csv-loader": "^2.1.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-cli": "^1.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.2.2",
