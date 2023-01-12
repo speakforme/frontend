@@ -48,7 +48,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "devDependencies": {
-    "csv-loader": "^2.1.1",
+    "csv-loader": "^3.0.5",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.4.0",
     "gulp-concat": "^2.6.1",
